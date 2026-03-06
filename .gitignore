@@ -1,41 +1,54 @@
+# CLion IDE
+.idea/
+cmake-build-debug/
+cmake-build-release/
+
+# CMake generated
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Keep these
+!include/
+!include/json.hpp
+!data/
+!CMakeLists.txt
+
+# Then paste the GitHub default below this line
 # Prerequisites
 *.d
-
 # Compiled Object files
 *.slo
 *.lo
 *.o
 *.obj
-
 # Precompiled Headers
 *.gch
 *.pch
-
 # Linker files
 *.ilk
-
 # Debugger Files
 *.pdb
-
 # Compiled Dynamic libraries
 *.so
 *.dylib
 *.dll
-
 # Fortran module files
 *.mod
 *.smod
-
 # Compiled Static libraries
 *.lai
 *.la
 *.a
 *.lib
-
 # Executables
 *.exe
 *.out
 *.app
-
 # debug information files
 *.dwo
