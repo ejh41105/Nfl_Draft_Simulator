@@ -14,8 +14,8 @@ Makefile
 Thumbs.db
 
 # Keep these
-!include/
-!include/json.hpp
+!Draft_Sim/
+!Draft_Sim/json.hpp
 !data/
 !CMakeLists.txt
 
