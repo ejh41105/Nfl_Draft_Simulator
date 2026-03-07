@@ -62,6 +62,7 @@ public:
     void updateNeedAfterPick(std::string_view position);
     void addPick(const Pick& pick);
     void removePick(int overallPickNumber);
+    Pick getNextPick() const;
 };
 
 #endif //MOCKDRAFTPROJECT_TEAM_H
