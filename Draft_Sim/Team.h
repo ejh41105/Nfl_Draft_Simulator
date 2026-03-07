@@ -25,44 +25,38 @@ private:
     std::string city_m{"???"};
     std::vector<Pick> picks_m{};
     std::map<std::string, int> positionalNeed_m{};
-    int    noiseRange_m{8};
-    double weightConsensus_m{0.30};
-    double weightNeed_m{0.25};
-    double weightPosValue_m{0.20};
-    double weightRAS_m{0.15};
-    double weightAge_m{0.05};
-    double weightMisc_m{0.05};
+    int noiseRange_m{8};
+
+    // Priority order replaces individual weights
+    // index 0 = highest priority (30%)
+    // index 6 = lowest priority (5%)
+    // values are category names:
+    // "consensusRank", "positionalNeed", "positionalValue",
+    // "RAS", "floorCeiling", "miscConcern", "positionalScarcity"
+    std::vector<std::string> priorities_m{};
 
 public:
     Team(std::string_view id, std::string_view name, std::string_view city,
          const std::vector<Pick>& picks,
          const std::map<std::string, int>& positionalNeed,
          int noiseRange,
-         double wConsensus, double wNeed, double wPosValue,
-         double wRAS, double wAge, double wMisc)
+         const std::vector<std::string>& priorities)
         : id_m{id}, name_m{name}, city_m{city},
           picks_m{picks}, positionalNeed_m{positionalNeed},
           noiseRange_m{noiseRange},
-          weightConsensus_m{wConsensus}, weightNeed_m{wNeed},
-          weightPosValue_m{wPosValue}, weightRAS_m{wRAS},
-          weightAge_m{wAge}, weightMisc_m{wMisc}
+          priorities_m{priorities}
     {}
 
     // Getters
-    std::string_view getId()                            const { return id_m; }
-    std::string_view getName()                          const { return name_m; }
-    std::string_view getCity()                          const { return city_m; }
-    const std::vector<Pick>& getPicks()                 const { return picks_m; }
+    std::string_view getId()                              const { return id_m; }
+    std::string_view getName()                            const { return name_m; }
+    std::string_view getCity()                            const { return city_m; }
+    const std::vector<Pick>& getPicks()                   const { return picks_m; }
     const std::map<std::string, int>& getPositionalNeed() const { return positionalNeed_m; }
-    int    getNoiseRange()                              const { return noiseRange_m; }
-    double getWeightConsensus()                         const { return weightConsensus_m; }
-    double getWeightNeed()                              const { return weightNeed_m; }
-    double getWeightPosValue()                          const { return weightPosValue_m; }
-    double getWeightRAS()                               const { return weightRAS_m; }
-    double getWeightAge()                               const { return weightAge_m; }
-    double getWeightMisc()                              const { return weightMisc_m; }
+    int getNoiseRange()                                   const { return noiseRange_m; }
+    const std::vector<std::string>& getPriorities()       const { return priorities_m; }
 
-    int getNeedForPosition(std::string_view position)   const;
+    int getNeedForPosition(std::string_view position)     const;
 
     // Declarations for Team.cpp
     void updateNeedAfterPick(std::string_view position);

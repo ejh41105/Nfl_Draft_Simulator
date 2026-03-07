@@ -19,11 +19,12 @@ private:
     int positionalRanking_m{999};
     double RAS_m{0.0};
     int miscellaneousConcerns_m{0};
+    int floorCeiling_m{0};
 
 public:
-    Player(std::string_view name, std::string_view position, std::string_view college, std::string_view majorStats, int number, int age, int height, int weight, int consensusRanking, int positionalRanking, double RAS, int miscellaneousConcerns)
+    Player(std::string_view name, std::string_view position, std::string_view college, std::string_view majorStats, int number, int age, int height, int weight, int consensusRanking, int positionalRanking, double RAS, int miscellaneousConcerns, int floorCeiling)
         : name_m{name}, position_m{position}, college_m{college}, majorStats_m{majorStats}, number_m{number}, age_m{age}, height_m{height},
-          weight_m{weight}, consensusRanking_m{consensusRanking}, positionalRanking_m{positionalRanking}, RAS_m{RAS}, miscellaneousConcerns_m{miscellaneousConcerns}
+          weight_m{weight}, consensusRanking_m{consensusRanking}, positionalRanking_m{positionalRanking}, RAS_m{RAS}, miscellaneousConcerns_m{miscellaneousConcerns}, floorCeiling_m{floorCeiling}
     {}
 
     std::string_view getName()           const { return name_m; }
@@ -38,6 +39,7 @@ public:
     int              getPositionalRank() const { return positionalRanking_m; }
     double           getRAS()            const { return RAS_m; }
     int              getMiscConcern()    const { return miscellaneousConcerns_m; }
+    int              getFloorCeiling()   const { return floorCeiling_m; }
 };
 
 #endif //MOCKDRAFTPROJECT_PLAYER_H
