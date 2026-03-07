@@ -7,6 +7,6 @@ include_directories(Draft_Sim)
 
 add_executable(MockDraftProject
         Draft_Sim/main.cpp
-        Draft_Sim/Player.cpp
+        Draft_Sim/Team.cpp
 
 )
