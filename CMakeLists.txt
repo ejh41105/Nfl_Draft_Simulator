@@ -8,5 +8,8 @@ include_directories(Draft_Sim)
 add_executable(MockDraftProject
         Draft_Sim/main.cpp
         Draft_Sim/Team.cpp
+        Draft_Sim/ScoringEngine.h
+        Draft_Sim/ScoringEngine.cpp
+        Draft_Sim/RNG.h
 
 )
