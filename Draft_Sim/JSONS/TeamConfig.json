@@ -1,0 +1,386 @@
+[
+  {
+    "id": "LV",
+    "name": "Raiders",
+    "city": "Las Vegas",
+    "noiseRange": 12,
+    "positionalNeed": {
+      "QB": 1, "WR": 2, "CB": 2, "OT": 2, "DE": 2,
+      "DT": 3, "ILB": 4, "RB": 4, "TE": 5,
+      "S": 3, "NT": 4, "G": 3, "C": 5, "FB": 5, "K": 5, "P": 5
+    },
+    "priorities": ["consensusRank","positionalNeed","floorCeiling","positionalValue","RAS","miscConcern","positionalScarcity"]
+  },
+  {
+    "id": "NYJ",
+    "name": "Jets",
+    "city": "New York",
+    "noiseRange": 15,
+    "positionalNeed": {
+      "QB": 1, "WR": 2, "CB": 2, "OT": 4, "DE": 1,
+      "DT": 2, "ILB": 2, "RB": 3, "TE": 3,
+      "S": 3, "NT": 4, "G": 3, "C": 3, "FB": 5, "K": 5, "P": 5
+    },
+    "priorities": ["positionalNeed","consensusRank","positionalValue","miscConcern","floorCeiling","RAS","positionalScarcity"]
+  },
+  {
+    "id": "ARI",
+    "name": "Cardinals",
+    "city": "Arizona",
+    "noiseRange": 10,
+    "positionalNeed": {
+      "QB": 1, "WR": 2, "CB": 3, "OT": 2, "DE": 2,
+      "DT": 2, "ILB": 3, "RB": 3, "TE": 5,
+      "S": 1, "NT": 3, "G": 2, "C": 3, "FB": 5, "K": 5, "P": 5
+    },
+    "priorities": ["positionalNeed","consensusRank","RAS","positionalValue","positionalScarcity","miscConcern","floorCeiling"]
+  },
+  {
+    "id": "TEN",
+    "name": "Titans",
+    "city": "Tennessee",
+    "noiseRange": 8,
+    "positionalNeed": {
+      "QB": 4, "WR": 2, "CB": 3, "OT": 2, "DE": 1,
+      "DT": 2, "ILB": 3, "RB": 2, "TE": 3,
+      "S": 3, "NT": 3, "G": 2, "C": 3, "FB": 5, "K": 5, "P": 5
+    },
+    "priorities": ["consensusRank","positionalNeed","positionalValue","floorCeiling","positionalScarcity","RAS","miscConcern"]
+  },
+  {
+    "id": "NYG",
+    "name": "Giants",
+    "city": "New York",
+    "noiseRange": 8,
+    "positionalNeed": {
+      "QB": 4, "WR": 1, "CB": 2, "OT": 3, "DE": 5,
+      "DT": 3, "ILB": 1, "RB": 3, "TE": 4,
+      "S": 3, "NT": 4, "G": 2, "C": 3, "FB": 5, "K": 5, "P": 5
+    },
+    "priorities": ["consensusRank","positionalNeed","RAS","positionalScarcity","floorCeiling","positionalValue","miscConcern"]
+  },
+  {
+    "id": "CLE",
+    "name": "Browns",
+    "city": "Cleveland",
+    "noiseRange": 12,
+    "positionalNeed": {
+      "QB": 1, "WR": 2, "CB": 2, "OT": 1, "DE": 3,
+      "DT": 3, "ILB": 2, "RB": 3, "TE": 3,
+      "S": 3, "NT": 3, "G": 3, "C": 3, "FB": 5, "K": 5, "P": 5
+    },
+    "priorities": ["positionalNeed","consensusRank","miscConcern","floorCeiling","positionalValue","positionalScarcity","RAS"]
+  },
+  {
+    "id": "WAS",
+    "name": "Commanders",
+    "city": "Washington",
+    "noiseRange": 8,
+    "positionalNeed": {
+      "QB": 5, "WR": 2, "CB": 2, "OT": 4, "DE": 3,
+      "DT": 3, "ILB": 3, "RB": 2, "TE": 3,
+      "S": 3, "NT": 3, "G": 3, "C": 2, "FB": 5, "K": 5, "P": 5
+    },
+    "priorities": ["consensusRank","positionalNeed","floorCeiling","RAS","positionalScarcity","positionalValue","miscConcern"]
+  },
+  {
+    "id": "NO",
+    "name": "Saints",
+    "city": "New Orleans",
+    "noiseRange": 8,
+    "positionalNeed": {
+      "QB": 3, "WR": 2, "CB": 2, "OT": 4, "DE": 1,
+      "DT": 2, "ILB": 2, "RB": 3, "TE": 3,
+      "S": 3, "NT": 3, "G": 3, "C": 3, "FB": 5, "K": 5, "P": 5
+    },
+    "priorities": ["consensusRank","positionalNeed","positionalValue","positionalScarcity","miscConcern","floorCeiling","RAS"]
+  },
+  {
+    "id": "KC",
+    "name": "Chiefs",
+    "city": "Kansas City",
+    "noiseRange": 5,
+    "positionalNeed": {
+      "QB": 5, "WR": 3, "CB": 1, "OT": 3, "DE": 2,
+      "DT": 2, "ILB": 2, "RB": 4, "TE": 3,
+      "S": 3, "NT": 3, "G": 4, "C": 5, "FB": 5, "K": 5, "P": 5
+    },
+    "priorities": ["consensusRank","positionalNeed","positionalValue","RAS","miscConcern","positionalScarcity","floorCeiling"]
+  },
+  {
+    "id": "CIN",
+    "name": "Bengals",
+    "city": "Cincinnati",
+    "noiseRange": 7,
+    "positionalNeed": {
+      "QB": 5, "WR": 5, "CB": 3, "OT": 3, "DE": 3,
+      "DT": 1, "ILB": 1, "RB": 3, "TE": 3,
+      "S": 3, "NT": 2, "G": 3, "C": 2, "FB": 5, "K": 5, "P": 5
+    },
+    "priorities": ["consensusRank","positionalNeed","RAS","floorCeiling","miscConcern","positionalValue","positionalScarcity"]
+  },
+  {
+    "id": "MIA",
+    "name": "Dolphins",
+    "city": "Miami",
+    "noiseRange": 10,
+    "positionalNeed": {
+      "QB": 1, "WR": 1, "CB": 2, "OT": 2, "DE": 2,
+      "DT": 3, "ILB": 3, "RB": 3, "TE": 3,
+      "S": 2, "NT": 3, "G": 3, "C": 3, "FB": 5, "K": 5, "P": 5
+    },
+    "priorities": ["positionalNeed","consensusRank","floorCeiling","positionalScarcity","RAS","positionalValue","miscConcern"]
+  },
+  {
+    "id": "DAL",
+    "name": "Cowboys",
+    "city": "Dallas",
+    "noiseRange": 8,
+    "positionalNeed": {
+      "QB": 5, "WR": 4, "CB": 2, "OT": 4, "DE": 2,
+      "DT": 2, "ILB": 1, "RB": 3, "TE": 3,
+      "S": 4, "NT": 3, "G": 4, "C": 4, "FB": 5, "K": 5, "P": 5
+    },
+    "priorities": ["positionalNeed","consensusRank","positionalValue","miscConcern","RAS","floorCeiling","positionalScarcity"]
+  },
+  {
+    "id": "LAR",
+    "name": "Rams",
+    "city": "Los Angeles",
+    "noiseRange": 6,
+    "positionalNeed": {
+      "QB": 2, "WR": 2, "CB": 5, "OT": 2, "DE": 3,
+      "DT": 2, "ILB": 2, "RB": 3, "TE": 3,
+      "S": 3, "NT": 3, "G": 2, "C": 3, "FB": 5, "K": 5, "P": 5
+    },
+    "priorities": ["consensusRank","positionalNeed","positionalValue","floorCeiling","positionalScarcity","miscConcern","RAS"]
+  },
+  {
+    "id": "BAL",
+    "name": "Ravens",
+    "city": "Baltimore",
+    "noiseRange": 6,
+    "positionalNeed": {
+      "QB": 5, "WR": 2, "CB": 3, "OT": 2, "DE": 4,
+      "DT": 2, "ILB": 3, "RB": 3, "TE": 4,
+      "S": 3, "NT": 3, "G": 2, "C": 3, "FB": 5, "K": 5, "P": 5
+    },
+    "priorities": ["consensusRank","positionalNeed","RAS","positionalScarcity","floorCeiling","positionalValue","miscConcern"]
+  },
+  {
+    "id": "TB",
+    "name": "Buccaneers",
+    "city": "Tampa Bay",
+    "noiseRange": 8,
+    "positionalNeed": {
+      "QB": 4, "WR": 3, "CB": 2, "OT": 3, "DE": 1,
+      "DT": 2, "ILB": 2, "RB": 3, "TE": 3,
+      "S": 3, "NT": 3, "G": 3, "C": 3, "FB": 5, "K": 5, "P": 5
+    },
+    "priorities": ["consensusRank","positionalNeed","miscConcern","positionalValue","RAS","positionalScarcity","floorCeiling"]
+  },
+  {
+    "id": "DET",
+    "name": "Lions",
+    "city": "Detroit",
+    "noiseRange": 6,
+    "positionalNeed": {
+      "QB": 5, "WR": 4, "CB": 2, "OT": 2, "DE": 2,
+      "DT": 2, "ILB": 3, "RB": 4, "TE": 4,
+      "S": 3, "NT": 3, "G": 2, "C": 4, "FB": 5, "K": 5, "P": 5
+    },
+    "priorities": ["consensusRank","positionalNeed","positionalValue","positionalScarcity","miscConcern","floorCeiling","RAS"]
+  },
+  {
+    "id": "MIN",
+    "name": "Vikings",
+    "city": "Minnesota",
+    "noiseRange": 7,
+    "positionalNeed": {
+      "QB": 1, "WR": 3, "CB": 2, "OT": 3, "DE": 3,
+      "DT": 2, "ILB": 3, "RB": 3, "TE": 3,
+      "S": 1, "NT": 3, "G": 3, "C": 3, "FB": 5, "K": 5, "P": 5
+    },
+    "priorities": ["consensusRank","positionalNeed","floorCeiling","miscConcern","positionalValue","RAS","positionalScarcity"]
+  },
+  {
+    "id": "CAR",
+    "name": "Panthers",
+    "city": "Carolina",
+    "noiseRange": 9,
+    "positionalNeed": {
+      "QB": 4, "WR": 3, "CB": 3, "OT": 3, "DE": 4,
+      "DT": 3, "ILB": 2, "RB": 2, "TE": 2,
+      "S": 1, "NT": 3, "G": 4, "C": 1, "FB": 5, "K": 5, "P": 5
+    },
+    "priorities": ["positionalNeed","consensusRank","positionalScarcity","floorCeiling","RAS","miscConcern","positionalValue"]
+  },
+  {
+    "id": "PIT",
+    "name": "Steelers",
+    "city": "Pittsburgh",
+    "noiseRange": 7,
+    "positionalNeed": {
+      "QB": 1, "WR": 4, "CB": 3, "OT": 3, "DE": 4,
+      "DT": 4, "ILB": 3, "RB": 2, "TE": 4,
+      "S": 2, "NT": 3, "G": 3, "C": 3, "FB": 5, "K": 5, "P": 5
+    },
+    "priorities": ["positionalNeed","consensusRank","miscConcern","RAS","positionalValue","floorCeiling","positionalScarcity"]
+  },
+  {
+    "id": "LAC",
+    "name": "Chargers",
+    "city": "Los Angeles",
+    "noiseRange": 7,
+    "positionalNeed": {
+      "QB": 5, "WR": 3, "CB": 2, "OT": 5, "DE": 2,
+      "DT": 2, "ILB": 3, "RB": 4, "TE": 3,
+      "S": 2, "NT": 3, "G": 3, "C": 3, "FB": 5, "K": 5, "P": 5
+    },
+    "priorities": ["consensusRank","positionalNeed","RAS","miscConcern","floorCeiling","positionalScarcity","positionalValue"]
+  },
+  {
+    "id": "PHI",
+    "name": "Eagles",
+    "city": "Philadelphia",
+    "noiseRange": 6,
+    "positionalNeed": {
+      "QB": 4, "WR": 4, "CB": 4, "OT": 2, "DE": 1,
+      "DT": 5, "ILB": 3, "RB": 3, "TE": 2,
+      "S": 2, "NT": 4, "G": 3, "C": 4, "FB": 5, "K": 5, "P": 5
+    },
+    "priorities": ["consensusRank","positionalNeed","positionalValue","RAS","positionalScarcity","floorCeiling","miscConcern"]
+  },
+  {
+    "id": "IND",
+    "name": "Colts",
+    "city": "Indianapolis",
+    "noiseRange": 8,
+    "positionalNeed": {
+      "QB": 3, "WR": 2, "CB": 3, "OT": 3, "DE": 2,
+      "DT": 3, "ILB": 3, "RB": 4, "TE": 4,
+      "S": 3, "NT": 3, "G": 4, "C": 3, "FB": 5, "K": 5, "P": 5
+    },
+    "priorities": ["consensusRank","positionalNeed","floorCeiling","positionalValue","miscConcern","RAS","positionalScarcity"]
+  },
+  {
+    "id": "HOU",
+    "name": "Texans",
+    "city": "Houston",
+    "noiseRange": 7,
+    "positionalNeed": {
+      "QB": 3, "WR": 4, "CB": 4, "OT": 3, "DE": 5,
+      "DT": 3, "ILB": 3, "RB": 2, "TE": 2,
+      "S": 4, "NT": 3, "G": 3, "C": 3, "FB": 5, "K": 5, "P": 5
+    },
+    "priorities": ["consensusRank","positionalNeed","RAS","floorCeiling","positionalScarcity","miscConcern","positionalValue"]
+  },
+  {
+    "id": "ATL",
+    "name": "Falcons",
+    "city": "Atlanta",
+    "noiseRange": 9,
+    "positionalNeed": {
+      "QB": 2, "WR": 3, "CB": 2, "OT": 3, "DE": 3,
+      "DT": 2, "ILB": 2, "RB": 4, "TE": 3,
+      "S": 3, "NT": 3, "G": 4, "C": 3, "FB": 5, "K": 5, "P": 5
+    },
+    "priorities": ["consensusRank","positionalNeed","positionalScarcity","RAS","miscConcern","floorCeiling","positionalValue"]
+  },
+  {
+    "id": "JAX",
+    "name": "Jaguars",
+    "city": "Jacksonville",
+    "noiseRange": 10,
+    "positionalNeed": {
+      "QB": 4, "WR": 2, "CB": 3, "OT": 3, "DE": 3,
+      "DT": 3, "ILB": 2, "RB": 2, "TE": 3,
+      "S": 3, "NT": 3, "G": 2, "C": 3, "FB": 5, "K": 5, "P": 5
+    },
+    "priorities": ["positionalNeed","consensusRank","floorCeiling","miscConcern","positionalValue","RAS","positionalScarcity"]
+  },
+  {
+    "id": "SEA",
+    "name": "Seahawks",
+    "city": "Seattle",
+    "noiseRange": 8,
+    "positionalNeed": {
+      "QB": 4, "WR": 4, "CB": 3, "OT": 3, "DE": 4,
+      "DT": 5, "ILB": 4, "RB": 1, "TE": 3,
+      "S": 3, "NT": 3, "G": 1, "C": 2, "FB": 5, "K": 5, "P": 5
+    },
+    "priorities": ["consensusRank","positionalNeed","RAS","positionalValue","floorCeiling","positionalScarcity","miscConcern"]
+  },
+  {
+    "id": "CHI",
+    "name": "Bears",
+    "city": "Chicago",
+    "noiseRange": 9,
+    "positionalNeed": {
+      "QB": 5, "WR": 2, "CB": 2, "OT": 2, "DE": 2,
+      "DT": 3, "ILB": 3, "RB": 3, "TE": 3,
+      "S": 3, "NT": 3, "G": 2, "C": 3, "FB": 5, "K": 5, "P": 5
+    },
+    "priorities": ["consensusRank","positionalNeed","miscConcern","floorCeiling","positionalValue","positionalScarcity","RAS"]
+  },
+  {
+    "id": "DEN",
+    "name": "Broncos",
+    "city": "Denver",
+    "noiseRange": 7,
+    "positionalNeed": {
+      "QB": 5, "WR": 2, "CB": 5, "OT": 4, "DE": 3,
+      "DT": 4, "ILB": 2, "RB": 3, "TE": 3,
+      "S": 3, "NT": 3, "G": 3, "C": 3, "FB": 5, "K": 5, "P": 5
+    },
+    "priorities": ["consensusRank","positionalNeed","positionalValue","positionalScarcity","RAS","miscConcern","floorCeiling"]
+  },
+  {
+    "id": "SF",
+    "name": "49ers",
+    "city": "San Francisco",
+    "noiseRange": 6,
+    "positionalNeed": {
+      "QB": 5, "WR": 2, "CB": 3, "OT": 2, "DE": 1,
+      "DT": 4, "ILB": 4, "RB": 3, "TE": 4,
+      "S": 2, "NT": 3, "G": 2, "C": 2, "FB": 5, "K": 5, "P": 5
+    },
+    "priorities": ["consensusRank","positionalNeed","positionalValue","floorCeiling","RAS","positionalScarcity","miscConcern"]
+  },
+  {
+    "id": "BUF",
+    "name": "Bills",
+    "city": "Buffalo",
+    "noiseRange": 6,
+    "positionalNeed": {
+      "QB": 5, "WR": 4, "CB": 3, "OT": 3, "DE": 3,
+      "DT": 3, "ILB": 3, "RB": 4, "TE": 3,
+      "S": 3, "NT": 3, "G": 3, "C": 3, "FB": 5, "K": 5, "P": 5
+    },
+    "priorities": ["consensusRank","positionalNeed","RAS","miscConcern","positionalValue","floorCeiling","positionalScarcity"]
+  },
+  {
+    "id": "GB",
+    "name": "Packers",
+    "city": "Green Bay",
+    "noiseRange": 7,
+    "positionalNeed": {
+      "QB": 5, "WR": 2, "CB": 2, "OT": 3, "DE": 3,
+      "DT": 3, "ILB": 3, "RB": 3, "TE": 3,
+      "S": 3, "NT": 3, "G": 3, "C": 3, "FB": 5, "K": 5, "P": 5
+    },
+    "priorities": ["consensusRank","positionalNeed","floorCeiling","positionalScarcity","RAS","positionalValue","miscConcern"]
+  },
+  {
+    "id": "NE",
+    "name": "Patriots",
+    "city": "New England",
+    "noiseRange": 7,
+    "positionalNeed": {
+      "QB": 5, "WR": 2, "CB": 4, "OT": 3, "DE": 3,
+      "DT": 3, "ILB": 3, "RB": 3, "TE": 3,
+      "S": 3, "NT": 3, "G": 2, "C": 3, "FB": 5, "K": 5, "P": 5
+    },
+    "priorities": ["consensusRank","positionalNeed","miscConcern","RAS","floorCeiling","positionalValue","positionalScarcity"]
+  }
+]

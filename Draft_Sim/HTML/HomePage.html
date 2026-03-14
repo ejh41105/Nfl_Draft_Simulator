@@ -409,12 +409,12 @@
         <div class="speed-card selected" data-speed="slow" onclick="selectSpeed(this)">
           <div class="speed-icon">🐢</div>
           <div class="speed-name">Slow</div>
-          <div class="speed-desc">2s per CPU pick</div>
+          <div class="speed-desc">1s per CPU pick</div>
         </div>
         <div class="speed-card" data-speed="medium" onclick="selectSpeed(this)">
           <div class="speed-icon">⚡</div>
           <div class="speed-name">Medium</div>
-          <div class="speed-desc">1s per CPU pick</div>
+          <div class="speed-desc">0.5s per CPU pick</div>
         </div>
         <div class="speed-card" data-speed="fast" onclick="selectSpeed(this)">
           <div class="speed-icon">🚀</div>
@@ -493,15 +493,15 @@
     { abbr: 'WAS', name: 'Washington Commanders' },
   ];
 
-  const YEARS   = ['27','26','25','24','23','22','21','20','19','18','17','16'];
+  const YEARS   = ['27'];
   const ROUNDS  = [1,2,3,4,5,6,7];
   const PICKS_PER_ROUND = 32;
 
   // ── State ──
   let selectedTeams = new Set();
   let selectedYear  = '26';
-  let selectedRounds = 7;
-  let selectedSpeed  = 'slow';
+  let selectedRounds = '1';
+  let selectedSpeed  = 'Fast';
 
   // ── Build Team Grid ──
   function buildTeams() {
