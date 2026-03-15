@@ -14,14 +14,14 @@
       --bg-card:       #1e2333;
       --bg-card-hover: #252b3d;
       --border:        #2a3045;
-      --border-active: #00d46a;
-      --accent:        #00d46a;
-      --accent-dim:    #00a852;
-      --accent-glow:   rgba(0, 212, 106, 0.15);
+      --border-active: #0015d4;
+      --accent: #006ad4;
+      --accent-dim: #006da8;
+      --accent-glow: rgba(0, 212, 155, 0.15);
       --text-primary:  #f0f2f8;
       --text-secondary:#8b93a8;
       --text-muted:    #4a5068;
-      --selected-bg:   rgba(0, 212, 106, 0.12);
+      --selected-bg: rgba(0, 60, 212, 0.12);
       --radius:        8px;
       --radius-lg:     12px;
     }
@@ -325,7 +325,7 @@
     }
 
     .start-btn:hover {
-      background: #00f07a;
+      background: #00b8f0;
       box-shadow: 0 0 20px var(--accent-glow);
       transform: translateY(-1px);
     }
@@ -379,7 +379,7 @@
     <div class="section-body">
       <div class="team-controls">
         <button class="ctrl-btn" onclick="selectAll()">Select All</button>
-        <button class="ctrl-btn" onclick="selectNone()">Select None</button>
+        <button class="ctrl-btn" onclick="selectNone()">Deselect All</button>
       </div>
       <div class="team-grid" id="teamGrid"></div>
     </div>
@@ -406,7 +406,7 @@
     <div class="section-label">Simulation Speed</div>
     <div class="section-body">
       <div class="speed-row">
-        <div class="speed-card selected" data-speed="slow" onclick="selectSpeed(this)">
+        <div class="speed-card" data-speed="slow" onclick="selectSpeed(this)">
           <div class="speed-icon">🐢</div>
           <div class="speed-name">Slow</div>
           <div class="speed-desc">1s per CPU pick</div>
@@ -416,7 +416,7 @@
           <div class="speed-name">Medium</div>
           <div class="speed-desc">0.5s per CPU pick</div>
         </div>
-        <div class="speed-card" data-speed="fast" onclick="selectSpeed(this)">
+        <div class="speed-card selected" data-speed="fast" onclick="selectSpeed(this)">
           <div class="speed-icon">🚀</div>
           <div class="speed-name">Fast</div>
           <div class="speed-desc">Instant CPU picks</div>
@@ -438,15 +438,15 @@
       </div>
       <div class="summary-item">
         <span class="summary-key">Rounds</span>
-        <span class="summary-val" id="summaryRounds">7</span>
+        <span class="summary-val" id="summaryRounds">1</span>
       </div>
       <div class="summary-item">
         <span class="summary-key">Speed</span>
-        <span class="summary-val" id="summarySpeed">Slow</span>
+        <span class="summary-val" id="summarySpeed">Fast</span>
       </div>
       <div class="summary-item">
         <span class="summary-key">Total Picks</span>
-        <span class="summary-val" id="summaryPicks">224</span>
+        <span class="summary-val" id="summaryPicks">32</span>
       </div>
     </div>
     <div>
@@ -497,11 +497,11 @@
   const ROUNDS  = [1,2,3,4,5,6,7];
   const PICKS_PER_ROUND = 32;
 
-  // ── State ──
-  let selectedTeams = new Set();
-  let selectedYear  = '26';
-  let selectedRounds = '1';
-  let selectedSpeed  = 'Fast';
+  // ── State ── (defaults: 1 round, fast speed)
+  let selectedTeams  = new Set();
+  let selectedYear   = '26';
+  let selectedRounds = 1;
+  let selectedSpeed  = 'fast';
 
   // ── Build Team Grid ──
   function buildTeams() {
@@ -619,7 +619,7 @@
       speed:  selectedSpeed,
     };
     sessionStorage.setItem('draftConfig', JSON.stringify(config));
-    window.location.href = 'draft.html';
+    window.location.href = 'DraftPage.html';
   }
 
   // ── Init ──
