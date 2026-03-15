@@ -4,30 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GRIDIRON DRAFT — Draft Room</title>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
+    /* ── CSS Variables (matched to homepage) ── */
     :root {
-      --bg:      #0a0a0b;
-      --surface: #111114;
-      --surface2:#18181d;
-      --border:  #2a2a35;
-      --accent:  #e8ff47;
-      --text:    #f0f0f0;
-      --muted:   #666;
+      --bg-base:       #0f1117;
+      --bg-surface:    #181c27;
+      --bg-card:       #1e2333;
+      --bg-card-hover: #252b3d;
+      --border:        #2a3045;
+      --border-active: #00d4a3;
+      --accent: #5a39fa;
+      --accent-dim:    #00a852;
+      --accent-glow:   rgba(0, 212, 106, 0.15);
+      --text-primary:  #f0f2f8;
+      --text-secondary:#8b93a8;
+      --text-muted:    #4a5068;
+      --selected-bg:   rgba(0, 212, 106, 0.12);
+      --radius:        8px;
+      --radius-lg:     12px;
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'DM Sans', sans-serif;
+      background: var(--bg-base);
+      color: var(--text-primary);
+      font-family: 'Barlow', sans-serif;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
     }
 
-    /* noise */
+    /* noise overlay */
     body::before {
       content: '';
       position: fixed;
@@ -46,19 +56,21 @@
       align-items: center;
       justify-content: space-between;
       padding: 0 1.5rem;
-      height: 52px;
-      background: var(--surface);
+      height: 60px;
+      background: var(--bg-surface);
       border-bottom: 1px solid var(--border);
       flex-shrink: 0;
     }
 
     .logo {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.4rem;
-      letter-spacing: 0.1em;
-      color: var(--accent);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--text-primary);
     }
-    .logo span { color: var(--text); }
+    .logo span { color: var(--accent); }
 
     .draft-status {
       display: flex;
@@ -70,13 +82,14 @@
       font-family: 'DM Mono', monospace;
       font-size: 0.7rem;
       letter-spacing: 0.12em;
-      color: var(--muted);
+      color: var(--text-secondary);
       text-transform: uppercase;
     }
     .round-badge strong {
       color: var(--accent);
       font-size: 1rem;
-      font-family: 'Bebas Neue', sans-serif;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
       letter-spacing: 0.05em;
     }
 
@@ -84,19 +97,20 @@
       display: flex;
       align-items: center;
       gap: 0.5rem;
-      background: var(--surface2);
+      background: var(--bg-card);
       border: 1px solid var(--border);
-      border-radius: 6px;
+      border-radius: var(--radius);
       padding: 0.3rem 0.75rem;
       font-family: 'DM Mono', monospace;
       font-size: 0.7rem;
-      color: var(--muted);
+      color: var(--text-secondary);
       letter-spacing: 0.08em;
     }
     .pick-indicator .pick-num {
-      color: var(--text);
+      color: var(--text-primary);
       font-size: 1rem;
-      font-family: 'Bebas Neue', sans-serif;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
     }
 
     .speed-control {
@@ -107,30 +121,30 @@
     .speed-label {
       font-family: 'DM Mono', monospace;
       font-size: 0.6rem;
-      color: var(--muted);
+      color: var(--text-muted);
       letter-spacing: 0.08em;
       text-transform: uppercase;
       margin-right: 4px;
     }
     .speed-btn {
-      padding: 0.25rem 0.6rem;
-      background: var(--surface2);
+      padding: 0.25rem 0.7rem;
+      background: var(--bg-card);
       border: 1px solid var(--border);
-      border-radius: 4px;
-      color: var(--muted);
-      font-family: 'DM Mono', monospace;
-      font-size: 0.6rem;
+      border-radius: var(--radius);
+      color: var(--text-secondary);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 600;
       letter-spacing: 0.08em;
       cursor: pointer;
       transition: all 0.15s;
       text-transform: uppercase;
     }
-    .speed-btn:hover  { border-color: var(--accent); color: var(--accent); }
+    .speed-btn:hover { border-color: var(--accent); color: var(--accent); }
     .speed-btn.active {
-      background: var(--accent);
-      color: #0a0a0b;
+      background: var(--selected-bg);
+      color: var(--accent);
       border-color: var(--accent);
-      font-weight: 600;
     }
 
     /* ── PAGE BODY ── */
@@ -141,17 +155,17 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 2rem;
+      padding: 1.5rem;
     }
 
     /* ── OUTER CONTAINER BOX ── */
     .draft-container {
       width: 100%;
       max-width: 1300px;
-      height: calc(100vh - 52px - 4rem);
-      background: var(--surface);
+      height: calc(100vh - 60px - 3rem);
+      background: var(--bg-surface);
       border: 1px solid var(--border);
-      border-radius: 16px;
+      border-radius: var(--radius-lg);
       overflow: hidden;
       display: grid;
       grid-template-columns: 1fr 120px 1fr;
@@ -170,7 +184,7 @@
       display: flex;
       border-bottom: 1px solid var(--border);
       flex-shrink: 0;
-      background: var(--surface2);
+      background: var(--bg-card);
     }
     .tab-btn {
       flex: 1;
@@ -178,19 +192,20 @@
       background: transparent;
       border: none;
       border-bottom: 2px solid transparent;
-      color: var(--muted);
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.78rem;
-      font-weight: 500;
+      color: var(--text-secondary);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
       cursor: pointer;
       transition: all 0.15s;
-      letter-spacing: 0.02em;
     }
-    .tab-btn:hover { color: var(--text); }
+    .tab-btn:hover { color: var(--text-primary); }
     .tab-btn.active {
-      color: var(--text);
+      color: var(--accent);
       border-bottom-color: var(--accent);
-      background: rgba(232,255,71,0.04);
+      background: var(--selected-bg);
     }
 
     .panel-subheader {
@@ -199,14 +214,16 @@
       justify-content: space-between;
       padding: 0.7rem 1.1rem;
       border-bottom: 1px solid var(--border);
-      background: var(--surface);
+      background: var(--bg-surface);
       flex-shrink: 0;
     }
     .panel-subheader h3 {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 1rem;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
       letter-spacing: 0.08em;
-      color: var(--text);
+      text-transform: uppercase;
+      color: var(--text-primary);
     }
     .next-pick-info {
       display: flex;
@@ -219,15 +236,16 @@
       object-fit: contain;
     }
     .next-pick-num {
-      font-family: 'Bebas Neue', sans-serif;
+      font-family: 'Barlow Condensed', sans-serif;
       font-size: 1.3rem;
+      font-weight: 700;
       color: var(--accent);
       line-height: 1;
     }
     .next-pick-label {
       font-family: 'DM Mono', monospace;
       font-size: 0.58rem;
-      color: var(--muted);
+      color: var(--text-secondary);
       text-transform: uppercase;
       letter-spacing: 0.08em;
     }
@@ -235,7 +253,7 @@
     /* ── BLANK CONTENT AREA ── */
     .panel-content {
       flex: 1;
-      background: var(--surface);
+      background: var(--bg-surface);
     }
 
     /* ── RIGHT PANEL EXTRAS ── */
@@ -244,7 +262,7 @@
       align-items: center;
       gap: 0.6rem;
       padding: 0.5rem 1.1rem;
-      background: rgba(232,255,71,0.05);
+      background: var(--selected-bg);
       border-bottom: 1px solid var(--border);
       flex-shrink: 0;
     }
@@ -257,10 +275,10 @@
     .needs-text {
       font-family: 'DM Mono', monospace;
       font-size: 0.62rem;
-      color: var(--muted);
+      color: var(--text-secondary);
       letter-spacing: 0.03em;
     }
-    .needs-text strong { color: var(--text); }
+    .needs-text strong { color: var(--text-primary); }
     .next-pick-tag {
       margin-left: auto;
       font-family: 'DM Mono', monospace;
@@ -273,26 +291,26 @@
     .pool-search {
       padding: 0.5rem 1.1rem;
       border-bottom: 1px solid var(--border);
-      background: var(--surface);
+      background: var(--bg-surface);
       flex-shrink: 0;
     }
     .search-input {
       width: 100%;
       padding: 0.4rem 0.7rem 0.4rem 2rem;
-      background: var(--surface2);
+      background: var(--bg-card);
       border: 1px solid var(--border);
-      border-radius: 6px;
-      color: var(--text);
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.78rem;
+      border-radius: var(--radius);
+      color: var(--text-primary);
+      font-family: 'Barlow', sans-serif;
+      font-size: 0.82rem;
       outline: none;
       transition: border-color 0.15s;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='13' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cpath d='m21 21-4.35-4.35'/%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='13' viewBox='0 0 24 24' fill='none' stroke='%234a5068' stroke-width='2'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cpath d='m21 21-4.35-4.35'/%3E%3C/svg%3E");
       background-repeat: no-repeat;
       background-position: 0.55rem center;
     }
     .search-input:focus { border-color: var(--accent); }
-    .search-input::placeholder { color: var(--muted); }
+    .search-input::placeholder { color: var(--text-muted); }
 
     /* ── MIDDLE CONTROLS ── */
     .controls-col {
@@ -303,7 +321,7 @@
       gap: 1.75rem;
       padding: 1rem 0;
       border-right: 1px solid var(--border);
-      background: var(--surface2);
+      background: var(--bg-card);
     }
 
     .ctrl-btn {
@@ -315,13 +333,13 @@
       border: none;
       cursor: pointer;
       padding: 0.5rem;
-      border-radius: 8px;
+      border-radius: var(--radius);
       transition: all 0.15s;
       width: 80px;
     }
-    .ctrl-btn:hover { background: rgba(232,255,71,0.06); }
+    .ctrl-btn:hover { background: var(--selected-bg); }
     .ctrl-btn:hover .ctrl-icon  { color: var(--accent); }
-    .ctrl-btn:hover .ctrl-label { color: var(--text); }
+    .ctrl-btn:hover .ctrl-label { color: var(--text-primary); }
     .ctrl-btn.disabled {
       opacity: 0.3;
       cursor: not-allowed;
@@ -330,17 +348,18 @@
 
     .ctrl-icon {
       font-size: 1.3rem;
-      color: var(--muted);
+      color: var(--text-secondary);
       transition: color 0.15s;
       line-height: 1;
     }
     .ctrl-label {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.62rem;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.72rem;
       font-weight: 600;
-      color: var(--muted);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
       text-align: center;
-      letter-spacing: 0.03em;
       transition: color 0.15s;
     }
 
@@ -355,7 +374,7 @@
 
 <!-- TOP BAR -->
 <header class="topbar">
-  <div class="logo">GRIDIRON <span>DRAFT</span></div>
+  <div class="logo">NFL Draft <span>Sim</span></div>
 
   <div class="draft-status">
     <div class="round-badge">Round <strong>1</strong></div>
