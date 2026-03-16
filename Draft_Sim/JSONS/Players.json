@@ -6,13 +6,14 @@
     "position": "QB",
     "height": 77,
     "weight": 236,
-    "number": 15,
-    "age": null,
+    "number": 4,
+    "age": 22,
     "majorStats": "3535 passing yards, 41 TD, 6 INT, 72.0% completion",
     "positionalRanking": 1,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 10
+    "RAS": 8.0,
+    "miscConcern": 10,
+    "floorCeiling": 10,
+    "logoFile": "indiana.png"
   },
   {
     "consensusRanking": 2,
@@ -21,13 +22,14 @@
     "position": "EDGE",
     "height": 76,
     "weight": 241,
-    "number": null,
-    "age": null,
+    "number": 40,
+    "age": 20,
     "majorStats": "69 tackles, 6.5 sacks, 2 PBU, 0 INT",
     "positionalRanking": 1,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 10
+    "RAS": 9.9,
+    "miscConcern": 10,
+    "floorCeiling": 10,
+    "logoFile": "ohio-state.png"
   },
   {
     "consensusRanking": 3,
@@ -36,13 +38,14 @@
     "position": "RB",
     "height": 72,
     "weight": 212,
-    "number": null,
-    "age": null,
+    "number": 48,
+    "age": 20,
     "majorStats": "1372 rush yds, 18 TD, avg 6.9, 280 rec yds, 3 rec TD",
     "positionalRanking": 1,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 10
+    "RAS": 9.6,
+    "miscConcern": 10,
+    "floorCeiling": 10,
+    "logoFile": "notre-dame.png"
   },
   {
     "consensusRanking": 4,
@@ -51,13 +54,14 @@
     "position": "OLB",
     "height": 77,
     "weight": 244,
-    "number": null,
-    "age": null,
+    "number": 48,
+    "age": 21,
     "majorStats": "82 tackles, 1.0 sacks, 3 PBU, 1 INT, 1 FF",
     "positionalRanking": 1,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 10
+    "RAS": 10.0,
+    "miscConcern": 10,
+    "floorCeiling": 10,
+    "logoFile": "ohio-state.png"
   },
   {
     "consensusRanking": 5,
@@ -66,13 +70,14 @@
     "position": "S",
     "height": 72,
     "weight": 206,
-    "number": null,
-    "age": null,
+    "number": 16,
+    "age": 21,
     "majorStats": "68 tackles, 1.0 sacks, 2 PBU, 2 INT, 2 FF",
     "positionalRanking": 1,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 10
+    "RAS": 8.8,
+    "miscConcern": 5,
+    "floorCeiling": 10,
+    "logoFile": "ohio-state.png"
   },
   {
     "consensusRanking": 6,
@@ -81,13 +86,14 @@
     "position": "OT",
     "height": 78,
     "weight": 329,
-    "number": null,
-    "age": null,
+    "number": 57,
+    "age": 20,
     "majorStats": "16 games started",
     "positionalRanking": 1,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 9
+    "RAS": 9.25,
+    "miscConcern": 10,
+    "floorCeiling": 9,
+    "logoFile": "miami.png"
   },
   {
     "consensusRanking": 7,
@@ -96,13 +102,14 @@
     "position": "EDGE",
     "height": 76,
     "weight": 251,
-    "number": null,
-    "age": null,
+    "number": 44,
+    "age": 22,
     "majorStats": "52 tackles, 14.5 sacks, 3 PBU, 0 INT, 3 FF",
     "positionalRanking": 2,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 9
+    "RAS": 9.67,
+    "miscConcern": 10,
+    "floorCeiling": 9,
+    "logoFile": "texas-tech.png"
   },
   {
     "consensusRanking": 8,
@@ -111,13 +118,14 @@
     "position": "CB",
     "height": 72,
     "weight": 187,
-    "number": null,
-    "age": null,
+    "number": 48,
+    "age": 22,
     "majorStats": "45 tackles, 0 sacks, 11 PBU, 2 INT",
     "positionalRanking": 1,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 9
+    "RAS": 8.5,
+    "miscConcern": 10,
+    "floorCeiling": 9,
+    "logoFile": "lsu.png"
   },
   {
     "consensusRanking": 9,
@@ -126,13 +134,14 @@
     "position": "WR",
     "height": 74,
     "weight": 192,
-    "number": null,
-    "age": null,
+    "number": 7,
+    "age": 21,
     "majorStats": "51 rec, 875 yards, 9 TD, avg 17.2",
     "positionalRanking": 1,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 9
+    "RAS": 8.0,
+    "miscConcern": 10,
+    "floorCeiling": 9,
+    "logoFile": "ohio-state.png"
   },
   {
     "consensusRanking": 10,
@@ -141,13 +150,14 @@
     "position": "TE",
     "height": 75,
     "weight": 241,
-    "number": null,
-    "age": null,
+    "number": 87,
+    "age": 21,
     "majorStats": "51 rec, 560 yards, 8 TD, avg 11.0",
     "positionalRanking": 1,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 9
+    "RAS": 9.44,
+    "miscConcern": 10,
+    "floorCeiling": 9,
+    "logoFile": "oregon.png"
   },
   {
     "consensusRanking": 11,
@@ -156,13 +166,14 @@
     "position": "EDGE",
     "height": 74,
     "weight": 263,
-    "number": null,
-    "age": null,
+    "number": 42,
+    "age": 21,
     "majorStats": "54 tackles, 9.5 sacks, 1 PBU, 1 INT, 1 FF",
     "positionalRanking": 3,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 9
+    "RAS": 8.0,
+    "miscConcern": 10,
+    "floorCeiling": 9,
+    "logoFile": "miami.png"
   },
   {
     "consensusRanking": 12,
@@ -171,13 +182,14 @@
     "position": "WR",
     "height": 71,
     "weight": 192,
-    "number": null,
-    "age": null,
+    "number": 38,
+    "age": 21,
     "majorStats": "79 rec, 1156 yards, 11 TD, avg 14.6",
     "positionalRanking": 2,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 9
+    "RAS": 8.9,
+    "miscConcern": 8,
+    "floorCeiling": 9,
+    "logoFile": "usc.png"
   },
   {
     "consensusRanking": 13,
@@ -186,13 +198,14 @@
     "position": "OT",
     "height": 78,
     "weight": 311,
-    "number": null,
-    "age": null,
+    "number": 63,
+    "age": 21,
     "majorStats": "12 games started, 4.91 40-yard dash",
     "positionalRanking": 2,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 9
+    "RAS": 9.76,
+    "miscConcern": 10,
+    "floorCeiling": 9,
+    "logoFile": "utah.png"
   },
   {
     "consensusRanking": 14,
@@ -201,13 +214,14 @@
     "position": "OG",
     "height": 76,
     "weight": 320,
-    "number": null,
-    "age": null,
+    "number": 51,
+    "age": 21,
     "majorStats": "11 games started",
     "positionalRanking": 1,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 9
+    "RAS": 8.6,
+    "miscConcern": 10,
+    "floorCeiling": 9,
+    "logoFile": "penn-state.png"
   },
   {
     "consensusRanking": 15,
@@ -216,13 +230,14 @@
     "position": "WR",
     "height": 74,
     "weight": 203,
-    "number": null,
-    "age": null,
+    "number": 2,
+    "age": 21,
     "majorStats": "61 rec, 711 yards, 8 TD, avg 11.7",
     "positionalRanking": 3,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 9
+    "RAS": 8.3,
+    "miscConcern": 8,
+    "floorCeiling": 9,
+    "logoFile": "arizona-state.png"
   },
   {
     "consensusRanking": 16,
@@ -231,13 +246,14 @@
     "position": "EDGE",
     "height": 76,
     "weight": 263,
-    "number": null,
-    "age": null,
+    "number": 42,
+    "age": 21,
     "majorStats": "37 tackles, 5.0 sacks, 1 PBU, 0 INT",
     "positionalRanking": 4,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 8
+    "RAS": 9.33,
+    "miscConcern": 10,
+    "floorCeiling": 8,
+    "logoFile": "clemson.png"
   },
   {
     "consensusRanking": 17,
@@ -246,13 +262,14 @@
     "position": "EDGE",
     "height": 78,
     "weight": 276,
-    "number": null,
-    "age": null,
+    "number": 46,
+    "age": 21,
     "majorStats": "29 tackles, 2.0 sacks, 4 PBU, 0 INT",
     "positionalRanking": 5,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 8
+    "RAS": 8.9,
+    "miscConcern": 10,
+    "floorCeiling": 8,
+    "logoFile": "auburn.png"
   },
   {
     "consensusRanking": 18,
@@ -261,13 +278,14 @@
     "position": "S",
     "height": 72,
     "weight": 201,
-    "number": null,
-    "age": null,
+    "number": 15,
+    "age": 21,
     "majorStats": "96 tackles, 1.0 sacks, 5 PBU, 2 INT",
     "positionalRanking": 2,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 8
+    "RAS": 9.67,
+    "miscConcern": 10,
+    "floorCeiling": 8,
+    "logoFile": "oregon.png"
   },
   {
     "consensusRanking": 19,
@@ -276,13 +294,14 @@
     "position": "QB",
     "height": 73,
     "weight": 211,
-    "number": null,
-    "age": null,
+    "number": 17,
+    "age": 23,
     "majorStats": "3567 passing yards, 28 TD, 5 INT, 64.5% completion",
     "positionalRanking": 2,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 8
+    "RAS": 7.2,
+    "miscConcern": 7,
+    "floorCeiling": 8,
+    "logoFile": "alabama.png"
   },
   {
     "consensusRanking": 20,
@@ -291,13 +310,14 @@
     "position": "OT",
     "height": 80,
     "weight": 315,
-    "number": null,
-    "age": null,
+    "number": 69,
+    "age": 21,
     "majorStats": "14 games started, 4.93 40-yard dash",
     "positionalRanking": 3,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 8
+    "RAS": 9.99,
+    "miscConcern": 10,
+    "floorCeiling": 8,
+    "logoFile": "georgia.png"
   },
   {
     "consensusRanking": 21,
@@ -306,13 +326,14 @@
     "position": "CB",
     "height": 73,
     "weight": 188,
-    "number": null,
-    "age": null,
+    "number": 2,
+    "age": 20,
     "majorStats": "44 tackles, 0 sacks, 9 PBU, 4 INT",
     "positionalRanking": 2,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 8
+    "RAS": 8.8,
+    "miscConcern": 5,
+    "floorCeiling": 8,
+    "logoFile": "tennessee.png"
   },
   {
     "consensusRanking": 22,
@@ -321,13 +342,14 @@
     "position": "WR",
     "height": 76,
     "weight": 212,
-    "number": null,
-    "age": null,
+    "number": 36,
+    "age": 22,
     "majorStats": "62 rec, 881 yards, 11 TD, avg 14.2",
     "positionalRanking": 4,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 8
+    "RAS": 7.2,
+    "miscConcern": 10,
+    "floorCeiling": 8,
+    "logoFile": "washington.png"
   },
   {
     "consensusRanking": 23,
@@ -336,13 +358,14 @@
     "position": "OT",
     "height": 78,
     "weight": 313,
-    "number": null,
-    "age": null,
+    "number": 56,
+    "age": 21,
     "majorStats": "12 games started, 4.99 40-yard dash",
     "positionalRanking": 4,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 8
+    "RAS": 9.88,
+    "miscConcern": 10,
+    "floorCeiling": 8,
+    "logoFile": "utah.png"
   },
   {
     "consensusRanking": 24,
@@ -351,13 +374,14 @@
     "position": "DL",
     "height": 74,
     "weight": 298,
-    "number": null,
-    "age": null,
+    "number": 97,
+    "age": 21,
     "majorStats": "30 tackles, 2.0 sacks, 1 PBU, 0 INT",
     "positionalRanking": 1,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 8
+    "RAS": 8.8,
+    "miscConcern": 10,
+    "floorCeiling": 8,
+    "logoFile": "clemson.png"
   },
   {
     "consensusRanking": 25,
@@ -366,13 +390,14 @@
     "position": "CB",
     "height": 72,
     "weight": 193,
-    "number": null,
-    "age": null,
+    "number": 27,
+    "age": 21,
     "majorStats": "49 tackles, 1.0 sacks, 9 PBU, 4 INT, 1 FF",
     "positionalRanking": 3,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 8
+    "RAS": 9.67,
+    "miscConcern": 10,
+    "floorCeiling": 8,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 26,
@@ -381,13 +406,14 @@
     "position": "OT",
     "height": 78,
     "weight": 352,
-    "number": null,
-    "age": null,
+    "number": 57,
+    "age": 20,
     "majorStats": "15 games started",
     "positionalRanking": 5,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 8
+    "RAS": 9.28,
+    "miscConcern": 8,
+    "floorCeiling": 8,
+    "logoFile": "alabama.png"
   },
   {
     "consensusRanking": 27,
@@ -396,13 +422,14 @@
     "position": "CB",
     "height": 72,
     "weight": 193,
-    "number": null,
-    "age": null,
+    "number": 29,
+    "age": 21,
     "majorStats": "50 tackles, 0 sacks, 8 PBU, 1 INT, 1 FF",
     "positionalRanking": 4,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 8
+    "RAS": 9.61,
+    "miscConcern": 10,
+    "floorCeiling": 8,
+    "logoFile": "tennessee.png"
   },
   {
     "consensusRanking": 28,
@@ -411,13 +438,14 @@
     "position": "DL",
     "height": 78,
     "weight": 327,
-    "number": null,
-    "age": null,
+    "number": 98,
+    "age": 23,
     "majorStats": "6 tackles, 0 sacks, 0 PBU, 0 INT",
     "positionalRanking": 2,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 8
+    "RAS": 9.84,
+    "miscConcern": 7,
+    "floorCeiling": 8,
+    "logoFile": "florida.png"
   },
   {
     "consensusRanking": 29,
@@ -426,13 +454,14 @@
     "position": "S",
     "height": 76,
     "weight": 201,
-    "number": null,
-    "age": null,
+    "number": 18,
+    "age": 22,
     "majorStats": "77 tackles, 0.5 sacks, 5 PBU, 2 INT, 3 FF",
     "positionalRanking": 3,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 8
+    "RAS": 9.13,
+    "miscConcern": 10,
+    "floorCeiling": 8,
+    "logoFile": "toledo.png"
   },
   {
     "consensusRanking": 30,
@@ -441,13 +470,14 @@
     "position": "EDGE",
     "height": 74,
     "weight": 253,
-    "number": null,
-    "age": null,
+    "number": 95,
+    "age": 22,
     "majorStats": "31 tackles, 11.5 sacks, 6 PBU, 0 INT, 1 FF",
     "positionalRanking": 6,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 8
+    "RAS": 8.11,
+    "miscConcern": 10,
+    "floorCeiling": 8,
+    "logoFile": "texas-am.png"
   },
   {
     "consensusRanking": 31,
@@ -456,13 +486,14 @@
     "position": "OT",
     "height": 78,
     "weight": 321,
-    "number": null,
-    "age": null,
+    "number": 77,
+    "age": 23,
     "majorStats": "12 games started, 4.91 40-yard dash",
     "positionalRanking": 6,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 8
+    "RAS": 9.91,
+    "miscConcern": 10,
+    "floorCeiling": 8,
+    "logoFile": "arizona-state.png"
   },
   {
     "consensusRanking": 32,
@@ -471,13 +502,14 @@
     "position": "WR",
     "height": 72,
     "weight": 199,
-    "number": null,
-    "age": null,
+    "number": 1,
+    "age": 22,
     "majorStats": "69 rec, 937 yards, 13 TD, avg 13.6",
     "positionalRanking": 5,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 8
+    "RAS": 8.79,
+    "miscConcern": 10,
+    "floorCeiling": 8,
+    "logoFile": "indiana.png"
   },
   {
     "consensusRanking": 33,
@@ -486,13 +518,14 @@
     "position": "WR",
     "height": 72,
     "weight": 196,
-    "number": null,
-    "age": null,
+    "number": 80,
+    "age": 21,
     "majorStats": "61 rec, 919 yards, 9 TD, avg 15.1",
     "positionalRanking": 6,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 7
+    "RAS": 8.3,
+    "miscConcern": 10,
+    "floorCeiling": 7,
+    "logoFile": "texas-am.png"
   },
   {
     "consensusRanking": 34,
@@ -501,13 +534,14 @@
     "position": "CB",
     "height": 71,
     "weight": 186,
-    "number": null,
-    "age": null,
+    "number": 11,
+    "age": 21,
     "majorStats": "48 tackles, 3.0 sacks, 9 PBU, 0 INT, 5 FF",
     "positionalRanking": 5,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 7
+    "RAS": 8.94,
+    "miscConcern": 10,
+    "floorCeiling": 7,
+    "logoFile": "clemson.png"
   },
   {
     "consensusRanking": 35,
@@ -516,13 +550,14 @@
     "position": "TE",
     "height": 76,
     "weight": 239,
-    "number": null,
-    "age": null,
+    "number": 83,
+    "age": 22,
     "majorStats": "62 rec, 769 yards, 4 TD, avg 12.4",
     "positionalRanking": 2,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 7
+    "RAS": 9.97,
+    "miscConcern": 10,
+    "floorCeiling": 7,
+    "logoFile": "vanderbilt.png"
   },
   {
     "consensusRanking": 36,
@@ -531,13 +566,14 @@
     "position": "ILB",
     "height": 74,
     "weight": 238,
-    "number": null,
-    "age": null,
+    "number": 50,
+    "age": 21,
     "majorStats": "69 tackles, 4.0 sacks, 1 PBU, 2 INT, 3 FF",
-    "positionalRanking": 2,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 7
+    "positionalRanking": 1,
+    "RAS": 9.93,
+    "miscConcern": 10,
+    "floorCeiling": 7,
+    "logoFile": "texas.png"
   },
   {
     "consensusRanking": 37,
@@ -546,13 +582,14 @@
     "position": "CB",
     "height": 72,
     "weight": 189,
-    "number": null,
-    "age": null,
+    "number": 18,
+    "age": 20,
     "majorStats": "27 tackles, 0 sacks, 5 PBU, 1 INT, 1 FF",
     "positionalRanking": 6,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 7
+    "RAS": 9.2,
+    "miscConcern": 10,
+    "floorCeiling": 7,
+    "logoFile": "south-carolina.png"
   },
   {
     "consensusRanking": 38,
@@ -561,13 +598,14 @@
     "position": "OT",
     "height": 79,
     "weight": 317,
-    "number": null,
-    "age": null,
+    "number": 54,
+    "age": 22,
     "majorStats": "13 games started",
     "positionalRanking": 7,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 7
+    "RAS": 9.97,
+    "miscConcern": 10,
+    "floorCeiling": 7,
+    "logoFile": "clemson.png"
   },
   {
     "consensusRanking": 39,
@@ -576,13 +614,14 @@
     "position": "OLB",
     "height": 73,
     "weight": 230,
-    "number": null,
-    "age": null,
+    "number": 46,
+    "age": 21,
     "majorStats": "88 tackles, 3.5 sacks, 4 PBU, 0 INT, 2 FF",
-    "positionalRanking": 3,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 7
+    "positionalRanking": 2,
+    "RAS": 7.8,
+    "miscConcern": 10,
+    "floorCeiling": 7,
+    "logoFile": "georgia.png"
   },
   {
     "consensusRanking": 40,
@@ -591,13 +630,14 @@
     "position": "EDGE",
     "height": 75,
     "weight": 259,
-    "number": null,
-    "age": null,
+    "number": 94,
+    "age": 24,
     "majorStats": "63 tackles, 12.5 sacks, 0 PBU, 0 INT, 4 FF",
     "positionalRanking": 7,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 7
+    "RAS": 8.2,
+    "miscConcern": 7,
+    "floorCeiling": 7,
+    "logoFile": "miami.png"
   },
   {
     "consensusRanking": 41,
@@ -606,13 +646,14 @@
     "position": "DL",
     "height": 76,
     "weight": 318,
-    "number": null,
-    "age": null,
+    "number": 90,
+    "age": 23,
     "majorStats": "41 tackles, 2.5 sacks, 0 PBU, 0 INT, 1 FF",
     "positionalRanking": 3,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 7
+    "RAS": 3.72,
+    "miscConcern": 10,
+    "floorCeiling": 7,
+    "logoFile": "texas-tech.png"
   },
   {
     "consensusRanking": 42,
@@ -621,13 +662,14 @@
     "position": "DL",
     "height": 74,
     "weight": 326,
-    "number": null,
-    "age": null,
+    "number": 53,
+    "age": 21,
     "majorStats": "65 tackles, 3.0 sacks, 1 PBU, 0 INT, 2 FF",
     "positionalRanking": 4,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 7
+    "RAS": 8.42,
+    "miscConcern": 10,
+    "floorCeiling": 7,
+    "logoFile": "ohio-state.png"
   },
   {
     "consensusRanking": 43,
@@ -636,13 +678,14 @@
     "position": "EDGE",
     "height": 75,
     "weight": 239,
-    "number": null,
-    "age": null,
+    "number": 42,
+    "age": 24,
     "majorStats": "38 tackles, 10.0 sacks, 1 PBU, 0 INT, 2 FF",
     "positionalRanking": 8,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 7
+    "RAS": 8.92,
+    "miscConcern": 10,
+    "floorCeiling": 7,
+    "logoFile": "texas-tech.png"
   },
   {
     "consensusRanking": 44,
@@ -651,13 +694,14 @@
     "position": "DL",
     "height": 76,
     "weight": 321,
-    "number": null,
-    "age": null,
+    "number": 92,
+    "age": 21,
     "majorStats": "23 tackles, 1.5 sacks, 0 PBU, 0 INT",
     "positionalRanking": 5,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 7
+    "RAS": 8.6,
+    "miscConcern": 10,
+    "floorCeiling": 7,
+    "logoFile": "georgia.png"
   },
   {
     "consensusRanking": 45,
@@ -666,13 +710,14 @@
     "position": "EDGE",
     "height": 76,
     "weight": 260,
-    "number": null,
-    "age": null,
+    "number": 43,
+    "age": 21,
     "majorStats": "43 tackles, 11.0 sacks, 1 PBU, 0 INT, 3 FF",
     "positionalRanking": 9,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 7
+    "RAS": 8.4,
+    "miscConcern": 10,
+    "floorCeiling": 7,
+    "logoFile": "illinois.png"
   },
   {
     "consensusRanking": 46,
@@ -681,13 +726,14 @@
     "position": "OG",
     "height": 76,
     "weight": 314,
-    "number": null,
-    "age": null,
+    "number": 61,
+    "age": 24,
     "majorStats": "15 games started",
     "positionalRanking": 2,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 7
+    "RAS": 9.42,
+    "miscConcern": 10,
+    "floorCeiling": 7,
+    "logoFile": "oregon.png"
   },
   {
     "consensusRanking": 47,
@@ -696,13 +742,14 @@
     "position": "CB",
     "height": 68,
     "weight": 182,
-    "number": null,
-    "age": null,
+    "number": 23,
+    "age": 22,
     "majorStats": "61 tackles, 0 sacks, 11 PBU, 2 INT, 1 FF",
     "positionalRanking": 7,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 7
+    "RAS": 7.5,
+    "miscConcern": 10,
+    "floorCeiling": 7,
+    "logoFile": "indiana.png"
   },
   {
     "consensusRanking": 48,
@@ -711,13 +758,14 @@
     "position": "EDGE",
     "height": 75,
     "weight": 242,
-    "number": null,
-    "age": null,
+    "number": 59,
+    "age": 23,
     "majorStats": "33 tackles, 4.0 sacks, 3 PBU, 0 INT, 3 FF",
     "positionalRanking": 10,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 7
+    "RAS": 4.0,
+    "miscConcern": 10,
+    "floorCeiling": 7,
+    "logoFile": "tennessee.png"
   },
   {
     "consensusRanking": 49,
@@ -726,13 +774,14 @@
     "position": "EDGE",
     "height": 74,
     "weight": 241,
-    "number": null,
-    "age": null,
+    "number": 48,
+    "age": 21,
     "majorStats": "26 tackles, 6.5 sacks, 1 PBU, 0 INT, 2 FF",
     "positionalRanking": 11,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 7
+    "RAS": 6.9,
+    "miscConcern": 10,
+    "floorCeiling": 7,
+    "logoFile": "oklahoma.png"
   },
   {
     "consensusRanking": 50,
@@ -741,13 +790,14 @@
     "position": "RB",
     "height": 70,
     "weight": 203,
-    "number": null,
-    "age": null,
+    "number": 3,
+    "age": 22,
     "majorStats": "674 rush yds, 11 TD, avg 6.0, 87 rec yds, 2 rec TD",
     "positionalRanking": 2,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 7
+    "RAS": 8.76,
+    "miscConcern": 10,
+    "floorCeiling": 7,
+    "logoFile": "notre-dame.png"
   },
   {
     "consensusRanking": 51,
@@ -756,13 +806,14 @@
     "position": "WR",
     "height": 68,
     "weight": 177,
-    "number": null,
-    "age": null,
+    "number": 47,
+    "age": 21,
     "majorStats": "81 rec, 811 yards, 6 TD, avg 10.0",
     "positionalRanking": 7,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 7
+    "RAS": 8.3,
+    "miscConcern": 4,
+    "floorCeiling": 7,
+    "logoFile": "georgia.png"
   },
   {
     "consensusRanking": 52,
@@ -771,13 +822,14 @@
     "position": "EDGE",
     "height": 78,
     "weight": 256,
-    "number": null,
-    "age": null,
+    "number": 43,
+    "age": 22,
     "majorStats": "42 tackles, 8.5 sacks, 3 PBU, 0 INT, 3 FF",
     "positionalRanking": 12,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 7
+    "RAS": 9.93,
+    "miscConcern": 4,
+    "floorCeiling": 7,
+    "logoFile": "penn-state.png"
   },
   {
     "consensusRanking": 53,
@@ -786,13 +838,14 @@
     "position": "WR",
     "height": 74,
     "weight": 222,
-    "number": null,
-    "age": null,
+    "number": 25,
+    "age": 21,
     "majorStats": "72 rec, 917 yards, 6 TD, avg 12.7",
     "positionalRanking": 8,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 7
+    "RAS": 8.8,
+    "miscConcern": 5,
+    "floorCeiling": 7,
+    "logoFile": "louisville.png"
   },
   {
     "consensusRanking": 54,
@@ -801,13 +854,14 @@
     "position": "CB",
     "height": 70,
     "weight": 187,
-    "number": null,
-    "age": null,
+    "number": 19,
+    "age": 21,
     "majorStats": "44 tackles, 1.0 sacks, 12 PBU, 2 INT, 2 FF",
     "positionalRanking": 8,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 7
+    "RAS": 6.8,
+    "miscConcern": 7,
+    "floorCeiling": 7,
+    "logoFile": "arizona-state.png"
   },
   {
     "consensusRanking": 55,
@@ -816,13 +870,14 @@
     "position": "EDGE",
     "height": 78,
     "weight": 262,
-    "number": null,
-    "age": null,
+    "number": 59,
+    "age": 22,
     "majorStats": "42 tackles, 6.5 sacks, 2 PBU, 0 INT, 2 FF",
     "positionalRanking": 13,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 7
+    "RAS": 8.4,
+    "miscConcern": 2,
+    "floorCeiling": 7,
+    "logoFile": "missouri.png"
   },
   {
     "consensusRanking": 56,
@@ -831,13 +886,14 @@
     "position": "WR",
     "height": 74,
     "weight": 206,
-    "number": null,
-    "age": null,
+    "number": 24,
+    "age": 22,
     "majorStats": "64 rec, 862 yards, 7 TD, avg 13.5",
     "positionalRanking": 9,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 7
+    "RAS": 9.03,
+    "miscConcern": 4,
+    "floorCeiling": 7,
+    "logoFile": "alabama.png"
   },
   {
     "consensusRanking": 57,
@@ -846,13 +902,14 @@
     "position": "OLB",
     "height": 76,
     "weight": 239,
-    "number": null,
-    "age": null,
+    "number": 92,
+    "age": 22,
     "majorStats": "105 tackles, 3.5 sacks, 3 PBU, 0 INT, 1 FF",
-    "positionalRanking": 4,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 7
+    "positionalRanking": 3,
+    "RAS": 9.84,
+    "miscConcern": 5,
+    "floorCeiling": 7,
+    "logoFile": "cincinnati.png"
   },
   {
     "consensusRanking": 58,
@@ -861,13 +918,14 @@
     "position": "WR",
     "height": 76,
     "weight": 198,
-    "number": null,
-    "age": null,
+    "number": 43,
+    "age": 22,
     "majorStats": "62 rec, 1017 yards, 9 TD, avg 16.4",
     "positionalRanking": 10,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 7
+    "RAS": 9.2,
+    "miscConcern": 5,
+    "floorCeiling": 7,
+    "logoFile": "tennessee.png"
   },
   {
     "consensusRanking": 59,
@@ -876,13 +934,14 @@
     "position": "OG",
     "height": 78,
     "weight": 315,
-    "number": null,
-    "age": null,
+    "number": 59,
+    "age": 21,
     "majorStats": "13 games started",
     "positionalRanking": 3,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 7
+    "RAS": 9.85,
+    "miscConcern": 5,
+    "floorCeiling": 7,
+    "logoFile": "texas-am.png"
   },
   {
     "consensusRanking": 60,
@@ -891,13 +950,14 @@
     "position": "DL",
     "height": 74,
     "weight": 322,
-    "number": null,
-    "age": null,
+    "number": 57,
+    "age": 22,
     "majorStats": "18 tackles, 0 sacks, 1 PBU, 0 INT",
     "positionalRanking": 6,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 7
+    "RAS": 8.5,
+    "miscConcern": 2,
+    "floorCeiling": 7,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 61,
@@ -906,13 +966,14 @@
     "position": "EDGE",
     "height": 76,
     "weight": 253,
-    "number": null,
-    "age": null,
+    "number": 52,
+    "age": 23,
     "majorStats": "28 tackles, 7.0 sacks, 3 PBU, 0 INT, 2 FF",
     "positionalRanking": 14,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 7
+    "RAS": 9.9,
+    "miscConcern": 5,
+    "floorCeiling": 7,
+    "logoFile": "ucf.png"
   },
   {
     "consensusRanking": 62,
@@ -921,13 +982,14 @@
     "position": "CB",
     "height": 72,
     "weight": 193,
-    "number": null,
-    "age": null,
+    "number": 41,
+    "age": 24,
     "majorStats": "64 tackles, 5.0 sacks, 5 PBU, 2 INT, 2 FF",
     "positionalRanking": 9,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 7
+    "RAS": 8.7,
+    "miscConcern": 7,
+    "floorCeiling": 7,
+    "logoFile": "miami.png"
   },
   {
     "consensusRanking": 63,
@@ -936,13 +998,14 @@
     "position": "WR",
     "height": 74,
     "weight": 210,
-    "number": null,
-    "age": null,
+    "number": 11,
+    "age": 22,
     "majorStats": "65 rec, 830 yards, 15 TD, avg 12.8",
     "positionalRanking": 11,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 7
+    "RAS": 6.0,
+    "miscConcern": 5,
+    "floorCeiling": 7,
+    "logoFile": "indiana.png"
   },
   {
     "consensusRanking": 64,
@@ -951,13 +1014,14 @@
     "position": "EDGE",
     "height": 76,
     "weight": 255,
-    "number": null,
-    "age": null,
+    "number": 46,
+    "age": 23,
     "majorStats": "30 tackles, 10.0 sacks, 3 PBU, 0 INT, 2 FF",
     "positionalRanking": 15,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 7
+    "RAS": 7.0,
+    "miscConcern": 6,
+    "floorCeiling": 7,
+    "logoFile": "michigan.png"
   },
   {
     "consensusRanking": 65,
@@ -966,13 +1030,14 @@
     "position": "S",
     "height": 72,
     "weight": 202,
-    "number": null,
-    "age": null,
+    "number": 45,
+    "age": 21,
     "majorStats": "27 tackles, 0 sacks, 2 PBU, 0 INT",
     "positionalRanking": 4,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "RAS": 8.61,
+    "miscConcern": 8,
+    "floorCeiling": 6,
+    "logoFile": "usc.png"
   },
   {
     "consensusRanking": 66,
@@ -981,13 +1046,14 @@
     "position": "RB",
     "height": 73,
     "weight": 223,
-    "number": null,
-    "age": null,
+    "number": 42,
+    "age": 22,
     "majorStats": "1070 rush yds, 8 TD, avg 6.4, 226 rec yds, 1 rec TD",
     "positionalRanking": 3,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "RAS": 10.0,
+    "miscConcern": 5,
+    "floorCeiling": 6,
+    "logoFile": "arkansas.png"
   },
   {
     "consensusRanking": 67,
@@ -996,13 +1062,14 @@
     "position": "OG",
     "height": 77,
     "weight": 319,
-    "number": null,
-    "age": null,
+    "number": 70,
+    "age": 22,
     "majorStats": "13 games started",
     "positionalRanking": 4,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "RAS": 8.6,
+    "miscConcern": 5,
+    "floorCeiling": 6,
+    "logoFile": "iowa.png"
   },
   {
     "consensusRanking": 68,
@@ -1011,13 +1078,14 @@
     "position": "WR",
     "height": 76,
     "weight": 218,
-    "number": null,
-    "age": null,
+    "number": 47,
+    "age": 23,
     "majorStats": "36 rec, 630 yards, 5 TD, avg 17.5",
     "positionalRanking": 12,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "RAS": 8.22,
+    "miscConcern": 5,
+    "floorCeiling": 6,
+    "logoFile": "notre-dame.png"
   },
   {
     "consensusRanking": 69,
@@ -1026,13 +1094,14 @@
     "position": "ILB",
     "height": 74,
     "weight": 231,
-    "number": null,
-    "age": null,
+    "number": 54,
+    "age": 23,
     "majorStats": "128 tackles, 1.0 sacks, 6 PBU, 4 INT, 7 FF",
-    "positionalRanking": 5,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "positionalRanking": 2,
+    "RAS": 9.23,
+    "miscConcern": 5,
+    "floorCeiling": 6,
+    "logoFile": "texas-tech.png"
   },
   {
     "consensusRanking": 70,
@@ -1041,13 +1110,14 @@
     "position": "CB",
     "height": 74,
     "weight": 189,
-    "number": null,
-    "age": null,
+    "number": 41,
+    "age": 21,
     "majorStats": "53 tackles, 0 sacks, 8 PBU, 2 INT",
     "positionalRanking": 10,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "RAS": 8.64,
+    "miscConcern": 6,
+    "floorCeiling": 6,
+    "logoFile": "ohio-state.png"
   },
   {
     "consensusRanking": 71,
@@ -1056,13 +1126,14 @@
     "position": "DL",
     "height": 75,
     "weight": 274,
-    "number": null,
-    "age": null,
+    "number": 57,
+    "age": 21,
     "majorStats": "42 tackles, 4.0 sacks, 1 PBU, 0 INT",
     "positionalRanking": 7,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "RAS": 9.58,
+    "miscConcern": 6,
+    "floorCeiling": 6,
+    "logoFile": "alabama.png"
   },
   {
     "consensusRanking": 72,
@@ -1071,13 +1142,14 @@
     "position": "DL",
     "height": 73,
     "weight": 290,
-    "number": null,
-    "age": null,
+    "number": 51,
+    "age": 21,
     "majorStats": "25 tackles, 4.0 sacks, 2 PBU, 1 INT",
     "positionalRanking": 8,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "RAS": 9.22,
+    "miscConcern": 5,
+    "floorCeiling": 6,
+    "logoFile": "penn-state.png"
   },
   {
     "consensusRanking": 73,
@@ -1086,13 +1158,14 @@
     "position": "TE",
     "height": 76,
     "weight": 246,
-    "number": null,
-    "age": null,
+    "number": 41,
+    "age": 22,
     "majorStats": "43 rec, 448 yards, 2 TD, avg 10.4",
     "positionalRanking": 3,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "RAS": 8.3,
+    "miscConcern": 7,
+    "floorCeiling": 6,
+    "logoFile": "ohio-state.png"
   },
   {
     "consensusRanking": 74,
@@ -1101,13 +1174,14 @@
     "position": "CB",
     "height": 72,
     "weight": 182,
-    "number": null,
-    "age": null,
+    "number": 26,
+    "age": 21,
     "majorStats": "30 tackles, 1.0 sacks, 4 PBU, 2 INT",
     "positionalRanking": 11,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "RAS": 9.45,
+    "miscConcern": 5,
+    "floorCeiling": 6,
+    "logoFile": "texas.png"
   },
   {
     "consensusRanking": 75,
@@ -1116,13 +1190,14 @@
     "position": "OT",
     "height": 80,
     "weight": 323,
-    "number": null,
-    "age": null,
+    "number": 56,
+    "age": 23,
     "majorStats": "13 games started",
     "positionalRanking": 8,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "RAS": 8.9,
+    "miscConcern": 8,
+    "floorCeiling": 6,
+    "logoFile": "northwestern.png"
   },
   {
     "consensusRanking": 76,
@@ -1131,13 +1206,14 @@
     "position": "WR",
     "height": 76,
     "weight": 206,
-    "number": null,
-    "age": null,
+    "number": 37,
+    "age": 22,
     "majorStats": "71 rec, 1004 yards, 6 TD, avg 14.1",
     "positionalRanking": 13,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "RAS": 9.92,
+    "miscConcern": 2,
+    "floorCeiling": 6,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 77,
@@ -1146,13 +1222,14 @@
     "position": "OG",
     "height": 76,
     "weight": 316,
-    "number": null,
-    "age": null,
+    "number": 60,
+    "age": 22,
     "majorStats": "13 games started",
     "positionalRanking": 5,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "RAS": 9.52,
+    "miscConcern": 5,
+    "floorCeiling": 6,
+    "logoFile": "georgia-tech.png"
   },
   {
     "consensusRanking": 78,
@@ -1161,13 +1238,14 @@
     "position": "WR",
     "height": 72,
     "weight": 187,
-    "number": null,
-    "age": null,
+    "number": 32,
+    "age": 22,
     "majorStats": "55 rec, 604 yards, 4 TD, avg 11.0",
     "positionalRanking": 14,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "RAS": 9.09,
+    "miscConcern": 5,
+    "floorCeiling": 6,
+    "logoFile": "clemson.png"
   },
   {
     "consensusRanking": 79,
@@ -1176,13 +1254,14 @@
     "position": "OC",
     "height": 77,
     "weight": 303,
-    "number": null,
-    "age": null,
+    "number": 79,
+    "age": 22,
     "majorStats": "12 games started",
-    "positionalRanking": 6,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "positionalRanking": 1,
+    "RAS": 9.91,
+    "miscConcern": 6,
+    "floorCeiling": 6,
+    "logoFile": "florida.png"
   },
   {
     "consensusRanking": 80,
@@ -1191,13 +1270,14 @@
     "position": "CB",
     "height": 76,
     "weight": 194,
-    "number": null,
-    "age": null,
+    "number": 10,
+    "age": 22,
     "majorStats": "19 tackles, 0 sacks, 3 PBU, 2 INT",
     "positionalRanking": 12,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "RAS": 9.76,
+    "miscConcern": 5,
+    "floorCeiling": 6,
+    "logoFile": "washington.png"
   },
   {
     "consensusRanking": 81,
@@ -1206,13 +1286,14 @@
     "position": "OT",
     "height": 77,
     "weight": 312,
-    "number": null,
-    "age": null,
+    "number": 57,
+    "age": 22,
     "majorStats": "12 games started",
     "positionalRanking": 9,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "RAS": 9.69,
+    "miscConcern": 3,
+    "floorCeiling": 6,
+    "logoFile": "kentucky.png"
   },
   {
     "consensusRanking": 82,
@@ -1221,13 +1302,14 @@
     "position": "S",
     "height": 72,
     "weight": 190,
-    "number": null,
-    "age": null,
+    "number": 2,
+    "age": 24,
     "majorStats": "52 tackles, 1.0 sacks, 6 PBU, 4 INT",
     "positionalRanking": 5,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "RAS": 9.2,
+    "miscConcern": 5,
+    "floorCeiling": 6,
+    "logoFile": "arizona.png"
   },
   {
     "consensusRanking": 83,
@@ -1236,13 +1318,14 @@
     "position": "WR",
     "height": 70,
     "weight": 180,
-    "number": null,
-    "age": null,
+    "number": 4,
+    "age": 23,
     "majorStats": "57 rec, 620 yards, 4 TD, avg 10.9",
     "positionalRanking": 15,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "RAS": 9.24,
+    "miscConcern": 4,
+    "floorCeiling": 6,
+    "logoFile": "oklahoma.png"
   },
   {
     "consensusRanking": 84,
@@ -1251,13 +1334,14 @@
     "position": "OLB",
     "height": 72,
     "weight": 220,
-    "number": null,
-    "age": null,
+    "number": 9,
+    "age": 22,
     "majorStats": "81 tackles, 3.0 sacks, 3 PBU, 2 INT, 1 FF",
-    "positionalRanking": 6,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "positionalRanking": 4,
+    "RAS": 8.64,
+    "miscConcern": 5,
+    "floorCeiling": 6,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 85,
@@ -1266,13 +1350,14 @@
     "position": "OC",
     "height": 76,
     "weight": 303,
-    "number": null,
-    "age": null,
+    "number": 75,
+    "age": 22,
     "majorStats": "12 games started",
-    "positionalRanking": 7,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "positionalRanking": 2,
+    "RAS": 8.14,
+    "miscConcern": 5,
+    "floorCeiling": 6,
+    "logoFile": "kansas-state.png"
   },
   {
     "consensusRanking": 86,
@@ -1281,13 +1366,14 @@
     "position": "QB",
     "height": 74,
     "weight": 203,
-    "number": null,
-    "age": null,
+    "number": 18,
+    "age": 24,
     "majorStats": "1927 passing yards, 12 TD, 5 INT, 67.4% completion",
     "positionalRanking": 3,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "RAS": 6.5,
+    "miscConcern": 4,
+    "floorCeiling": 6,
+    "logoFile": "lsu.png"
   },
   {
     "consensusRanking": 87,
@@ -1296,13 +1382,14 @@
     "position": "S",
     "height": 74,
     "weight": 202,
-    "number": null,
-    "age": null,
+    "number": 12,
+    "age": 22,
     "majorStats": "77 tackles, 0 sacks, 8 PBU, 1 INT, 2 FF",
     "positionalRanking": 6,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "RAS": 8.5,
+    "miscConcern": 3,
+    "floorCeiling": 6,
+    "logoFile": "arizona-state.png"
   },
   {
     "consensusRanking": 88,
@@ -1311,13 +1398,14 @@
     "position": "QB",
     "height": 77,
     "weight": 233,
-    "number": null,
-    "age": null,
+    "number": 11,
+    "age": 23,
     "majorStats": "3813 passing yards, 30 TD, 12 INT, 72.4% completion",
     "positionalRanking": 4,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "RAS": 6.0,
+    "miscConcern": 5,
+    "floorCeiling": 6,
+    "logoFile": "miami.png"
   },
   {
     "consensusRanking": 89,
@@ -1326,13 +1414,14 @@
     "position": "WR",
     "height": 76,
     "weight": 200,
-    "number": null,
-    "age": null,
+    "number": 8,
+    "age": 21,
     "majorStats": "49 rec, 745 yards, 4 TD, avg 15.2",
     "positionalRanking": 16,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "RAS": 9.69,
+    "miscConcern": 7,
+    "floorCeiling": 6,
+    "logoFile": "usc.png"
   },
   {
     "consensusRanking": 90,
@@ -1341,13 +1430,14 @@
     "position": "S",
     "height": 73,
     "weight": 188,
-    "number": null,
-    "age": null,
+    "number": 21,
+    "age": 22,
     "majorStats": "56 tackles, 1.0 sacks, 7 PBU, 4 INT",
     "positionalRanking": 7,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "RAS": 9.32,
+    "miscConcern": 6,
+    "floorCeiling": 6,
+    "logoFile": "tcu.png"
   },
   {
     "consensusRanking": 91,
@@ -1356,13 +1446,14 @@
     "position": "RB",
     "height": 68,
     "weight": 220,
-    "number": null,
-    "age": null,
+    "number": 1,
+    "age": 22,
     "majorStats": "758 rush yds, 15 TD, avg 4.9, 354 rec yds, 2 rec TD",
     "positionalRanking": 4,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "RAS": 6.0,
+    "miscConcern": 5,
+    "floorCeiling": 6,
+    "logoFile": "washington.png"
   },
   {
     "consensusRanking": 92,
@@ -1371,13 +1462,14 @@
     "position": "CB",
     "height": 74,
     "weight": 203,
-    "number": null,
-    "age": null,
+    "number": 23,
+    "age": 23,
     "majorStats": "55 tackles, 0 sacks, 10 PBU, 2 INT",
     "positionalRanking": 13,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "RAS": 9.89,
+    "miscConcern": 4,
+    "floorCeiling": 6,
+    "logoFile": "arkansas.png"
   },
   {
     "consensusRanking": 93,
@@ -1386,13 +1478,14 @@
     "position": "OC",
     "height": 76,
     "weight": 310,
-    "number": null,
-    "age": null,
+    "number": 75,
+    "age": 21,
     "majorStats": "7 games started",
-    "positionalRanking": 8,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "positionalRanking": 3,
+    "RAS": 9.0,
+    "miscConcern": 2,
+    "floorCeiling": 6,
+    "logoFile": "auburn.png"
   },
   {
     "consensusRanking": 94,
@@ -1401,13 +1494,14 @@
     "position": "ILB",
     "height": 74,
     "weight": 237,
-    "number": null,
-    "age": null,
+    "number": 40,
+    "age": 21,
     "majorStats": "84 tackles, 2.0 sacks, 1 PBU, 0 INT",
-    "positionalRanking": 7,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "positionalRanking": 3,
+    "RAS": 7.5,
+    "miscConcern": 6,
+    "floorCeiling": 6,
+    "logoFile": "missouri.png"
   },
   {
     "consensusRanking": 95,
@@ -1416,13 +1510,14 @@
     "position": "RB",
     "height": 70,
     "weight": 202,
-    "number": null,
-    "age": null,
+    "number": 21,
+    "age": 22,
     "majorStats": "1451 rush yds, 12 TD, avg 5.8, 370 rec yds, 3 rec TD",
     "positionalRanking": 5,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "RAS": 5.85,
+    "miscConcern": 6,
+    "floorCeiling": 6,
+    "logoFile": "nebraska.png"
   },
   {
     "consensusRanking": 96,
@@ -1431,13 +1526,14 @@
     "position": "S",
     "height": 72,
     "weight": 215,
-    "number": null,
-    "age": null,
+    "number": 13,
+    "age": 22,
     "majorStats": "88 tackles, 0 sacks, 4 PBU, 3 INT, 1 FF",
     "positionalRanking": 8,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "RAS": 5.0,
+    "miscConcern": 3,
+    "floorCeiling": 6,
+    "logoFile": "lsu.png"
   },
   {
     "consensusRanking": 97,
@@ -1446,13 +1542,14 @@
     "position": "QB",
     "height": 78,
     "weight": 228,
-    "number": null,
-    "age": null,
+    "number": 15,
+    "age": 22,
     "majorStats": "1100 passing yards, 8 TD, 3 INT, 64.8% completion",
     "positionalRanking": 5,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "RAS": 8.5,
+    "miscConcern": 5,
+    "floorCeiling": 6,
+    "logoFile": "penn-state.png"
   },
   {
     "consensusRanking": 98,
@@ -1461,13 +1558,14 @@
     "position": "S",
     "height": 75,
     "weight": 203,
-    "number": null,
-    "age": null,
+    "number": 6,
+    "age": 24,
     "majorStats": "74 tackles, 0 sacks, 1 PBU, 1 INT",
     "positionalRanking": 9,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "RAS": 7.55,
+    "miscConcern": 5,
+    "floorCeiling": 6,
+    "logoFile": "penn-state.png"
   },
   {
     "consensusRanking": 99,
@@ -1476,13 +1574,14 @@
     "position": "EDGE",
     "height": 78,
     "weight": 256,
-    "number": null,
-    "age": null,
+    "number": 6,
+    "age": 21,
     "majorStats": "37 tackles, 3.0 sacks, 0 PBU, 0 INT, 1 FF",
     "positionalRanking": 16,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "RAS": 8.5,
+    "miscConcern": 9,
+    "floorCeiling": 6,
+    "logoFile": "usc.png"
   },
   {
     "consensusRanking": 100,
@@ -1491,13 +1590,14 @@
     "position": "TE",
     "height": 76,
     "weight": 240,
-    "number": null,
-    "age": null,
+    "number": 48,
+    "age": 23,
     "majorStats": "50 rec, 694 yards, 6 TD, avg 13.9",
     "positionalRanking": 4,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 6
+    "RAS": 9.2,
+    "miscConcern": 5,
+    "floorCeiling": 6,
+    "logoFile": "baylor.png"
   },
   {
     "consensusRanking": 101,
@@ -1506,13 +1606,14 @@
     "position": "DL",
     "height": 74,
     "weight": 293,
-    "number": null,
-    "age": null,
+    "number": 96,
+    "age": 22,
     "majorStats": "33 tackles, 3.5 sacks, 2 PBU, 0 INT, 1 FF",
     "positionalRanking": 9,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 9.7,
+    "miscConcern": 8,
+    "floorCeiling": 10,
+    "logoFile": "oklahoma.png"
   },
   {
     "consensusRanking": 102,
@@ -1521,13 +1622,14 @@
     "position": "WR",
     "height": 72,
     "weight": 192,
-    "number": null,
-    "age": null,
+    "number": 85,
+    "age": 23,
     "majorStats": "101 rec, 1278 yards, 13 TD, avg 12.7",
     "positionalRanking": 17,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 9.71,
+    "miscConcern": 6,
+    "floorCeiling": 8,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 103,
@@ -1536,13 +1638,14 @@
     "position": "OT",
     "height": 79,
     "weight": 318,
-    "number": null,
-    "age": null,
+    "number": 54,
+    "age": 22,
     "majorStats": "12 games started",
     "positionalRanking": 10,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 9.75,
+    "miscConcern": 5,
+    "floorCeiling": 8,
+    "logoFile": "florida.png"
   },
   {
     "consensusRanking": 104,
@@ -1551,13 +1654,14 @@
     "position": "QB",
     "height": 74,
     "weight": 207,
-    "number": null,
-    "age": null,
+    "number": 11,
+    "age": 21,
     "majorStats": "2943 passing yards, 16 TD, 6 INT, 65.6% completion",
     "positionalRanking": 6,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 8.33,
+    "miscConcern": 4,
+    "floorCeiling": 7,
+    "logoFile": "clemson.png"
   },
   {
     "consensusRanking": 105,
@@ -1566,13 +1670,14 @@
     "position": "DL",
     "height": 74,
     "weight": 273,
-    "number": null,
-    "age": null,
+    "number": 59,
+    "age": 23,
     "majorStats": "34 tackles, 1.0 sacks, 1 PBU, 0 INT",
     "positionalRanking": 10,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 6.32,
+    "miscConcern": 5,
+    "floorCeiling": 6,
+    "logoFile": "florida.png"
   },
   {
     "consensusRanking": 106,
@@ -1581,13 +1686,14 @@
     "position": "OC",
     "height": 78,
     "weight": 309,
-    "number": null,
-    "age": null,
+    "number": 52,
+    "age": 21,
     "majorStats": "13 games started",
-    "positionalRanking": 9,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "positionalRanking": 4,
+    "RAS": 9.76,
+    "miscConcern": 3,
+    "floorCeiling": 8,
+    "logoFile": "duke.png"
   },
   {
     "consensusRanking": 107,
@@ -1596,13 +1702,14 @@
     "position": "TE",
     "height": 78,
     "weight": 267,
-    "number": null,
-    "age": null,
+    "number": 44,
+    "age": 22,
     "majorStats": "49 rec, 545 yards, 2 TD, avg 11.1",
     "positionalRanking": 5,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 9.93,
+    "miscConcern": 6,
+    "floorCeiling": 8,
+    "logoFile": "stanford.png"
   },
   {
     "consensusRanking": 108,
@@ -1611,13 +1718,14 @@
     "position": "WR",
     "height": 76,
     "weight": 204,
-    "number": null,
-    "age": null,
+    "number": 17,
+    "age": 22,
     "majorStats": "WR, 4.34 40-yard dash, 41.5 vertical",
     "positionalRanking": 18,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 9.98,
+    "miscConcern": 4,
+    "floorCeiling": 8,
+    "logoFile": "north-dakota-state.png"
   },
   {
     "consensusRanking": 109,
@@ -1626,13 +1734,14 @@
     "position": "TE",
     "height": 76,
     "weight": 241,
-    "number": null,
-    "age": null,
+    "number": 46,
+    "age": 24,
     "majorStats": "49 rec, 489 yards, 7 TD, avg 10.0",
     "positionalRanking": 6,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 5.98,
+    "miscConcern": 8,
+    "floorCeiling": 7,
+    "logoFile": "nc-state.png"
   },
   {
     "consensusRanking": 110,
@@ -1641,13 +1750,14 @@
     "position": "WR",
     "height": 70,
     "weight": 179,
-    "number": null,
-    "age": null,
+    "number": 46,
+    "age": 22,
     "majorStats": "66 rec, 732 yards, 1 TD, avg 11.1",
     "positionalRanking": 19,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 7.86,
+    "miscConcern": 5,
+    "floorCeiling": 6,
+    "logoFile": "missouri.png"
   },
   {
     "consensusRanking": 111,
@@ -1656,13 +1766,14 @@
     "position": "DL",
     "height": 78,
     "weight": 315,
-    "number": null,
-    "age": null,
+    "number": 94,
+    "age": 23,
     "majorStats": "45 tackles, 1.0 sacks, 0 PBU, 0 INT",
     "positionalRanking": 11,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 8.61,
+    "miscConcern": 2,
+    "floorCeiling": 7,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 112,
@@ -1671,13 +1782,14 @@
     "position": "CB",
     "height": 74,
     "weight": 196,
-    "number": null,
-    "age": null,
+    "number": 16,
+    "age": 21,
     "majorStats": "50 tackles, 0 sacks, 10 PBU, 1 INT",
     "positionalRanking": 14,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 9.82,
+    "miscConcern": 5,
+    "floorCeiling": 10,
+    "logoFile": "georgia.png"
   },
   {
     "consensusRanking": 113,
@@ -1686,13 +1798,14 @@
     "position": "DL",
     "height": 72,
     "weight": 340,
-    "number": null,
-    "age": null,
+    "number": 98,
+    "age": 21,
     "majorStats": "13 tackles, 0 sacks, 0 PBU, 0 INT",
     "positionalRanking": 12,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 6.13,
+    "miscConcern": 4,
+    "floorCeiling": 7,
+    "logoFile": "cincinnati.png"
   },
   {
     "consensusRanking": 114,
@@ -1701,13 +1814,14 @@
     "position": "WR",
     "height": 70,
     "weight": 176,
-    "number": null,
-    "age": null,
+    "number": 1,
+    "age": 22,
     "majorStats": "46 rec, 658 yards, 2 TD, avg 14.3",
     "positionalRanking": 20,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 8.74,
+    "miscConcern": 5,
+    "floorCeiling": 7,
+    "logoFile": "georgia-tech.png"
   },
   {
     "consensusRanking": 115,
@@ -1716,13 +1830,14 @@
     "position": "WR",
     "height": 74,
     "weight": 202,
-    "number": null,
-    "age": null,
+    "number": 15,
+    "age": 21,
     "majorStats": "50 rec, 557 yards, 7 TD, avg 11.1",
     "positionalRanking": 21,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 7.78,
+    "miscConcern": 5,
+    "floorCeiling": 7,
+    "logoFile": "miami.png"
   },
   {
     "consensusRanking": 116,
@@ -1731,13 +1846,14 @@
     "position": "OG",
     "height": 75,
     "weight": 313,
-    "number": null,
-    "age": null,
+    "number": 52,
+    "age": 23,
     "majorStats": "13 games started",
-    "positionalRanking": 10,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "positionalRanking": 6,
+    "RAS": 8.49,
+    "miscConcern": 4,
+    "floorCeiling": 7,
+    "logoFile": "texas.png"
   },
   {
     "consensusRanking": 117,
@@ -1746,13 +1862,14 @@
     "position": "OC",
     "height": 75,
     "weight": 299,
-    "number": null,
-    "age": null,
+    "number": 56,
+    "age": 24,
     "majorStats": "13 games started",
-    "positionalRanking": 11,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "positionalRanking": 5,
+    "RAS": 9.56,
+    "miscConcern": 4,
+    "floorCeiling": 8,
+    "logoFile": "iowa.png"
   },
   {
     "consensusRanking": 118,
@@ -1761,13 +1878,14 @@
     "position": "OT",
     "height": 80,
     "weight": 312,
-    "number": null,
-    "age": null,
+    "number": 57,
+    "age": 24,
     "majorStats": "15 games started",
     "positionalRanking": 11,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 5.41,
+    "miscConcern": 7,
+    "floorCeiling": 5,
+    "logoFile": "oregon.png"
   },
   {
     "consensusRanking": 119,
@@ -1776,13 +1894,14 @@
     "position": "S",
     "height": 72,
     "weight": 190,
-    "number": null,
-    "age": null,
+    "number": 7,
+    "age": 22,
     "majorStats": "70 tackles, 1.0 sacks, 1 PBU, 2 INT",
     "positionalRanking": 10,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 6.31,
+    "miscConcern": 5,
+    "floorCeiling": 5,
+    "logoFile": "texas.png"
   },
   {
     "consensusRanking": 120,
@@ -1791,13 +1910,14 @@
     "position": "QB",
     "height": 78,
     "weight": 227,
-    "number": null,
-    "age": null,
+    "number": 14,
+    "age": 23,
     "majorStats": "2714 passing yards, 19 TD, 11 INT, 60.7% completion",
     "positionalRanking": 7,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 9.99,
+    "miscConcern": 4,
+    "floorCeiling": 8,
+    "logoFile": "arkansas.png"
   },
   {
     "consensusRanking": 121,
@@ -1806,13 +1926,14 @@
     "position": "OG",
     "height": 77,
     "weight": 310,
-    "number": null,
-    "age": null,
+    "number": 71,
+    "age": 21,
     "majorStats": "7 games started",
-    "positionalRanking": 12,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "positionalRanking": 7,
+    "RAS": 7.75,
+    "miscConcern": 6,
+    "floorCeiling": 5,
+    "logoFile": "notre-dame.png"
   },
   {
     "consensusRanking": 122,
@@ -1821,13 +1942,14 @@
     "position": "RB",
     "height": 72,
     "weight": 216,
-    "number": null,
-    "age": null,
+    "number": 4,
+    "age": 21,
     "majorStats": "1303 rush yds, 15 TD, avg 6.2, 68 rec yds, 0 rec TD",
     "positionalRanking": 6,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 5.82,
+    "miscConcern": 4,
+    "floorCeiling": 7,
+    "logoFile": "penn-state.png"
   },
   {
     "consensusRanking": 123,
@@ -1836,13 +1958,14 @@
     "position": "TE",
     "height": 76,
     "weight": 245,
-    "number": null,
-    "age": null,
+    "number": 47,
+    "age": 21,
     "majorStats": "33 rec, 346 yards, 3 TD, avg 10.5",
     "positionalRanking": 7,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 8.65,
+    "miscConcern": 5,
+    "floorCeiling": 9,
+    "logoFile": "texas.png"
   },
   {
     "consensusRanking": 124,
@@ -1851,13 +1974,14 @@
     "position": "RB",
     "height": 72,
     "weight": 223,
-    "number": null,
-    "age": null,
+    "number": 9,
+    "age": 24,
     "majorStats": "725 rush yds, 12 TD, avg 4.4, 126 rec yds, 0 rec TD",
     "positionalRanking": 7,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 9.63,
+    "miscConcern": 4,
+    "floorCeiling": 8,
+    "logoFile": "kentucky.png"
   },
   {
     "consensusRanking": 125,
@@ -1866,13 +1990,14 @@
     "position": "S",
     "height": 74,
     "weight": 210,
-    "number": null,
-    "age": null,
+    "number": 16,
+    "age": 24,
     "majorStats": "54 tackles, 0 sacks, 10 PBU, 2 INT",
     "positionalRanking": 11,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 9.97,
+    "miscConcern": 2,
+    "floorCeiling": 10,
+    "logoFile": "south-carolina.png"
   },
   {
     "consensusRanking": 126,
@@ -1881,13 +2006,14 @@
     "position": "CB",
     "height": 76,
     "weight": 198,
-    "number": null,
-    "age": null,
+    "number": 36,
+    "age": 24,
     "majorStats": "35 tackles, 1.0 sacks, 4 PBU, 2 INT, 1 FF",
     "positionalRanking": 15,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 5.06,
+    "miscConcern": 5,
+    "floorCeiling": 5,
+    "logoFile": "florida.png"
   },
   {
     "consensusRanking": 127,
@@ -1896,13 +2022,14 @@
     "position": "DL",
     "height": 80,
     "weight": 330,
-    "number": null,
-    "age": null,
+    "number": 52,
+    "age": 21,
     "majorStats": null,
     "positionalRanking": 13,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 6.81,
+    "miscConcern": 8,
+    "floorCeiling": 7,
+    "logoFile": "ole-miss.png"
   },
   {
     "consensusRanking": 128,
@@ -1911,13 +2038,14 @@
     "position": "WR",
     "height": 70,
     "weight": 164,
-    "number": null,
-    "age": null,
+    "number": 27,
+    "age": 22,
     "majorStats": "57 rec, 1054 yards, 6 TD, avg 18.5",
     "positionalRanking": 22,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 5.58,
+    "miscConcern": 4,
+    "floorCeiling": 7,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 129,
@@ -1926,13 +2054,14 @@
     "position": "OLB",
     "height": 73,
     "weight": 223,
-    "number": null,
-    "age": null,
+    "number": 98,
+    "age": 24,
     "majorStats": "56 tackles, 4.0 sacks, 3 PBU, 3 INT, 1 FF",
-    "positionalRanking": 8,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "positionalRanking": 5,
+    "RAS": 6.06,
+    "miscConcern": 5,
+    "floorCeiling": 7,
+    "logoFile": "lsu.png"
   },
   {
     "consensusRanking": 130,
@@ -1941,13 +2070,14 @@
     "position": "OG",
     "height": 78,
     "weight": 310,
-    "number": null,
-    "age": null,
+    "number": 62,
+    "age": 21,
     "majorStats": "13 games started",
-    "positionalRanking": 13,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "positionalRanking": 8,
+    "RAS": 6.01,
+    "miscConcern": 5,
+    "floorCeiling": 6,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 131,
@@ -1956,13 +2086,14 @@
     "position": "RB",
     "height": 70,
     "weight": 188,
-    "number": null,
-    "age": null,
+    "number": 28,
+    "age": 23,
     "majorStats": "907 rush yds, 10 TD, avg 5.1, 140 rec yds, 0 rec TD",
     "positionalRanking": 8,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 8.48,
+    "miscConcern": 6,
+    "floorCeiling": 7,
+    "logoFile": "wake-forest.png"
   },
   {
     "consensusRanking": 132,
@@ -1971,13 +2102,14 @@
     "position": "CB",
     "height": 70,
     "weight": 185,
-    "number": null,
-    "age": null,
+    "number": 10,
+    "age": 24,
     "majorStats": "59 tackles, 0 sacks, 8 PBU, 2 INT, 1 FF",
     "positionalRanking": 16,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 7.56,
+    "miscConcern": 5,
+    "floorCeiling": 5,
+    "logoFile": "duke.png"
   },
   {
     "consensusRanking": 133,
@@ -1986,13 +2118,14 @@
     "position": "CB",
     "height": 73,
     "weight": 194,
-    "number": null,
-    "age": null,
+    "number": 38,
+    "age": 21,
     "majorStats": "39 tackles, 0 sacks, 1 PBU, 0 INT",
     "positionalRanking": 17,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 5.18,
+    "miscConcern": 3,
+    "floorCeiling": 6,
+    "logoFile": "alabama.png"
   },
   {
     "consensusRanking": 134,
@@ -2001,13 +2134,14 @@
     "position": "DL",
     "height": 76,
     "weight": 298,
-    "number": null,
-    "age": null,
+    "number": 51,
+    "age": 23,
     "majorStats": "35 tackles, 1.5 sacks, 2 PBU, 0 INT",
     "positionalRanking": 14,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 9.92,
+    "miscConcern": 5,
+    "floorCeiling": 7,
+    "logoFile": "michigan.png"
   },
   {
     "consensusRanking": 135,
@@ -2016,13 +2150,14 @@
     "position": "ILB",
     "height": 76,
     "weight": 233,
-    "number": null,
-    "age": null,
+    "number": 41,
+    "age": 22,
     "majorStats": "55 tackles, 1.5 sacks, 1 PBU, 1 INT",
-    "positionalRanking": 9,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "positionalRanking": 4,
+    "RAS": 8.85,
+    "miscConcern": 9,
+    "floorCeiling": 6,
+    "logoFile": "utah.png"
   },
   {
     "consensusRanking": 136,
@@ -2031,13 +2166,14 @@
     "position": "DL",
     "height": 73,
     "weight": 327,
-    "number": null,
-    "age": null,
+    "number": 52,
+    "age": 22,
     "majorStats": "16 tackles, 2.0 sacks, 1 PBU, 0 INT, 1 FF",
     "positionalRanking": 15,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 2.96,
+    "miscConcern": 6,
+    "floorCeiling": 1,
+    "logoFile": "alabama.png"
   },
   {
     "consensusRanking": 137,
@@ -2046,13 +2182,14 @@
     "position": "OC",
     "height": 74,
     "weight": 289,
-    "number": null,
-    "age": null,
+    "number": 62,
+    "age": 22,
     "majorStats": "14 games started",
-    "positionalRanking": 14,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "positionalRanking": 6,
+    "RAS": 8.47,
+    "miscConcern": 5,
+    "floorCeiling": 6,
+    "logoFile": "alabama.png"
   },
   {
     "consensusRanking": 138,
@@ -2061,13 +2198,14 @@
     "position": "OT",
     "height": 76,
     "weight": 322,
-    "number": null,
-    "age": null,
+    "number": 68,
+    "age": 22,
     "majorStats": "12 games started",
     "positionalRanking": 12,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 7.28,
+    "miscConcern": 6,
+    "floorCeiling": 7,
+    "logoFile": "illinois.png"
   },
   {
     "consensusRanking": 139,
@@ -2076,13 +2214,14 @@
     "position": "OT",
     "height": 77,
     "weight": 314,
-    "number": null,
-    "age": null,
+    "number": 63,
+    "age": 21,
     "majorStats": "9 games started",
     "positionalRanking": 13,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 9.53,
+    "miscConcern": 6,
+    "floorCeiling": 9,
+    "logoFile": "boston-college.png"
   },
   {
     "consensusRanking": 140,
@@ -2091,13 +2230,14 @@
     "position": "EDGE",
     "height": 78,
     "weight": 258,
-    "number": null,
-    "age": null,
+    "number": 99,
+    "age": 23,
     "majorStats": "26 tackles, 6.5 sacks, 6 PBU, 0 INT, 2 FF",
     "positionalRanking": 17,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 7.72,
+    "miscConcern": 5,
+    "floorCeiling": 7,
+    "logoFile": "iowa.png"
   },
   {
     "consensusRanking": 141,
@@ -2106,13 +2246,14 @@
     "position": "S",
     "height": 75,
     "weight": 206,
-    "number": null,
-    "age": null,
+    "number": 16,
+    "age": 23,
     "majorStats": null,
     "positionalRanking": 12,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 9.86,
+    "miscConcern": 5,
+    "floorCeiling": 9,
+    "logoFile": "kansas-state.png"
   },
   {
     "consensusRanking": 142,
@@ -2121,13 +2262,14 @@
     "position": "OT",
     "height": 80,
     "weight": 319,
-    "number": null,
-    "age": null,
+    "number": 64,
+    "age": 23,
     "majorStats": "13 games started",
     "positionalRanking": 14,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 4.42,
+    "miscConcern": 5,
+    "floorCeiling": 5,
+    "logoFile": "texas-am.png"
   },
   {
     "consensusRanking": 143,
@@ -2136,13 +2278,14 @@
     "position": "OC",
     "height": 78,
     "weight": 312,
-    "number": null,
-    "age": null,
+    "number": 64,
+    "age": 21,
     "majorStats": "13 games started",
-    "positionalRanking": 15,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "positionalRanking": 7,
+    "RAS": 5.06,
+    "miscConcern": 6,
+    "floorCeiling": 5,
+    "logoFile": "texas-am.png"
   },
   {
     "consensusRanking": 144,
@@ -2151,13 +2294,14 @@
     "position": "RB",
     "height": 72,
     "weight": 219,
-    "number": null,
-    "age": null,
+    "number": 5,
+    "age": 21,
     "majorStats": "549 rush yds, 13 TD, avg 4.5, 219 rec yds, 1 rec TD",
     "positionalRanking": 9,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 6.66,
+    "miscConcern": 4,
+    "floorCeiling": 6,
+    "logoFile": "penn-state.png"
   },
   {
     "consensusRanking": 145,
@@ -2166,13 +2310,14 @@
     "position": "OT",
     "height": 82,
     "weight": 346,
-    "number": null,
-    "age": null,
+    "number": 54,
+    "age": 23,
     "majorStats": "16 games started",
     "positionalRanking": 15,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 7.67,
+    "miscConcern": 8,
+    "floorCeiling": 5,
+    "logoFile": "miami.png"
   },
   {
     "consensusRanking": 146,
@@ -2181,13 +2326,14 @@
     "position": "QB",
     "height": 76,
     "weight": 216,
-    "number": null,
-    "age": null,
+    "number": 12,
+    "age": 22,
     "majorStats": "3681 passing yards, 31 TD, 12 INT, 60.3% completion",
     "positionalRanking": 8,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 9.8,
+    "miscConcern": 5,
+    "floorCeiling": 8,
+    "logoFile": "baylor.png"
   },
   {
     "consensusRanking": 147,
@@ -2196,13 +2342,14 @@
     "position": "S",
     "height": 73,
     "weight": 196,
-    "number": null,
-    "age": null,
+    "number": 40,
+    "age": 23,
     "majorStats": null,
     "positionalRanking": 13,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 8.12,
+    "miscConcern": 3,
+    "floorCeiling": 6,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 148,
@@ -2211,13 +2358,14 @@
     "position": "TE",
     "height": 78,
     "weight": 245,
-    "number": null,
-    "age": null,
+    "number": 87,
+    "age": 21,
     "majorStats": "32 rec, 482 yards, 0 TD, avg 15.1",
     "positionalRanking": 8,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 9.81,
+    "miscConcern": 5,
+    "floorCeiling": 8,
+    "logoFile": "notre-dame.png"
   },
   {
     "consensusRanking": 149,
@@ -2226,13 +2374,14 @@
     "position": "ILB",
     "height": 75,
     "weight": 226,
-    "number": null,
-    "age": null,
+    "number": 44,
+    "age": 21,
     "majorStats": "89 tackles, 1.5 sacks, 4 PBU, 0 INT, 2 FF",
-    "positionalRanking": 10,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "positionalRanking": 5,
+    "RAS": 9.04,
+    "miscConcern": 5,
+    "floorCeiling": 6,
+    "logoFile": "alabama.png"
   },
   {
     "consensusRanking": 150,
@@ -2241,13 +2390,14 @@
     "position": "CB",
     "height": 73,
     "weight": 193,
-    "number": null,
-    "age": null,
+    "number": 18,
+    "age": 22,
     "majorStats": "CB, 4.41 40-yard dash, 42.0 vertical",
     "positionalRanking": 18,
-    "RAS": null,
-    "miscConcern": 1,
-    "floorCeiling": 5
+    "RAS": 9.97,
+    "miscConcern": 5,
+    "floorCeiling": 9,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 151,
@@ -2260,9 +2410,10 @@
     "age": 23,
     "majorStats": "48 rec, 620 yards, 6 TD, avg 12.9",
     "positionalRanking": 9,
-    "RAS": 5.6,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "RAS": 9.17,
+    "miscConcern": 10,
+    "floorCeiling": 9,
+    "logoFile": "utah.png"
   },
   {
     "consensusRanking": 152,
@@ -2275,9 +2426,10 @@
     "age": 22,
     "majorStats": null,
     "positionalRanking": 23,
-    "RAS": 5.4,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "RAS": 9.88,
+    "miscConcern": 3,
+    "floorCeiling": 9,
+    "logoFile": "ole-miss.png"
   },
   {
     "consensusRanking": 153,
@@ -2291,8 +2443,9 @@
     "majorStats": null,
     "positionalRanking": 14,
     "RAS": 7.2,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "miscConcern": 10,
+    "floorCeiling": 5,
+    "logoFile": "nebraska.png"
   },
   {
     "consensusRanking": 154,
@@ -2305,9 +2458,10 @@
     "age": 24,
     "majorStats": "32 tackles, 4.0 sacks, 3 PBU, 0 INT, 1 FF",
     "positionalRanking": 18,
-    "RAS": 7.1,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "RAS": 8.71,
+    "miscConcern": 7,
+    "floorCeiling": 9,
+    "logoFile": "michigan.png"
   },
   {
     "consensusRanking": 155,
@@ -2320,9 +2474,10 @@
     "age": 24,
     "majorStats": "49 tackles, 2.0 sacks, 3 PBU, 0 INT, 1 FF",
     "positionalRanking": 16,
-    "RAS": 6.5,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "RAS": 9.1,
+    "miscConcern": 6,
+    "floorCeiling": 8,
+    "logoFile": "texas-am.png"
   },
   {
     "consensusRanking": 156,
@@ -2334,10 +2489,11 @@
     "number": 53,
     "age": 24,
     "majorStats": "73 tackles, 1.0 sacks, 3 PBU, 0 INT",
-    "positionalRanking": 11,
+    "positionalRanking": 6,
     "RAS": 6.8,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "miscConcern": 7,
+    "floorCeiling": 7,
+    "logoFile": "texas-am.png"
   },
   {
     "consensusRanking": 157,
@@ -2350,9 +2506,10 @@
     "age": 23,
     "majorStats": "57 rec, 705 yards, 6 TD, avg 12.4",
     "positionalRanking": 24,
-    "RAS": 7.6,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "RAS": 7.34,
+    "miscConcern": 10,
+    "floorCeiling": 5,
+    "logoFile": "texas-tech.png"
   },
   {
     "consensusRanking": 158,
@@ -2365,9 +2522,10 @@
     "age": 22,
     "majorStats": "21 tackles, 1.0 sacks, 2 PBU, 0 INT",
     "positionalRanking": 17,
-    "RAS": 6.4,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "RAS": 9.97,
+    "miscConcern": 10,
+    "floorCeiling": 9,
+    "logoFile": "clemson.png"
   },
   {
     "consensusRanking": 159,
@@ -2380,9 +2538,10 @@
     "age": 24,
     "majorStats": "51 tackles, 1.0 sacks, 3 PBU, 5 INT",
     "positionalRanking": 15,
-    "RAS": 6.0,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "RAS": 6.5,
+    "miscConcern": 7,
+    "floorCeiling": 5,
+    "logoFile": "usc.png"
   },
   {
     "consensusRanking": 160,
@@ -2394,10 +2553,11 @@
     "number": 56,
     "age": 24,
     "majorStats": null,
-    "positionalRanking": 12,
+    "positionalRanking": 7,
     "RAS": 7.3,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "miscConcern": 3,
+    "floorCeiling": 7,
+    "logoFile": "michigan.png"
   },
   {
     "consensusRanking": 161,
@@ -2410,9 +2570,10 @@
     "age": 23,
     "majorStats": "50 tackles, 1.0 sacks, 8 PBU, 0 INT",
     "positionalRanking": 19,
-    "RAS": 6.2,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "RAS": 9.46,
+    "miscConcern": 8,
+    "floorCeiling": 8,
+    "logoFile": "texas-am.png"
   },
   {
     "consensusRanking": 162,
@@ -2424,10 +2585,11 @@
     "number": 68,
     "age": 24,
     "majorStats": null,
-    "positionalRanking": 16,
-    "RAS": 5.0,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "positionalRanking": 9,
+    "RAS": 9.98,
+    "miscConcern": 9,
+    "floorCeiling": 10,
+    "logoFile": "georgia.png"
   },
   {
     "consensusRanking": 163,
@@ -2440,9 +2602,10 @@
     "age": 23,
     "majorStats": null,
     "positionalRanking": 16,
-    "RAS": 8.0,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "RAS": 9.96,
+    "miscConcern": 10,
+    "floorCeiling": 10,
+    "logoFile": "ohio-state.png"
   },
   {
     "consensusRanking": 164,
@@ -2456,8 +2619,9 @@
     "majorStats": null,
     "positionalRanking": 10,
     "RAS": 6.4,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "miscConcern": 9,
+    "floorCeiling": 5,
+    "logoFile": "texas-am.png"
   },
   {
     "consensusRanking": 165,
@@ -2471,8 +2635,9 @@
     "majorStats": null,
     "positionalRanking": 19,
     "RAS": 6.4,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "miscConcern": 7,
+    "floorCeiling": 6,
+    "logoFile": "ohio-state.png"
   },
   {
     "consensusRanking": 166,
@@ -2484,10 +2649,11 @@
     "number": 61,
     "age": 23,
     "majorStats": "10 games started",
-    "positionalRanking": 17,
+    "positionalRanking": 10,
     "RAS": 5.4,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "miscConcern": 9,
+    "floorCeiling": 4,
+    "logoFile": "alabama.png"
   },
   {
     "consensusRanking": 167,
@@ -2500,9 +2666,10 @@
     "age": 24,
     "majorStats": "12 games started",
     "positionalRanking": 16,
-    "RAS": 7.4,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "RAS": 8.68,
+    "miscConcern": 9,
+    "floorCeiling": 9,
+    "logoFile": "penn-state.png"
   },
   {
     "consensusRanking": 168,
@@ -2515,9 +2682,10 @@
     "age": 22,
     "majorStats": "48 tackles, 0 sacks, 7 PBU, 1 INT",
     "positionalRanking": 20,
-    "RAS": 7.8,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "RAS": 9.9,
+    "miscConcern": 8,
+    "floorCeiling": 8,
+    "logoFile": "washington.png"
   },
   {
     "consensusRanking": 169,
@@ -2530,9 +2698,10 @@
     "age": 22,
     "majorStats": null,
     "positionalRanking": 21,
-    "RAS": 5.3,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "RAS": 8.48,
+    "miscConcern": 8,
+    "floorCeiling": 6,
+    "logoFile": "missouri.png"
   },
   {
     "consensusRanking": 170,
@@ -2546,8 +2715,9 @@
     "majorStats": "29 rec, 416 yards, 4 TD, avg 14.3",
     "positionalRanking": 10,
     "RAS": 7.1,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "miscConcern": 10,
+    "floorCeiling": 7,
+    "logoFile": "cincinnati.png"
   },
   {
     "consensusRanking": 171,
@@ -2559,10 +2729,11 @@
     "number": 73,
     "age": 22,
     "majorStats": "13 games started",
-    "positionalRanking": 18,
-    "RAS": 7.8,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "positionalRanking": 11,
+    "RAS": 8.18,
+    "miscConcern": 10,
+    "floorCeiling": 6,
+    "logoFile": "texas-am.png"
   },
   {
     "consensusRanking": 172,
@@ -2574,10 +2745,11 @@
     "number": 42,
     "age": 22,
     "majorStats": null,
-    "positionalRanking": 13,
+    "positionalRanking": 8,
     "RAS": 5.9,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "miscConcern": 7,
+    "floorCeiling": 5,
+    "logoFile": "oregon.png"
   },
   {
     "consensusRanking": 173,
@@ -2591,8 +2763,9 @@
     "majorStats": null,
     "positionalRanking": 17,
     "RAS": 6.0,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "miscConcern": 9,
+    "floorCeiling": 4,
+    "logoFile": "missouri.png"
   },
   {
     "consensusRanking": 174,
@@ -2606,8 +2779,9 @@
     "majorStats": null,
     "positionalRanking": 11,
     "RAS": 5.6,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "miscConcern": 6,
+    "floorCeiling": 4,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 175,
@@ -2620,9 +2794,10 @@
     "age": 23,
     "majorStats": null,
     "positionalRanking": 25,
-    "RAS": 5.8,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "RAS": 9.99,
+    "miscConcern": 10,
+    "floorCeiling": 8,
+    "logoFile": "cincinnati.png"
   },
   {
     "consensusRanking": 176,
@@ -2635,9 +2810,10 @@
     "age": 22,
     "majorStats": "TE, 4.61 40-yard dash, 6'6\" 248 lbs",
     "positionalRanking": 11,
-    "RAS": 6.1,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "RAS": 9.0,
+    "miscConcern": 10,
+    "floorCeiling": 8,
+    "logoFile": "michigan.png"
   },
   {
     "consensusRanking": 177,
@@ -2651,8 +2827,9 @@
     "majorStats": "88 tackles, 0 sacks, 4 PBU, 6 INT",
     "positionalRanking": 17,
     "RAS": 5.4,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "miscConcern": 9,
+    "floorCeiling": 5,
+    "logoFile": "indiana.png"
   },
   {
     "consensusRanking": 178,
@@ -2664,10 +2841,11 @@
     "number": 59,
     "age": 24,
     "majorStats": "97 tackles, 4.5 sacks, 1 PBU, 2 INT, 1 FF",
-    "positionalRanking": 14,
+    "positionalRanking": 9,
     "RAS": 5.5,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "miscConcern": 7,
+    "floorCeiling": 5,
+    "logoFile": "indiana.png"
   },
   {
     "consensusRanking": 179,
@@ -2679,10 +2857,11 @@
     "number": 63,
     "age": 22,
     "majorStats": null,
-    "positionalRanking": 19,
+    "positionalRanking": 8,
     "RAS": 5.3,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "miscConcern": 10,
+    "floorCeiling": 6,
+    "logoFile": "indiana.png"
   },
   {
     "consensusRanking": 180,
@@ -2694,10 +2873,11 @@
     "number": 44,
     "age": 23,
     "majorStats": null,
-    "positionalRanking": 15,
-    "RAS": 5.5,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "positionalRanking": 6,
+    "RAS": 9.92,
+    "miscConcern": 7,
+    "floorCeiling": 9,
+    "logoFile": "tcu.png"
   },
   {
     "consensusRanking": 181,
@@ -2709,10 +2889,11 @@
     "number": 55,
     "age": 23,
     "majorStats": "12 games started, 4.94 40-yard dash",
-    "positionalRanking": 20,
-    "RAS": 5.4,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "positionalRanking": 9,
+    "RAS": 9.93,
+    "miscConcern": 9,
+    "floorCeiling": 8,
+    "logoFile": "kentucky.png"
   },
   {
     "consensusRanking": 182,
@@ -2725,9 +2906,10 @@
     "age": 23,
     "majorStats": null,
     "positionalRanking": 26,
-    "RAS": 7.3,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "RAS": 7.6,
+    "miscConcern": 10,
+    "floorCeiling": 7,
+    "logoFile": "byu.png"
   },
   {
     "consensusRanking": 183,
@@ -2740,9 +2922,10 @@
     "age": 23,
     "majorStats": null,
     "positionalRanking": 18,
-    "RAS": 5.4,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "RAS": 9.5,
+    "miscConcern": 6,
+    "floorCeiling": 9,
+    "logoFile": "ole-miss.png"
   },
   {
     "consensusRanking": 184,
@@ -2755,9 +2938,10 @@
     "age": 22,
     "majorStats": "55 tackles, 14.5 sacks, 1 PBU, 0 INT, 4 FF",
     "positionalRanking": 20,
-    "RAS": 7.0,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "RAS": 6.82,
+    "miscConcern": 10,
+    "floorCeiling": 5,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 185,
@@ -2771,8 +2955,9 @@
     "majorStats": null,
     "positionalRanking": 12,
     "RAS": 5.0,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "miscConcern": 4,
+    "floorCeiling": 6,
+    "logoFile": "alabama.png"
   },
   {
     "consensusRanking": 186,
@@ -2786,8 +2971,9 @@
     "majorStats": null,
     "positionalRanking": 12,
     "RAS": 6.0,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "miscConcern": 10,
+    "floorCeiling": 5,
+    "logoFile": "indiana.png"
   },
   {
     "consensusRanking": 187,
@@ -2800,9 +2986,10 @@
     "age": 23,
     "majorStats": "12 games started",
     "positionalRanking": 19,
-    "RAS": 6.0,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "RAS": 8.92,
+    "miscConcern": 10,
+    "floorCeiling": 9,
+    "logoFile": "notre-dame.png"
   },
   {
     "consensusRanking": 188,
@@ -2815,9 +3002,10 @@
     "age": 23,
     "majorStats": "47 tackles, 0 sacks, 13 PBU, 5 INT",
     "positionalRanking": 22,
-    "RAS": 6.2,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "RAS": 6.07,
+    "miscConcern": 10,
+    "floorCeiling": 6,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 189,
@@ -2830,9 +3018,10 @@
     "age": 24,
     "majorStats": null,
     "positionalRanking": 13,
-    "RAS": 5.3,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "RAS": 9.72,
+    "miscConcern": 9,
+    "floorCeiling": 10,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 190,
@@ -2844,10 +3033,11 @@
     "number": 61,
     "age": 23,
     "majorStats": null,
-    "positionalRanking": 21,
+    "positionalRanking": 12,
     "RAS": 7.2,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "miscConcern": 6,
+    "floorCeiling": 5,
+    "logoFile": "auburn.png"
   },
   {
     "consensusRanking": 191,
@@ -2860,9 +3050,10 @@
     "age": 23,
     "majorStats": null,
     "positionalRanking": 13,
-    "RAS": 5.7,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "RAS": 9.42,
+    "miscConcern": 10,
+    "floorCeiling": 9,
+    "logoFile": "clemson.png"
   },
   {
     "consensusRanking": 192,
@@ -2876,8 +3067,9 @@
     "majorStats": null,
     "positionalRanking": 21,
     "RAS": 7.2,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "miscConcern": 9,
+    "floorCeiling": 7,
+    "logoFile": "smu.png"
   },
   {
     "consensusRanking": 193,
@@ -2891,8 +3083,9 @@
     "majorStats": null,
     "positionalRanking": 18,
     "RAS": 7.2,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "miscConcern": 9,
+    "floorCeiling": 5,
+    "logoFile": "byu.png"
   },
   {
     "consensusRanking": 194,
@@ -2906,8 +3099,9 @@
     "majorStats": "69 rec, 872 yards, 9 TD, avg 12.6",
     "positionalRanking": 27,
     "RAS": 5.9,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "miscConcern": 10,
+    "floorCeiling": 6,
+    "logoFile": "baylor.png"
   },
   {
     "consensusRanking": 195,
@@ -2921,8 +3115,9 @@
     "majorStats": "33 rec, 398 yards, 0 TD, avg 12.1",
     "positionalRanking": 28,
     "RAS": 7.9,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "miscConcern": 10,
+    "floorCeiling": 8,
+    "logoFile": "lsu.png"
   },
   {
     "consensusRanking": 196,
@@ -2936,8 +3131,9 @@
     "majorStats": null,
     "positionalRanking": 22,
     "RAS": 6.5,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "miscConcern": 8,
+    "floorCeiling": 5,
+    "logoFile": "lsu.png"
   },
   {
     "consensusRanking": 197,
@@ -2950,9 +3146,10 @@
     "age": 23,
     "majorStats": null,
     "positionalRanking": 23,
-    "RAS": 6.6,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "RAS": 8.77,
+    "miscConcern": 9,
+    "floorCeiling": 7,
+    "logoFile": "texas.png"
   },
   {
     "consensusRanking": 198,
@@ -2966,8 +3163,9 @@
     "majorStats": null,
     "positionalRanking": 14,
     "RAS": 7.6,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "miscConcern": 9,
+    "floorCeiling": 7,
+    "logoFile": "ole-miss.png"
   },
   {
     "consensusRanking": 199,
@@ -2979,10 +3177,11 @@
     "number": 53,
     "age": 24,
     "majorStats": null,
-    "positionalRanking": 16,
-    "RAS": 7.5,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "positionalRanking": 7,
+    "RAS": 9.83,
+    "miscConcern": 8,
+    "floorCeiling": 9,
+    "logoFile": "byu.png"
   },
   {
     "consensusRanking": 200,
@@ -2996,8 +3195,9 @@
     "majorStats": null,
     "positionalRanking": 29,
     "RAS": 7.0,
-    "miscConcern": 1,
-    "floorCeiling": 4
+    "miscConcern": 10,
+    "floorCeiling": 6,
+    "logoFile": "georgia.png"
   },
   {
     "consensusRanking": 201,
@@ -3011,8 +3211,9 @@
     "majorStats": "36 tackles, 5.0 sacks, 0 PBU, 1 INT, 1 FF",
     "positionalRanking": 24,
     "RAS": 7.0,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "miscConcern": 6,
+    "floorCeiling": 7,
+    "logoFile": "auburn.png"
   },
   {
     "consensusRanking": 202,
@@ -3026,8 +3227,9 @@
     "majorStats": null,
     "positionalRanking": 23,
     "RAS": 6.1,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "miscConcern": 4,
+    "floorCeiling": 6,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 203,
@@ -3039,10 +3241,11 @@
     "number": 46,
     "age": 23,
     "majorStats": null,
-    "positionalRanking": 17,
-    "RAS": 5.0,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "positionalRanking": 10,
+    "RAS": 8.39,
+    "miscConcern": 10,
+    "floorCeiling": 8,
+    "logoFile": "alabama.png"
   },
   {
     "consensusRanking": 204,
@@ -3055,9 +3258,10 @@
     "age": 22,
     "majorStats": null,
     "positionalRanking": 30,
-    "RAS": 7.7,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "RAS": 9.52,
+    "miscConcern": 6,
+    "floorCeiling": 8,
+    "logoFile": "texas-tech.png"
   },
   {
     "consensusRanking": 205,
@@ -3071,8 +3275,9 @@
     "majorStats": "40 tackles, 3.0 sacks, 1 PBU, 0 INT, 1 FF",
     "positionalRanking": 19,
     "RAS": 5.8,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "miscConcern": 7,
+    "floorCeiling": 6,
+    "logoFile": "texas.png"
   },
   {
     "consensusRanking": 206,
@@ -3086,8 +3291,9 @@
     "majorStats": null,
     "positionalRanking": 24,
     "RAS": 7.3,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "miscConcern": 10,
+    "floorCeiling": 6,
+    "logoFile": "stanford.png"
   },
   {
     "consensusRanking": 207,
@@ -3099,10 +3305,11 @@
     "number": 47,
     "age": 23,
     "majorStats": null,
-    "positionalRanking": 18,
-    "RAS": 7.6,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "positionalRanking": 11,
+    "RAS": 7.89,
+    "miscConcern": 10,
+    "floorCeiling": 6,
+    "logoFile": "oklahoma.png"
   },
   {
     "consensusRanking": 208,
@@ -3115,9 +3322,10 @@
     "age": 24,
     "majorStats": null,
     "positionalRanking": 20,
-    "RAS": 6.2,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "RAS": 9.51,
+    "miscConcern": 10,
+    "floorCeiling": 8,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 209,
@@ -3130,9 +3338,10 @@
     "age": 24,
     "majorStats": null,
     "positionalRanking": 25,
-    "RAS": 6.6,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "RAS": 5.97,
+    "miscConcern": 9,
+    "floorCeiling": 4,
+    "logoFile": "iowa.png"
   },
   {
     "consensusRanking": 210,
@@ -3146,8 +3355,9 @@
     "majorStats": null,
     "positionalRanking": 21,
     "RAS": 5.9,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "miscConcern": 9,
+    "floorCeiling": 5,
+    "logoFile": "iowa.png"
   },
   {
     "consensusRanking": 211,
@@ -3161,8 +3371,9 @@
     "majorStats": null,
     "positionalRanking": 22,
     "RAS": 7.4,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "miscConcern": 9,
+    "floorCeiling": 6,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 212,
@@ -3174,10 +3385,11 @@
     "number": 74,
     "age": 22,
     "majorStats": null,
-    "positionalRanking": 22,
-    "RAS": 5.8,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "positionalRanking": 13,
+    "RAS": 8.9,
+    "miscConcern": 9,
+    "floorCeiling": 8,
+    "logoFile": "arkansas.png"
   },
   {
     "consensusRanking": 213,
@@ -3191,8 +3403,9 @@
     "majorStats": null,
     "positionalRanking": 9,
     "RAS": 6.7,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "miscConcern": 8,
+    "floorCeiling": 5,
+    "logoFile": "kansas.png"
   },
   {
     "consensusRanking": 214,
@@ -3206,8 +3419,9 @@
     "majorStats": null,
     "positionalRanking": 14,
     "RAS": 7.3,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "miscConcern": 10,
+    "floorCeiling": 5,
+    "logoFile": "oregon.png"
   },
   {
     "consensusRanking": 215,
@@ -3220,9 +3434,10 @@
     "age": 22,
     "majorStats": null,
     "positionalRanking": 10,
-    "RAS": 7.2,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "RAS": 9.97,
+    "miscConcern": 10,
+    "floorCeiling": 10,
+    "logoFile": "north-dakota-state.png"
   },
   {
     "consensusRanking": 216,
@@ -3235,9 +3450,10 @@
     "age": 23,
     "majorStats": null,
     "positionalRanking": 25,
-    "RAS": 5.2,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "RAS": 7.3,
+    "miscConcern": 8,
+    "floorCeiling": 7,
+    "logoFile": "duke.png"
   },
   {
     "consensusRanking": 217,
@@ -3250,9 +3466,10 @@
     "age": 22,
     "majorStats": null,
     "positionalRanking": 23,
-    "RAS": 6.3,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "RAS": 6.98,
+    "miscConcern": 9,
+    "floorCeiling": 6,
+    "logoFile": "tennessee.png"
   },
   {
     "consensusRanking": 218,
@@ -3266,8 +3483,9 @@
     "majorStats": "20 rec, 261 yards, 1 TD, avg 13.1",
     "positionalRanking": 15,
     "RAS": 6.9,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "miscConcern": 10,
+    "floorCeiling": 5,
+    "logoFile": "georgia.png"
   },
   {
     "consensusRanking": 219,
@@ -3281,8 +3499,9 @@
     "majorStats": null,
     "positionalRanking": 18,
     "RAS": 5.9,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "miscConcern": 10,
+    "floorCeiling": 6,
+    "logoFile": "miami.png"
   },
   {
     "consensusRanking": 220,
@@ -3294,10 +3513,11 @@
     "number": 63,
     "age": 23,
     "majorStats": null,
-    "positionalRanking": 23,
+    "positionalRanking": 14,
     "RAS": 6.2,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "miscConcern": 2,
+    "floorCeiling": 5,
+    "logoFile": "miami.png"
   },
   {
     "consensusRanking": 221,
@@ -3310,9 +3530,10 @@
     "age": 23,
     "majorStats": null,
     "positionalRanking": 16,
-    "RAS": 6.4,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "RAS": 7.97,
+    "miscConcern": 6,
+    "floorCeiling": 7,
+    "logoFile": "indiana.png"
   },
   {
     "consensusRanking": 222,
@@ -3325,9 +3546,10 @@
     "age": 22,
     "majorStats": "48 tackles, 6.0 sacks, 2 PBU, 0 INT",
     "positionalRanking": 24,
-    "RAS": 7.7,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "RAS": 8.48,
+    "miscConcern": 7,
+    "floorCeiling": 8,
+    "logoFile": "missouri.png"
   },
   {
     "consensusRanking": 223,
@@ -3341,8 +3563,9 @@
     "majorStats": null,
     "positionalRanking": 26,
     "RAS": 6.7,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "miscConcern": 9,
+    "floorCeiling": 6,
+    "logoFile": "indiana.png"
   },
   {
     "consensusRanking": 224,
@@ -3355,9 +3578,10 @@
     "age": 22,
     "majorStats": null,
     "positionalRanking": 15,
-    "RAS": 6.1,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "RAS": 7.04,
+    "miscConcern": 9,
+    "floorCeiling": 5,
+    "logoFile": "alabama.png"
   },
   {
     "consensusRanking": 225,
@@ -3371,8 +3595,9 @@
     "majorStats": "13 tackles, 0.5 sacks, 1 PBU, 1 INT",
     "positionalRanking": 25,
     "RAS": 6.4,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "miscConcern": 7,
+    "floorCeiling": 5,
+    "logoFile": "texas-tech.png"
   },
   {
     "consensusRanking": 226,
@@ -3385,9 +3610,10 @@
     "age": 22,
     "majorStats": null,
     "positionalRanking": 26,
-    "RAS": 7.5,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "RAS": 8.26,
+    "miscConcern": 8,
+    "floorCeiling": 6,
+    "logoFile": "arkansas.png"
   },
   {
     "consensusRanking": 227,
@@ -3400,9 +3626,10 @@
     "age": 24,
     "majorStats": null,
     "positionalRanking": 20,
-    "RAS": 7.7,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "RAS": 9.84,
+    "miscConcern": 8,
+    "floorCeiling": 8,
+    "logoFile": "kansas.png"
   },
   {
     "consensusRanking": 228,
@@ -3415,9 +3642,10 @@
     "age": 24,
     "majorStats": null,
     "positionalRanking": 27,
-    "RAS": 5.5,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "RAS": 9.75,
+    "miscConcern": 10,
+    "floorCeiling": 10,
+    "logoFile": "kentucky.png"
   },
   {
     "consensusRanking": 229,
@@ -3431,8 +3659,9 @@
     "majorStats": null,
     "positionalRanking": 11,
     "RAS": 5.7,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "miscConcern": 7,
+    "floorCeiling": 6,
+    "logoFile": "vanderbilt.png"
   },
   {
     "consensusRanking": 230,
@@ -3445,9 +3674,10 @@
     "age": 24,
     "majorStats": null,
     "positionalRanking": 19,
-    "RAS": 5.0,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "RAS": 9.95,
+    "miscConcern": 10,
+    "floorCeiling": 10,
+    "logoFile": "iowa.png"
   },
   {
     "consensusRanking": 231,
@@ -3461,8 +3691,9 @@
     "majorStats": null,
     "positionalRanking": 31,
     "RAS": 6.0,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "miscConcern": 9,
+    "floorCeiling": 5,
+    "logoFile": "lsu.png"
   },
   {
     "consensusRanking": 232,
@@ -3474,10 +3705,11 @@
     "number": 40,
     "age": 24,
     "majorStats": null,
-    "positionalRanking": 19,
+    "positionalRanking": 12,
     "RAS": 7.0,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "miscConcern": 8,
+    "floorCeiling": 7,
+    "logoFile": "arizona-state.png"
   },
   {
     "consensusRanking": 233,
@@ -3489,10 +3721,11 @@
     "number": 48,
     "age": 24,
     "majorStats": null,
-    "positionalRanking": 20,
-    "RAS": 5.0,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "positionalRanking": 13,
+    "RAS": 9.54,
+    "miscConcern": 3,
+    "floorCeiling": 10,
+    "logoFile": "iowa.png"
   },
   {
     "consensusRanking": 234,
@@ -3504,10 +3737,11 @@
     "number": 70,
     "age": 23,
     "majorStats": "13 games started",
-    "positionalRanking": 24,
-    "RAS": 5.8,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "positionalRanking": 15,
+    "RAS": 7.4,
+    "miscConcern": 9,
+    "floorCeiling": 6,
+    "logoFile": "iowa.png"
   },
   {
     "consensusRanking": 235,
@@ -3521,8 +3755,9 @@
     "majorStats": null,
     "positionalRanking": 16,
     "RAS": 7.8,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "miscConcern": 8,
+    "floorCeiling": 8,
+    "logoFile": "south-carolina.png"
   },
   {
     "consensusRanking": 236,
@@ -3534,10 +3769,11 @@
     "number": 52,
     "age": 22,
     "majorStats": null,
-    "positionalRanking": 21,
+    "positionalRanking": 8,
     "RAS": 5.1,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "miscConcern": 10,
+    "floorCeiling": 5,
+    "logoFile": "usc.png"
   },
   {
     "consensusRanking": 237,
@@ -3549,10 +3785,11 @@
     "number": 76,
     "age": 22,
     "majorStats": null,
-    "positionalRanking": 25,
-    "RAS": 6.7,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "positionalRanking": 16,
+    "RAS": 7.27,
+    "miscConcern": 3,
+    "floorCeiling": 6,
+    "logoFile": "northwestern.png"
   },
   {
     "consensusRanking": 238,
@@ -3564,10 +3801,11 @@
     "number": 49,
     "age": 22,
     "majorStats": null,
-    "positionalRanking": 22,
-    "RAS": 7.5,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "positionalRanking": 9,
+    "RAS": 8.85,
+    "miscConcern": 10,
+    "floorCeiling": 7,
+    "logoFile": "arkansas.png"
   },
   {
     "consensusRanking": 239,
@@ -3580,9 +3818,10 @@
     "age": 22,
     "majorStats": null,
     "positionalRanking": 32,
-    "RAS": 7.4,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "RAS": 9.12,
+    "miscConcern": 8,
+    "floorCeiling": 7,
+    "logoFile": "lsu.png"
   },
   {
     "consensusRanking": 240,
@@ -3595,9 +3834,10 @@
     "age": 23,
     "majorStats": null,
     "positionalRanking": 17,
-    "RAS": 5.5,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "RAS": 9.92,
+    "miscConcern": 7,
+    "floorCeiling": 10,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 241,
@@ -3609,10 +3849,11 @@
     "number": 48,
     "age": 24,
     "majorStats": null,
-    "positionalRanking": 23,
+    "positionalRanking": 10,
     "RAS": 6.1,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "miscConcern": 7,
+    "floorCeiling": 5,
+    "logoFile": "oklahoma.png"
   },
   {
     "consensusRanking": 242,
@@ -3626,8 +3867,9 @@
     "majorStats": "72 rec, 1190 yards, 10 TD, avg 16.5",
     "positionalRanking": 33,
     "RAS": 7.1,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "miscConcern": 9,
+    "floorCeiling": 5,
+    "logoFile": "tcu.png"
   },
   {
     "consensusRanking": 243,
@@ -3641,8 +3883,9 @@
     "majorStats": null,
     "positionalRanking": 27,
     "RAS": 7.2,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "miscConcern": 8,
+    "floorCeiling": 5,
+    "logoFile": "utah.png"
   },
   {
     "consensusRanking": 244,
@@ -3654,10 +3897,11 @@
     "number": 43,
     "age": 24,
     "majorStats": null,
-    "positionalRanking": 24,
+    "positionalRanking": 14,
     "RAS": 5.4,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "miscConcern": 10,
+    "floorCeiling": 4,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 245,
@@ -3670,9 +3914,10 @@
     "age": 24,
     "majorStats": null,
     "positionalRanking": 34,
-    "RAS": 5.3,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "RAS": 7.84,
+    "miscConcern": 2,
+    "floorCeiling": 6,
+    "logoFile": "oregon.png"
   },
   {
     "consensusRanking": 246,
@@ -3686,8 +3931,9 @@
     "majorStats": null,
     "positionalRanking": 28,
     "RAS": 6.1,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "miscConcern": 8,
+    "floorCeiling": 6,
+    "logoFile": "nc-state.png"
   },
   {
     "consensusRanking": 247,
@@ -3701,8 +3947,9 @@
     "majorStats": null,
     "positionalRanking": 26,
     "RAS": 5.7,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "miscConcern": 8,
+    "floorCeiling": 4,
+    "logoFile": "oregon.png"
   },
   {
     "consensusRanking": 248,
@@ -3716,8 +3963,9 @@
     "majorStats": null,
     "positionalRanking": 21,
     "RAS": 5.5,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "miscConcern": 10,
+    "floorCeiling": 6,
+    "logoFile": "wake-forest.png"
   },
   {
     "consensusRanking": 249,
@@ -3730,9 +3978,10 @@
     "age": 23,
     "majorStats": null,
     "positionalRanking": 18,
-    "RAS": 7.4,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "RAS": 9.09,
+    "miscConcern": 9,
+    "floorCeiling": 8,
+    "logoFile": "lsu.png"
   },
   {
     "consensusRanking": 250,
@@ -3745,9 +3994,10 @@
     "age": 22,
     "majorStats": null,
     "positionalRanking": 12,
-    "RAS": 5.9,
-    "miscConcern": 1,
-    "floorCeiling": 3
+    "RAS": 7.75,
+    "miscConcern": 8,
+    "floorCeiling": 8,
+    "logoFile": "illinois.png"
   },
   {
     "consensusRanking": 251,
@@ -3760,9 +4010,10 @@
     "age": 22,
     "majorStats": "33 tackles, 7.5 sacks, 2 PBU, 0 INT, 1 FF",
     "positionalRanking": 28,
-    "RAS": 6.5,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "RAS": 8.32,
+    "miscConcern": 9,
+    "floorCeiling": 6,
+    "logoFile": "duke.png"
   },
   {
     "consensusRanking": 252,
@@ -3776,8 +4027,9 @@
     "majorStats": null,
     "positionalRanking": 29,
     "RAS": 7.8,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "miscConcern": 10,
+    "floorCeiling": 7,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 253,
@@ -3791,8 +4043,9 @@
     "majorStats": null,
     "positionalRanking": 35,
     "RAS": 7.4,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "miscConcern": 10,
+    "floorCeiling": 6,
+    "logoFile": "ole-miss.png"
   },
   {
     "consensusRanking": 254,
@@ -3805,9 +4058,10 @@
     "age": 24,
     "majorStats": null,
     "positionalRanking": 20,
-    "RAS": 6.3,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "RAS": 9.78,
+    "miscConcern": 5,
+    "floorCeiling": 10,
+    "logoFile": "oklahoma.png"
   },
   {
     "consensusRanking": 255,
@@ -3820,9 +4074,10 @@
     "age": 24,
     "majorStats": null,
     "positionalRanking": 17,
-    "RAS": 7.6,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "RAS": 9.12,
+    "miscConcern": 10,
+    "floorCeiling": 8,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 256,
@@ -3836,8 +4091,9 @@
     "majorStats": null,
     "positionalRanking": 27,
     "RAS": 7.6,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "miscConcern": 8,
+    "floorCeiling": 8,
+    "logoFile": "georgia-tech.png"
   },
   {
     "consensusRanking": 257,
@@ -3850,9 +4106,10 @@
     "age": 23,
     "majorStats": null,
     "positionalRanking": 28,
-    "RAS": 6.1,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "RAS": 9.5,
+    "miscConcern": 7,
+    "floorCeiling": 9,
+    "logoFile": "toledo.png"
   },
   {
     "consensusRanking": 258,
@@ -3866,8 +4123,9 @@
     "majorStats": null,
     "positionalRanking": 29,
     "RAS": 5.1,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "miscConcern": 10,
+    "floorCeiling": 6,
+    "logoFile": "indiana.png"
   },
   {
     "consensusRanking": 259,
@@ -3879,10 +4137,11 @@
     "number": 52,
     "age": 22,
     "majorStats": null,
-    "positionalRanking": 25,
-    "RAS": 5.9,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "positionalRanking": 11,
+    "RAS": 9.56,
+    "miscConcern": 6,
+    "floorCeiling": 8,
+    "logoFile": "tcu.png"
   },
   {
     "consensusRanking": 260,
@@ -3896,8 +4155,9 @@
     "majorStats": null,
     "positionalRanking": 30,
     "RAS": 7.8,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "miscConcern": 9,
+    "floorCeiling": 8,
+    "logoFile": "texas-am.png"
   },
   {
     "consensusRanking": 261,
@@ -3910,9 +4170,10 @@
     "age": 23,
     "majorStats": null,
     "positionalRanking": 18,
-    "RAS": 7.4,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "RAS": 7.47,
+    "miscConcern": 3,
+    "floorCeiling": 7,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 262,
@@ -3926,8 +4187,9 @@
     "majorStats": "19 rec, 198 yards, 3 TD, avg 10.4",
     "positionalRanking": 19,
     "RAS": 5.4,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "miscConcern": 10,
+    "floorCeiling": 4,
+    "logoFile": "texas-am.png"
   },
   {
     "consensusRanking": 263,
@@ -3941,8 +4203,9 @@
     "majorStats": null,
     "positionalRanking": 36,
     "RAS": 6.1,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "miscConcern": 9,
+    "floorCeiling": 6,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 264,
@@ -3954,10 +4217,11 @@
     "number": 79,
     "age": 24,
     "majorStats": null,
-    "positionalRanking": 26,
-    "RAS": 6.0,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "positionalRanking": 17,
+    "RAS": 9.55,
+    "miscConcern": 9,
+    "floorCeiling": 10,
+    "logoFile": "boston-college.png"
   },
   {
     "consensusRanking": 265,
@@ -3970,9 +4234,10 @@
     "age": 24,
     "majorStats": null,
     "positionalRanking": 29,
-    "RAS": 6.0,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "RAS": 9.89,
+    "miscConcern": 10,
+    "floorCeiling": 9,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 266,
@@ -3986,8 +4251,9 @@
     "majorStats": null,
     "positionalRanking": 1,
     "RAS": 7.4,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "miscConcern": 9,
+    "floorCeiling": 7,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 267,
@@ -3999,10 +4265,11 @@
     "number": 59,
     "age": 22,
     "majorStats": null,
-    "positionalRanking": 26,
+    "positionalRanking": 15,
     "RAS": 6.6,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "miscConcern": 9,
+    "floorCeiling": 6,
+    "logoFile": "miami.png"
   },
   {
     "consensusRanking": 268,
@@ -4015,9 +4282,10 @@
     "age": 24,
     "majorStats": null,
     "positionalRanking": 37,
-    "RAS": 6.2,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "RAS": 3.66,
+    "miscConcern": 9,
+    "floorCeiling": 3,
+    "logoFile": "louisville.png"
   },
   {
     "consensusRanking": 269,
@@ -4030,9 +4298,10 @@
     "age": 24,
     "majorStats": null,
     "positionalRanking": 30,
-    "RAS": 7.7,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "RAS": 8.72,
+    "miscConcern": 5,
+    "floorCeiling": 8,
+    "logoFile": "florida.png"
   },
   {
     "consensusRanking": 270,
@@ -4046,8 +4315,9 @@
     "majorStats": null,
     "positionalRanking": 13,
     "RAS": 6.6,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "miscConcern": 9,
+    "floorCeiling": 6,
+    "logoFile": "texas-tech.png"
   },
   {
     "consensusRanking": 271,
@@ -4060,9 +4330,10 @@
     "age": 22,
     "majorStats": null,
     "positionalRanking": 20,
-    "RAS": 5.7,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "RAS": 7.9,
+    "miscConcern": 10,
+    "floorCeiling": 6,
+    "logoFile": "oklahoma.png"
   },
   {
     "consensusRanking": 272,
@@ -4075,9 +4346,10 @@
     "age": 22,
     "majorStats": null,
     "positionalRanking": 31,
-    "RAS": 7.5,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "RAS": 9.53,
+    "miscConcern": 6,
+    "floorCeiling": 9,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 273,
@@ -4090,9 +4362,10 @@
     "age": 23,
     "majorStats": null,
     "positionalRanking": 22,
-    "RAS": 5.0,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "RAS": 5.45,
+    "miscConcern": 9,
+    "floorCeiling": 4,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 274,
@@ -4105,9 +4378,10 @@
     "age": 22,
     "majorStats": null,
     "positionalRanking": 38,
-    "RAS": 7.7,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "RAS": 7.29,
+    "miscConcern": 10,
+    "floorCeiling": 7,
+    "logoFile": "iowa.png"
   },
   {
     "consensusRanking": 275,
@@ -4120,9 +4394,10 @@
     "age": 24,
     "majorStats": null,
     "positionalRanking": 23,
-    "RAS": 5.9,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "RAS": 6.26,
+    "miscConcern": 6,
+    "floorCeiling": 6,
+    "logoFile": "washington.png"
   },
   {
     "consensusRanking": 276,
@@ -4134,10 +4409,11 @@
     "number": 68,
     "age": 22,
     "majorStats": null,
-    "positionalRanking": 27,
-    "RAS": 6.7,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "positionalRanking": 18,
+    "RAS": 9.14,
+    "miscConcern": 7,
+    "floorCeiling": 8,
+    "logoFile": "auburn.png"
   },
   {
     "consensusRanking": 277,
@@ -4150,9 +4426,10 @@
     "age": 22,
     "majorStats": null,
     "positionalRanking": 21,
-    "RAS": 5.0,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "RAS": 7.65,
+    "miscConcern": 7,
+    "floorCeiling": 8,
+    "logoFile": "arizona.png"
   },
   {
     "consensusRanking": 278,
@@ -4166,8 +4443,9 @@
     "majorStats": null,
     "positionalRanking": 32,
     "RAS": 6.2,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "miscConcern": 6,
+    "floorCeiling": 4,
+    "logoFile": "michigan.png"
   },
   {
     "consensusRanking": 279,
@@ -4180,9 +4458,10 @@
     "age": 22,
     "majorStats": null,
     "positionalRanking": 21,
-    "RAS": 5.5,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "RAS": 9.56,
+    "miscConcern": 10,
+    "floorCeiling": 10,
+    "logoFile": "smu.png"
   },
   {
     "consensusRanking": 280,
@@ -4196,8 +4475,9 @@
     "majorStats": null,
     "positionalRanking": 31,
     "RAS": 6.3,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "miscConcern": 5,
+    "floorCeiling": 4,
+    "logoFile": "illinois.png"
   },
   {
     "consensusRanking": 281,
@@ -4210,9 +4490,10 @@
     "age": 24,
     "majorStats": null,
     "positionalRanking": 22,
-    "RAS": 5.3,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "RAS": 8.58,
+    "miscConcern": 9,
+    "floorCeiling": 9,
+    "logoFile": "smu.png"
   },
   {
     "consensusRanking": 282,
@@ -4226,8 +4507,9 @@
     "majorStats": null,
     "positionalRanking": 32,
     "RAS": 5.7,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "miscConcern": 5,
+    "floorCeiling": 5,
+    "logoFile": "oklahoma.png"
   },
   {
     "consensusRanking": 283,
@@ -4242,7 +4524,8 @@
     "positionalRanking": 33,
     "RAS": 5.6,
     "miscConcern": 1,
-    "floorCeiling": 2
+    "floorCeiling": 6,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 284,
@@ -4256,8 +4539,9 @@
     "majorStats": null,
     "positionalRanking": 22,
     "RAS": 6.8,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "miscConcern": 8,
+    "floorCeiling": 7,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 285,
@@ -4269,10 +4553,11 @@
     "number": 65,
     "age": 22,
     "majorStats": null,
-    "positionalRanking": 28,
+    "positionalRanking": 19,
     "RAS": 6.4,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "miscConcern": 9,
+    "floorCeiling": 6,
+    "logoFile": "oklahoma.png"
   },
   {
     "consensusRanking": 286,
@@ -4286,8 +4571,9 @@
     "majorStats": null,
     "positionalRanking": 33,
     "RAS": 7.5,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "miscConcern": 7,
+    "floorCeiling": 6,
+    "logoFile": "lsu.png"
   },
   {
     "consensusRanking": 287,
@@ -4301,8 +4587,9 @@
     "majorStats": null,
     "positionalRanking": 34,
     "RAS": 7.0,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "miscConcern": 7,
+    "floorCeiling": 5,
+    "logoFile": "louisville.png"
   },
   {
     "consensusRanking": 288,
@@ -4316,8 +4603,9 @@
     "majorStats": null,
     "positionalRanking": 19,
     "RAS": 7.8,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "miscConcern": 8,
+    "floorCeiling": 7,
+    "logoFile": "oklahoma.png"
   },
   {
     "consensusRanking": 289,
@@ -4330,9 +4618,10 @@
     "age": 22,
     "majorStats": null,
     "positionalRanking": 30,
-    "RAS": 5.7,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "RAS": 6.95,
+    "miscConcern": 10,
+    "floorCeiling": 5,
+    "logoFile": "toledo.png"
   },
   {
     "consensusRanking": 290,
@@ -4345,9 +4634,10 @@
     "age": 23,
     "majorStats": null,
     "positionalRanking": 39,
-    "RAS": 6.6,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "RAS": 6.78,
+    "miscConcern": 9,
+    "floorCeiling": 7,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 291,
@@ -4360,9 +4650,10 @@
     "age": 23,
     "majorStats": null,
     "positionalRanking": 40,
-    "RAS": 6.0,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "RAS": 7.6,
+    "miscConcern": 7,
+    "floorCeiling": 8,
+    "logoFile": "kansas.png"
   },
   {
     "consensusRanking": 292,
@@ -4374,10 +4665,11 @@
     "number": 78,
     "age": 23,
     "majorStats": null,
-    "positionalRanking": 29,
+    "positionalRanking": 20,
     "RAS": 6.5,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "miscConcern": 10,
+    "floorCeiling": 5,
+    "logoFile": "kansas.png"
   },
   {
     "consensusRanking": 293,
@@ -4391,8 +4683,9 @@
     "majorStats": null,
     "positionalRanking": 24,
     "RAS": 5.1,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "miscConcern": 9,
+    "floorCeiling": 6,
+    "logoFile": "penn-state.png"
   },
   {
     "consensusRanking": 294,
@@ -4406,8 +4699,9 @@
     "majorStats": null,
     "positionalRanking": 35,
     "RAS": 5.2,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "miscConcern": 4,
+    "floorCeiling": 5,
+    "logoFile": "nc-state.png"
   },
   {
     "consensusRanking": 295,
@@ -4420,9 +4714,10 @@
     "age": 22,
     "majorStats": null,
     "positionalRanking": 25,
-    "RAS": 7.0,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "RAS": 9.08,
+    "miscConcern": 7,
+    "floorCeiling": 8,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 296,
@@ -4435,9 +4730,10 @@
     "age": 24,
     "majorStats": null,
     "positionalRanking": 41,
-    "RAS": 5.8,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "RAS": 9.57,
+    "miscConcern": 10,
+    "floorCeiling": 8,
+    "logoFile": "georgia.png"
   },
   {
     "consensusRanking": 297,
@@ -4451,8 +4747,9 @@
     "majorStats": "51 rec, 674 yards, 13 TD, avg 13.2",
     "positionalRanking": 42,
     "RAS": 6.1,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "miscConcern": 10,
+    "floorCeiling": 4,
+    "logoFile": "cincinnati.png"
   },
   {
     "consensusRanking": 298,
@@ -4465,9 +4762,10 @@
     "age": 23,
     "majorStats": null,
     "positionalRanking": 43,
-    "RAS": 5.4,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "RAS": 9.45,
+    "miscConcern": 8,
+    "floorCeiling": 8,
+    "logoFile": "kentucky.png"
   },
   {
     "consensusRanking": 299,
@@ -4480,9 +4778,10 @@
     "age": 24,
     "majorStats": "42 tackles, 2.0 sacks, 1 PBU, 0 INT",
     "positionalRanking": 34,
-    "RAS": 5.8,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "RAS": 8.65,
+    "miscConcern": 8,
+    "floorCeiling": 8,
+    "logoFile": "south-carolina.png"
   },
   {
     "consensusRanking": 300,
@@ -4496,8 +4795,9 @@
     "majorStats": null,
     "positionalRanking": 20,
     "RAS": 7.8,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "miscConcern": 10,
+    "floorCeiling": 6,
+    "logoFile": "indiana.png"
   },
   {
     "consensusRanking": 301,
@@ -4509,10 +4809,11 @@
     "number": 40,
     "age": 23,
     "majorStats": null,
-    "positionalRanking": 27,
+    "positionalRanking": 12,
     "RAS": 5.7,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "miscConcern": 8,
+    "floorCeiling": 4,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 302,
@@ -4527,7 +4828,8 @@
     "positionalRanking": 26,
     "RAS": 7.5,
     "miscConcern": 1,
-    "floorCeiling": 2
+    "floorCeiling": 6,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 303,
@@ -4539,10 +4841,11 @@
     "number": 52,
     "age": 22,
     "majorStats": null,
-    "positionalRanking": 28,
+    "positionalRanking": 16,
     "RAS": 6.1,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "miscConcern": 7,
+    "floorCeiling": 6,
+    "logoFile": "texas-am.png"
   },
   {
     "consensusRanking": 304,
@@ -4554,10 +4857,11 @@
     "number": 60,
     "age": 23,
     "majorStats": null,
-    "positionalRanking": 30,
+    "positionalRanking": 10,
     "RAS": 5.7,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "miscConcern": 8,
+    "floorCeiling": 4,
+    "logoFile": "kansas.png"
   },
   {
     "consensusRanking": 305,
@@ -4571,8 +4875,9 @@
     "majorStats": null,
     "positionalRanking": 1,
     "RAS": 5.1,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "miscConcern": 10,
+    "floorCeiling": 4,
+    "logoFile": "florida.png"
   },
   {
     "consensusRanking": 306,
@@ -4585,9 +4890,10 @@
     "age": 22,
     "majorStats": null,
     "positionalRanking": 36,
-    "RAS": 5.7,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "RAS": 7.61,
+    "miscConcern": 9,
+    "floorCeiling": 8,
+    "logoFile": "ucf.png"
   },
   {
     "consensusRanking": 307,
@@ -4601,8 +4907,9 @@
     "majorStats": null,
     "positionalRanking": 44,
     "RAS": 5.0,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "miscConcern": 10,
+    "floorCeiling": 5,
+    "logoFile": "smu.png"
   },
   {
     "consensusRanking": 308,
@@ -4616,8 +4923,9 @@
     "majorStats": null,
     "positionalRanking": 23,
     "RAS": 6.3,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "miscConcern": 3,
+    "floorCeiling": 4,
+    "logoFile": "tcu.png"
   },
   {
     "consensusRanking": 309,
@@ -4631,8 +4939,9 @@
     "majorStats": null,
     "positionalRanking": 23,
     "RAS": 6.3,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "miscConcern": 8,
+    "floorCeiling": 6,
+    "logoFile": "south-carolina.png"
   },
   {
     "consensusRanking": 310,
@@ -4646,8 +4955,9 @@
     "majorStats": null,
     "positionalRanking": 31,
     "RAS": 7.7,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "miscConcern": 8,
+    "floorCeiling": 6,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 311,
@@ -4660,9 +4970,10 @@
     "age": 23,
     "majorStats": null,
     "positionalRanking": 24,
-    "RAS": 7.1,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "RAS": 9.14,
+    "miscConcern": 7,
+    "floorCeiling": 7,
+    "logoFile": "ohio-state.png"
   },
   {
     "consensusRanking": 312,
@@ -4676,8 +4987,9 @@
     "majorStats": null,
     "positionalRanking": 37,
     "RAS": 6.6,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "miscConcern": 10,
+    "floorCeiling": 7,
+    "logoFile": "oklahoma.png"
   },
   {
     "consensusRanking": 313,
@@ -4689,10 +5001,11 @@
     "number": 42,
     "age": 22,
     "majorStats": null,
-    "positionalRanking": 29,
+    "positionalRanking": 17,
     "RAS": 5.7,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "miscConcern": 5,
+    "floorCeiling": 5,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 314,
@@ -4705,9 +5018,10 @@
     "age": 24,
     "majorStats": null,
     "positionalRanking": 35,
-    "RAS": 5.3,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "RAS": 8.66,
+    "miscConcern": 7,
+    "floorCeiling": 9,
+    "logoFile": "baylor.png"
   },
   {
     "consensusRanking": 315,
@@ -4721,7 +5035,8 @@
     "majorStats": null,
     "positionalRanking": 2,
     "RAS": 6.9,
-    "miscConcern": 1,
-    "floorCeiling": 2
+    "miscConcern": 10,
+    "floorCeiling": 5,
+    "logoFile": "florida.png"
   }
 ]
