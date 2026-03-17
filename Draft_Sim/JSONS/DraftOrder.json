@@ -3,1542 +3,1799 @@
     "overall": 1,
     "round": 1,
     "selection": 1,
+    "tradeValue": 3000,
     "teamId": "LV"
   },
   {
     "overall": 2,
     "round": 1,
     "selection": 2,
+    "tradeValue": 2600,
     "teamId": "NYJ"
   },
   {
     "overall": 3,
     "round": 1,
     "selection": 3,
+    "tradeValue": 2200,
     "teamId": "ARI"
   },
   {
     "overall": 4,
     "round": 1,
     "selection": 4,
+    "tradeValue": 1800,
     "teamId": "TEN"
   },
   {
     "overall": 5,
     "round": 1,
     "selection": 5,
+    "tradeValue": 1700,
     "teamId": "NYG"
   },
   {
     "overall": 6,
     "round": 1,
     "selection": 6,
+    "tradeValue": 1600,
     "teamId": "CLE"
   },
   {
     "overall": 7,
     "round": 1,
     "selection": 7,
+    "tradeValue": 1500,
     "teamId": "WAS"
   },
   {
     "overall": 8,
     "round": 1,
     "selection": 8,
+    "tradeValue": 1400,
     "teamId": "NO"
   },
   {
     "overall": 9,
     "round": 1,
     "selection": 9,
+    "tradeValue": 1350,
     "teamId": "KC"
   },
   {
     "overall": 10,
     "round": 1,
     "selection": 10,
+    "tradeValue": 1300,
     "teamId": "CIN"
   },
   {
     "overall": 11,
     "round": 1,
     "selection": 11,
+    "tradeValue": 1250,
     "teamId": "MIA"
   },
   {
     "overall": 12,
     "round": 1,
     "selection": 12,
+    "tradeValue": 1200,
     "teamId": "DAL"
   },
   {
     "overall": 13,
     "round": 1,
     "selection": 13,
+    "tradeValue": 1150,
     "teamId": "LAR"
   },
   {
     "overall": 14,
     "round": 1,
     "selection": 14,
+    "tradeValue": 1100,
     "teamId": "BAL"
   },
   {
     "overall": 15,
     "round": 1,
     "selection": 15,
+    "tradeValue": 1050,
     "teamId": "TB"
   },
   {
     "overall": 16,
     "round": 1,
     "selection": 16,
+    "tradeValue": 1000,
     "teamId": "NYJ"
   },
   {
     "overall": 17,
     "round": 1,
     "selection": 17,
+    "tradeValue": 950,
     "teamId": "DET"
   },
   {
     "overall": 18,
     "round": 1,
     "selection": 18,
+    "tradeValue": 900,
     "teamId": "MIN"
   },
   {
     "overall": 19,
     "round": 1,
     "selection": 19,
+    "tradeValue": 875,
     "teamId": "CAR"
   },
   {
     "overall": 20,
     "round": 1,
     "selection": 20,
+    "tradeValue": 850,
     "teamId": "DAL"
   },
   {
     "overall": 21,
     "round": 1,
     "selection": 21,
+    "tradeValue": 800,
     "teamId": "PIT"
   },
   {
     "overall": 22,
     "round": 1,
     "selection": 22,
+    "tradeValue": 780,
     "teamId": "LAC"
   },
   {
     "overall": 23,
     "round": 1,
     "selection": 23,
+    "tradeValue": 760,
     "teamId": "PHI"
   },
   {
     "overall": 24,
     "round": 1,
     "selection": 24,
+    "tradeValue": 740,
     "teamId": "CLE"
   },
   {
     "overall": 25,
     "round": 1,
     "selection": 25,
+    "tradeValue": 720,
     "teamId": "CHI"
   },
   {
     "overall": 26,
     "round": 1,
     "selection": 26,
+    "tradeValue": 700,
     "teamId": "BUF"
   },
   {
     "overall": 27,
     "round": 1,
     "selection": 27,
+    "tradeValue": 680,
     "teamId": "SF"
   },
   {
     "overall": 28,
     "round": 1,
     "selection": 28,
+    "tradeValue": 660,
     "teamId": "HOU"
   },
   {
     "overall": 29,
     "round": 1,
     "selection": 29,
+    "tradeValue": 640,
     "teamId": "KC"
   },
   {
     "overall": 30,
     "round": 1,
     "selection": 30,
+    "tradeValue": 620,
     "teamId": "DEN"
   },
   {
     "overall": 31,
     "round": 1,
     "selection": 31,
+    "tradeValue": 600,
     "teamId": "NE"
   },
   {
     "overall": 32,
     "round": 1,
     "selection": 32,
+    "tradeValue": 590,
     "teamId": "SEA"
   },
   {
     "overall": 33,
     "round": 2,
     "selection": 1,
+    "tradeValue": 580,
     "teamId": "NYJ"
   },
   {
     "overall": 34,
     "round": 2,
     "selection": 2,
+    "tradeValue": 560,
     "teamId": "ARI"
   },
   {
     "overall": 35,
     "round": 2,
     "selection": 3,
+    "tradeValue": 550,
     "teamId": "TEN"
   },
   {
     "overall": 36,
     "round": 2,
     "selection": 4,
+    "tradeValue": 540,
     "teamId": "LV"
   },
   {
     "overall": 37,
     "round": 2,
     "selection": 5,
+    "tradeValue": 530,
     "teamId": "NYG"
   },
   {
     "overall": 38,
     "round": 2,
     "selection": 6,
+    "tradeValue": 520,
     "teamId": "HOU"
   },
   {
     "overall": 39,
     "round": 2,
     "selection": 7,
+    "tradeValue": 510,
     "teamId": "CLE"
   },
   {
     "overall": 40,
     "round": 2,
     "selection": 8,
+    "tradeValue": 500,
     "teamId": "KC"
   },
   {
     "overall": 41,
     "round": 2,
     "selection": 9,
+    "tradeValue": 490,
     "teamId": "CIN"
   },
   {
     "overall": 42,
     "round": 2,
     "selection": 10,
+    "tradeValue": 480,
     "teamId": "NO"
   },
   {
     "overall": 43,
     "round": 2,
     "selection": 11,
+    "tradeValue": 470,
     "teamId": "MIA"
   },
   {
     "overall": 44,
     "round": 2,
     "selection": 12,
+    "tradeValue": 460,
     "teamId": "NYJ"
   },
   {
     "overall": 45,
     "round": 2,
     "selection": 13,
+    "tradeValue": 450,
     "teamId": "BAL"
   },
   {
     "overall": 46,
     "round": 2,
     "selection": 14,
+    "tradeValue": 440,
     "teamId": "TB"
   },
   {
     "overall": 47,
     "round": 2,
     "selection": 15,
+    "tradeValue": 430,
     "teamId": "IND"
   },
   {
     "overall": 48,
     "round": 2,
     "selection": 16,
+    "tradeValue": 420,
     "teamId": "ATL"
   },
   {
     "overall": 49,
     "round": 2,
     "selection": 17,
+    "tradeValue": 410,
     "teamId": "MIN"
   },
   {
     "overall": 50,
     "round": 2,
     "selection": 18,
+    "tradeValue": 400,
     "teamId": "DET"
   },
   {
     "overall": 51,
     "round": 2,
     "selection": 19,
+    "tradeValue": 390,
     "teamId": "CAR"
   },
   {
     "overall": 52,
     "round": 2,
     "selection": 20,
+    "tradeValue": 380,
     "teamId": "GB"
   },
   {
     "overall": 53,
     "round": 2,
     "selection": 21,
+    "tradeValue": 370,
     "teamId": "PIT"
   },
   {
     "overall": 54,
     "round": 2,
     "selection": 22,
+    "tradeValue": 360,
     "teamId": "PHI"
   },
   {
     "overall": 55,
     "round": 2,
     "selection": 23,
+    "tradeValue": 350,
     "teamId": "LAC"
   },
   {
     "overall": 56,
     "round": 2,
     "selection": 24,
+    "tradeValue": 340,
     "teamId": "JAX"
   },
   {
     "overall": 57,
     "round": 2,
     "selection": 25,
+    "tradeValue": 330,
     "teamId": "CHI"
   },
   {
     "overall": 58,
     "round": 2,
     "selection": 26,
+    "tradeValue": 320,
     "teamId": "SF"
   },
   {
     "overall": 59,
     "round": 2,
     "selection": 27,
+    "tradeValue": 310,
     "teamId": "HOU"
   },
   {
     "overall": 60,
     "round": 2,
     "selection": 28,
+    "tradeValue": 300,
     "teamId": "CHI"
   },
   {
     "overall": 61,
     "round": 2,
     "selection": 29,
+    "tradeValue": 292,
     "teamId": "LAR"
   },
   {
     "overall": 62,
     "round": 2,
     "selection": 30,
+    "tradeValue": 284,
     "teamId": "DEN"
   },
   {
     "overall": 63,
     "round": 2,
     "selection": 31,
+    "tradeValue": 276,
     "teamId": "NE"
   },
   {
     "overall": 64,
     "round": 2,
     "selection": 32,
+    "tradeValue": 270,
     "teamId": "SEA"
   },
   {
     "overall": 65,
     "round": 3,
     "selection": 1,
+    "tradeValue": 265,
     "teamId": "ARI"
   },
   {
     "overall": 66,
     "round": 3,
     "selection": 2,
+    "tradeValue": 260,
     "teamId": "TEN"
   },
   {
     "overall": 67,
     "round": 3,
     "selection": 3,
+    "tradeValue": 255,
     "teamId": "LV"
   },
   {
     "overall": 68,
     "round": 3,
     "selection": 4,
+    "tradeValue": 250,
     "teamId": "PHI"
   },
   {
     "overall": 69,
     "round": 3,
     "selection": 5,
+    "tradeValue": 245,
     "teamId": "HOU"
   },
   {
     "overall": 70,
     "round": 3,
     "selection": 6,
+    "tradeValue": 240,
     "teamId": "CLE"
   },
   {
     "overall": 71,
     "round": 3,
     "selection": 7,
+    "tradeValue": 235,
     "teamId": "WAS"
   },
   {
     "overall": 72,
     "round": 3,
     "selection": 8,
+    "tradeValue": 230,
     "teamId": "CIN"
   },
   {
     "overall": 73,
     "round": 3,
     "selection": 9,
+    "tradeValue": 225,
     "teamId": "NO"
   },
   {
     "overall": 74,
     "round": 3,
     "selection": 10,
+    "tradeValue": 220,
     "teamId": "KC"
   },
   {
     "overall": 75,
     "round": 3,
     "selection": 11,
+    "tradeValue": 215,
     "teamId": "MIA"
   },
   {
     "overall": 76,
     "round": 3,
     "selection": 12,
+    "tradeValue": 210,
     "teamId": "PIT"
   },
   {
     "overall": 77,
     "round": 3,
     "selection": 13,
+    "tradeValue": 205,
     "teamId": "TB"
   },
   {
     "overall": 78,
     "round": 3,
     "selection": 14,
+    "tradeValue": 200,
     "teamId": "IND"
   },
   {
     "overall": 79,
     "round": 3,
     "selection": 15,
+    "tradeValue": 195,
     "teamId": "ATL"
   },
   {
     "overall": 80,
     "round": 3,
     "selection": 16,
+    "tradeValue": 190,
     "teamId": "BAL"
   },
   {
     "overall": 81,
     "round": 3,
     "selection": 17,
+    "tradeValue": 185,
     "teamId": "JAX"
   },
   {
     "overall": 82,
     "round": 3,
     "selection": 18,
+    "tradeValue": 180,
     "teamId": "MIN"
   },
   {
     "overall": 83,
     "round": 3,
     "selection": 19,
+    "tradeValue": 175,
     "teamId": "CAR"
   },
   {
     "overall": 84,
     "round": 3,
     "selection": 20,
+    "tradeValue": 170,
     "teamId": "GB"
   },
   {
     "overall": 85,
     "round": 3,
     "selection": 21,
+    "tradeValue": 165,
     "teamId": "PIT"
   },
   {
     "overall": 86,
     "round": 3,
     "selection": 22,
+    "tradeValue": 160,
     "teamId": "LAC"
   },
   {
     "overall": 87,
     "round": 3,
     "selection": 23,
+    "tradeValue": 155,
     "teamId": "MIA"
   },
   {
     "overall": 88,
     "round": 3,
     "selection": 24,
+    "tradeValue": 150,
     "teamId": "JAX"
   },
   {
     "overall": 89,
     "round": 3,
     "selection": 25,
+    "tradeValue": 145,
     "teamId": "CHI"
   },
   {
     "overall": 90,
     "round": 3,
     "selection": 26,
+    "tradeValue": 140,
     "teamId": "MIA"
   },
   {
     "overall": 91,
     "round": 3,
     "selection": 27,
+    "tradeValue": 136,
     "teamId": "BUF"
   },
   {
     "overall": 92,
     "round": 3,
     "selection": 28,
+    "tradeValue": 132,
     "teamId": "DAL"
   },
   {
     "overall": 93,
     "round": 3,
     "selection": 29,
+    "tradeValue": 128,
     "teamId": "LAR"
   },
   {
     "overall": 94,
     "round": 3,
     "selection": 30,
+    "tradeValue": 124,
     "teamId": "DEN"
   },
   {
     "overall": 95,
     "round": 3,
     "selection": 31,
+    "tradeValue": 120,
     "teamId": "NE"
   },
   {
     "overall": 96,
     "round": 3,
     "selection": 32,
+    "tradeValue": 116,
     "teamId": "SEA"
   },
   {
     "overall": 97,
     "round": 3,
     "selection": 33,
+    "tradeValue": 112,
     "teamId": "MIN"
   },
   {
     "overall": 98,
     "round": 3,
     "selection": 34,
+    "tradeValue": 108,
     "teamId": "PHI"
   },
   {
     "overall": 99,
     "round": 3,
     "selection": 35,
+    "tradeValue": 104,
     "teamId": "PIT"
   },
   {
     "overall": 100,
     "round": 3,
     "selection": 36,
+    "tradeValue": 100,
     "teamId": "JAX"
   },
   {
     "overall": 101,
     "round": 4,
     "selection": 1,
+    "tradeValue": 96,
     "teamId": "TEN"
   },
   {
     "overall": 102,
     "round": 4,
     "selection": 2,
+    "tradeValue": 92,
     "teamId": "LV"
   },
   {
     "overall": 103,
     "round": 4,
     "selection": 3,
+    "tradeValue": 88,
     "teamId": "NYJ"
   },
   {
     "overall": 104,
     "round": 4,
     "selection": 4,
+    "tradeValue": 86,
     "teamId": "ARI"
   },
   {
     "overall": 105,
     "round": 4,
     "selection": 5,
+    "tradeValue": 84,
     "teamId": "NYG"
   },
   {
     "overall": 106,
     "round": 4,
     "selection": 6,
+    "tradeValue": 82,
     "teamId": "HOU"
   },
   {
     "overall": 107,
     "round": 4,
     "selection": 7,
+    "tradeValue": 80,
     "teamId": "CLE"
   },
   {
     "overall": 108,
     "round": 4,
     "selection": 8,
+    "tradeValue": 78,
     "teamId": "DEN"
   },
   {
     "overall": 109,
     "round": 4,
     "selection": 9,
+    "tradeValue": 76,
     "teamId": "KC"
   },
   {
     "overall": 110,
     "round": 4,
     "selection": 10,
+    "tradeValue": 74,
     "teamId": "CIN"
   },
   {
     "overall": 111,
     "round": 4,
     "selection": 11,
+    "tradeValue": 72,
     "teamId": "MIA"
   },
   {
     "overall": 112,
     "round": 4,
     "selection": 12,
+    "tradeValue": 70,
     "teamId": "DAL"
   },
   {
     "overall": 113,
     "round": 4,
     "selection": 13,
+    "tradeValue": 68,
     "teamId": "IND"
   },
   {
     "overall": 114,
     "round": 4,
     "selection": 14,
+    "tradeValue": 66,
     "teamId": "ATL"
   },
   {
     "overall": 115,
     "round": 4,
     "selection": 15,
+    "tradeValue": 64,
     "teamId": "BAL"
   },
   {
     "overall": 116,
     "round": 4,
     "selection": 16,
+    "tradeValue": 62,
     "teamId": "TB"
   },
   {
     "overall": 117,
     "round": 4,
     "selection": 17,
+    "tradeValue": 60,
     "teamId": "LV"
   },
   {
     "overall": 118,
     "round": 4,
     "selection": 18,
+    "tradeValue": 58,
     "teamId": "DET"
   },
   {
     "overall": 119,
     "round": 4,
     "selection": 19,
+    "tradeValue": 56,
     "teamId": "CAR"
   },
   {
     "overall": 120,
     "round": 4,
     "selection": 20,
+    "tradeValue": 54,
     "teamId": "GB"
   },
   {
     "overall": 121,
     "round": 4,
     "selection": 21,
+    "tradeValue": 52,
     "teamId": "PIT"
   },
   {
     "overall": 122,
     "round": 4,
     "selection": 22,
+    "tradeValue": 50,
     "teamId": "PHI"
   },
   {
     "overall": 123,
     "round": 4,
     "selection": 23,
+    "tradeValue": 49,
     "teamId": "LAC"
   },
   {
     "overall": 124,
     "round": 4,
     "selection": 24,
+    "tradeValue": 48,
     "teamId": "JAX"
   },
   {
     "overall": 125,
     "round": 4,
     "selection": 25,
+    "tradeValue": 47,
     "teamId": "NE"
   },
   {
     "overall": 126,
     "round": 4,
     "selection": 26,
+    "tradeValue": 46,
     "teamId": "BUF"
   },
   {
     "overall": 127,
     "round": 4,
     "selection": 27,
+    "tradeValue": 45,
     "teamId": "SF"
   },
   {
     "overall": 128,
     "round": 4,
     "selection": 28,
+    "tradeValue": 44,
     "teamId": "DET"
   },
   {
     "overall": 129,
     "round": 4,
     "selection": 29,
+    "tradeValue": 43,
     "teamId": "CHI"
   },
   {
     "overall": 130,
     "round": 4,
     "selection": 30,
+    "tradeValue": 42,
     "teamId": "DEN"
   },
   {
     "overall": 131,
     "round": 4,
     "selection": 31,
+    "tradeValue": 41,
     "teamId": "NE"
   },
   {
     "overall": 132,
     "round": 4,
     "selection": 32,
+    "tradeValue": 40,
     "teamId": "NO"
   },
   {
     "overall": 133,
     "round": 4,
     "selection": 33,
+    "tradeValue": 39,
     "teamId": "SF"
   },
   {
     "overall": 134,
     "round": 4,
     "selection": 34,
+    "tradeValue": 39,
     "teamId": "LV"
   },
   {
     "overall": 135,
     "round": 4,
     "selection": 35,
+    "tradeValue": 38,
     "teamId": "PIT"
   },
   {
     "overall": 136,
     "round": 4,
     "selection": 36,
+    "tradeValue": 38,
     "teamId": "NO"
   },
   {
     "overall": 137,
     "round": 4,
     "selection": 37,
+    "tradeValue": 37,
     "teamId": "PHI"
   },
   {
     "overall": 138,
     "round": 4,
     "selection": 38,
+    "tradeValue": 37,
     "teamId": "SF"
   },
   {
     "overall": 139,
     "round": 4,
     "selection": 39,
+    "tradeValue": 36,
     "teamId": "SF"
   },
   {
     "overall": 140,
     "round": 4,
     "selection": 40,
+    "tradeValue": 36,
     "teamId": "NYJ"
   },
   {
     "overall": 141,
     "round": 5,
     "selection": 1,
+    "tradeValue": 35,
     "teamId": "HOU"
   },
   {
     "overall": 142,
     "round": 5,
     "selection": 2,
+    "tradeValue": 35,
     "teamId": "TEN"
   },
   {
     "overall": 143,
     "round": 5,
     "selection": 3,
+    "tradeValue": 34,
     "teamId": "ARI"
   },
   {
     "overall": 144,
     "round": 5,
     "selection": 4,
+    "tradeValue": 34,
     "teamId": "TEN"
   },
   {
     "overall": 145,
     "round": 5,
     "selection": 5,
+    "tradeValue": 33,
     "teamId": "NYG"
   },
   {
     "overall": 146,
     "round": 5,
     "selection": 6,
+    "tradeValue": 33,
     "teamId": "CLE"
   },
   {
     "overall": 147,
     "round": 5,
     "selection": 7,
+    "tradeValue": 32,
     "teamId": "WAS"
   },
   {
     "overall": 148,
     "round": 5,
     "selection": 8,
+    "tradeValue": 32,
     "teamId": "KC"
   },
   {
     "overall": 149,
     "round": 5,
     "selection": 9,
+    "tradeValue": 31,
     "teamId": "CLE"
   },
   {
     "overall": 150,
     "round": 5,
     "selection": 10,
+    "tradeValue": 31,
     "teamId": "NO"
   },
   {
     "overall": 151,
     "round": 5,
     "selection": 11,
+    "tradeValue": 31,
     "teamId": "MIA"
   },
   {
     "overall": 152,
     "round": 5,
     "selection": 12,
+    "tradeValue": 30,
     "teamId": "DAL"
   },
   {
     "overall": 153,
     "round": 5,
     "selection": 13,
+    "tradeValue": 30,
     "teamId": "PHI"
   },
   {
     "overall": 154,
     "round": 5,
     "selection": 14,
+    "tradeValue": 29,
     "teamId": "BAL"
   },
   {
     "overall": 155,
     "round": 5,
     "selection": 15,
+    "tradeValue": 29,
     "teamId": "TB"
   },
   {
     "overall": 156,
     "round": 5,
     "selection": 16,
+    "tradeValue": 29,
     "teamId": "IND"
   },
   {
     "overall": 157,
     "round": 5,
     "selection": 17,
+    "tradeValue": 28,
     "teamId": "DET"
   },
   {
     "overall": 158,
     "round": 5,
     "selection": 18,
+    "tradeValue": 28,
     "teamId": "CAR"
   },
   {
     "overall": 159,
     "round": 5,
     "selection": 19,
+    "tradeValue": 27,
     "teamId": "CAR"
   },
   {
     "overall": 160,
     "round": 5,
     "selection": 20,
+    "tradeValue": 27,
     "teamId": "GB"
   },
   {
     "overall": 161,
     "round": 5,
     "selection": 21,
+    "tradeValue": 27,
     "teamId": "PIT"
   },
   {
     "overall": 162,
     "round": 5,
     "selection": 22,
+    "tradeValue": 26,
     "teamId": "BAL"
   },
   {
     "overall": 163,
     "round": 5,
     "selection": 23,
+    "tradeValue": 26,
     "teamId": "MIN"
   },
   {
     "overall": 164,
     "round": 5,
     "selection": 24,
+    "tradeValue": 25,
     "teamId": "JAX"
   },
   {
     "overall": 165,
     "round": 5,
     "selection": 25,
+    "tradeValue": 25,
     "teamId": "BUF"
   },
   {
     "overall": 166,
     "round": 5,
     "selection": 26,
+    "tradeValue": 25,
     "teamId": "JAX"
   },
   {
     "overall": 167,
     "round": 5,
     "selection": 27,
+    "tradeValue": 24,
     "teamId": "HOU"
   },
   {
     "overall": 168,
     "round": 5,
     "selection": 28,
+    "tradeValue": 24,
     "teamId": "BUF"
   },
   {
     "overall": 169,
     "round": 5,
     "selection": 29,
+    "tradeValue": 23,
     "teamId": "KC"
   },
   {
     "overall": 170,
     "round": 5,
     "selection": 30,
+    "tradeValue": 23,
     "teamId": "DEN"
   },
   {
     "overall": 171,
     "round": 5,
     "selection": 31,
+    "tradeValue": 23,
     "teamId": "NE"
   },
   {
     "overall": 172,
     "round": 5,
     "selection": 32,
+    "tradeValue": 22,
     "teamId": "NO"
   },
   {
     "overall": 173,
     "round": 5,
     "selection": 33,
+    "tradeValue": 22,
     "teamId": "BAL"
   },
   {
     "overall": 174,
     "round": 5,
     "selection": 34,
+    "tradeValue": 21,
     "teamId": "BAL"
   },
   {
     "overall": 175,
     "round": 5,
     "selection": 35,
+    "tradeValue": 21,
     "teamId": "LV"
   },
   {
     "overall": 176,
     "round": 5,
     "selection": 36,
+    "tradeValue": 21,
     "teamId": "KC"
   },
   {
     "overall": 177,
     "round": 5,
     "selection": 37,
+    "tradeValue": 20,
     "teamId": "DAL"
   },
   {
     "overall": 178,
     "round": 5,
     "selection": 38,
+    "tradeValue": 19,
     "teamId": "PHI"
   },
   {
     "overall": 179,
     "round": 5,
     "selection": 39,
+    "tradeValue": 19,
     "teamId": "NYJ"
   },
   {
     "overall": 180,
     "round": 5,
     "selection": 40,
+    "tradeValue": 19,
     "teamId": "DAL"
   },
   {
     "overall": 181,
     "round": 5,
     "selection": 41,
+    "tradeValue": 18,
     "teamId": "DET"
   },
   {
     "overall": 182,
     "round": 6,
     "selection": 1,
+    "tradeValue": 18,
     "teamId": "BUF"
   },
   {
     "overall": 183,
     "round": 6,
     "selection": 2,
+    "tradeValue": 17,
     "teamId": "ARI"
   },
   {
     "overall": 184,
     "round": 6,
     "selection": 3,
+    "tradeValue": 17,
     "teamId": "TEN"
   },
   {
     "overall": 185,
     "round": 6,
     "selection": 4,
+    "tradeValue": 17,
     "teamId": "LV"
   },
   {
     "overall": 186,
     "round": 6,
     "selection": 5,
+    "tradeValue": 16,
     "teamId": "NYG"
   },
   {
     "overall": 187,
     "round": 6,
     "selection": 6,
+    "tradeValue": 16,
     "teamId": "WAS"
   },
   {
     "overall": 188,
     "round": 6,
     "selection": 7,
+    "tradeValue": 15,
     "teamId": "SEA"
   },
   {
     "overall": 189,
     "round": 6,
     "selection": 8,
+    "tradeValue": 15,
     "teamId": "CIN"
   },
   {
     "overall": 190,
     "round": 6,
     "selection": 9,
+    "tradeValue": 15,
     "teamId": "NO"
   },
   {
     "overall": 191,
     "round": 6,
     "selection": 10,
+    "tradeValue": 14,
     "teamId": "NE"
   },
   {
     "overall": 192,
     "round": 6,
     "selection": 11,
+    "tradeValue": 14,
     "teamId": "NYG"
   },
   {
     "overall": 193,
     "round": 6,
     "selection": 12,
+    "tradeValue": 13,
     "teamId": "NYG"
   },
   {
     "overall": 194,
     "round": 6,
     "selection": 13,
+    "tradeValue": 13,
     "teamId": "TEN"
   },
   {
     "overall": 195,
     "round": 6,
     "selection": 14,
+    "tradeValue": 13,
     "teamId": "TB"
   },
   {
     "overall": 196,
     "round": 6,
     "selection": 15,
+    "tradeValue": 12,
     "teamId": "MIN"
   },
   {
     "overall": 197,
     "round": 6,
     "selection": 16,
+    "tradeValue": 12,
     "teamId": "ATL"
   },
   {
     "overall": 198,
     "round": 6,
     "selection": 17,
+    "tradeValue": 11,
     "teamId": "NE"
   },
   {
     "overall": 199,
     "round": 6,
     "selection": 18,
+    "tradeValue": 11,
     "teamId": "CIN"
   },
   {
     "overall": 200,
     "round": 6,
     "selection": 19,
+    "tradeValue": 11,
     "teamId": "CAR"
   },
   {
     "overall": 201,
     "round": 6,
     "selection": 20,
+    "tradeValue": 10,
     "teamId": "GB"
   },
   {
     "overall": 202,
     "round": 6,
     "selection": 21,
+    "tradeValue": 10,
     "teamId": "NE"
   },
   {
     "overall": 203,
     "round": 6,
     "selection": 22,
+    "tradeValue": 9,
     "teamId": "JAX"
   },
   {
     "overall": 204,
     "round": 6,
     "selection": 23,
+    "tradeValue": 9,
     "teamId": "LAC"
   },
   {
     "overall": 205,
     "round": 6,
     "selection": 24,
+    "tradeValue": 9,
     "teamId": "DET"
   },
   {
     "overall": 206,
     "round": 6,
     "selection": 25,
+    "tradeValue": 8,
     "teamId": "CLE"
   },
   {
     "overall": 207,
     "round": 6,
     "selection": 26,
+    "tradeValue": 8,
     "teamId": "LAR"
   },
   {
     "overall": 208,
     "round": 6,
     "selection": 27,
+    "tradeValue": 7,
     "teamId": "LV"
   },
   {
     "overall": 209,
     "round": 6,
     "selection": 28,
+    "tradeValue": 7,
     "teamId": "WAS"
   },
   {
     "overall": 210,
     "round": 6,
     "selection": 29,
+    "tradeValue": 7,
     "teamId": "KC"
   },
   {
     "overall": 211,
     "round": 6,
     "selection": 30,
+    "tradeValue": 6,
     "teamId": "BAL"
   },
   {
     "overall": 212,
     "round": 6,
     "selection": 31,
+    "tradeValue": 6,
     "teamId": "NE"
   },
   {
     "overall": 213,
     "round": 6,
     "selection": 32,
+    "tradeValue": 5,
     "teamId": "DET"
   },
   {
     "overall": 214,
     "round": 6,
     "selection": 33,
+    "tradeValue": 5,
     "teamId": "IND"
   },
   {
     "overall": 215,
     "round": 6,
     "selection": 34,
+    "tradeValue": 5,
     "teamId": "PHI"
   },
   {
     "overall": 216,
     "round": 6,
     "selection": 35,
+    "tradeValue": 4,
     "teamId": "PIT"
   },
   {
     "overall": 217,
     "round": 7,
     "selection": 1,
+    "tradeValue": 1,
     "teamId": "ARI"
   },
   {
     "overall": 218,
     "round": 7,
     "selection": 2,
+    "tradeValue": 1,
     "teamId": "DAL"
   },
   {
     "overall": 219,
     "round": 7,
     "selection": 3,
+    "tradeValue": 1,
     "teamId": "LV"
   },
   {
     "overall": 220,
     "round": 7,
     "selection": 4,
+    "tradeValue": 1,
     "teamId": "BUF"
   },
   {
     "overall": 221,
     "round": 7,
     "selection": 5,
+    "tradeValue": 1,
     "teamId": "CIN"
   },
   {
     "overall": 222,
     "round": 7,
     "selection": 6,
+    "tradeValue": 1,
     "teamId": "DET"
   },
   {
     "overall": 223,
     "round": 7,
     "selection": 7,
+    "tradeValue": 1,
     "teamId": "WAS"
   },
   {
     "overall": 224,
     "round": 7,
     "selection": 8,
+    "tradeValue": 1,
     "teamId": "PIT"
   },
   {
     "overall": 225,
     "round": 7,
     "selection": 9,
+    "tradeValue": 1,
     "teamId": "TEN"
   },
   {
     "overall": 226,
     "round": 7,
     "selection": 10,
+    "tradeValue": 1,
     "teamId": "CIN"
   },
   {
     "overall": 227,
     "round": 7,
     "selection": 11,
+    "tradeValue": 1,
     "teamId": "MIA"
   },
   {
     "overall": 228,
     "round": 7,
     "selection": 12,
+    "tradeValue": 1,
     "teamId": "NYJ"
   },
   {
     "overall": 229,
     "round": 7,
     "selection": 13,
+    "tradeValue": 1,
     "teamId": "TB"
   },
   {
     "overall": 230,
     "round": 7,
     "selection": 14,
+    "tradeValue": 1,
     "teamId": "PIT"
   },
   {
     "overall": 231,
     "round": 7,
     "selection": 15,
+    "tradeValue": 1,
     "teamId": "ATL"
   },
   {
     "overall": 232,
     "round": 7,
     "selection": 16,
+    "tradeValue": 1,
     "teamId": "LAR"
   },
   {
     "overall": 233,
     "round": 7,
     "selection": 17,
+    "tradeValue": 1,
     "teamId": "JAX"
   },
   {
     "overall": 234,
     "round": 7,
     "selection": 18,
+    "tradeValue": 1,
     "teamId": "MIN"
   },
   {
     "overall": 235,
     "round": 7,
     "selection": 19,
+    "tradeValue": 1,
     "teamId": "MIN"
   },
   {
     "overall": 236,
     "round": 7,
     "selection": 20,
+    "tradeValue": 1,
     "teamId": "GB"
   },
   {
     "overall": 237,
     "round": 7,
     "selection": 21,
+    "tradeValue": 1,
     "teamId": "PIT"
   },
   {
     "overall": 238,
     "round": 7,
     "selection": 22,
+    "tradeValue": 1,
     "teamId": "MIA"
   },
   {
     "overall": 239,
     "round": 7,
     "selection": 23,
+    "tradeValue": 1,
     "teamId": "CHI"
   },
   {
     "overall": 240,
     "round": 7,
     "selection": 24,
+    "tradeValue": 1,
     "teamId": "JAX"
   },
   {
     "overall": 241,
     "round": 7,
     "selection": 25,
+    "tradeValue": 1,
     "teamId": "CHI"
   },
   {
     "overall": 242,
     "round": 7,
     "selection": 26,
+    "tradeValue": 1,
     "teamId": "NYJ"
   },
   {
     "overall": 243,
     "round": 7,
     "selection": 27,
+    "tradeValue": 1,
     "teamId": "HOU"
   },
   {
     "overall": 244,
     "round": 7,
     "selection": 28,
+    "tradeValue": 1,
     "teamId": "MIN"
   },
   {
     "overall": 245,
     "round": 7,
     "selection": 29,
+    "tradeValue": 1,
     "teamId": "JAX"
   },
   {
     "overall": 246,
     "round": 7,
     "selection": 30,
+    "tradeValue": 1,
     "teamId": "DEN"
   },
   {
     "overall": 247,
     "round": 7,
     "selection": 31,
+    "tradeValue": 1,
     "teamId": "NE"
   },
   {
     "overall": 248,
     "round": 7,
     "selection": 32,
+    "tradeValue": 1,
     "teamId": "CLE"
   },
   {
     "overall": 249,
     "round": 7,
     "selection": 33,
+    "tradeValue": 1,
     "teamId": "IND"
   },
   {
     "overall": 250,
     "round": 7,
     "selection": 34,
+    "tradeValue": 1,
     "teamId": "BAL"
   },
   {
     "overall": 251,
     "round": 7,
     "selection": 35,
+    "tradeValue": 1,
     "teamId": "LAR"
   },
   {
     "overall": 252,
     "round": 7,
     "selection": 36,
+    "tradeValue": 1,
     "teamId": "LAR"
   },
   {
     "overall": 253,
     "round": 7,
     "selection": 37,
+    "tradeValue": 1,
     "teamId": "BAL"
   },
   {
     "overall": 254,
     "round": 7,
     "selection": 38,
+    "tradeValue": 1,
     "teamId": "IND"
   },
   {
     "overall": 255,
     "round": 7,
     "selection": 39,
+    "tradeValue": 1,
     "teamId": "GB"
   },
   {
     "overall": 256,
     "round": 7,
     "selection": 40,
+    "tradeValue": 1,
     "teamId": "DEN"
   },
   {
     "overall": 257,
     "round": 7,
     "selection": 41,
+    "tradeValue": 1,
     "teamId": "DEN"
   }
 ]

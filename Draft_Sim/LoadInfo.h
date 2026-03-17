@@ -4,7 +4,6 @@
 #include <vector>
 #include "Team.h"
 #include "Player.h"
-#include "json.hpp"
 
 extern std::vector<Player> draftPool;
 extern std::vector<Team>   teamList;

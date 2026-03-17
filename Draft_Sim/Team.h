@@ -11,10 +11,11 @@ struct Pick
     int overall{0};
     int round{0};
     int selection{0};
+    int tradeValue{0};
     std::string teamId{"???"};
 
-    Pick(int overall, int round, int selection, const std::string& teamID)
-        : overall{overall}, round{round}, selection{selection}, teamId{teamID}
+    Pick(int overall, int round, int selection, int tradeValue, const std::string& teamID)
+        : overall{overall}, round{round}, selection{selection}, tradeValue{tradeValue}, teamId{teamID}
     {}
 };
 

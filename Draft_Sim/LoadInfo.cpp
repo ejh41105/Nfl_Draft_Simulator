@@ -60,14 +60,15 @@ void loadTeams(const std::string& path)
                 pk["overall"].get<int>(),
                 pk["round"].get<int>(),
                 pk["selection"].get<int>(),
-                pk["teamId"].get<std::string>()
+                pk["tradeValue"].get<int>(),
+                t["id"].get<std::string>()
             });
         }
         std::vector<std::string> priorities = t["priorities"].get<std::vector<std::string>>();
 
         teamList.emplace_back
         (
-            t["teamid"].get<std::string>(),
+            t["id"].get<std::string>(),
             t["name"].get<std::string>(),
             t["city"].get<std::string>(),
             picks,
@@ -76,7 +77,6 @@ void loadTeams(const std::string& path)
             priorities
         );
     }
-
 }
 
 void loadDraftOrder(const std::string& path)
@@ -97,6 +97,7 @@ void loadDraftOrder(const std::string& path)
             d["overall"].get<int>(),
             d["round"].get<int>(),
             d["selection"].get<int>(),
+            d["tradeValue"].get<int>(),
             d["teamId"].get<std::string>()
         );
     }
