@@ -5,11 +5,84 @@
     "city": "Las Vegas",
     "noiseRange": 12,
     "positionalNeed": {
-      "QB": 1, "WR": 2, "CB": 2, "OT": 2, "DE": 2,
-      "DT": 3, "ILB": 4, "RB": 4, "TE": 5,
-      "S": 3, "NT": 4, "G": 3, "C": 5, "FB": 5, "K": 5, "P": 5
+      "QB": 1,
+      "RB": 4,
+      "WR": 2,
+      "TE": 5,
+      "OT": 2,
+      "OG": 3,
+      "OC": 5,
+      "EDGE": 2,
+      "DL": 4,
+      "ILB": 4,
+      "OLB": 3,
+      "CB": 2,
+      "S": 3,
+      "FB": 5,
+      "K": 5,
+      "P": 5
     },
-    "priorities": ["consensusRank","positionalNeed","floorCeiling","positionalValue","RAS","miscConcern","positionalScarcity"]
+    "priorities": [
+      "consensusRank",
+      "positionalNeed",
+      "floorCeiling",
+      "positionalValue",
+      "RAS",
+      "miscConcern",
+      "positionalScarcity"
+    ],
+    "picks": [
+      {
+        "overall": 1,
+        "round": 1,
+        "selection": 1
+      },
+      {
+        "overall": 36,
+        "round": 2,
+        "selection": 4
+      },
+      {
+        "overall": 67,
+        "round": 3,
+        "selection": 3
+      },
+      {
+        "overall": 102,
+        "round": 4,
+        "selection": 2
+      },
+      {
+        "overall": 117,
+        "round": 4,
+        "selection": 17
+      },
+      {
+        "overall": 134,
+        "round": 4,
+        "selection": 34
+      },
+      {
+        "overall": 175,
+        "round": 5,
+        "selection": 35
+      },
+      {
+        "overall": 185,
+        "round": 6,
+        "selection": 4
+      },
+      {
+        "overall": 208,
+        "round": 6,
+        "selection": 27
+      },
+      {
+        "overall": 219,
+        "round": 7,
+        "selection": 3
+      }
+    ]
   },
   {
     "id": "NYJ",
@@ -17,11 +90,79 @@
     "city": "New York",
     "noiseRange": 15,
     "positionalNeed": {
-      "QB": 1, "WR": 2, "CB": 2, "OT": 4, "DE": 1,
-      "DT": 2, "ILB": 2, "RB": 3, "TE": 3,
-      "S": 3, "NT": 4, "G": 3, "C": 3, "FB": 5, "K": 5, "P": 5
+      "QB": 1,
+      "RB": 3,
+      "WR": 2,
+      "TE": 3,
+      "OT": 4,
+      "OG": 3,
+      "OC": 3,
+      "EDGE": 1,
+      "DL": 3,
+      "ILB": 2,
+      "OLB": 3,
+      "CB": 2,
+      "S": 3,
+      "FB": 5,
+      "K": 5,
+      "P": 5
     },
-    "priorities": ["positionalNeed","consensusRank","positionalValue","miscConcern","floorCeiling","RAS","positionalScarcity"]
+    "priorities": [
+      "positionalNeed",
+      "consensusRank",
+      "positionalValue",
+      "miscConcern",
+      "floorCeiling",
+      "RAS",
+      "positionalScarcity"
+    ],
+    "picks": [
+      {
+        "overall": 2,
+        "round": 1,
+        "selection": 2
+      },
+      {
+        "overall": 16,
+        "round": 1,
+        "selection": 16
+      },
+      {
+        "overall": 33,
+        "round": 2,
+        "selection": 1
+      },
+      {
+        "overall": 44,
+        "round": 2,
+        "selection": 12
+      },
+      {
+        "overall": 103,
+        "round": 4,
+        "selection": 3
+      },
+      {
+        "overall": 140,
+        "round": 4,
+        "selection": 40
+      },
+      {
+        "overall": 179,
+        "round": 5,
+        "selection": 39
+      },
+      {
+        "overall": 228,
+        "round": 7,
+        "selection": 12
+      },
+      {
+        "overall": 242,
+        "round": 7,
+        "selection": 26
+      }
+    ]
   },
   {
     "id": "ARI",
@@ -29,11 +170,69 @@
     "city": "Arizona",
     "noiseRange": 10,
     "positionalNeed": {
-      "QB": 1, "WR": 2, "CB": 3, "OT": 2, "DE": 2,
-      "DT": 2, "ILB": 3, "RB": 3, "TE": 5,
-      "S": 1, "NT": 3, "G": 2, "C": 3, "FB": 5, "K": 5, "P": 5
+      "QB": 1,
+      "RB": 3,
+      "WR": 2,
+      "TE": 5,
+      "OT": 2,
+      "OG": 2,
+      "OC": 3,
+      "EDGE": 2,
+      "DL": 2,
+      "ILB": 3,
+      "OLB": 3,
+      "CB": 3,
+      "S": 1,
+      "FB": 5,
+      "K": 5,
+      "P": 5
     },
-    "priorities": ["positionalNeed","consensusRank","RAS","positionalValue","positionalScarcity","miscConcern","floorCeiling"]
+    "priorities": [
+      "positionalNeed",
+      "consensusRank",
+      "RAS",
+      "positionalValue",
+      "positionalScarcity",
+      "miscConcern",
+      "floorCeiling"
+    ],
+    "picks": [
+      {
+        "overall": 3,
+        "round": 1,
+        "selection": 3
+      },
+      {
+        "overall": 34,
+        "round": 2,
+        "selection": 2
+      },
+      {
+        "overall": 65,
+        "round": 3,
+        "selection": 1
+      },
+      {
+        "overall": 104,
+        "round": 4,
+        "selection": 4
+      },
+      {
+        "overall": 143,
+        "round": 5,
+        "selection": 3
+      },
+      {
+        "overall": 183,
+        "round": 6,
+        "selection": 2
+      },
+      {
+        "overall": 217,
+        "round": 7,
+        "selection": 1
+      }
+    ]
   },
   {
     "id": "TEN",
@@ -41,11 +240,79 @@
     "city": "Tennessee",
     "noiseRange": 8,
     "positionalNeed": {
-      "QB": 4, "WR": 2, "CB": 3, "OT": 2, "DE": 1,
-      "DT": 2, "ILB": 3, "RB": 2, "TE": 3,
-      "S": 3, "NT": 3, "G": 2, "C": 3, "FB": 5, "K": 5, "P": 5
+      "QB": 4,
+      "RB": 2,
+      "WR": 2,
+      "TE": 3,
+      "OT": 2,
+      "OG": 2,
+      "OC": 3,
+      "EDGE": 1,
+      "DL": 2,
+      "ILB": 3,
+      "OLB": 3,
+      "CB": 3,
+      "S": 3,
+      "FB": 5,
+      "K": 5,
+      "P": 5
     },
-    "priorities": ["consensusRank","positionalNeed","positionalValue","floorCeiling","positionalScarcity","RAS","miscConcern"]
+    "priorities": [
+      "consensusRank",
+      "positionalNeed",
+      "positionalValue",
+      "floorCeiling",
+      "positionalScarcity",
+      "RAS",
+      "miscConcern"
+    ],
+    "picks": [
+      {
+        "overall": 4,
+        "round": 1,
+        "selection": 4
+      },
+      {
+        "overall": 35,
+        "round": 2,
+        "selection": 3
+      },
+      {
+        "overall": 66,
+        "round": 3,
+        "selection": 2
+      },
+      {
+        "overall": 101,
+        "round": 4,
+        "selection": 1
+      },
+      {
+        "overall": 142,
+        "round": 5,
+        "selection": 2
+      },
+      {
+        "overall": 144,
+        "round": 5,
+        "selection": 4
+      },
+      {
+        "overall": 184,
+        "round": 6,
+        "selection": 3
+      },
+      {
+        "overall": 194,
+        "round": 6,
+        "selection": 13
+      },
+      {
+        "overall": 225,
+        "round": 7,
+        "selection": 9
+      }
+    ]
   },
   {
     "id": "NYG",
@@ -53,11 +320,69 @@
     "city": "New York",
     "noiseRange": 8,
     "positionalNeed": {
-      "QB": 4, "WR": 1, "CB": 2, "OT": 3, "DE": 5,
-      "DT": 3, "ILB": 1, "RB": 3, "TE": 4,
-      "S": 3, "NT": 4, "G": 2, "C": 3, "FB": 5, "K": 5, "P": 5
+      "QB": 4,
+      "RB": 3,
+      "WR": 1,
+      "TE": 4,
+      "OT": 3,
+      "OG": 2,
+      "OC": 3,
+      "EDGE": 5,
+      "DL": 4,
+      "ILB": 1,
+      "OLB": 3,
+      "CB": 2,
+      "S": 3,
+      "FB": 5,
+      "K": 5,
+      "P": 5
     },
-    "priorities": ["consensusRank","positionalNeed","RAS","positionalScarcity","floorCeiling","positionalValue","miscConcern"]
+    "priorities": [
+      "consensusRank",
+      "positionalNeed",
+      "RAS",
+      "positionalScarcity",
+      "floorCeiling",
+      "positionalValue",
+      "miscConcern"
+    ],
+    "picks": [
+      {
+        "overall": 5,
+        "round": 1,
+        "selection": 5
+      },
+      {
+        "overall": 37,
+        "round": 2,
+        "selection": 5
+      },
+      {
+        "overall": 105,
+        "round": 4,
+        "selection": 5
+      },
+      {
+        "overall": 145,
+        "round": 5,
+        "selection": 5
+      },
+      {
+        "overall": 186,
+        "round": 6,
+        "selection": 5
+      },
+      {
+        "overall": 192,
+        "round": 6,
+        "selection": 11
+      },
+      {
+        "overall": 193,
+        "round": 6,
+        "selection": 12
+      }
+    ]
   },
   {
     "id": "CLE",
@@ -65,11 +390,79 @@
     "city": "Cleveland",
     "noiseRange": 12,
     "positionalNeed": {
-      "QB": 1, "WR": 2, "CB": 2, "OT": 1, "DE": 3,
-      "DT": 3, "ILB": 2, "RB": 3, "TE": 3,
-      "S": 3, "NT": 3, "G": 3, "C": 3, "FB": 5, "K": 5, "P": 5
+      "QB": 1,
+      "RB": 3,
+      "WR": 2,
+      "TE": 3,
+      "OT": 1,
+      "OG": 3,
+      "OC": 3,
+      "EDGE": 3,
+      "DL": 3,
+      "ILB": 2,
+      "OLB": 3,
+      "CB": 2,
+      "S": 3,
+      "FB": 5,
+      "K": 5,
+      "P": 5
     },
-    "priorities": ["positionalNeed","consensusRank","miscConcern","floorCeiling","positionalValue","positionalScarcity","RAS"]
+    "priorities": [
+      "positionalNeed",
+      "consensusRank",
+      "miscConcern",
+      "floorCeiling",
+      "positionalValue",
+      "positionalScarcity",
+      "RAS"
+    ],
+    "picks": [
+      {
+        "overall": 6,
+        "round": 1,
+        "selection": 6
+      },
+      {
+        "overall": 24,
+        "round": 1,
+        "selection": 24
+      },
+      {
+        "overall": 39,
+        "round": 2,
+        "selection": 7
+      },
+      {
+        "overall": 70,
+        "round": 3,
+        "selection": 6
+      },
+      {
+        "overall": 107,
+        "round": 4,
+        "selection": 7
+      },
+      {
+        "overall": 146,
+        "round": 5,
+        "selection": 6
+      },
+      {
+        "overall": 149,
+        "round": 5,
+        "selection": 9
+      },
+      {
+        "overall": 206,
+        "round": 6,
+        "selection": 25
+      },
+      {
+        "overall": 248,
+        "round": 7,
+        "selection": 32
+      }
+    ]
   },
   {
     "id": "WAS",
@@ -77,11 +470,64 @@
     "city": "Washington",
     "noiseRange": 8,
     "positionalNeed": {
-      "QB": 5, "WR": 2, "CB": 2, "OT": 4, "DE": 3,
-      "DT": 3, "ILB": 3, "RB": 2, "TE": 3,
-      "S": 3, "NT": 3, "G": 3, "C": 2, "FB": 5, "K": 5, "P": 5
+      "QB": 5,
+      "RB": 2,
+      "WR": 2,
+      "TE": 3,
+      "OT": 4,
+      "OG": 3,
+      "OC": 2,
+      "EDGE": 3,
+      "DL": 3,
+      "ILB": 3,
+      "OLB": 3,
+      "CB": 2,
+      "S": 3,
+      "FB": 5,
+      "K": 5,
+      "P": 5
     },
-    "priorities": ["consensusRank","positionalNeed","floorCeiling","RAS","positionalScarcity","positionalValue","miscConcern"]
+    "priorities": [
+      "consensusRank",
+      "positionalNeed",
+      "floorCeiling",
+      "RAS",
+      "positionalScarcity",
+      "positionalValue",
+      "miscConcern"
+    ],
+    "picks": [
+      {
+        "overall": 7,
+        "round": 1,
+        "selection": 7
+      },
+      {
+        "overall": 71,
+        "round": 3,
+        "selection": 7
+      },
+      {
+        "overall": 147,
+        "round": 5,
+        "selection": 7
+      },
+      {
+        "overall": 187,
+        "round": 6,
+        "selection": 6
+      },
+      {
+        "overall": 209,
+        "round": 6,
+        "selection": 28
+      },
+      {
+        "overall": 223,
+        "round": 7,
+        "selection": 7
+      }
+    ]
   },
   {
     "id": "NO",
@@ -89,11 +535,74 @@
     "city": "New Orleans",
     "noiseRange": 8,
     "positionalNeed": {
-      "QB": 3, "WR": 2, "CB": 2, "OT": 4, "DE": 1,
-      "DT": 2, "ILB": 2, "RB": 3, "TE": 3,
-      "S": 3, "NT": 3, "G": 3, "C": 3, "FB": 5, "K": 5, "P": 5
+      "QB": 3,
+      "RB": 3,
+      "WR": 2,
+      "TE": 3,
+      "OT": 4,
+      "OG": 3,
+      "OC": 3,
+      "EDGE": 1,
+      "DL": 2,
+      "ILB": 2,
+      "OLB": 3,
+      "CB": 2,
+      "S": 3,
+      "FB": 5,
+      "K": 5,
+      "P": 5
     },
-    "priorities": ["consensusRank","positionalNeed","positionalValue","positionalScarcity","miscConcern","floorCeiling","RAS"]
+    "priorities": [
+      "consensusRank",
+      "positionalNeed",
+      "positionalValue",
+      "positionalScarcity",
+      "miscConcern",
+      "floorCeiling",
+      "RAS"
+    ],
+    "picks": [
+      {
+        "overall": 8,
+        "round": 1,
+        "selection": 8
+      },
+      {
+        "overall": 42,
+        "round": 2,
+        "selection": 10
+      },
+      {
+        "overall": 73,
+        "round": 3,
+        "selection": 9
+      },
+      {
+        "overall": 132,
+        "round": 4,
+        "selection": 32
+      },
+      {
+        "overall": 136,
+        "round": 4,
+        "selection": 36
+      },
+      {
+        "overall": 150,
+        "round": 5,
+        "selection": 10
+      },
+      {
+        "overall": 172,
+        "round": 5,
+        "selection": 32
+      },
+      {
+        "overall": 190,
+        "round": 6,
+        "selection": 9
+      }
+    ]
   },
   {
     "id": "KC",
@@ -101,11 +610,79 @@
     "city": "Kansas City",
     "noiseRange": 5,
     "positionalNeed": {
-      "QB": 5, "WR": 3, "CB": 1, "OT": 3, "DE": 2,
-      "DT": 2, "ILB": 2, "RB": 4, "TE": 3,
-      "S": 3, "NT": 3, "G": 4, "C": 5, "FB": 5, "K": 5, "P": 5
+      "QB": 5,
+      "RB": 4,
+      "WR": 3,
+      "TE": 3,
+      "OT": 3,
+      "OG": 4,
+      "OC": 5,
+      "EDGE": 2,
+      "DL": 2,
+      "ILB": 2,
+      "OLB": 3,
+      "CB": 1,
+      "S": 3,
+      "FB": 5,
+      "K": 5,
+      "P": 5
     },
-    "priorities": ["consensusRank","positionalNeed","positionalValue","RAS","miscConcern","positionalScarcity","floorCeiling"]
+    "priorities": [
+      "consensusRank",
+      "positionalNeed",
+      "positionalValue",
+      "RAS",
+      "miscConcern",
+      "positionalScarcity",
+      "floorCeiling"
+    ],
+    "picks": [
+      {
+        "overall": 9,
+        "round": 1,
+        "selection": 9
+      },
+      {
+        "overall": 29,
+        "round": 1,
+        "selection": 29
+      },
+      {
+        "overall": 40,
+        "round": 2,
+        "selection": 8
+      },
+      {
+        "overall": 74,
+        "round": 3,
+        "selection": 10
+      },
+      {
+        "overall": 109,
+        "round": 4,
+        "selection": 9
+      },
+      {
+        "overall": 148,
+        "round": 5,
+        "selection": 8
+      },
+      {
+        "overall": 169,
+        "round": 5,
+        "selection": 29
+      },
+      {
+        "overall": 176,
+        "round": 5,
+        "selection": 36
+      },
+      {
+        "overall": 210,
+        "round": 6,
+        "selection": 29
+      }
+    ]
   },
   {
     "id": "CIN",
@@ -113,11 +690,74 @@
     "city": "Cincinnati",
     "noiseRange": 7,
     "positionalNeed": {
-      "QB": 5, "WR": 5, "CB": 3, "OT": 3, "DE": 3,
-      "DT": 1, "ILB": 1, "RB": 3, "TE": 3,
-      "S": 3, "NT": 2, "G": 3, "C": 2, "FB": 5, "K": 5, "P": 5
+      "QB": 5,
+      "RB": 3,
+      "WR": 5,
+      "TE": 3,
+      "OT": 3,
+      "OG": 3,
+      "OC": 2,
+      "EDGE": 3,
+      "DL": 2,
+      "ILB": 1,
+      "OLB": 3,
+      "CB": 3,
+      "S": 3,
+      "FB": 5,
+      "K": 5,
+      "P": 5
     },
-    "priorities": ["consensusRank","positionalNeed","RAS","floorCeiling","miscConcern","positionalValue","positionalScarcity"]
+    "priorities": [
+      "consensusRank",
+      "positionalNeed",
+      "RAS",
+      "floorCeiling",
+      "miscConcern",
+      "positionalValue",
+      "positionalScarcity"
+    ],
+    "picks": [
+      {
+        "overall": 10,
+        "round": 1,
+        "selection": 10
+      },
+      {
+        "overall": 41,
+        "round": 2,
+        "selection": 9
+      },
+      {
+        "overall": 72,
+        "round": 3,
+        "selection": 8
+      },
+      {
+        "overall": 110,
+        "round": 4,
+        "selection": 10
+      },
+      {
+        "overall": 189,
+        "round": 6,
+        "selection": 8
+      },
+      {
+        "overall": 199,
+        "round": 6,
+        "selection": 18
+      },
+      {
+        "overall": 221,
+        "round": 7,
+        "selection": 5
+      },
+      {
+        "overall": 226,
+        "round": 7,
+        "selection": 10
+      }
+    ]
   },
   {
     "id": "MIA",
@@ -125,11 +765,79 @@
     "city": "Miami",
     "noiseRange": 10,
     "positionalNeed": {
-      "QB": 1, "WR": 1, "CB": 2, "OT": 2, "DE": 2,
-      "DT": 3, "ILB": 3, "RB": 3, "TE": 3,
-      "S": 2, "NT": 3, "G": 3, "C": 3, "FB": 5, "K": 5, "P": 5
+      "QB": 1,
+      "RB": 3,
+      "WR": 1,
+      "TE": 3,
+      "OT": 2,
+      "OG": 3,
+      "OC": 3,
+      "EDGE": 2,
+      "DL": 3,
+      "ILB": 3,
+      "OLB": 3,
+      "CB": 2,
+      "S": 2,
+      "FB": 5,
+      "K": 5,
+      "P": 5
     },
-    "priorities": ["positionalNeed","consensusRank","floorCeiling","positionalScarcity","RAS","positionalValue","miscConcern"]
+    "priorities": [
+      "positionalNeed",
+      "consensusRank",
+      "floorCeiling",
+      "positionalScarcity",
+      "RAS",
+      "positionalValue",
+      "miscConcern"
+    ],
+    "picks": [
+      {
+        "overall": 11,
+        "round": 1,
+        "selection": 11
+      },
+      {
+        "overall": 43,
+        "round": 2,
+        "selection": 11
+      },
+      {
+        "overall": 75,
+        "round": 3,
+        "selection": 11
+      },
+      {
+        "overall": 87,
+        "round": 3,
+        "selection": 23
+      },
+      {
+        "overall": 90,
+        "round": 3,
+        "selection": 26
+      },
+      {
+        "overall": 111,
+        "round": 4,
+        "selection": 11
+      },
+      {
+        "overall": 151,
+        "round": 5,
+        "selection": 11
+      },
+      {
+        "overall": 227,
+        "round": 7,
+        "selection": 11
+      },
+      {
+        "overall": 238,
+        "round": 7,
+        "selection": 22
+      }
+    ]
   },
   {
     "id": "DAL",
@@ -137,11 +845,74 @@
     "city": "Dallas",
     "noiseRange": 8,
     "positionalNeed": {
-      "QB": 5, "WR": 4, "CB": 2, "OT": 4, "DE": 2,
-      "DT": 2, "ILB": 1, "RB": 3, "TE": 3,
-      "S": 4, "NT": 3, "G": 4, "C": 4, "FB": 5, "K": 5, "P": 5
+      "QB": 5,
+      "RB": 3,
+      "WR": 4,
+      "TE": 3,
+      "OT": 4,
+      "OG": 4,
+      "OC": 4,
+      "EDGE": 2,
+      "DL": 2,
+      "ILB": 1,
+      "OLB": 3,
+      "CB": 2,
+      "S": 4,
+      "FB": 5,
+      "K": 5,
+      "P": 5
     },
-    "priorities": ["positionalNeed","consensusRank","positionalValue","miscConcern","RAS","floorCeiling","positionalScarcity"]
+    "priorities": [
+      "positionalNeed",
+      "consensusRank",
+      "positionalValue",
+      "miscConcern",
+      "RAS",
+      "floorCeiling",
+      "positionalScarcity"
+    ],
+    "picks": [
+      {
+        "overall": 12,
+        "round": 1,
+        "selection": 12
+      },
+      {
+        "overall": 20,
+        "round": 1,
+        "selection": 20
+      },
+      {
+        "overall": 92,
+        "round": 3,
+        "selection": 28
+      },
+      {
+        "overall": 112,
+        "round": 4,
+        "selection": 12
+      },
+      {
+        "overall": 152,
+        "round": 5,
+        "selection": 12
+      },
+      {
+        "overall": 177,
+        "round": 5,
+        "selection": 37
+      },
+      {
+        "overall": 180,
+        "round": 5,
+        "selection": 40
+      },
+      {
+        "overall": 218,
+        "round": 7,
+        "selection": 2
+      }
+    ]
   },
   {
     "id": "LAR",
@@ -149,11 +920,69 @@
     "city": "Los Angeles",
     "noiseRange": 6,
     "positionalNeed": {
-      "QB": 2, "WR": 2, "CB": 5, "OT": 2, "DE": 3,
-      "DT": 2, "ILB": 2, "RB": 3, "TE": 3,
-      "S": 3, "NT": 3, "G": 2, "C": 3, "FB": 5, "K": 5, "P": 5
+      "QB": 2,
+      "RB": 3,
+      "WR": 2,
+      "TE": 3,
+      "OT": 2,
+      "OG": 2,
+      "OC": 3,
+      "EDGE": 3,
+      "DL": 2,
+      "ILB": 2,
+      "OLB": 3,
+      "CB": 5,
+      "S": 3,
+      "FB": 5,
+      "K": 5,
+      "P": 5
     },
-    "priorities": ["consensusRank","positionalNeed","positionalValue","floorCeiling","positionalScarcity","miscConcern","RAS"]
+    "priorities": [
+      "consensusRank",
+      "positionalNeed",
+      "positionalValue",
+      "floorCeiling",
+      "positionalScarcity",
+      "miscConcern",
+      "RAS"
+    ],
+    "picks": [
+      {
+        "overall": 13,
+        "round": 1,
+        "selection": 13
+      },
+      {
+        "overall": 61,
+        "round": 2,
+        "selection": 29
+      },
+      {
+        "overall": 93,
+        "round": 3,
+        "selection": 29
+      },
+      {
+        "overall": 207,
+        "round": 6,
+        "selection": 26
+      },
+      {
+        "overall": 232,
+        "round": 7,
+        "selection": 16
+      },
+      {
+        "overall": 251,
+        "round": 7,
+        "selection": 35
+      },
+      {
+        "overall": 252,
+        "round": 7,
+        "selection": 36
+      }
+    ]
   },
   {
     "id": "BAL",
@@ -161,11 +990,89 @@
     "city": "Baltimore",
     "noiseRange": 6,
     "positionalNeed": {
-      "QB": 5, "WR": 2, "CB": 3, "OT": 2, "DE": 4,
-      "DT": 2, "ILB": 3, "RB": 3, "TE": 4,
-      "S": 3, "NT": 3, "G": 2, "C": 3, "FB": 5, "K": 5, "P": 5
+      "QB": 5,
+      "RB": 3,
+      "WR": 2,
+      "TE": 4,
+      "OT": 2,
+      "OG": 2,
+      "OC": 3,
+      "EDGE": 4,
+      "DL": 2,
+      "ILB": 3,
+      "OLB": 3,
+      "CB": 3,
+      "S": 3,
+      "FB": 5,
+      "K": 5,
+      "P": 5
     },
-    "priorities": ["consensusRank","positionalNeed","RAS","positionalScarcity","floorCeiling","positionalValue","miscConcern"]
+    "priorities": [
+      "consensusRank",
+      "positionalNeed",
+      "RAS",
+      "positionalScarcity",
+      "floorCeiling",
+      "positionalValue",
+      "miscConcern"
+    ],
+    "picks": [
+      {
+        "overall": 14,
+        "round": 1,
+        "selection": 14
+      },
+      {
+        "overall": 45,
+        "round": 2,
+        "selection": 13
+      },
+      {
+        "overall": 80,
+        "round": 3,
+        "selection": 16
+      },
+      {
+        "overall": 115,
+        "round": 4,
+        "selection": 15
+      },
+      {
+        "overall": 154,
+        "round": 5,
+        "selection": 14
+      },
+      {
+        "overall": 162,
+        "round": 5,
+        "selection": 22
+      },
+      {
+        "overall": 173,
+        "round": 5,
+        "selection": 33
+      },
+      {
+        "overall": 174,
+        "round": 5,
+        "selection": 34
+      },
+      {
+        "overall": 211,
+        "round": 6,
+        "selection": 30
+      },
+      {
+        "overall": 250,
+        "round": 7,
+        "selection": 34
+      },
+      {
+        "overall": 253,
+        "round": 7,
+        "selection": 37
+      }
+    ]
   },
   {
     "id": "TB",
@@ -173,11 +1080,69 @@
     "city": "Tampa Bay",
     "noiseRange": 8,
     "positionalNeed": {
-      "QB": 4, "WR": 3, "CB": 2, "OT": 3, "DE": 1,
-      "DT": 2, "ILB": 2, "RB": 3, "TE": 3,
-      "S": 3, "NT": 3, "G": 3, "C": 3, "FB": 5, "K": 5, "P": 5
+      "QB": 4,
+      "RB": 3,
+      "WR": 3,
+      "TE": 3,
+      "OT": 3,
+      "OG": 3,
+      "OC": 3,
+      "EDGE": 1,
+      "DL": 2,
+      "ILB": 2,
+      "OLB": 3,
+      "CB": 2,
+      "S": 3,
+      "FB": 5,
+      "K": 5,
+      "P": 5
     },
-    "priorities": ["consensusRank","positionalNeed","miscConcern","positionalValue","RAS","positionalScarcity","floorCeiling"]
+    "priorities": [
+      "consensusRank",
+      "positionalNeed",
+      "miscConcern",
+      "positionalValue",
+      "RAS",
+      "positionalScarcity",
+      "floorCeiling"
+    ],
+    "picks": [
+      {
+        "overall": 15,
+        "round": 1,
+        "selection": 15
+      },
+      {
+        "overall": 46,
+        "round": 2,
+        "selection": 14
+      },
+      {
+        "overall": 77,
+        "round": 3,
+        "selection": 13
+      },
+      {
+        "overall": 116,
+        "round": 4,
+        "selection": 16
+      },
+      {
+        "overall": 155,
+        "round": 5,
+        "selection": 15
+      },
+      {
+        "overall": 195,
+        "round": 6,
+        "selection": 14
+      },
+      {
+        "overall": 229,
+        "round": 7,
+        "selection": 13
+      }
+    ]
   },
   {
     "id": "DET",
@@ -185,11 +1150,79 @@
     "city": "Detroit",
     "noiseRange": 6,
     "positionalNeed": {
-      "QB": 5, "WR": 4, "CB": 2, "OT": 2, "DE": 2,
-      "DT": 2, "ILB": 3, "RB": 4, "TE": 4,
-      "S": 3, "NT": 3, "G": 2, "C": 4, "FB": 5, "K": 5, "P": 5
+      "QB": 5,
+      "RB": 4,
+      "WR": 4,
+      "TE": 4,
+      "OT": 2,
+      "OG": 2,
+      "OC": 4,
+      "EDGE": 2,
+      "DL": 2,
+      "ILB": 3,
+      "OLB": 3,
+      "CB": 2,
+      "S": 3,
+      "FB": 5,
+      "K": 5,
+      "P": 5
     },
-    "priorities": ["consensusRank","positionalNeed","positionalValue","positionalScarcity","miscConcern","floorCeiling","RAS"]
+    "priorities": [
+      "consensusRank",
+      "positionalNeed",
+      "positionalValue",
+      "positionalScarcity",
+      "miscConcern",
+      "floorCeiling",
+      "RAS"
+    ],
+    "picks": [
+      {
+        "overall": 17,
+        "round": 1,
+        "selection": 17
+      },
+      {
+        "overall": 50,
+        "round": 2,
+        "selection": 18
+      },
+      {
+        "overall": 118,
+        "round": 4,
+        "selection": 18
+      },
+      {
+        "overall": 128,
+        "round": 4,
+        "selection": 28
+      },
+      {
+        "overall": 157,
+        "round": 5,
+        "selection": 17
+      },
+      {
+        "overall": 181,
+        "round": 5,
+        "selection": 41
+      },
+      {
+        "overall": 205,
+        "round": 6,
+        "selection": 24
+      },
+      {
+        "overall": 213,
+        "round": 6,
+        "selection": 32
+      },
+      {
+        "overall": 222,
+        "round": 7,
+        "selection": 6
+      }
+    ]
   },
   {
     "id": "MIN",
@@ -197,11 +1230,79 @@
     "city": "Minnesota",
     "noiseRange": 7,
     "positionalNeed": {
-      "QB": 1, "WR": 3, "CB": 2, "OT": 3, "DE": 3,
-      "DT": 2, "ILB": 3, "RB": 3, "TE": 3,
-      "S": 1, "NT": 3, "G": 3, "C": 3, "FB": 5, "K": 5, "P": 5
+      "QB": 1,
+      "RB": 3,
+      "WR": 3,
+      "TE": 3,
+      "OT": 3,
+      "OG": 3,
+      "OC": 3,
+      "EDGE": 3,
+      "DL": 2,
+      "ILB": 3,
+      "OLB": 3,
+      "CB": 2,
+      "S": 1,
+      "FB": 5,
+      "K": 5,
+      "P": 5
     },
-    "priorities": ["consensusRank","positionalNeed","floorCeiling","miscConcern","positionalValue","RAS","positionalScarcity"]
+    "priorities": [
+      "consensusRank",
+      "positionalNeed",
+      "floorCeiling",
+      "miscConcern",
+      "positionalValue",
+      "RAS",
+      "positionalScarcity"
+    ],
+    "picks": [
+      {
+        "overall": 18,
+        "round": 1,
+        "selection": 18
+      },
+      {
+        "overall": 49,
+        "round": 2,
+        "selection": 17
+      },
+      {
+        "overall": 82,
+        "round": 3,
+        "selection": 18
+      },
+      {
+        "overall": 97,
+        "round": 3,
+        "selection": 33
+      },
+      {
+        "overall": 163,
+        "round": 5,
+        "selection": 23
+      },
+      {
+        "overall": 196,
+        "round": 6,
+        "selection": 15
+      },
+      {
+        "overall": 234,
+        "round": 7,
+        "selection": 18
+      },
+      {
+        "overall": 235,
+        "round": 7,
+        "selection": 19
+      },
+      {
+        "overall": 244,
+        "round": 7,
+        "selection": 28
+      }
+    ]
   },
   {
     "id": "CAR",
@@ -209,11 +1310,69 @@
     "city": "Carolina",
     "noiseRange": 9,
     "positionalNeed": {
-      "QB": 4, "WR": 3, "CB": 3, "OT": 3, "DE": 4,
-      "DT": 3, "ILB": 2, "RB": 2, "TE": 2,
-      "S": 1, "NT": 3, "G": 4, "C": 1, "FB": 5, "K": 5, "P": 5
+      "QB": 4,
+      "RB": 2,
+      "WR": 3,
+      "TE": 2,
+      "OT": 3,
+      "OG": 4,
+      "OC": 1,
+      "EDGE": 4,
+      "DL": 3,
+      "ILB": 2,
+      "OLB": 3,
+      "CB": 3,
+      "S": 1,
+      "FB": 5,
+      "K": 5,
+      "P": 5
     },
-    "priorities": ["positionalNeed","consensusRank","positionalScarcity","floorCeiling","RAS","miscConcern","positionalValue"]
+    "priorities": [
+      "positionalNeed",
+      "consensusRank",
+      "positionalScarcity",
+      "floorCeiling",
+      "RAS",
+      "miscConcern",
+      "positionalValue"
+    ],
+    "picks": [
+      {
+        "overall": 19,
+        "round": 1,
+        "selection": 19
+      },
+      {
+        "overall": 51,
+        "round": 2,
+        "selection": 19
+      },
+      {
+        "overall": 83,
+        "round": 3,
+        "selection": 19
+      },
+      {
+        "overall": 119,
+        "round": 4,
+        "selection": 19
+      },
+      {
+        "overall": 158,
+        "round": 5,
+        "selection": 18
+      },
+      {
+        "overall": 159,
+        "round": 5,
+        "selection": 19
+      },
+      {
+        "overall": 200,
+        "round": 6,
+        "selection": 19
+      }
+    ]
   },
   {
     "id": "PIT",
@@ -221,11 +1380,94 @@
     "city": "Pittsburgh",
     "noiseRange": 7,
     "positionalNeed": {
-      "QB": 1, "WR": 4, "CB": 3, "OT": 3, "DE": 4,
-      "DT": 4, "ILB": 3, "RB": 2, "TE": 4,
-      "S": 2, "NT": 3, "G": 3, "C": 3, "FB": 5, "K": 5, "P": 5
+      "QB": 1,
+      "RB": 2,
+      "WR": 4,
+      "TE": 4,
+      "OT": 3,
+      "OG": 3,
+      "OC": 3,
+      "EDGE": 4,
+      "DL": 4,
+      "ILB": 3,
+      "OLB": 3,
+      "CB": 3,
+      "S": 2,
+      "FB": 5,
+      "K": 5,
+      "P": 5
     },
-    "priorities": ["positionalNeed","consensusRank","miscConcern","RAS","positionalValue","floorCeiling","positionalScarcity"]
+    "priorities": [
+      "positionalNeed",
+      "consensusRank",
+      "miscConcern",
+      "RAS",
+      "positionalValue",
+      "floorCeiling",
+      "positionalScarcity"
+    ],
+    "picks": [
+      {
+        "overall": 21,
+        "round": 1,
+        "selection": 21
+      },
+      {
+        "overall": 53,
+        "round": 2,
+        "selection": 21
+      },
+      {
+        "overall": 76,
+        "round": 3,
+        "selection": 12
+      },
+      {
+        "overall": 85,
+        "round": 3,
+        "selection": 21
+      },
+      {
+        "overall": 99,
+        "round": 3,
+        "selection": 35
+      },
+      {
+        "overall": 121,
+        "round": 4,
+        "selection": 21
+      },
+      {
+        "overall": 135,
+        "round": 4,
+        "selection": 35
+      },
+      {
+        "overall": 161,
+        "round": 5,
+        "selection": 21
+      },
+      {
+        "overall": 216,
+        "round": 6,
+        "selection": 35
+      },
+      {
+        "overall": 224,
+        "round": 7,
+        "selection": 8
+      },
+      {
+        "overall": 230,
+        "round": 7,
+        "selection": 14
+      },
+      {
+        "overall": 237,
+        "round": 7,
+        "selection": 21
+      }
+    ]
   },
   {
     "id": "LAC",
@@ -233,11 +1475,59 @@
     "city": "Los Angeles",
     "noiseRange": 7,
     "positionalNeed": {
-      "QB": 5, "WR": 3, "CB": 2, "OT": 5, "DE": 2,
-      "DT": 2, "ILB": 3, "RB": 4, "TE": 3,
-      "S": 2, "NT": 3, "G": 3, "C": 3, "FB": 5, "K": 5, "P": 5
+      "QB": 5,
+      "RB": 4,
+      "WR": 3,
+      "TE": 3,
+      "OT": 5,
+      "OG": 3,
+      "OC": 3,
+      "EDGE": 2,
+      "DL": 2,
+      "ILB": 3,
+      "OLB": 3,
+      "CB": 2,
+      "S": 2,
+      "FB": 5,
+      "K": 5,
+      "P": 5
     },
-    "priorities": ["consensusRank","positionalNeed","RAS","miscConcern","floorCeiling","positionalScarcity","positionalValue"]
+    "priorities": [
+      "consensusRank",
+      "positionalNeed",
+      "RAS",
+      "miscConcern",
+      "floorCeiling",
+      "positionalScarcity",
+      "positionalValue"
+    ],
+    "picks": [
+      {
+        "overall": 22,
+        "round": 1,
+        "selection": 22
+      },
+      {
+        "overall": 55,
+        "round": 2,
+        "selection": 23
+      },
+      {
+        "overall": 86,
+        "round": 3,
+        "selection": 22
+      },
+      {
+        "overall": 123,
+        "round": 4,
+        "selection": 23
+      },
+      {
+        "overall": 204,
+        "round": 6,
+        "selection": 23
+      }
+    ]
   },
   {
     "id": "PHI",
@@ -245,11 +1535,79 @@
     "city": "Philadelphia",
     "noiseRange": 6,
     "positionalNeed": {
-      "QB": 4, "WR": 4, "CB": 4, "OT": 2, "DE": 1,
-      "DT": 5, "ILB": 3, "RB": 3, "TE": 2,
-      "S": 2, "NT": 4, "G": 3, "C": 4, "FB": 5, "K": 5, "P": 5
+      "QB": 4,
+      "RB": 3,
+      "WR": 4,
+      "TE": 2,
+      "OT": 2,
+      "OG": 3,
+      "OC": 4,
+      "EDGE": 1,
+      "DL": 4,
+      "ILB": 3,
+      "OLB": 3,
+      "CB": 4,
+      "S": 2,
+      "FB": 5,
+      "K": 5,
+      "P": 5
     },
-    "priorities": ["consensusRank","positionalNeed","positionalValue","RAS","positionalScarcity","floorCeiling","miscConcern"]
+    "priorities": [
+      "consensusRank",
+      "positionalNeed",
+      "positionalValue",
+      "RAS",
+      "positionalScarcity",
+      "floorCeiling",
+      "miscConcern"
+    ],
+    "picks": [
+      {
+        "overall": 23,
+        "round": 1,
+        "selection": 23
+      },
+      {
+        "overall": 54,
+        "round": 2,
+        "selection": 22
+      },
+      {
+        "overall": 68,
+        "round": 3,
+        "selection": 4
+      },
+      {
+        "overall": 98,
+        "round": 3,
+        "selection": 34
+      },
+      {
+        "overall": 122,
+        "round": 4,
+        "selection": 22
+      },
+      {
+        "overall": 137,
+        "round": 4,
+        "selection": 37
+      },
+      {
+        "overall": 153,
+        "round": 5,
+        "selection": 13
+      },
+      {
+        "overall": 178,
+        "round": 5,
+        "selection": 38
+      },
+      {
+        "overall": 215,
+        "round": 6,
+        "selection": 34
+      }
+    ]
   },
   {
     "id": "IND",
@@ -257,11 +1615,69 @@
     "city": "Indianapolis",
     "noiseRange": 8,
     "positionalNeed": {
-      "QB": 3, "WR": 2, "CB": 3, "OT": 3, "DE": 2,
-      "DT": 3, "ILB": 3, "RB": 4, "TE": 4,
-      "S": 3, "NT": 3, "G": 4, "C": 3, "FB": 5, "K": 5, "P": 5
+      "QB": 3,
+      "RB": 4,
+      "WR": 2,
+      "TE": 4,
+      "OT": 3,
+      "OG": 4,
+      "OC": 3,
+      "EDGE": 2,
+      "DL": 3,
+      "ILB": 3,
+      "OLB": 3,
+      "CB": 3,
+      "S": 3,
+      "FB": 5,
+      "K": 5,
+      "P": 5
     },
-    "priorities": ["consensusRank","positionalNeed","floorCeiling","positionalValue","miscConcern","RAS","positionalScarcity"]
+    "priorities": [
+      "consensusRank",
+      "positionalNeed",
+      "floorCeiling",
+      "positionalValue",
+      "miscConcern",
+      "RAS",
+      "positionalScarcity"
+    ],
+    "picks": [
+      {
+        "overall": 47,
+        "round": 2,
+        "selection": 15
+      },
+      {
+        "overall": 78,
+        "round": 3,
+        "selection": 14
+      },
+      {
+        "overall": 113,
+        "round": 4,
+        "selection": 13
+      },
+      {
+        "overall": 156,
+        "round": 5,
+        "selection": 16
+      },
+      {
+        "overall": 214,
+        "round": 6,
+        "selection": 33
+      },
+      {
+        "overall": 249,
+        "round": 7,
+        "selection": 33
+      },
+      {
+        "overall": 254,
+        "round": 7,
+        "selection": 38
+      }
+    ]
   },
   {
     "id": "HOU",
@@ -269,11 +1685,74 @@
     "city": "Houston",
     "noiseRange": 7,
     "positionalNeed": {
-      "QB": 3, "WR": 4, "CB": 4, "OT": 3, "DE": 5,
-      "DT": 3, "ILB": 3, "RB": 2, "TE": 2,
-      "S": 4, "NT": 3, "G": 3, "C": 3, "FB": 5, "K": 5, "P": 5
+      "QB": 3,
+      "RB": 2,
+      "WR": 4,
+      "TE": 2,
+      "OT": 3,
+      "OG": 3,
+      "OC": 3,
+      "EDGE": 5,
+      "DL": 3,
+      "ILB": 3,
+      "OLB": 3,
+      "CB": 4,
+      "S": 4,
+      "FB": 5,
+      "K": 5,
+      "P": 5
     },
-    "priorities": ["consensusRank","positionalNeed","RAS","floorCeiling","positionalScarcity","miscConcern","positionalValue"]
+    "priorities": [
+      "consensusRank",
+      "positionalNeed",
+      "RAS",
+      "floorCeiling",
+      "positionalScarcity",
+      "miscConcern",
+      "positionalValue"
+    ],
+    "picks": [
+      {
+        "overall": 28,
+        "round": 1,
+        "selection": 28
+      },
+      {
+        "overall": 38,
+        "round": 2,
+        "selection": 6
+      },
+      {
+        "overall": 59,
+        "round": 2,
+        "selection": 27
+      },
+      {
+        "overall": 69,
+        "round": 3,
+        "selection": 5
+      },
+      {
+        "overall": 106,
+        "round": 4,
+        "selection": 6
+      },
+      {
+        "overall": 141,
+        "round": 5,
+        "selection": 1
+      },
+      {
+        "overall": 167,
+        "round": 5,
+        "selection": 27
+      },
+      {
+        "overall": 243,
+        "round": 7,
+        "selection": 27
+      }
+    ]
   },
   {
     "id": "ATL",
@@ -281,11 +1760,59 @@
     "city": "Atlanta",
     "noiseRange": 9,
     "positionalNeed": {
-      "QB": 2, "WR": 3, "CB": 2, "OT": 3, "DE": 3,
-      "DT": 2, "ILB": 2, "RB": 4, "TE": 3,
-      "S": 3, "NT": 3, "G": 4, "C": 3, "FB": 5, "K": 5, "P": 5
+      "QB": 2,
+      "RB": 4,
+      "WR": 3,
+      "TE": 3,
+      "OT": 3,
+      "OG": 4,
+      "OC": 3,
+      "EDGE": 3,
+      "DL": 2,
+      "ILB": 2,
+      "OLB": 3,
+      "CB": 2,
+      "S": 3,
+      "FB": 5,
+      "K": 5,
+      "P": 5
     },
-    "priorities": ["consensusRank","positionalNeed","positionalScarcity","RAS","miscConcern","floorCeiling","positionalValue"]
+    "priorities": [
+      "consensusRank",
+      "positionalNeed",
+      "positionalScarcity",
+      "RAS",
+      "miscConcern",
+      "floorCeiling",
+      "positionalValue"
+    ],
+    "picks": [
+      {
+        "overall": 48,
+        "round": 2,
+        "selection": 16
+      },
+      {
+        "overall": 79,
+        "round": 3,
+        "selection": 15
+      },
+      {
+        "overall": 114,
+        "round": 4,
+        "selection": 14
+      },
+      {
+        "overall": 197,
+        "round": 6,
+        "selection": 16
+      },
+      {
+        "overall": 231,
+        "round": 7,
+        "selection": 15
+      }
+    ]
   },
   {
     "id": "JAX",
@@ -293,11 +1820,89 @@
     "city": "Jacksonville",
     "noiseRange": 10,
     "positionalNeed": {
-      "QB": 4, "WR": 2, "CB": 3, "OT": 3, "DE": 3,
-      "DT": 3, "ILB": 2, "RB": 2, "TE": 3,
-      "S": 3, "NT": 3, "G": 2, "C": 3, "FB": 5, "K": 5, "P": 5
+      "QB": 4,
+      "RB": 2,
+      "WR": 2,
+      "TE": 3,
+      "OT": 3,
+      "OG": 2,
+      "OC": 3,
+      "EDGE": 3,
+      "DL": 3,
+      "ILB": 2,
+      "OLB": 3,
+      "CB": 3,
+      "S": 3,
+      "FB": 5,
+      "K": 5,
+      "P": 5
     },
-    "priorities": ["positionalNeed","consensusRank","floorCeiling","miscConcern","positionalValue","RAS","positionalScarcity"]
+    "priorities": [
+      "positionalNeed",
+      "consensusRank",
+      "floorCeiling",
+      "miscConcern",
+      "positionalValue",
+      "RAS",
+      "positionalScarcity"
+    ],
+    "picks": [
+      {
+        "overall": 56,
+        "round": 2,
+        "selection": 24
+      },
+      {
+        "overall": 81,
+        "round": 3,
+        "selection": 17
+      },
+      {
+        "overall": 88,
+        "round": 3,
+        "selection": 24
+      },
+      {
+        "overall": 100,
+        "round": 3,
+        "selection": 36
+      },
+      {
+        "overall": 124,
+        "round": 4,
+        "selection": 24
+      },
+      {
+        "overall": 164,
+        "round": 5,
+        "selection": 24
+      },
+      {
+        "overall": 166,
+        "round": 5,
+        "selection": 26
+      },
+      {
+        "overall": 203,
+        "round": 6,
+        "selection": 22
+      },
+      {
+        "overall": 233,
+        "round": 7,
+        "selection": 17
+      },
+      {
+        "overall": 240,
+        "round": 7,
+        "selection": 24
+      },
+      {
+        "overall": 245,
+        "round": 7,
+        "selection": 29
+      }
+    ]
   },
   {
     "id": "SEA",
@@ -305,11 +1910,54 @@
     "city": "Seattle",
     "noiseRange": 8,
     "positionalNeed": {
-      "QB": 4, "WR": 4, "CB": 3, "OT": 3, "DE": 4,
-      "DT": 5, "ILB": 4, "RB": 1, "TE": 3,
-      "S": 3, "NT": 3, "G": 1, "C": 2, "FB": 5, "K": 5, "P": 5
+      "QB": 4,
+      "RB": 1,
+      "WR": 4,
+      "TE": 3,
+      "OT": 3,
+      "OG": 1,
+      "OC": 2,
+      "EDGE": 4,
+      "DL": 4,
+      "ILB": 4,
+      "OLB": 3,
+      "CB": 3,
+      "S": 3,
+      "FB": 5,
+      "K": 5,
+      "P": 5
     },
-    "priorities": ["consensusRank","positionalNeed","RAS","positionalValue","floorCeiling","positionalScarcity","miscConcern"]
+    "priorities": [
+      "consensusRank",
+      "positionalNeed",
+      "RAS",
+      "positionalValue",
+      "floorCeiling",
+      "positionalScarcity",
+      "miscConcern"
+    ],
+    "picks": [
+      {
+        "overall": 32,
+        "round": 1,
+        "selection": 32
+      },
+      {
+        "overall": 64,
+        "round": 2,
+        "selection": 32
+      },
+      {
+        "overall": 96,
+        "round": 3,
+        "selection": 32
+      },
+      {
+        "overall": 188,
+        "round": 6,
+        "selection": 7
+      }
+    ]
   },
   {
     "id": "CHI",
@@ -317,11 +1965,69 @@
     "city": "Chicago",
     "noiseRange": 9,
     "positionalNeed": {
-      "QB": 5, "WR": 2, "CB": 2, "OT": 2, "DE": 2,
-      "DT": 3, "ILB": 3, "RB": 3, "TE": 3,
-      "S": 3, "NT": 3, "G": 2, "C": 3, "FB": 5, "K": 5, "P": 5
+      "QB": 5,
+      "RB": 3,
+      "WR": 2,
+      "TE": 3,
+      "OT": 2,
+      "OG": 2,
+      "OC": 3,
+      "EDGE": 2,
+      "DL": 3,
+      "ILB": 3,
+      "OLB": 3,
+      "CB": 2,
+      "S": 3,
+      "FB": 5,
+      "K": 5,
+      "P": 5
     },
-    "priorities": ["consensusRank","positionalNeed","miscConcern","floorCeiling","positionalValue","positionalScarcity","RAS"]
+    "priorities": [
+      "consensusRank",
+      "positionalNeed",
+      "miscConcern",
+      "floorCeiling",
+      "positionalValue",
+      "positionalScarcity",
+      "RAS"
+    ],
+    "picks": [
+      {
+        "overall": 25,
+        "round": 1,
+        "selection": 25
+      },
+      {
+        "overall": 57,
+        "round": 2,
+        "selection": 25
+      },
+      {
+        "overall": 60,
+        "round": 2,
+        "selection": 28
+      },
+      {
+        "overall": 89,
+        "round": 3,
+        "selection": 25
+      },
+      {
+        "overall": 129,
+        "round": 4,
+        "selection": 29
+      },
+      {
+        "overall": 239,
+        "round": 7,
+        "selection": 23
+      },
+      {
+        "overall": 241,
+        "round": 7,
+        "selection": 25
+      }
+    ]
   },
   {
     "id": "DEN",
@@ -329,11 +2035,79 @@
     "city": "Denver",
     "noiseRange": 7,
     "positionalNeed": {
-      "QB": 5, "WR": 2, "CB": 5, "OT": 4, "DE": 3,
-      "DT": 4, "ILB": 2, "RB": 3, "TE": 3,
-      "S": 3, "NT": 3, "G": 3, "C": 3, "FB": 5, "K": 5, "P": 5
+      "QB": 5,
+      "RB": 3,
+      "WR": 2,
+      "TE": 3,
+      "OT": 4,
+      "OG": 3,
+      "OC": 3,
+      "EDGE": 3,
+      "DL": 4,
+      "ILB": 2,
+      "OLB": 3,
+      "CB": 5,
+      "S": 3,
+      "FB": 5,
+      "K": 5,
+      "P": 5
     },
-    "priorities": ["consensusRank","positionalNeed","positionalValue","positionalScarcity","RAS","miscConcern","floorCeiling"]
+    "priorities": [
+      "consensusRank",
+      "positionalNeed",
+      "positionalValue",
+      "positionalScarcity",
+      "RAS",
+      "miscConcern",
+      "floorCeiling"
+    ],
+    "picks": [
+      {
+        "overall": 30,
+        "round": 1,
+        "selection": 30
+      },
+      {
+        "overall": 62,
+        "round": 2,
+        "selection": 30
+      },
+      {
+        "overall": 94,
+        "round": 3,
+        "selection": 30
+      },
+      {
+        "overall": 108,
+        "round": 4,
+        "selection": 8
+      },
+      {
+        "overall": 130,
+        "round": 4,
+        "selection": 30
+      },
+      {
+        "overall": 170,
+        "round": 5,
+        "selection": 30
+      },
+      {
+        "overall": 246,
+        "round": 7,
+        "selection": 30
+      },
+      {
+        "overall": 256,
+        "round": 7,
+        "selection": 40
+      },
+      {
+        "overall": 257,
+        "round": 7,
+        "selection": 41
+      }
+    ]
   },
   {
     "id": "SF",
@@ -341,11 +2115,64 @@
     "city": "San Francisco",
     "noiseRange": 6,
     "positionalNeed": {
-      "QB": 5, "WR": 2, "CB": 3, "OT": 2, "DE": 1,
-      "DT": 4, "ILB": 4, "RB": 3, "TE": 4,
-      "S": 2, "NT": 3, "G": 2, "C": 2, "FB": 5, "K": 5, "P": 5
+      "QB": 5,
+      "RB": 3,
+      "WR": 2,
+      "TE": 4,
+      "OT": 2,
+      "OG": 2,
+      "OC": 2,
+      "EDGE": 1,
+      "DL": 4,
+      "ILB": 4,
+      "OLB": 3,
+      "CB": 3,
+      "S": 2,
+      "FB": 5,
+      "K": 5,
+      "P": 5
     },
-    "priorities": ["consensusRank","positionalNeed","positionalValue","floorCeiling","RAS","positionalScarcity","miscConcern"]
+    "priorities": [
+      "consensusRank",
+      "positionalNeed",
+      "positionalValue",
+      "floorCeiling",
+      "RAS",
+      "positionalScarcity",
+      "miscConcern"
+    ],
+    "picks": [
+      {
+        "overall": 27,
+        "round": 1,
+        "selection": 27
+      },
+      {
+        "overall": 58,
+        "round": 2,
+        "selection": 26
+      },
+      {
+        "overall": 127,
+        "round": 4,
+        "selection": 27
+      },
+      {
+        "overall": 133,
+        "round": 4,
+        "selection": 33
+      },
+      {
+        "overall": 138,
+        "round": 4,
+        "selection": 38
+      },
+      {
+        "overall": 139,
+        "round": 4,
+        "selection": 39
+      }
+    ]
   },
   {
     "id": "BUF",
@@ -353,11 +2180,69 @@
     "city": "Buffalo",
     "noiseRange": 6,
     "positionalNeed": {
-      "QB": 5, "WR": 4, "CB": 3, "OT": 3, "DE": 3,
-      "DT": 3, "ILB": 3, "RB": 4, "TE": 3,
-      "S": 3, "NT": 3, "G": 3, "C": 3, "FB": 5, "K": 5, "P": 5
+      "QB": 5,
+      "RB": 4,
+      "WR": 4,
+      "TE": 3,
+      "OT": 3,
+      "OG": 3,
+      "OC": 3,
+      "EDGE": 3,
+      "DL": 3,
+      "ILB": 3,
+      "OLB": 3,
+      "CB": 3,
+      "S": 3,
+      "FB": 5,
+      "K": 5,
+      "P": 5
     },
-    "priorities": ["consensusRank","positionalNeed","RAS","miscConcern","positionalValue","floorCeiling","positionalScarcity"]
+    "priorities": [
+      "consensusRank",
+      "positionalNeed",
+      "RAS",
+      "miscConcern",
+      "positionalValue",
+      "floorCeiling",
+      "positionalScarcity"
+    ],
+    "picks": [
+      {
+        "overall": 26,
+        "round": 1,
+        "selection": 26
+      },
+      {
+        "overall": 91,
+        "round": 3,
+        "selection": 27
+      },
+      {
+        "overall": 126,
+        "round": 4,
+        "selection": 26
+      },
+      {
+        "overall": 165,
+        "round": 5,
+        "selection": 25
+      },
+      {
+        "overall": 168,
+        "round": 5,
+        "selection": 28
+      },
+      {
+        "overall": 182,
+        "round": 6,
+        "selection": 1
+      },
+      {
+        "overall": 220,
+        "round": 7,
+        "selection": 4
+      }
+    ]
   },
   {
     "id": "GB",
@@ -365,11 +2250,69 @@
     "city": "Green Bay",
     "noiseRange": 7,
     "positionalNeed": {
-      "QB": 5, "WR": 2, "CB": 2, "OT": 3, "DE": 3,
-      "DT": 3, "ILB": 3, "RB": 3, "TE": 3,
-      "S": 3, "NT": 3, "G": 3, "C": 3, "FB": 5, "K": 5, "P": 5
+      "QB": 5,
+      "RB": 3,
+      "WR": 2,
+      "TE": 3,
+      "OT": 3,
+      "OG": 3,
+      "OC": 3,
+      "EDGE": 3,
+      "DL": 3,
+      "ILB": 3,
+      "OLB": 3,
+      "CB": 2,
+      "S": 3,
+      "FB": 5,
+      "K": 5,
+      "P": 5
     },
-    "priorities": ["consensusRank","positionalNeed","floorCeiling","positionalScarcity","RAS","positionalValue","miscConcern"]
+    "priorities": [
+      "consensusRank",
+      "positionalNeed",
+      "floorCeiling",
+      "positionalScarcity",
+      "RAS",
+      "positionalValue",
+      "miscConcern"
+    ],
+    "picks": [
+      {
+        "overall": 52,
+        "round": 2,
+        "selection": 20
+      },
+      {
+        "overall": 84,
+        "round": 3,
+        "selection": 20
+      },
+      {
+        "overall": 120,
+        "round": 4,
+        "selection": 20
+      },
+      {
+        "overall": 160,
+        "round": 5,
+        "selection": 20
+      },
+      {
+        "overall": 201,
+        "round": 6,
+        "selection": 20
+      },
+      {
+        "overall": 236,
+        "round": 7,
+        "selection": 20
+      },
+      {
+        "overall": 255,
+        "round": 7,
+        "selection": 39
+      }
+    ]
   },
   {
     "id": "NE",
@@ -377,10 +2320,88 @@
     "city": "New England",
     "noiseRange": 7,
     "positionalNeed": {
-      "QB": 5, "WR": 2, "CB": 4, "OT": 3, "DE": 3,
-      "DT": 3, "ILB": 3, "RB": 3, "TE": 3,
-      "S": 3, "NT": 3, "G": 2, "C": 3, "FB": 5, "K": 5, "P": 5
+      "QB": 5,
+      "RB": 3,
+      "WR": 2,
+      "TE": 3,
+      "OT": 3,
+      "OG": 2,
+      "OC": 3,
+      "EDGE": 3,
+      "DL": 3,
+      "ILB": 3,
+      "OLB": 3,
+      "CB": 4,
+      "S": 3,
+      "FB": 5,
+      "K": 5,
+      "P": 5
     },
-    "priorities": ["consensusRank","positionalNeed","miscConcern","RAS","floorCeiling","positionalValue","positionalScarcity"]
+    "priorities": [
+      "consensusRank",
+      "positionalNeed",
+      "miscConcern",
+      "RAS",
+      "floorCeiling",
+      "positionalValue",
+      "positionalScarcity"
+    ],
+    "picks": [
+      {
+        "overall": 31,
+        "round": 1,
+        "selection": 31
+      },
+      {
+        "overall": 63,
+        "round": 2,
+        "selection": 31
+      },
+      {
+        "overall": 95,
+        "round": 3,
+        "selection": 31
+      },
+      {
+        "overall": 125,
+        "round": 4,
+        "selection": 25
+      },
+      {
+        "overall": 131,
+        "round": 4,
+        "selection": 31
+      },
+      {
+        "overall": 171,
+        "round": 5,
+        "selection": 31
+      },
+      {
+        "overall": 191,
+        "round": 6,
+        "selection": 10
+      },
+      {
+        "overall": 198,
+        "round": 6,
+        "selection": 17
+      },
+      {
+        "overall": 202,
+        "round": 6,
+        "selection": 21
+      },
+      {
+        "overall": 212,
+        "round": 6,
+        "selection": 31
+      },
+      {
+        "overall": 247,
+        "round": 7,
+        "selection": 31
+      }
+    ]
   }
 ]
