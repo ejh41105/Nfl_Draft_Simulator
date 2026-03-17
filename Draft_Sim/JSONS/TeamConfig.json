@@ -35,52 +35,62 @@
       {
         "overall": 1,
         "round": 1,
-        "selection": 1
+        "selection": 1,
+        "tradeValue": 3000
       },
       {
         "overall": 36,
         "round": 2,
-        "selection": 4
+        "selection": 4,
+        "tradeValue": 540
       },
       {
         "overall": 67,
         "round": 3,
-        "selection": 3
+        "selection": 3,
+        "tradeValue": 255
       },
       {
         "overall": 102,
         "round": 4,
-        "selection": 2
+        "selection": 2,
+        "tradeValue": 92
       },
       {
         "overall": 117,
         "round": 4,
-        "selection": 17
+        "selection": 17,
+        "tradeValue": 60
       },
       {
         "overall": 134,
         "round": 4,
-        "selection": 34
+        "selection": 34,
+        "tradeValue": 39
       },
       {
         "overall": 175,
         "round": 5,
-        "selection": 35
+        "selection": 35,
+        "tradeValue": 21
       },
       {
         "overall": 185,
         "round": 6,
-        "selection": 4
+        "selection": 4,
+        "tradeValue": 17
       },
       {
         "overall": 208,
         "round": 6,
-        "selection": 27
+        "selection": 27,
+        "tradeValue": 7
       },
       {
         "overall": 219,
         "round": 7,
-        "selection": 3
+        "selection": 3,
+        "tradeValue": 1
       }
     ]
   },
@@ -120,47 +130,56 @@
       {
         "overall": 2,
         "round": 1,
-        "selection": 2
+        "selection": 2,
+        "tradeValue": 2600
       },
       {
         "overall": 16,
         "round": 1,
-        "selection": 16
+        "selection": 16,
+        "tradeValue": 1000
       },
       {
         "overall": 33,
         "round": 2,
-        "selection": 1
+        "selection": 1,
+        "tradeValue": 580
       },
       {
         "overall": 44,
         "round": 2,
-        "selection": 12
+        "selection": 12,
+        "tradeValue": 460
       },
       {
         "overall": 103,
         "round": 4,
-        "selection": 3
+        "selection": 3,
+        "tradeValue": 88
       },
       {
         "overall": 140,
         "round": 4,
-        "selection": 40
+        "selection": 40,
+        "tradeValue": 36
       },
       {
         "overall": 179,
         "round": 5,
-        "selection": 39
+        "selection": 39,
+        "tradeValue": 19
       },
       {
         "overall": 228,
         "round": 7,
-        "selection": 12
+        "selection": 12,
+        "tradeValue": 1
       },
       {
         "overall": 242,
         "round": 7,
-        "selection": 26
+        "selection": 26,
+        "tradeValue": 1
       }
     ]
   },
@@ -200,37 +219,44 @@
       {
         "overall": 3,
         "round": 1,
-        "selection": 3
+        "selection": 3,
+        "tradeValue": 2200
       },
       {
         "overall": 34,
         "round": 2,
-        "selection": 2
+        "selection": 2,
+        "tradeValue": 560
       },
       {
         "overall": 65,
         "round": 3,
-        "selection": 1
+        "selection": 1,
+        "tradeValue": 265
       },
       {
         "overall": 104,
         "round": 4,
-        "selection": 4
+        "selection": 4,
+        "tradeValue": 86
       },
       {
         "overall": 143,
         "round": 5,
-        "selection": 3
+        "selection": 3,
+        "tradeValue": 34
       },
       {
         "overall": 183,
         "round": 6,
-        "selection": 2
+        "selection": 2,
+        "tradeValue": 17
       },
       {
         "overall": 217,
         "round": 7,
-        "selection": 1
+        "selection": 1,
+        "tradeValue": 1
       }
     ]
   },
@@ -270,47 +296,56 @@
       {
         "overall": 4,
         "round": 1,
-        "selection": 4
+        "selection": 4,
+        "tradeValue": 1800
       },
       {
         "overall": 35,
         "round": 2,
-        "selection": 3
+        "selection": 3,
+        "tradeValue": 550
       },
       {
         "overall": 66,
         "round": 3,
-        "selection": 2
+        "selection": 2,
+        "tradeValue": 260
       },
       {
         "overall": 101,
         "round": 4,
-        "selection": 1
+        "selection": 1,
+        "tradeValue": 96
       },
       {
         "overall": 142,
         "round": 5,
-        "selection": 2
+        "selection": 2,
+        "tradeValue": 35
       },
       {
         "overall": 144,
         "round": 5,
-        "selection": 4
+        "selection": 4,
+        "tradeValue": 34
       },
       {
         "overall": 184,
         "round": 6,
-        "selection": 3
+        "selection": 3,
+        "tradeValue": 17
       },
       {
         "overall": 194,
         "round": 6,
-        "selection": 13
+        "selection": 13,
+        "tradeValue": 13
       },
       {
         "overall": 225,
         "round": 7,
-        "selection": 9
+        "selection": 9,
+        "tradeValue": 1
       }
     ]
   },
@@ -350,37 +385,44 @@
       {
         "overall": 5,
         "round": 1,
-        "selection": 5
+        "selection": 5,
+        "tradeValue": 1700
       },
       {
         "overall": 37,
         "round": 2,
-        "selection": 5
+        "selection": 5,
+        "tradeValue": 530
       },
       {
         "overall": 105,
         "round": 4,
-        "selection": 5
+        "selection": 5,
+        "tradeValue": 84
       },
       {
         "overall": 145,
         "round": 5,
-        "selection": 5
+        "selection": 5,
+        "tradeValue": 33
       },
       {
         "overall": 186,
         "round": 6,
-        "selection": 5
+        "selection": 5,
+        "tradeValue": 16
       },
       {
         "overall": 192,
         "round": 6,
-        "selection": 11
+        "selection": 11,
+        "tradeValue": 14
       },
       {
         "overall": 193,
         "round": 6,
-        "selection": 12
+        "selection": 12,
+        "tradeValue": 13
       }
     ]
   },
@@ -420,47 +462,56 @@
       {
         "overall": 6,
         "round": 1,
-        "selection": 6
+        "selection": 6,
+        "tradeValue": 1600
       },
       {
         "overall": 24,
         "round": 1,
-        "selection": 24
+        "selection": 24,
+        "tradeValue": 740
       },
       {
         "overall": 39,
         "round": 2,
-        "selection": 7
+        "selection": 7,
+        "tradeValue": 510
       },
       {
         "overall": 70,
         "round": 3,
-        "selection": 6
+        "selection": 6,
+        "tradeValue": 240
       },
       {
         "overall": 107,
         "round": 4,
-        "selection": 7
+        "selection": 7,
+        "tradeValue": 80
       },
       {
         "overall": 146,
         "round": 5,
-        "selection": 6
+        "selection": 6,
+        "tradeValue": 33
       },
       {
         "overall": 149,
         "round": 5,
-        "selection": 9
+        "selection": 9,
+        "tradeValue": 31
       },
       {
         "overall": 206,
         "round": 6,
-        "selection": 25
+        "selection": 25,
+        "tradeValue": 8
       },
       {
         "overall": 248,
         "round": 7,
-        "selection": 32
+        "selection": 32,
+        "tradeValue": 1
       }
     ]
   },
@@ -500,32 +551,38 @@
       {
         "overall": 7,
         "round": 1,
-        "selection": 7
+        "selection": 7,
+        "tradeValue": 1500
       },
       {
         "overall": 71,
         "round": 3,
-        "selection": 7
+        "selection": 7,
+        "tradeValue": 235
       },
       {
         "overall": 147,
         "round": 5,
-        "selection": 7
+        "selection": 7,
+        "tradeValue": 32
       },
       {
         "overall": 187,
         "round": 6,
-        "selection": 6
+        "selection": 6,
+        "tradeValue": 16
       },
       {
         "overall": 209,
         "round": 6,
-        "selection": 28
+        "selection": 28,
+        "tradeValue": 7
       },
       {
         "overall": 223,
         "round": 7,
-        "selection": 7
+        "selection": 7,
+        "tradeValue": 1
       }
     ]
   },
@@ -565,42 +622,50 @@
       {
         "overall": 8,
         "round": 1,
-        "selection": 8
+        "selection": 8,
+        "tradeValue": 1400
       },
       {
         "overall": 42,
         "round": 2,
-        "selection": 10
+        "selection": 10,
+        "tradeValue": 480
       },
       {
         "overall": 73,
         "round": 3,
-        "selection": 9
+        "selection": 9,
+        "tradeValue": 225
       },
       {
         "overall": 132,
         "round": 4,
-        "selection": 32
+        "selection": 32,
+        "tradeValue": 40
       },
       {
         "overall": 136,
         "round": 4,
-        "selection": 36
+        "selection": 36,
+        "tradeValue": 38
       },
       {
         "overall": 150,
         "round": 5,
-        "selection": 10
+        "selection": 10,
+        "tradeValue": 31
       },
       {
         "overall": 172,
         "round": 5,
-        "selection": 32
+        "selection": 32,
+        "tradeValue": 22
       },
       {
         "overall": 190,
         "round": 6,
-        "selection": 9
+        "selection": 9,
+        "tradeValue": 15
       }
     ]
   },
@@ -640,47 +705,56 @@
       {
         "overall": 9,
         "round": 1,
-        "selection": 9
+        "selection": 9,
+        "tradeValue": 1350
       },
       {
         "overall": 29,
         "round": 1,
-        "selection": 29
+        "selection": 29,
+        "tradeValue": 640
       },
       {
         "overall": 40,
         "round": 2,
-        "selection": 8
+        "selection": 8,
+        "tradeValue": 500
       },
       {
         "overall": 74,
         "round": 3,
-        "selection": 10
+        "selection": 10,
+        "tradeValue": 220
       },
       {
         "overall": 109,
         "round": 4,
-        "selection": 9
+        "selection": 9,
+        "tradeValue": 76
       },
       {
         "overall": 148,
         "round": 5,
-        "selection": 8
+        "selection": 8,
+        "tradeValue": 32
       },
       {
         "overall": 169,
         "round": 5,
-        "selection": 29
+        "selection": 29,
+        "tradeValue": 23
       },
       {
         "overall": 176,
         "round": 5,
-        "selection": 36
+        "selection": 36,
+        "tradeValue": 21
       },
       {
         "overall": 210,
         "round": 6,
-        "selection": 29
+        "selection": 29,
+        "tradeValue": 7
       }
     ]
   },
@@ -720,42 +794,50 @@
       {
         "overall": 10,
         "round": 1,
-        "selection": 10
+        "selection": 10,
+        "tradeValue": 1300
       },
       {
         "overall": 41,
         "round": 2,
-        "selection": 9
+        "selection": 9,
+        "tradeValue": 490
       },
       {
         "overall": 72,
         "round": 3,
-        "selection": 8
+        "selection": 8,
+        "tradeValue": 230
       },
       {
         "overall": 110,
         "round": 4,
-        "selection": 10
+        "selection": 10,
+        "tradeValue": 74
       },
       {
         "overall": 189,
         "round": 6,
-        "selection": 8
+        "selection": 8,
+        "tradeValue": 15
       },
       {
         "overall": 199,
         "round": 6,
-        "selection": 18
+        "selection": 18,
+        "tradeValue": 11
       },
       {
         "overall": 221,
         "round": 7,
-        "selection": 5
+        "selection": 5,
+        "tradeValue": 1
       },
       {
         "overall": 226,
         "round": 7,
-        "selection": 10
+        "selection": 10,
+        "tradeValue": 1
       }
     ]
   },
@@ -795,47 +877,56 @@
       {
         "overall": 11,
         "round": 1,
-        "selection": 11
+        "selection": 11,
+        "tradeValue": 1250
       },
       {
         "overall": 43,
         "round": 2,
-        "selection": 11
+        "selection": 11,
+        "tradeValue": 470
       },
       {
         "overall": 75,
         "round": 3,
-        "selection": 11
+        "selection": 11,
+        "tradeValue": 215
       },
       {
         "overall": 87,
         "round": 3,
-        "selection": 23
+        "selection": 23,
+        "tradeValue": 155
       },
       {
         "overall": 90,
         "round": 3,
-        "selection": 26
+        "selection": 26,
+        "tradeValue": 140
       },
       {
         "overall": 111,
         "round": 4,
-        "selection": 11
+        "selection": 11,
+        "tradeValue": 72
       },
       {
         "overall": 151,
         "round": 5,
-        "selection": 11
+        "selection": 11,
+        "tradeValue": 31
       },
       {
         "overall": 227,
         "round": 7,
-        "selection": 11
+        "selection": 11,
+        "tradeValue": 1
       },
       {
         "overall": 238,
         "round": 7,
-        "selection": 22
+        "selection": 22,
+        "tradeValue": 1
       }
     ]
   },
@@ -875,42 +966,50 @@
       {
         "overall": 12,
         "round": 1,
-        "selection": 12
+        "selection": 12,
+        "tradeValue": 1200
       },
       {
         "overall": 20,
         "round": 1,
-        "selection": 20
+        "selection": 20,
+        "tradeValue": 850
       },
       {
         "overall": 92,
         "round": 3,
-        "selection": 28
+        "selection": 28,
+        "tradeValue": 132
       },
       {
         "overall": 112,
         "round": 4,
-        "selection": 12
+        "selection": 12,
+        "tradeValue": 70
       },
       {
         "overall": 152,
         "round": 5,
-        "selection": 12
+        "selection": 12,
+        "tradeValue": 30
       },
       {
         "overall": 177,
         "round": 5,
-        "selection": 37
+        "selection": 37,
+        "tradeValue": 20
       },
       {
         "overall": 180,
         "round": 5,
-        "selection": 40
+        "selection": 40,
+        "tradeValue": 19
       },
       {
         "overall": 218,
         "round": 7,
-        "selection": 2
+        "selection": 2,
+        "tradeValue": 1
       }
     ]
   },
@@ -950,37 +1049,44 @@
       {
         "overall": 13,
         "round": 1,
-        "selection": 13
+        "selection": 13,
+        "tradeValue": 1150
       },
       {
         "overall": 61,
         "round": 2,
-        "selection": 29
+        "selection": 29,
+        "tradeValue": 292
       },
       {
         "overall": 93,
         "round": 3,
-        "selection": 29
+        "selection": 29,
+        "tradeValue": 128
       },
       {
         "overall": 207,
         "round": 6,
-        "selection": 26
+        "selection": 26,
+        "tradeValue": 8
       },
       {
         "overall": 232,
         "round": 7,
-        "selection": 16
+        "selection": 16,
+        "tradeValue": 1
       },
       {
         "overall": 251,
         "round": 7,
-        "selection": 35
+        "selection": 35,
+        "tradeValue": 1
       },
       {
         "overall": 252,
         "round": 7,
-        "selection": 36
+        "selection": 36,
+        "tradeValue": 1
       }
     ]
   },
@@ -1020,57 +1126,68 @@
       {
         "overall": 14,
         "round": 1,
-        "selection": 14
+        "selection": 14,
+        "tradeValue": 1100
       },
       {
         "overall": 45,
         "round": 2,
-        "selection": 13
+        "selection": 13,
+        "tradeValue": 450
       },
       {
         "overall": 80,
         "round": 3,
-        "selection": 16
+        "selection": 16,
+        "tradeValue": 190
       },
       {
         "overall": 115,
         "round": 4,
-        "selection": 15
+        "selection": 15,
+        "tradeValue": 64
       },
       {
         "overall": 154,
         "round": 5,
-        "selection": 14
+        "selection": 14,
+        "tradeValue": 29
       },
       {
         "overall": 162,
         "round": 5,
-        "selection": 22
+        "selection": 22,
+        "tradeValue": 26
       },
       {
         "overall": 173,
         "round": 5,
-        "selection": 33
+        "selection": 33,
+        "tradeValue": 22
       },
       {
         "overall": 174,
         "round": 5,
-        "selection": 34
+        "selection": 34,
+        "tradeValue": 21
       },
       {
         "overall": 211,
         "round": 6,
-        "selection": 30
+        "selection": 30,
+        "tradeValue": 6
       },
       {
         "overall": 250,
         "round": 7,
-        "selection": 34
+        "selection": 34,
+        "tradeValue": 1
       },
       {
         "overall": 253,
         "round": 7,
-        "selection": 37
+        "selection": 37,
+        "tradeValue": 1
       }
     ]
   },
@@ -1110,37 +1227,44 @@
       {
         "overall": 15,
         "round": 1,
-        "selection": 15
+        "selection": 15,
+        "tradeValue": 1050
       },
       {
         "overall": 46,
         "round": 2,
-        "selection": 14
+        "selection": 14,
+        "tradeValue": 440
       },
       {
         "overall": 77,
         "round": 3,
-        "selection": 13
+        "selection": 13,
+        "tradeValue": 205
       },
       {
         "overall": 116,
         "round": 4,
-        "selection": 16
+        "selection": 16,
+        "tradeValue": 62
       },
       {
         "overall": 155,
         "round": 5,
-        "selection": 15
+        "selection": 15,
+        "tradeValue": 29
       },
       {
         "overall": 195,
         "round": 6,
-        "selection": 14
+        "selection": 14,
+        "tradeValue": 13
       },
       {
         "overall": 229,
         "round": 7,
-        "selection": 13
+        "selection": 13,
+        "tradeValue": 1
       }
     ]
   },
@@ -1180,47 +1304,56 @@
       {
         "overall": 17,
         "round": 1,
-        "selection": 17
+        "selection": 17,
+        "tradeValue": 950
       },
       {
         "overall": 50,
         "round": 2,
-        "selection": 18
+        "selection": 18,
+        "tradeValue": 400
       },
       {
         "overall": 118,
         "round": 4,
-        "selection": 18
+        "selection": 18,
+        "tradeValue": 58
       },
       {
         "overall": 128,
         "round": 4,
-        "selection": 28
+        "selection": 28,
+        "tradeValue": 44
       },
       {
         "overall": 157,
         "round": 5,
-        "selection": 17
+        "selection": 17,
+        "tradeValue": 28
       },
       {
         "overall": 181,
         "round": 5,
-        "selection": 41
+        "selection": 41,
+        "tradeValue": 18
       },
       {
         "overall": 205,
         "round": 6,
-        "selection": 24
+        "selection": 24,
+        "tradeValue": 9
       },
       {
         "overall": 213,
         "round": 6,
-        "selection": 32
+        "selection": 32,
+        "tradeValue": 5
       },
       {
         "overall": 222,
         "round": 7,
-        "selection": 6
+        "selection": 6,
+        "tradeValue": 1
       }
     ]
   },
@@ -1260,47 +1393,56 @@
       {
         "overall": 18,
         "round": 1,
-        "selection": 18
+        "selection": 18,
+        "tradeValue": 900
       },
       {
         "overall": 49,
         "round": 2,
-        "selection": 17
+        "selection": 17,
+        "tradeValue": 410
       },
       {
         "overall": 82,
         "round": 3,
-        "selection": 18
+        "selection": 18,
+        "tradeValue": 180
       },
       {
         "overall": 97,
         "round": 3,
-        "selection": 33
+        "selection": 33,
+        "tradeValue": 112
       },
       {
         "overall": 163,
         "round": 5,
-        "selection": 23
+        "selection": 23,
+        "tradeValue": 26
       },
       {
         "overall": 196,
         "round": 6,
-        "selection": 15
+        "selection": 15,
+        "tradeValue": 12
       },
       {
         "overall": 234,
         "round": 7,
-        "selection": 18
+        "selection": 18,
+        "tradeValue": 1
       },
       {
         "overall": 235,
         "round": 7,
-        "selection": 19
+        "selection": 19,
+        "tradeValue": 1
       },
       {
         "overall": 244,
         "round": 7,
-        "selection": 28
+        "selection": 28,
+        "tradeValue": 1
       }
     ]
   },
@@ -1340,37 +1482,44 @@
       {
         "overall": 19,
         "round": 1,
-        "selection": 19
+        "selection": 19,
+        "tradeValue": 875
       },
       {
         "overall": 51,
         "round": 2,
-        "selection": 19
+        "selection": 19,
+        "tradeValue": 390
       },
       {
         "overall": 83,
         "round": 3,
-        "selection": 19
+        "selection": 19,
+        "tradeValue": 175
       },
       {
         "overall": 119,
         "round": 4,
-        "selection": 19
+        "selection": 19,
+        "tradeValue": 56
       },
       {
         "overall": 158,
         "round": 5,
-        "selection": 18
+        "selection": 18,
+        "tradeValue": 28
       },
       {
         "overall": 159,
         "round": 5,
-        "selection": 19
+        "selection": 19,
+        "tradeValue": 27
       },
       {
         "overall": 200,
         "round": 6,
-        "selection": 19
+        "selection": 19,
+        "tradeValue": 11
       }
     ]
   },
@@ -1410,62 +1559,74 @@
       {
         "overall": 21,
         "round": 1,
-        "selection": 21
+        "selection": 21,
+        "tradeValue": 800
       },
       {
         "overall": 53,
         "round": 2,
-        "selection": 21
+        "selection": 21,
+        "tradeValue": 370
       },
       {
         "overall": 76,
         "round": 3,
-        "selection": 12
+        "selection": 12,
+        "tradeValue": 210
       },
       {
         "overall": 85,
         "round": 3,
-        "selection": 21
+        "selection": 21,
+        "tradeValue": 165
       },
       {
         "overall": 99,
         "round": 3,
-        "selection": 35
+        "selection": 35,
+        "tradeValue": 104
       },
       {
         "overall": 121,
         "round": 4,
-        "selection": 21
+        "selection": 21,
+        "tradeValue": 52
       },
       {
         "overall": 135,
         "round": 4,
-        "selection": 35
+        "selection": 35,
+        "tradeValue": 38
       },
       {
         "overall": 161,
         "round": 5,
-        "selection": 21
+        "selection": 21,
+        "tradeValue": 27
       },
       {
         "overall": 216,
         "round": 6,
-        "selection": 35
+        "selection": 35,
+        "tradeValue": 4
       },
       {
         "overall": 224,
         "round": 7,
-        "selection": 8
+        "selection": 8,
+        "tradeValue": 1
       },
       {
         "overall": 230,
         "round": 7,
-        "selection": 14
+        "selection": 14,
+        "tradeValue": 1
       },
       {
         "overall": 237,
         "round": 7,
-        "selection": 21
+        "selection": 21,
+        "tradeValue": 1
       }
     ]
   },
@@ -1505,27 +1666,32 @@
       {
         "overall": 22,
         "round": 1,
-        "selection": 22
+        "selection": 22,
+        "tradeValue": 780
       },
       {
         "overall": 55,
         "round": 2,
-        "selection": 23
+        "selection": 23,
+        "tradeValue": 350
       },
       {
         "overall": 86,
         "round": 3,
-        "selection": 22
+        "selection": 22,
+        "tradeValue": 160
       },
       {
         "overall": 123,
         "round": 4,
-        "selection": 23
+        "selection": 23,
+        "tradeValue": 49
       },
       {
         "overall": 204,
         "round": 6,
-        "selection": 23
+        "selection": 23,
+        "tradeValue": 9
       }
     ]
   },
@@ -1565,47 +1731,56 @@
       {
         "overall": 23,
         "round": 1,
-        "selection": 23
+        "selection": 23,
+        "tradeValue": 760
       },
       {
         "overall": 54,
         "round": 2,
-        "selection": 22
+        "selection": 22,
+        "tradeValue": 360
       },
       {
         "overall": 68,
         "round": 3,
-        "selection": 4
+        "selection": 4,
+        "tradeValue": 250
       },
       {
         "overall": 98,
         "round": 3,
-        "selection": 34
+        "selection": 34,
+        "tradeValue": 108
       },
       {
         "overall": 122,
         "round": 4,
-        "selection": 22
+        "selection": 22,
+        "tradeValue": 50
       },
       {
         "overall": 137,
         "round": 4,
-        "selection": 37
+        "selection": 37,
+        "tradeValue": 37
       },
       {
         "overall": 153,
         "round": 5,
-        "selection": 13
+        "selection": 13,
+        "tradeValue": 30
       },
       {
         "overall": 178,
         "round": 5,
-        "selection": 38
+        "selection": 38,
+        "tradeValue": 19
       },
       {
         "overall": 215,
         "round": 6,
-        "selection": 34
+        "selection": 34,
+        "tradeValue": 5
       }
     ]
   },
@@ -1645,37 +1820,44 @@
       {
         "overall": 47,
         "round": 2,
-        "selection": 15
+        "selection": 15,
+        "tradeValue": 430
       },
       {
         "overall": 78,
         "round": 3,
-        "selection": 14
+        "selection": 14,
+        "tradeValue": 200
       },
       {
         "overall": 113,
         "round": 4,
-        "selection": 13
+        "selection": 13,
+        "tradeValue": 68
       },
       {
         "overall": 156,
         "round": 5,
-        "selection": 16
+        "selection": 16,
+        "tradeValue": 29
       },
       {
         "overall": 214,
         "round": 6,
-        "selection": 33
+        "selection": 33,
+        "tradeValue": 5
       },
       {
         "overall": 249,
         "round": 7,
-        "selection": 33
+        "selection": 33,
+        "tradeValue": 1
       },
       {
         "overall": 254,
         "round": 7,
-        "selection": 38
+        "selection": 38,
+        "tradeValue": 1
       }
     ]
   },
@@ -1715,42 +1897,50 @@
       {
         "overall": 28,
         "round": 1,
-        "selection": 28
+        "selection": 28,
+        "tradeValue": 660
       },
       {
         "overall": 38,
         "round": 2,
-        "selection": 6
+        "selection": 6,
+        "tradeValue": 520
       },
       {
         "overall": 59,
         "round": 2,
-        "selection": 27
+        "selection": 27,
+        "tradeValue": 310
       },
       {
         "overall": 69,
         "round": 3,
-        "selection": 5
+        "selection": 5,
+        "tradeValue": 245
       },
       {
         "overall": 106,
         "round": 4,
-        "selection": 6
+        "selection": 6,
+        "tradeValue": 82
       },
       {
         "overall": 141,
         "round": 5,
-        "selection": 1
+        "selection": 1,
+        "tradeValue": 35
       },
       {
         "overall": 167,
         "round": 5,
-        "selection": 27
+        "selection": 27,
+        "tradeValue": 24
       },
       {
         "overall": 243,
         "round": 7,
-        "selection": 27
+        "selection": 27,
+        "tradeValue": 1
       }
     ]
   },
@@ -1790,27 +1980,32 @@
       {
         "overall": 48,
         "round": 2,
-        "selection": 16
+        "selection": 16,
+        "tradeValue": 420
       },
       {
         "overall": 79,
         "round": 3,
-        "selection": 15
+        "selection": 15,
+        "tradeValue": 195
       },
       {
         "overall": 114,
         "round": 4,
-        "selection": 14
+        "selection": 14,
+        "tradeValue": 66
       },
       {
         "overall": 197,
         "round": 6,
-        "selection": 16
+        "selection": 16,
+        "tradeValue": 12
       },
       {
         "overall": 231,
         "round": 7,
-        "selection": 15
+        "selection": 15,
+        "tradeValue": 1
       }
     ]
   },
@@ -1850,57 +2045,68 @@
       {
         "overall": 56,
         "round": 2,
-        "selection": 24
+        "selection": 24,
+        "tradeValue": 340
       },
       {
         "overall": 81,
         "round": 3,
-        "selection": 17
+        "selection": 17,
+        "tradeValue": 185
       },
       {
         "overall": 88,
         "round": 3,
-        "selection": 24
+        "selection": 24,
+        "tradeValue": 150
       },
       {
         "overall": 100,
         "round": 3,
-        "selection": 36
+        "selection": 36,
+        "tradeValue": 100
       },
       {
         "overall": 124,
         "round": 4,
-        "selection": 24
+        "selection": 24,
+        "tradeValue": 48
       },
       {
         "overall": 164,
         "round": 5,
-        "selection": 24
+        "selection": 24,
+        "tradeValue": 25
       },
       {
         "overall": 166,
         "round": 5,
-        "selection": 26
+        "selection": 26,
+        "tradeValue": 25
       },
       {
         "overall": 203,
         "round": 6,
-        "selection": 22
+        "selection": 22,
+        "tradeValue": 9
       },
       {
         "overall": 233,
         "round": 7,
-        "selection": 17
+        "selection": 17,
+        "tradeValue": 1
       },
       {
         "overall": 240,
         "round": 7,
-        "selection": 24
+        "selection": 24,
+        "tradeValue": 1
       },
       {
         "overall": 245,
         "round": 7,
-        "selection": 29
+        "selection": 29,
+        "tradeValue": 1
       }
     ]
   },
@@ -1940,22 +2146,26 @@
       {
         "overall": 32,
         "round": 1,
-        "selection": 32
+        "selection": 32,
+        "tradeValue": 590
       },
       {
         "overall": 64,
         "round": 2,
-        "selection": 32
+        "selection": 32,
+        "tradeValue": 270
       },
       {
         "overall": 96,
         "round": 3,
-        "selection": 32
+        "selection": 32,
+        "tradeValue": 116
       },
       {
         "overall": 188,
         "round": 6,
-        "selection": 7
+        "selection": 7,
+        "tradeValue": 15
       }
     ]
   },
@@ -1995,37 +2205,44 @@
       {
         "overall": 25,
         "round": 1,
-        "selection": 25
+        "selection": 25,
+        "tradeValue": 720
       },
       {
         "overall": 57,
         "round": 2,
-        "selection": 25
+        "selection": 25,
+        "tradeValue": 330
       },
       {
         "overall": 60,
         "round": 2,
-        "selection": 28
+        "selection": 28,
+        "tradeValue": 300
       },
       {
         "overall": 89,
         "round": 3,
-        "selection": 25
+        "selection": 25,
+        "tradeValue": 145
       },
       {
         "overall": 129,
         "round": 4,
-        "selection": 29
+        "selection": 29,
+        "tradeValue": 43
       },
       {
         "overall": 239,
         "round": 7,
-        "selection": 23
+        "selection": 23,
+        "tradeValue": 1
       },
       {
         "overall": 241,
         "round": 7,
-        "selection": 25
+        "selection": 25,
+        "tradeValue": 1
       }
     ]
   },
@@ -2065,47 +2282,56 @@
       {
         "overall": 30,
         "round": 1,
-        "selection": 30
+        "selection": 30,
+        "tradeValue": 620
       },
       {
         "overall": 62,
         "round": 2,
-        "selection": 30
+        "selection": 30,
+        "tradeValue": 284
       },
       {
         "overall": 94,
         "round": 3,
-        "selection": 30
+        "selection": 30,
+        "tradeValue": 124
       },
       {
         "overall": 108,
         "round": 4,
-        "selection": 8
+        "selection": 8,
+        "tradeValue": 78
       },
       {
         "overall": 130,
         "round": 4,
-        "selection": 30
+        "selection": 30,
+        "tradeValue": 42
       },
       {
         "overall": 170,
         "round": 5,
-        "selection": 30
+        "selection": 30,
+        "tradeValue": 23
       },
       {
         "overall": 246,
         "round": 7,
-        "selection": 30
+        "selection": 30,
+        "tradeValue": 1
       },
       {
         "overall": 256,
         "round": 7,
-        "selection": 40
+        "selection": 40,
+        "tradeValue": 1
       },
       {
         "overall": 257,
         "round": 7,
-        "selection": 41
+        "selection": 41,
+        "tradeValue": 1
       }
     ]
   },
@@ -2145,32 +2371,38 @@
       {
         "overall": 27,
         "round": 1,
-        "selection": 27
+        "selection": 27,
+        "tradeValue": 680
       },
       {
         "overall": 58,
         "round": 2,
-        "selection": 26
+        "selection": 26,
+        "tradeValue": 320
       },
       {
         "overall": 127,
         "round": 4,
-        "selection": 27
+        "selection": 27,
+        "tradeValue": 45
       },
       {
         "overall": 133,
         "round": 4,
-        "selection": 33
+        "selection": 33,
+        "tradeValue": 39
       },
       {
         "overall": 138,
         "round": 4,
-        "selection": 38
+        "selection": 38,
+        "tradeValue": 37
       },
       {
         "overall": 139,
         "round": 4,
-        "selection": 39
+        "selection": 39,
+        "tradeValue": 36
       }
     ]
   },
@@ -2210,37 +2442,44 @@
       {
         "overall": 26,
         "round": 1,
-        "selection": 26
+        "selection": 26,
+        "tradeValue": 700
       },
       {
         "overall": 91,
         "round": 3,
-        "selection": 27
+        "selection": 27,
+        "tradeValue": 136
       },
       {
         "overall": 126,
         "round": 4,
-        "selection": 26
+        "selection": 26,
+        "tradeValue": 46
       },
       {
         "overall": 165,
         "round": 5,
-        "selection": 25
+        "selection": 25,
+        "tradeValue": 25
       },
       {
         "overall": 168,
         "round": 5,
-        "selection": 28
+        "selection": 28,
+        "tradeValue": 24
       },
       {
         "overall": 182,
         "round": 6,
-        "selection": 1
+        "selection": 1,
+        "tradeValue": 18
       },
       {
         "overall": 220,
         "round": 7,
-        "selection": 4
+        "selection": 4,
+        "tradeValue": 1
       }
     ]
   },
@@ -2280,37 +2519,44 @@
       {
         "overall": 52,
         "round": 2,
-        "selection": 20
+        "selection": 20,
+        "tradeValue": 380
       },
       {
         "overall": 84,
         "round": 3,
-        "selection": 20
+        "selection": 20,
+        "tradeValue": 170
       },
       {
         "overall": 120,
         "round": 4,
-        "selection": 20
+        "selection": 20,
+        "tradeValue": 54
       },
       {
         "overall": 160,
         "round": 5,
-        "selection": 20
+        "selection": 20,
+        "tradeValue": 27
       },
       {
         "overall": 201,
         "round": 6,
-        "selection": 20
+        "selection": 20,
+        "tradeValue": 10
       },
       {
         "overall": 236,
         "round": 7,
-        "selection": 20
+        "selection": 20,
+        "tradeValue": 1
       },
       {
         "overall": 255,
         "round": 7,
-        "selection": 39
+        "selection": 39,
+        "tradeValue": 1
       }
     ]
   },
@@ -2350,57 +2596,68 @@
       {
         "overall": 31,
         "round": 1,
-        "selection": 31
+        "selection": 31,
+        "tradeValue": 600
       },
       {
         "overall": 63,
         "round": 2,
-        "selection": 31
+        "selection": 31,
+        "tradeValue": 276
       },
       {
         "overall": 95,
         "round": 3,
-        "selection": 31
+        "selection": 31,
+        "tradeValue": 120
       },
       {
         "overall": 125,
         "round": 4,
-        "selection": 25
+        "selection": 25,
+        "tradeValue": 47
       },
       {
         "overall": 131,
         "round": 4,
-        "selection": 31
+        "selection": 31,
+        "tradeValue": 41
       },
       {
         "overall": 171,
         "round": 5,
-        "selection": 31
+        "selection": 31,
+        "tradeValue": 23
       },
       {
         "overall": 191,
         "round": 6,
-        "selection": 10
+        "selection": 10,
+        "tradeValue": 14
       },
       {
         "overall": 198,
         "round": 6,
-        "selection": 17
+        "selection": 17,
+        "tradeValue": 11
       },
       {
         "overall": 202,
         "round": 6,
-        "selection": 21
+        "selection": 21,
+        "tradeValue": 10
       },
       {
         "overall": 212,
         "round": 6,
-        "selection": 31
+        "selection": 31,
+        "tradeValue": 6
       },
       {
         "overall": 247,
         "round": 7,
-        "selection": 31
+        "selection": 31,
+        "tradeValue": 1
       }
     ]
   }

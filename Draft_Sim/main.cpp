@@ -1,16 +1,35 @@
-#include <LoadInfo.h>
 #include <iostream>
-
+#include "ScoringEngine.h"
+#include "LoadInfo.h"
 
 int main()
 {
-    loadDraftOrder("../Draft_Sim/JSONS/DraftOrder.json");
+    loadPlayers("../Draft_Sim/JSONS/Players.json");
+    loadTeams("../Draft_Sim/JSONS/TeamConfig.json");
 
-    for (const auto& t : draftOrder)
+    // find the Raiders in teamList
+    Team* cowboys = nullptr;
+    for (auto& t : teamList)
     {
-        std::cout << "Pick " << t.overall << " belongs to " << t.teamId << ".\n";
+        if (t.getId() == "DAL")
+        {
+            cowboys = &t;
+            break;
+        }
     }
 
-}
+    if (cowboys == nullptr)
+    {
+        std::cerr << "cowboys not found!\n";
+        return 1;
+    }
 
-//test
+    for (const auto& p : draftPool)
+    {
+        std::cout << "Scoring: " << p.getName() << "\n";
+        std::cout << p.getName() << " gets a positional score for Cowboys of "
+                  << scorePositionalNeed(p, *cowboys) << '\n';
+    }
+
+    return 0;
+}
