@@ -59,14 +59,15 @@ void loadTeams(const std::string& path)
             picks.push_back({
                 pk["overall"].get<int>(),
                 pk["round"].get<int>(),
-                pk["selection"].get<int>()
+                pk["selection"].get<int>(),
+                pk["teamId"].get<std::string>()
             });
         }
         std::vector<std::string> priorities = t["priorities"].get<std::vector<std::string>>();
 
         teamList.emplace_back
         (
-            t["id"].get<std::string>(),
+            t["teamid"].get<std::string>(),
             t["name"].get<std::string>(),
             t["city"].get<std::string>(),
             picks,
@@ -80,7 +81,25 @@ void loadTeams(const std::string& path)
 
 void loadDraftOrder(const std::string& path)
 {
+    std::ifstream file(path);
+    if (!file.is_open())
+    {
+        std::cerr << "Error: Could not open " << path << "\n";
+        return;
+    }
 
+    json data = json::parse(file);
+
+    for (const auto& d : data)
+    {
+        draftOrder.emplace_back
+        (
+            d["overall"].get<int>(),
+            d["round"].get<int>(),
+            d["selection"].get<int>(),
+            d["teamId"].get<std::string>()
+        );
+    }
 }
 
 
