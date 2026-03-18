@@ -51,7 +51,7 @@
     "consensusRanking": 4,
     "name": "Sonny Styles",
     "college": "Ohio State",
-    "position": "OLB",
+    "position": "ILB",
     "height": 77,
     "weight": 244,
     "number": 48,
@@ -75,7 +75,7 @@
     "majorStats": "68 tackles, 1.0 sacks, 2 PBU, 2 INT, 2 FF",
     "positionalRanking": 1,
     "RAS": 8.8,
-    "miscConcern": 5,
+    "miscConcern": 9,
     "floorCeiling": 10,
     "logoFile": "ohio-state.png"
   },
@@ -241,19 +241,19 @@
   },
   {
     "consensusRanking": 16,
-    "name": "T.J. Parker",
-    "college": "Clemson",
+    "name": "Akheem Mesidor",
+    "college": "Miami (FL)",
     "position": "EDGE",
-    "height": 76,
-    "weight": 263,
-    "number": 42,
-    "age": 21,
-    "majorStats": "37 tackles, 5.0 sacks, 1 PBU, 0 INT",
+    "height": 75,
+    "weight": 259,
+    "number": 94,
+    "age": 24,
+    "majorStats": "63 tackles, 12.5 sacks, 0 PBU, 0 INT, 4 FF",
     "positionalRanking": 4,
-    "RAS": 9.33,
-    "miscConcern": 10,
-    "floorCeiling": 8,
-    "logoFile": "clemson.png"
+    "RAS": 8.2,
+    "miscConcern": 7,
+    "floorCeiling": 7,
+    "logoFile": "miami.png"
   },
   {
     "consensusRanking": 17,
@@ -330,8 +330,8 @@
     "age": 20,
     "majorStats": "44 tackles, 0 sacks, 9 PBU, 4 INT",
     "positionalRanking": 2,
-    "RAS": 8.8,
-    "miscConcern": 5,
+    "RAS": 9.2,
+    "miscConcern": 8,
     "floorCeiling": 8,
     "logoFile": "tennessee.png"
   },
@@ -385,19 +385,19 @@
   },
   {
     "consensusRanking": 25,
-    "name": "Chris Johnson",
-    "college": "San Diego State",
-    "position": "CB",
-    "height": 72,
-    "weight": 193,
-    "number": 27,
-    "age": 21,
-    "majorStats": "49 tackles, 1.0 sacks, 9 PBU, 4 INT, 1 FF",
+    "name": "Emmanuel McNeil-Warren",
+    "college": "Toledo",
+    "position": "S",
+    "height": 76,
+    "weight": 201,
+    "number": 18,
+    "age": 22,
+    "majorStats": "77 tackles, 0.5 sacks, 5 PBU, 2 INT, 3 FF",
     "positionalRanking": 3,
-    "RAS": 9.67,
+    "RAS": 9.13,
     "miscConcern": 10,
     "floorCeiling": 8,
-    "logoFile": "default.png"
+    "logoFile": "toledo.png"
   },
   {
     "consensusRanking": 26,
@@ -417,19 +417,19 @@
   },
   {
     "consensusRanking": 27,
-    "name": "Colton Hood",
-    "college": "Tennessee",
+    "name": "Avieon Terrell",
+    "college": "Clemson",
     "position": "CB",
-    "height": 72,
-    "weight": 193,
-    "number": 29,
+    "height": 71,
+    "weight": 186,
+    "number": 11,
     "age": 21,
-    "majorStats": "50 tackles, 0 sacks, 8 PBU, 1 INT, 1 FF",
-    "positionalRanking": 4,
-    "RAS": 9.61,
+    "majorStats": "48 tackles, 3.0 sacks, 9 PBU, 0 INT, 5 FF",
+    "positionalRanking": 3,
+    "RAS": 8.94,
     "miscConcern": 10,
-    "floorCeiling": 8,
-    "logoFile": "tennessee.png"
+    "floorCeiling": 7,
+    "logoFile": "clemson.png"
   },
   {
     "consensusRanking": 28,
@@ -448,20 +448,20 @@
     "logoFile": "florida.png"
   },
   {
-    "consensusRanking": 29,
-    "name": "Emmanuel McNeil-Warren",
-    "college": "Toledo",
-    "position": "S",
-    "height": 76,
-    "weight": 201,
-    "number": 18,
-    "age": 22,
-    "majorStats": "77 tackles, 0.5 sacks, 5 PBU, 2 INT, 3 FF",
-    "positionalRanking": 3,
-    "RAS": 9.13,
-    "miscConcern": 10,
+    "consensusRanking": 27,
+    "name": "Colton Hood",
+    "college": "Tennessee",
+    "position": "CB",
+    "height": 72,
+    "weight": 193,
+    "number": 29,
+    "age": 21,
+    "majorStats": "50 tackles, 0 sacks, 8 PBU, 1 INT, 1 FF",
+    "positionalRanking": 4,
+    "RAS": 9.61,
+    "miscConcern": 8,
     "floorCeiling": 8,
-    "logoFile": "toledo.png"
+    "logoFile": "tennessee.png"
   },
   {
     "consensusRanking": 30,
@@ -529,19 +529,19 @@
   },
   {
     "consensusRanking": 34,
-    "name": "Avieon Terrell",
-    "college": "Clemson",
+    "name": "Chris Johnson",
+    "college": "San Diego State",
     "position": "CB",
-    "height": 71,
-    "weight": 186,
-    "number": 11,
+    "height": 72,
+    "weight": 193,
+    "number": 27,
     "age": 21,
-    "majorStats": "48 tackles, 3.0 sacks, 9 PBU, 0 INT, 5 FF",
+    "majorStats": "49 tackles, 1.0 sacks, 9 PBU, 4 INT, 1 FF",
     "positionalRanking": 5,
-    "RAS": 8.94,
-    "miscConcern": 10,
-    "floorCeiling": 7,
-    "logoFile": "clemson.png"
+    "RAS": 9.67,
+    "miscConcern": 8,
+    "floorCeiling": 8,
+    "logoFile": "default.png"
   },
   {
     "consensusRanking": 35,
@@ -569,7 +569,7 @@
     "number": 50,
     "age": 21,
     "majorStats": "69 tackles, 4.0 sacks, 1 PBU, 2 INT, 3 FF",
-    "positionalRanking": 1,
+    "positionalRanking": 2,
     "RAS": 9.93,
     "miscConcern": 10,
     "floorCeiling": 7,
@@ -625,19 +625,19 @@
   },
   {
     "consensusRanking": 40,
-    "name": "Akheem Mesidor",
-    "college": "Miami (FL)",
+    "name": "T.J. Parker",
+    "college": "Clemson",
     "position": "EDGE",
-    "height": 75,
-    "weight": 259,
-    "number": 94,
-    "age": 24,
-    "majorStats": "63 tackles, 12.5 sacks, 0 PBU, 0 INT, 4 FF",
+    "height": 76,
+    "weight": 263,
+    "number": 42,
+    "age": 21,
+    "majorStats": "37 tackles, 5.0 sacks, 1 PBU, 0 INT",
     "positionalRanking": 7,
-    "RAS": 8.2,
-    "miscConcern": 7,
-    "floorCeiling": 7,
-    "logoFile": "miami.png"
+    "RAS": 9.33,
+    "miscConcern": 10,
+    "floorCeiling": 8,
+    "logoFile": "clemson.png"
   },
   {
     "consensusRanking": 41,
@@ -2411,8 +2411,8 @@
     "majorStats": "48 rec, 620 yards, 6 TD, avg 12.9",
     "positionalRanking": 9,
     "RAS": 9.17,
-    "miscConcern": 10,
-    "floorCeiling": 9,
+    "miscConcern": 7,
+    "floorCeiling": 6,
     "logoFile": "utah.png"
   },
   {
@@ -2427,8 +2427,8 @@
     "majorStats": null,
     "positionalRanking": 23,
     "RAS": 9.88,
-    "miscConcern": 3,
-    "floorCeiling": 9,
+    "miscConcern": 5,
+    "floorCeiling": 5,
     "logoFile": "ole-miss.png"
   },
   {
@@ -2443,7 +2443,7 @@
     "majorStats": null,
     "positionalRanking": 14,
     "RAS": 7.2,
-    "miscConcern": 10,
+    "miscConcern": 7,
     "floorCeiling": 5,
     "logoFile": "nebraska.png"
   },
@@ -2459,8 +2459,8 @@
     "majorStats": "32 tackles, 4.0 sacks, 3 PBU, 0 INT, 1 FF",
     "positionalRanking": 18,
     "RAS": 8.71,
-    "miscConcern": 7,
-    "floorCeiling": 9,
+    "miscConcern": 6,
+    "floorCeiling": 6,
     "logoFile": "michigan.png"
   },
   {
@@ -2476,7 +2476,7 @@
     "positionalRanking": 16,
     "RAS": 9.1,
     "miscConcern": 6,
-    "floorCeiling": 8,
+    "floorCeiling": 6,
     "logoFile": "texas-am.png"
   },
   {
@@ -2507,7 +2507,7 @@
     "majorStats": "57 rec, 705 yards, 6 TD, avg 12.4",
     "positionalRanking": 24,
     "RAS": 7.34,
-    "miscConcern": 10,
+    "miscConcern": 7,
     "floorCeiling": 5,
     "logoFile": "texas-tech.png"
   },
@@ -2523,8 +2523,8 @@
     "majorStats": "21 tackles, 1.0 sacks, 2 PBU, 0 INT",
     "positionalRanking": 17,
     "RAS": 9.97,
-    "miscConcern": 10,
-    "floorCeiling": 9,
+    "miscConcern": 6,
+    "floorCeiling": 6,
     "logoFile": "clemson.png"
   },
   {
@@ -2571,8 +2571,8 @@
     "majorStats": "50 tackles, 1.0 sacks, 8 PBU, 0 INT",
     "positionalRanking": 19,
     "RAS": 9.46,
-    "miscConcern": 8,
-    "floorCeiling": 8,
+    "miscConcern": 6,
+    "floorCeiling": 5,
     "logoFile": "texas-am.png"
   },
   {
@@ -2587,8 +2587,8 @@
     "majorStats": null,
     "positionalRanking": 9,
     "RAS": 9.98,
-    "miscConcern": 9,
-    "floorCeiling": 10,
+    "miscConcern": 6,
+    "floorCeiling": 6,
     "logoFile": "georgia.png"
   },
   {
@@ -2603,8 +2603,8 @@
     "majorStats": null,
     "positionalRanking": 16,
     "RAS": 9.96,
-    "miscConcern": 10,
-    "floorCeiling": 10,
+    "miscConcern": 6,
+    "floorCeiling": 5,
     "logoFile": "ohio-state.png"
   },
   {
@@ -2667,8 +2667,8 @@
     "majorStats": "12 games started",
     "positionalRanking": 16,
     "RAS": 8.68,
-    "miscConcern": 9,
-    "floorCeiling": 9,
+    "miscConcern": 6,
+    "floorCeiling": 6,
     "logoFile": "penn-state.png"
   },
   {
@@ -2683,8 +2683,8 @@
     "majorStats": "48 tackles, 0 sacks, 7 PBU, 1 INT",
     "positionalRanking": 20,
     "RAS": 9.9,
-    "miscConcern": 8,
-    "floorCeiling": 8,
+    "miscConcern": 6,
+    "floorCeiling": 5,
     "logoFile": "washington.png"
   },
   {
@@ -2795,8 +2795,8 @@
     "majorStats": null,
     "positionalRanking": 25,
     "RAS": 9.99,
-    "miscConcern": 10,
-    "floorCeiling": 8,
+    "miscConcern": 6,
+    "floorCeiling": 5,
     "logoFile": "cincinnati.png"
   },
   {
@@ -2811,8 +2811,8 @@
     "majorStats": "TE, 4.61 40-yard dash, 6'6\" 248 lbs",
     "positionalRanking": 11,
     "RAS": 9.0,
-    "miscConcern": 10,
-    "floorCeiling": 8,
+    "miscConcern": 6,
+    "floorCeiling": 5,
     "logoFile": "michigan.png"
   },
   {
@@ -2876,7 +2876,7 @@
     "positionalRanking": 6,
     "RAS": 9.92,
     "miscConcern": 7,
-    "floorCeiling": 9,
+    "floorCeiling": 6,
     "logoFile": "tcu.png"
   },
   {
@@ -2891,8 +2891,8 @@
     "majorStats": "12 games started, 4.94 40-yard dash",
     "positionalRanking": 9,
     "RAS": 9.93,
-    "miscConcern": 9,
-    "floorCeiling": 8,
+    "miscConcern": 6,
+    "floorCeiling": 5,
     "logoFile": "kentucky.png"
   },
   {
@@ -2924,7 +2924,7 @@
     "positionalRanking": 18,
     "RAS": 9.5,
     "miscConcern": 6,
-    "floorCeiling": 9,
+    "floorCeiling": 6,
     "logoFile": "ole-miss.png"
   },
   {
@@ -2987,8 +2987,8 @@
     "majorStats": "12 games started",
     "positionalRanking": 19,
     "RAS": 8.92,
-    "miscConcern": 10,
-    "floorCeiling": 9,
+    "miscConcern": 6,
+    "floorCeiling": 6,
     "logoFile": "notre-dame.png"
   },
   {
@@ -3019,8 +3019,8 @@
     "majorStats": null,
     "positionalRanking": 13,
     "RAS": 9.72,
-    "miscConcern": 9,
-    "floorCeiling": 10,
+    "miscConcern": 6,
+    "floorCeiling": 5,
     "logoFile": "default.png"
   },
   {
@@ -3051,8 +3051,8 @@
     "majorStats": null,
     "positionalRanking": 13,
     "RAS": 9.42,
-    "miscConcern": 10,
-    "floorCeiling": 9,
+    "miscConcern": 6,
+    "floorCeiling": 5,
     "logoFile": "clemson.png"
   },
   {
@@ -3116,7 +3116,7 @@
     "positionalRanking": 28,
     "RAS": 7.9,
     "miscConcern": 10,
-    "floorCeiling": 8,
+    "floorCeiling": 5,
     "logoFile": "lsu.png"
   },
   {
@@ -3179,8 +3179,8 @@
     "majorStats": null,
     "positionalRanking": 7,
     "RAS": 9.83,
-    "miscConcern": 8,
-    "floorCeiling": 9,
+    "miscConcern": 6,
+    "floorCeiling": 5,
     "logoFile": "byu.png"
   },
   {
@@ -3243,8 +3243,8 @@
     "majorStats": null,
     "positionalRanking": 10,
     "RAS": 8.39,
-    "miscConcern": 10,
-    "floorCeiling": 8,
+    "miscConcern": 6,
+    "floorCeiling": 5,
     "logoFile": "alabama.png"
   },
   {
@@ -3260,7 +3260,7 @@
     "positionalRanking": 30,
     "RAS": 9.52,
     "miscConcern": 6,
-    "floorCeiling": 8,
+    "floorCeiling": 5,
     "logoFile": "texas-tech.png"
   },
   {
@@ -3323,8 +3323,8 @@
     "majorStats": null,
     "positionalRanking": 20,
     "RAS": 9.51,
-    "miscConcern": 10,
-    "floorCeiling": 8,
+    "miscConcern": 6,
+    "floorCeiling": 5,
     "logoFile": "default.png"
   },
   {
@@ -3387,8 +3387,8 @@
     "majorStats": null,
     "positionalRanking": 13,
     "RAS": 8.9,
-    "miscConcern": 9,
-    "floorCeiling": 8,
+    "miscConcern": 6,
+    "floorCeiling": 5,
     "logoFile": "arkansas.png"
   },
   {
@@ -3434,9 +3434,9 @@
     "age": 22,
     "majorStats": null,
     "positionalRanking": 10,
-    "RAS": 9.97,
-    "miscConcern": 10,
-    "floorCeiling": 10,
+    "RAS": 6.97,
+    "miscConcern": 8,
+    "floorCeiling": 7,
     "logoFile": "north-dakota-state.png"
   },
   {
@@ -3548,7 +3548,7 @@
     "positionalRanking": 24,
     "RAS": 8.48,
     "miscConcern": 7,
-    "floorCeiling": 8,
+    "floorCeiling": 5,
     "logoFile": "missouri.png"
   },
   {
@@ -3627,8 +3627,8 @@
     "majorStats": null,
     "positionalRanking": 20,
     "RAS": 9.84,
-    "miscConcern": 8,
-    "floorCeiling": 8,
+    "miscConcern": 6,
+    "floorCeiling": 5,
     "logoFile": "kansas.png"
   },
   {
@@ -3643,8 +3643,8 @@
     "majorStats": null,
     "positionalRanking": 27,
     "RAS": 9.75,
-    "miscConcern": 10,
-    "floorCeiling": 10,
+    "miscConcern": 6,
+    "floorCeiling": 5,
     "logoFile": "kentucky.png"
   },
   {
@@ -3674,9 +3674,9 @@
     "age": 24,
     "majorStats": null,
     "positionalRanking": 19,
-    "RAS": 9.95,
-    "miscConcern": 10,
-    "floorCeiling": 10,
+    "RAS": 8.95,
+    "miscConcern": 6,
+    "floorCeiling": 5,
     "logoFile": "iowa.png"
   },
   {
@@ -3724,7 +3724,7 @@
     "positionalRanking": 13,
     "RAS": 9.54,
     "miscConcern": 3,
-    "floorCeiling": 10,
+    "floorCeiling": 5,
     "logoFile": "iowa.png"
   },
   {
@@ -3756,7 +3756,7 @@
     "positionalRanking": 16,
     "RAS": 7.8,
     "miscConcern": 8,
-    "floorCeiling": 8,
+    "floorCeiling": 5,
     "logoFile": "south-carolina.png"
   },
   {
@@ -3835,8 +3835,8 @@
     "majorStats": null,
     "positionalRanking": 17,
     "RAS": 9.92,
-    "miscConcern": 7,
-    "floorCeiling": 10,
+    "miscConcern": 6,
+    "floorCeiling": 5,
     "logoFile": "default.png"
   },
   {
@@ -3979,8 +3979,8 @@
     "majorStats": null,
     "positionalRanking": 18,
     "RAS": 9.09,
-    "miscConcern": 9,
-    "floorCeiling": 8,
+    "miscConcern": 6,
+    "floorCeiling": 5,
     "logoFile": "lsu.png"
   },
   {
@@ -3996,7 +3996,7 @@
     "positionalRanking": 12,
     "RAS": 7.75,
     "miscConcern": 8,
-    "floorCeiling": 8,
+    "floorCeiling": 5,
     "logoFile": "illinois.png"
   },
   {
@@ -4060,7 +4060,7 @@
     "positionalRanking": 20,
     "RAS": 9.78,
     "miscConcern": 5,
-    "floorCeiling": 10,
+    "floorCeiling": 5,
     "logoFile": "oklahoma.png"
   },
   {
@@ -4075,8 +4075,8 @@
     "majorStats": null,
     "positionalRanking": 17,
     "RAS": 9.12,
-    "miscConcern": 10,
-    "floorCeiling": 8,
+    "miscConcern": 6,
+    "floorCeiling": 5,
     "logoFile": "default.png"
   },
   {
@@ -4092,7 +4092,7 @@
     "positionalRanking": 27,
     "RAS": 7.6,
     "miscConcern": 8,
-    "floorCeiling": 8,
+    "floorCeiling": 5,
     "logoFile": "georgia-tech.png"
   },
   {
@@ -4107,8 +4107,8 @@
     "majorStats": null,
     "positionalRanking": 28,
     "RAS": 9.5,
-    "miscConcern": 7,
-    "floorCeiling": 9,
+    "miscConcern": 6,
+    "floorCeiling": 5,
     "logoFile": "toledo.png"
   },
   {
@@ -4140,7 +4140,7 @@
     "positionalRanking": 11,
     "RAS": 9.56,
     "miscConcern": 6,
-    "floorCeiling": 8,
+    "floorCeiling": 5,
     "logoFile": "tcu.png"
   },
   {
@@ -4155,8 +4155,8 @@
     "majorStats": null,
     "positionalRanking": 30,
     "RAS": 7.8,
-    "miscConcern": 9,
-    "floorCeiling": 8,
+    "miscConcern": 6,
+    "floorCeiling": 5,
     "logoFile": "texas-am.png"
   },
   {
@@ -4219,8 +4219,8 @@
     "majorStats": null,
     "positionalRanking": 17,
     "RAS": 9.55,
-    "miscConcern": 9,
-    "floorCeiling": 10,
+    "miscConcern": 6,
+    "floorCeiling": 5,
     "logoFile": "boston-college.png"
   },
   {
@@ -4235,8 +4235,8 @@
     "majorStats": null,
     "positionalRanking": 29,
     "RAS": 9.89,
-    "miscConcern": 10,
-    "floorCeiling": 9,
+    "miscConcern": 6,
+    "floorCeiling": 5,
     "logoFile": "default.png"
   },
   {
@@ -4300,7 +4300,7 @@
     "positionalRanking": 30,
     "RAS": 8.72,
     "miscConcern": 5,
-    "floorCeiling": 8,
+    "floorCeiling": 5,
     "logoFile": "florida.png"
   },
   {
@@ -4348,7 +4348,7 @@
     "positionalRanking": 31,
     "RAS": 9.53,
     "miscConcern": 6,
-    "floorCeiling": 9,
+    "floorCeiling": 5,
     "logoFile": "default.png"
   },
   {
@@ -4411,8 +4411,8 @@
     "majorStats": null,
     "positionalRanking": 18,
     "RAS": 9.14,
-    "miscConcern": 7,
-    "floorCeiling": 8,
+    "miscConcern": 6,
+    "floorCeiling": 5,
     "logoFile": "auburn.png"
   },
   {
@@ -4428,7 +4428,7 @@
     "positionalRanking": 21,
     "RAS": 7.65,
     "miscConcern": 7,
-    "floorCeiling": 8,
+    "floorCeiling": 5,
     "logoFile": "arizona.png"
   },
   {
@@ -4459,8 +4459,8 @@
     "majorStats": null,
     "positionalRanking": 21,
     "RAS": 9.56,
-    "miscConcern": 10,
-    "floorCeiling": 10,
+    "miscConcern": 6,
+    "floorCeiling": 5,
     "logoFile": "smu.png"
   },
   {
@@ -4491,8 +4491,8 @@
     "majorStats": null,
     "positionalRanking": 22,
     "RAS": 8.58,
-    "miscConcern": 9,
-    "floorCeiling": 9,
+    "miscConcern": 6,
+    "floorCeiling": 5,
     "logoFile": "smu.png"
   },
   {
@@ -4540,7 +4540,7 @@
     "positionalRanking": 22,
     "RAS": 6.8,
     "miscConcern": 8,
-    "floorCeiling": 7,
+    "floorCeiling": 5,
     "logoFile": "default.png"
   },
   {
@@ -4651,8 +4651,8 @@
     "majorStats": null,
     "positionalRanking": 40,
     "RAS": 7.6,
-    "miscConcern": 7,
-    "floorCeiling": 8,
+    "miscConcern": 6,
+    "floorCeiling": 5,
     "logoFile": "kansas.png"
   },
   {
@@ -4715,8 +4715,8 @@
     "majorStats": null,
     "positionalRanking": 25,
     "RAS": 9.08,
-    "miscConcern": 7,
-    "floorCeiling": 8,
+    "miscConcern": 6,
+    "floorCeiling": 5,
     "logoFile": "default.png"
   },
   {
@@ -4731,8 +4731,8 @@
     "majorStats": null,
     "positionalRanking": 41,
     "RAS": 9.57,
-    "miscConcern": 10,
-    "floorCeiling": 8,
+    "miscConcern": 6,
+    "floorCeiling": 5,
     "logoFile": "georgia.png"
   },
   {
@@ -4763,8 +4763,8 @@
     "majorStats": null,
     "positionalRanking": 43,
     "RAS": 9.45,
-    "miscConcern": 8,
-    "floorCeiling": 8,
+    "miscConcern": 6,
+    "floorCeiling": 5,
     "logoFile": "kentucky.png"
   },
   {
@@ -4779,8 +4779,8 @@
     "majorStats": "42 tackles, 2.0 sacks, 1 PBU, 0 INT",
     "positionalRanking": 34,
     "RAS": 8.65,
-    "miscConcern": 8,
-    "floorCeiling": 8,
+    "miscConcern": 6,
+    "floorCeiling": 5,
     "logoFile": "south-carolina.png"
   },
   {
@@ -4891,8 +4891,8 @@
     "majorStats": null,
     "positionalRanking": 36,
     "RAS": 7.61,
-    "miscConcern": 9,
-    "floorCeiling": 8,
+    "miscConcern": 6,
+    "floorCeiling": 5,
     "logoFile": "ucf.png"
   },
   {
@@ -4972,7 +4972,7 @@
     "positionalRanking": 24,
     "RAS": 9.14,
     "miscConcern": 7,
-    "floorCeiling": 7,
+    "floorCeiling": 4,
     "logoFile": "ohio-state.png"
   },
   {
@@ -5019,8 +5019,8 @@
     "majorStats": null,
     "positionalRanking": 35,
     "RAS": 8.66,
-    "miscConcern": 7,
-    "floorCeiling": 9,
+    "miscConcern": 6,
+    "floorCeiling": 5,
     "logoFile": "baylor.png"
   },
   {

@@ -1,9 +1,9 @@
 #include "ScoringEngine.h"
 #include "loadInfo.h"
-
+#include <random>
 
 std::map<std::string, double> getWeights(const Team& team) {
-    const std::array<double, 7> weights = {0.30, 0.22, 0.16, 0.12, 0.09, 0.07, 0.04};
+    const std::array<double, 7> weights = {0.33, 0.19, 0.16, 0.12, 0.09, 0.07, 0.04};
     std::map<std::string, double> weightMap;
 
     const auto& priorities = team.getPriorities();
@@ -25,7 +25,7 @@ double scoreConsensus(const Player& player, int totalPlayers)
         }
     }
 
-    return 100.0 * std::exp(-0.015 * (rank - 1));
+    return 100.0 * std::exp(-0.025 * (rank - 1));
 }
 
 double scorePositionalValue(const Player& player)
@@ -42,7 +42,7 @@ double scorePositionalValue(const Player& player)
         {"ILB",  60.0},
         {"OC",   60.0},
         {"TE",   40.0},
-        {"S",    40.0},
+        {"S",    55.0},
         {"K",    20.0},
         {"P",    20.0},
         {"FB",   20.0},
@@ -111,7 +111,22 @@ int scoreScarcity(std::string_view position, const std::vector<Player>& pool)
 
 double scorePlayer(const Player& player, const Team& team, const std::vector<Player>& pool)
 {
+    std::map<std::string, double> weights = getWeights(team);
 
+    double rawTotal =
+        scoreConsensus(player, pool.size())             * weights["consensusRank"]      +
+        scorePositionalNeed(player, team)               * weights["positionalNeed"]     +
+        scorePositionalValue(player)                    * weights["positionalValue"]    +
+        scoreRAS(player)                                * weights["RAS"]                +
+        scoreFloorCeiling(player)                       * weights["floorCeiling"]       +
+        scoreMiscConcern(player)                        * weights["miscConcern"]        +
+        scoreScarcity(player.getPosition(), pool)       * weights["positionalScarcity"];
+
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_real_distribution<double> noise(-team.getNoiseRange() / 15.0, team.getNoiseRange() / 10);
+
+    return rawTotal + noise(gen);
 }
 
 int getBestPlayerIndex(const Team& team, const std::vector<Player>& pool)
