@@ -1,34 +1,47 @@
 #include <iostream>
-#include "ScoringEngine.h"
+#include <algorithm>
 #include "LoadInfo.h"
+#include "ScoringEngine.h"
 
 int main()
 {
     loadPlayers("../Draft_Sim/JSONS/Players.json");
     loadTeams("../Draft_Sim/JSONS/TeamConfig.json");
+    loadDraftOrder("../Draft_Sim/JSONS/DraftOrder.json");
 
-    // find the Raiders in teamList
-    Team* cowboys = nullptr;
+    // build a team lookup map
+    std::map<std::string, Team*> teamMap;
     for (auto& t : teamList)
-    {
-        if (t.getId() == "DAL")
-        {
-            cowboys = &t;
-            break;
-        }
-    }
+        teamMap[std::string(t.getId())] = &t;
 
-    if (cowboys == nullptr)
-    {
-        std::cerr << "cowboys not found!\n";
-        return 1;
-    }
+    // available players — we'll remove from this as picks are made
+    std::vector<Player> availablePool = draftPool;
 
-    for (const auto& p : draftPool)
+    // run through every pick in order
+    for (const auto& pick : draftOrder)
     {
-        std::cout << "Scoring: " << p.getName() << "\n";
-        std::cout << p.getName() << " gets a positional score for Cowboys of "
-                  << scorePositionalNeed(p, *cowboys) << '\n';
+        Team* team = teamMap[pick.teamId];
+        if (team == nullptr) continue;
+
+        // score every available player for this team
+        std::vector<std::pair<double, int>> scored; // score, index
+        for (int i = 0; i < availablePool.size(); i++)
+            scored.push_back({scorePlayer(availablePool[i], *team, availablePool), i});
+
+        // find the highest scored player
+        auto best = std::max_element(scored.begin(), scored.end());
+        const Player& drafted = availablePool[best->second];
+
+        std::cout << "Pick " << pick.overall
+          << " | Round " << pick.round
+          << " | " << team->getName()
+          << " select " << drafted.getName()
+          << " | " << drafted.getPosition()
+          << " | Consensus Rank: " << drafted.getConsensusRank()
+          << " | Score: " << best->first << "\n";
+
+        // remove drafted player from pool
+        availablePool.erase(availablePool.begin() + best->second);
     }
 
     return 0;

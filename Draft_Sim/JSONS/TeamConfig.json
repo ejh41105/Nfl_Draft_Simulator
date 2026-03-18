@@ -847,7 +847,7 @@
     "city": "Miami",
     "noiseRange": 10,
     "positionalNeed": {
-      "QB": 1,
+      "QB": 2,
       "RB": 3,
       "WR": 1,
       "TE": 3,
@@ -954,8 +954,8 @@
       "P": 5
     },
     "priorities": [
-      "positionalNeed",
       "consensusRank",
+      "positionalNeed",
       "positionalValue",
       "miscConcern",
       "RAS",
@@ -1461,7 +1461,7 @@
       "OC": 1,
       "EDGE": 4,
       "DL": 3,
-      "ILB": 2,
+      "ILB": 4,
       "OLB": 3,
       "CB": 3,
       "S": 1,
@@ -1529,7 +1529,7 @@
     "city": "Pittsburgh",
     "noiseRange": 7,
     "positionalNeed": {
-      "QB": 1,
+      "QB": 2,
       "RB": 2,
       "WR": 4,
       "TE": 4,

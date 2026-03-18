@@ -23,6 +23,6 @@ double scorePlayer(const Player& player, const Team& team, const std::vector<Pla
 
 int getBestPlayerIndex(const Team& team, const std::vector<Player>& pool);
 
-int calculateScarcity(std::string_view position, const std::vector<Player>& pool);
+int scoreScarcity(std::string_view position, const std::vector<Player>& pool);
 
 #endif
