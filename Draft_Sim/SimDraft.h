@@ -7,7 +7,7 @@
 #include "ScoringEngine.h"
 
 
-void Draft()
+/*void Draft()
 {
     loadPlayers("../Draft_Sim/JSONS/Players.json");
     loadTeams("../Draft_Sim/JSONS/TeamConfig.json");
@@ -19,5 +19,5 @@ void Draft()
 
     }
 }
-
+*/
 #endif //MOCKDRAFTPROJECT_SIMDRAFT_H
