@@ -2,8 +2,11 @@
 #include "loadInfo.h"
 #include <random>
 
+std::random_device rd;
+std::mt19937 gen(rd());
+
 std::map<std::string, double> getWeights(const Team& team) {
-    const std::array<double, 7> weights = {0.33, 0.19, 0.16, 0.12, 0.09, 0.07, 0.04};
+    const std::array<double, 7> weights = {0.43, 0.20, 0.13, 0.10, 0.06, 0.04, 0.04};
     std::map<std::string, double> weightMap;
 
     const auto& priorities = team.getPriorities();
@@ -42,7 +45,7 @@ double scorePositionalValue(const Player& player)
         {"ILB",  60.0},
         {"OC",   60.0},
         {"TE",   40.0},
-        {"S",    55.0},
+        {"S",    40.0},
         {"K",    20.0},
         {"P",    20.0},
         {"FB",   20.0},
@@ -51,7 +54,7 @@ double scorePositionalValue(const Player& player)
     auto it = positionValue.find(std::string(player.getPosition()));
     if (it != positionValue.end())
         return it->second;
-    return 50.0; // default
+    return 50.0;
 }
 
 double scoreRAS(const Player& player)
@@ -109,7 +112,7 @@ int scoreScarcity(std::string_view position, const std::vector<Player>& pool)
     }
 }
 
-double scorePlayer(const Player& player, const Team& team, const std::vector<Player>& pool)
+double scorePlayer(const Player& player, const Team& team, const std::vector<Player>& pool, const Pick& pick)
 {
     std::map<std::string, double> weights = getWeights(team);
 
@@ -122,15 +125,6 @@ double scorePlayer(const Player& player, const Team& team, const std::vector<Pla
         scoreMiscConcern(player)                        * weights["miscConcern"]        +
         scoreScarcity(player.getPosition(), pool)       * weights["positionalScarcity"];
 
-    std::random_device rd;
-    std::mt19937 gen(rd());
-    std::uniform_real_distribution<double> noise(-team.getNoiseRange() / 15.0, team.getNoiseRange() / 10);
-
+    std::uniform_real_distribution<double> noise(-pick.noiseRange / 15.0, pick.noiseRange / 10.0);
     return rawTotal + noise(gen);
 }
-
-int getBestPlayerIndex(const Team& team, const std::vector<Player>& pool)
-{
-
-}
-

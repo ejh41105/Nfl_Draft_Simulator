@@ -19,7 +19,7 @@ double scorePositionalNeed(const Player& player, const Team& team);
 
 double scorePositionalScarcity(const Player& player, const Team& team);
 
-double scorePlayer(const Player& player, const Team& team, const std::vector<Player>& pool);
+double scorePlayer(const Player& player, const Team& team, const std::vector<Player>& pool, const Pick& pick);
 
 int getBestPlayerIndex(const Team& team, const std::vector<Player>& pool);
 
