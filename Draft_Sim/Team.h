@@ -12,10 +12,11 @@ struct Pick
     int round{0};
     int selection{0};
     int tradeValue{0};
+    int noiseRange{8};
     std::string teamId{"???"};
 
-    Pick(int overall, int round, int selection, int tradeValue, const std::string& teamID)
-        : overall{overall}, round{round}, selection{selection}, tradeValue{tradeValue}, teamId{teamID}
+    Pick(int overall, int round, int selection, int tradeValue, int noiseRange, const std::string& teamID)
+        : overall{overall}, round{round}, selection{selection}, tradeValue{tradeValue}, noiseRange{noiseRange}, teamId{teamID}
     {}
 };
 
@@ -27,7 +28,6 @@ private:
     std::string city_m{"???"};
     std::vector<Pick> picks_m{};
     std::map<std::string, int> positionalNeed_m{};
-    int noiseRange_m{8};
 
     // Priority order replaces individual weights
     // index 0 = highest priority (30%)
@@ -41,11 +41,9 @@ public:
     Team(std::string_view id, std::string_view name, std::string_view city,
          const std::vector<Pick>& picks,
          const std::map<std::string, int>& positionalNeed,
-         int noiseRange,
          const std::vector<std::string>& priorities)
         : id_m{id}, name_m{name}, city_m{city},
           picks_m{picks}, positionalNeed_m{positionalNeed},
-          noiseRange_m{noiseRange},
           priorities_m{priorities}
     {}
 
@@ -55,7 +53,6 @@ public:
     std::string_view getCity()                            const { return city_m; }
     const std::vector<Pick>& getPicks()                   const { return picks_m; }
     const std::map<std::string, int>& getPositionalNeed() const { return positionalNeed_m; }
-    int getNoiseRange()                                   const { return noiseRange_m; }
     const std::vector<std::string>& getPriorities()       const { return priorities_m; }
 
     int getNeedForPosition(std::string_view position)     const;

@@ -11,6 +11,8 @@ add_executable(MockDraftProject
         Draft_Sim/RNG.h
         Draft_Sim/LoadInfo.cpp
         Draft_Sim/LoadInfo.h
+        Draft_Sim/SimDraft.h
+        SimDraft.cpp
 )
 
 target_include_directories(MockDraftProject PRIVATE Draft_Sim/)

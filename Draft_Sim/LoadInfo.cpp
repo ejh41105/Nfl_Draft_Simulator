@@ -61,6 +61,7 @@ void loadTeams(const std::string& path)
                 pk["round"].get<int>(),
                 pk["selection"].get<int>(),
                 pk["tradeValue"].get<int>(),
+                pk["noiseRange"].get<int>(),
                 t["id"].get<std::string>()
             });
         }
@@ -73,7 +74,6 @@ void loadTeams(const std::string& path)
             t["city"].get<std::string>(),
             picks,
             t["positionalNeed"].get<std::map<std::string, int>>(),
-            t["noiseRange"].get<int>(),
             priorities
         );
     }
@@ -98,6 +98,7 @@ void loadDraftOrder(const std::string& path)
             d["round"].get<int>(),
             d["selection"].get<int>(),
             d["tradeValue"].get<int>(),
+            d["noiseRange"].get<int>(),
             d["teamId"].get<std::string>()
         );
     }
