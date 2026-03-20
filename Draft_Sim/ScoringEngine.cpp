@@ -1,6 +1,7 @@
 #include "ScoringEngine.h"
 #include "loadInfo.h"
 #include <random>
+#include <array>
 
 std::random_device rd;
 std::mt19937 gen(rd());
