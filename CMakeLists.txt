@@ -1,6 +1,5 @@
 cmake_minimum_required(VERSION 4.0)
 project(MockDraftProject)
-
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(MockDraftProject
@@ -13,3 +12,5 @@ add_executable(MockDraftProject
 )
 
 target_include_directories(MockDraftProject PRIVATE Draft_Sim/)
+
+file(COPY Draft_Sim/JSONS DESTINATION ${CMAKE_BINARY_DIR})
