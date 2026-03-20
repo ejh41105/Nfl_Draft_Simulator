@@ -6,9 +6,9 @@
 
 int main()
 {
-    loadPlayers("../Draft_Sim/JSONS/Players.json");
-    loadTeams("../Draft_Sim/JSONS/TeamConfig.json");
-    loadDraftOrder("../Draft_Sim/JSONS/DraftOrder.json");
+    loadPlayers("JSONS/Players.json");
+    loadTeams("JSONS/TeamConfig.json");
+    loadDraftOrder("JSONS/DraftOrder.json");
 
     // build a team lookup map
     std::map<std::string, Team*> teamMap;
@@ -46,3 +46,5 @@ int main()
 
     return 0;
 }
+
+//test
