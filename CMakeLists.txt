@@ -7,7 +7,8 @@ add_executable(MockDraftProject
         Draft_Sim/Team.cpp
         Draft_Sim/ScoringEngine.cpp
         Draft_Sim/LoadInfo.cpp
-        Draft_sim/SimDraft.cpp
+        Draft_Sim/SimDraft.cpp
+
 )
 
 target_include_directories(MockDraftProject PRIVATE Draft_Sim/)

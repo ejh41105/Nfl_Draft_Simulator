@@ -156,7 +156,7 @@
     "round": 1,
     "selection": 20,
     "tradeValue": 850,
-    "noiseRange": 10,
+    "noiseRange": 100,
     "teamId": "DAL"
   },
   {
@@ -164,7 +164,7 @@
     "round": 1,
     "selection": 21,
     "tradeValue": 800,
-    "noiseRange": 10,
+    "noiseRange": 100,
     "teamId": "PIT"
   },
   {
@@ -172,7 +172,7 @@
     "round": 1,
     "selection": 22,
     "tradeValue": 780,
-    "noiseRange": 10,
+    "noiseRange": 100,
     "teamId": "LAC"
   },
   {
@@ -180,7 +180,7 @@
     "round": 1,
     "selection": 23,
     "tradeValue": 760,
-    "noiseRange": 10,
+    "noiseRange": 100,
     "teamId": "PHI"
   },
   {
@@ -188,7 +188,7 @@
     "round": 1,
     "selection": 24,
     "tradeValue": 740,
-    "noiseRange": 10,
+    "noiseRange": 100,
     "teamId": "CLE"
   },
   {
@@ -196,7 +196,7 @@
     "round": 1,
     "selection": 25,
     "tradeValue": 720,
-    "noiseRange": 10,
+    "noiseRange": 100,
     "teamId": "CHI"
   },
   {
@@ -204,7 +204,7 @@
     "round": 1,
     "selection": 26,
     "tradeValue": 700,
-    "noiseRange": 10,
+    "noiseRange": 100,
     "teamId": "BUF"
   },
   {
@@ -212,7 +212,7 @@
     "round": 1,
     "selection": 27,
     "tradeValue": 680,
-    "noiseRange": 10,
+    "noiseRange": 100,
     "teamId": "SF"
   },
   {
@@ -220,7 +220,7 @@
     "round": 1,
     "selection": 28,
     "tradeValue": 660,
-    "noiseRange": 10,
+    "noiseRange": 100,
     "teamId": "HOU"
   },
   {
@@ -228,7 +228,7 @@
     "round": 1,
     "selection": 29,
     "tradeValue": 640,
-    "noiseRange": 10,
+    "noiseRange": 100,
     "teamId": "KC"
   },
   {
@@ -236,7 +236,7 @@
     "round": 1,
     "selection": 30,
     "tradeValue": 620,
-    "noiseRange": 10,
+    "noiseRange": 100,
     "teamId": "MIA"
   },
   {
@@ -244,7 +244,7 @@
     "round": 1,
     "selection": 31,
     "tradeValue": 600,
-    "noiseRange": 10,
+    "noiseRange": 100,
     "teamId": "NE"
   },
   {
@@ -252,7 +252,7 @@
     "round": 1,
     "selection": 32,
     "tradeValue": 590,
-    "noiseRange": 10,
+    "noiseRange": 100,
     "teamId": "SEA"
   },
   {
