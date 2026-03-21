@@ -8,9 +8,10 @@ add_executable(MockDraftProject
         Draft_Sim/ScoringEngine.cpp
         Draft_Sim/LoadInfo.cpp
         Draft_Sim/SimDraft.cpp
-
 )
 
 target_include_directories(MockDraftProject PRIVATE Draft_Sim/)
 
-file(COPY Draft_Sim/JSONS DESTINATION ${CMAKE_BINARY_DIR})
+configure_file(Draft_Sim/JSONS/Players.json JSONS/Players.json COPYONLY)
+configure_file(Draft_Sim/JSONS/TeamConfig.json JSONS/TeamConfig.json COPYONLY)
+configure_file(Draft_Sim/JSONS/DraftOrder.json JSONS/DraftOrder.json COPYONLY)

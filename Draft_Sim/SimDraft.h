@@ -5,19 +5,10 @@
 #include <algorithm>
 #include "LoadInfo.h"
 #include "ScoringEngine.h"
+#include <random>
 
 
-/*void Draft()
-{
-    loadPlayers("../Draft_Sim/JSONS/Players.json");
-    loadTeams("../Draft_Sim/JSONS/TeamConfig.json");
-    loadDraftOrder("../Draft_Sim/JSONS/DraftOrder.json");
+void runDraft(const std::string&);
 
-    std::map<std::string, Team*> teamGetter;
-    for (const auto& t : teamList)
-    {
 
-    }
-}
-*/
 #endif //MOCKDRAFTPROJECT_SIMDRAFT_H

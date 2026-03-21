@@ -43,63 +43,63 @@
         "round": 2,
         "selection": 4,
         "tradeValue": 540,
-        "noiseRange": 10
+        "noiseRange": 20
       },
       {
         "overall": 67,
         "round": 3,
         "selection": 3,
         "tradeValue": 255,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 102,
         "round": 4,
         "selection": 2,
         "tradeValue": 92,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 117,
         "round": 4,
         "selection": 17,
         "tradeValue": 60,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 134,
         "round": 4,
         "selection": 34,
         "tradeValue": 39,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 175,
         "round": 5,
         "selection": 35,
         "tradeValue": 21,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 185,
         "round": 6,
         "selection": 4,
         "tradeValue": 17,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 208,
         "round": 6,
         "selection": 27,
         "tradeValue": 7,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 219,
         "round": 7,
         "selection": 3,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       }
     ]
   },
@@ -154,49 +154,49 @@
         "round": 2,
         "selection": 1,
         "tradeValue": 580,
-        "noiseRange": 10
+        "noiseRange": 20
       },
       {
         "overall": 44,
         "round": 2,
         "selection": 12,
         "tradeValue": 460,
-        "noiseRange": 10
+        "noiseRange": 20
       },
       {
         "overall": 103,
         "round": 4,
         "selection": 3,
         "tradeValue": 88,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 140,
         "round": 4,
         "selection": 40,
         "tradeValue": 36,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 179,
         "round": 5,
         "selection": 39,
         "tradeValue": 19,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 228,
         "round": 7,
         "selection": 12,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 242,
         "round": 7,
         "selection": 26,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       }
     ]
   },
@@ -214,7 +214,7 @@
       "OC": 3,
       "EDGE": 2,
       "DL": 2,
-      "ILB": 3,
+      "ILB": 2,
       "OLB": 3,
       "CB": 3,
       "S": 1,
@@ -244,42 +244,42 @@
         "round": 2,
         "selection": 2,
         "tradeValue": 560,
-        "noiseRange": 10
+        "noiseRange": 20
       },
       {
         "overall": 65,
         "round": 3,
         "selection": 1,
         "tradeValue": 265,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 104,
         "round": 4,
         "selection": 4,
         "tradeValue": 86,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 143,
         "round": 5,
         "selection": 3,
         "tradeValue": 34,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 183,
         "round": 6,
         "selection": 2,
         "tradeValue": 17,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 217,
         "round": 7,
         "selection": 1,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       }
     ]
   },
@@ -294,10 +294,10 @@
       "TE": 3,
       "OT": 2,
       "OG": 2,
-      "OC": 3,
+      "OC": 2,
       "EDGE": 1,
       "DL": 2,
-      "ILB": 3,
+      "ILB": 2,
       "OLB": 3,
       "CB": 3,
       "S": 3,
@@ -327,56 +327,56 @@
         "round": 2,
         "selection": 3,
         "tradeValue": 550,
-        "noiseRange": 10
+        "noiseRange": 20
       },
       {
         "overall": 66,
         "round": 3,
         "selection": 2,
         "tradeValue": 260,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 101,
         "round": 4,
         "selection": 1,
         "tradeValue": 96,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 142,
         "round": 5,
         "selection": 2,
         "tradeValue": 35,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 144,
         "round": 5,
         "selection": 4,
         "tradeValue": 34,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 184,
         "round": 6,
         "selection": 3,
         "tradeValue": 17,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 194,
         "round": 6,
         "selection": 13,
         "tradeValue": 13,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 225,
         "round": 7,
         "selection": 9,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       }
     ]
   },
@@ -394,10 +394,10 @@
       "OC": 3,
       "EDGE": 5,
       "DL": 4,
-      "ILB": 1,
+      "ILB": 2,
       "OLB": 3,
-      "CB": 2,
-      "S": 3,
+      "CB": 3,
+      "S": 2,
       "FB": 5,
       "K": 5,
       "P": 5
@@ -424,42 +424,42 @@
         "round": 2,
         "selection": 5,
         "tradeValue": 530,
-        "noiseRange": 10
+        "noiseRange": 20
       },
       {
         "overall": 105,
         "round": 4,
         "selection": 5,
         "tradeValue": 84,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 145,
         "round": 5,
         "selection": 5,
         "tradeValue": 33,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 186,
         "round": 6,
         "selection": 5,
         "tradeValue": 16,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 192,
         "round": 6,
         "selection": 11,
         "tradeValue": 14,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 193,
         "round": 6,
         "selection": 12,
         "tradeValue": 13,
-        "noiseRange": 10
+        "noiseRange": 100
       }
     ]
   },
@@ -473,11 +473,11 @@
       "WR": 2,
       "TE": 3,
       "OT": 1,
-      "OG": 3,
+      "OG": 2,
       "OC": 3,
       "EDGE": 3,
       "DL": 3,
-      "ILB": 2,
+      "ILB": 3,
       "OLB": 3,
       "CB": 2,
       "S": 3,
@@ -514,49 +514,49 @@
         "round": 2,
         "selection": 7,
         "tradeValue": 510,
-        "noiseRange": 10
+        "noiseRange": 20
       },
       {
         "overall": 70,
         "round": 3,
         "selection": 6,
         "tradeValue": 240,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 107,
         "round": 4,
         "selection": 7,
         "tradeValue": 80,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 146,
         "round": 5,
         "selection": 6,
         "tradeValue": 33,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 149,
         "round": 5,
         "selection": 9,
         "tradeValue": 31,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 206,
         "round": 6,
         "selection": 25,
         "tradeValue": 8,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 248,
         "round": 7,
         "selection": 32,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       }
     ]
   },
@@ -573,11 +573,11 @@
       "OG": 3,
       "OC": 2,
       "EDGE": 3,
-      "DL": 3,
-      "ILB": 3,
+      "DL": 2,
+      "ILB": 4,
       "OLB": 3,
-      "CB": 2,
-      "S": 3,
+      "CB": 3,
+      "S": 2,
       "FB": 5,
       "K": 5,
       "P": 5
@@ -604,35 +604,35 @@
         "round": 3,
         "selection": 7,
         "tradeValue": 235,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 147,
         "round": 5,
         "selection": 7,
         "tradeValue": 32,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 187,
         "round": 6,
         "selection": 6,
         "tradeValue": 16,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 209,
         "round": 6,
         "selection": 28,
         "tradeValue": 7,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 223,
         "round": 7,
         "selection": 7,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       }
     ]
   },
@@ -680,49 +680,49 @@
         "round": 2,
         "selection": 10,
         "tradeValue": 480,
-        "noiseRange": 10
+        "noiseRange": 20
       },
       {
         "overall": 73,
         "round": 3,
         "selection": 9,
         "tradeValue": 225,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 132,
         "round": 4,
         "selection": 32,
         "tradeValue": 40,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 136,
         "round": 4,
         "selection": 36,
         "tradeValue": 38,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 150,
         "round": 5,
         "selection": 10,
         "tradeValue": 31,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 172,
         "round": 5,
         "selection": 32,
         "tradeValue": 22,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 190,
         "round": 6,
         "selection": 9,
         "tradeValue": 15,
-        "noiseRange": 10
+        "noiseRange": 100
       }
     ]
   },
@@ -733,7 +733,7 @@
     "positionalNeed": {
       "QB": 5,
       "RB": 4,
-      "WR": 3,
+      "WR": 2,
       "TE": 2,
       "OT": 3,
       "OG": 4,
@@ -777,49 +777,49 @@
         "round": 2,
         "selection": 8,
         "tradeValue": 500,
-        "noiseRange": 10
+        "noiseRange": 20
       },
       {
         "overall": 74,
         "round": 3,
         "selection": 10,
         "tradeValue": 220,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 109,
         "round": 4,
         "selection": 9,
         "tradeValue": 76,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 148,
         "round": 5,
         "selection": 8,
         "tradeValue": 32,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 169,
         "round": 5,
         "selection": 29,
         "tradeValue": 23,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 176,
         "round": 5,
         "selection": 36,
         "tradeValue": 21,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 210,
         "round": 6,
         "selection": 29,
         "tradeValue": 7,
-        "noiseRange": 10
+        "noiseRange": 100
       }
     ]
   },
@@ -836,7 +836,7 @@
       "OG": 3,
       "OC": 3,
       "EDGE": 3,
-      "DL": 4,
+      "DL": 2,
       "ILB": 1,
       "OLB": 3,
       "CB": 3,
@@ -867,49 +867,49 @@
         "round": 2,
         "selection": 9,
         "tradeValue": 490,
-        "noiseRange": 10
+        "noiseRange": 20
       },
       {
         "overall": 72,
         "round": 3,
         "selection": 8,
         "tradeValue": 230,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 110,
         "round": 4,
         "selection": 10,
         "tradeValue": 74,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 189,
         "round": 6,
         "selection": 8,
         "tradeValue": 15,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 199,
         "round": 6,
         "selection": 18,
         "tradeValue": 11,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 221,
         "round": 7,
         "selection": 5,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 226,
         "round": 7,
         "selection": 10,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       }
     ]
   },
@@ -923,7 +923,7 @@
       "WR": 1,
       "TE": 3,
       "OT": 2,
-      "OG": 3,
+      "OG": 2,
       "OC": 3,
       "EDGE": 2,
       "DL": 3,
@@ -964,56 +964,56 @@
         "round": 2,
         "selection": 11,
         "tradeValue": 470,
-        "noiseRange": 10
+        "noiseRange": 20
       },
       {
         "overall": 75,
         "round": 3,
         "selection": 11,
         "tradeValue": 215,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 87,
         "round": 3,
         "selection": 23,
         "tradeValue": 155,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 90,
         "round": 3,
         "selection": 26,
         "tradeValue": 140,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 111,
         "round": 4,
         "selection": 11,
         "tradeValue": 72,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 151,
         "round": 5,
         "selection": 11,
         "tradeValue": 31,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 227,
         "round": 7,
         "selection": 11,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 238,
         "round": 7,
         "selection": 22,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       }
     ]
   },
@@ -1026,13 +1026,13 @@
       "RB": 3,
       "WR": 5,
       "TE": 3,
-      "OT": 5,
+      "OT": 4,
       "OG": 5,
       "OC": 5,
       "EDGE": 2,
       "DL": 2,
       "ILB": 1,
-      "OLB": 3,
+      "OLB": 5,
       "CB": 2,
       "S": 4,
       "FB": 5,
@@ -1068,42 +1068,42 @@
         "round": 3,
         "selection": 28,
         "tradeValue": 132,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 112,
         "round": 4,
         "selection": 12,
         "tradeValue": 70,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 152,
         "round": 5,
         "selection": 12,
         "tradeValue": 30,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 177,
         "round": 5,
         "selection": 37,
         "tradeValue": 20,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 180,
         "round": 5,
         "selection": 40,
         "tradeValue": 19,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 218,
         "round": 7,
         "selection": 2,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       }
     ]
   },
@@ -1117,7 +1117,7 @@
       "WR": 2,
       "TE": 3,
       "OT": 2,
-      "OG": 2,
+      "OG": 4,
       "OC": 3,
       "EDGE": 3,
       "DL": 2,
@@ -1151,42 +1151,42 @@
         "round": 2,
         "selection": 29,
         "tradeValue": 292,
-        "noiseRange": 10
+        "noiseRange": 20
       },
       {
         "overall": 93,
         "round": 3,
         "selection": 29,
         "tradeValue": 128,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 207,
         "round": 6,
         "selection": 26,
         "tradeValue": 8,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 232,
         "round": 7,
         "selection": 16,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 251,
         "round": 7,
         "selection": 35,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 252,
         "round": 7,
         "selection": 36,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       }
     ]
   },
@@ -1234,70 +1234,70 @@
         "round": 2,
         "selection": 13,
         "tradeValue": 450,
-        "noiseRange": 10
+        "noiseRange": 20
       },
       {
         "overall": 80,
         "round": 3,
         "selection": 16,
         "tradeValue": 190,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 115,
         "round": 4,
         "selection": 15,
         "tradeValue": 64,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 154,
         "round": 5,
         "selection": 14,
         "tradeValue": 29,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 162,
         "round": 5,
         "selection": 22,
         "tradeValue": 26,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 173,
         "round": 5,
         "selection": 33,
         "tradeValue": 22,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 174,
         "round": 5,
         "selection": 34,
         "tradeValue": 21,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 211,
         "round": 6,
         "selection": 30,
         "tradeValue": 6,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 250,
         "round": 7,
         "selection": 34,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 253,
         "round": 7,
         "selection": 37,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       }
     ]
   },
@@ -1309,9 +1309,9 @@
       "QB": 4,
       "RB": 3,
       "WR": 3,
-      "TE": 3,
+      "TE": 2,
       "OT": 3,
-      "OG": 3,
+      "OG": 2,
       "OC": 3,
       "EDGE": 1,
       "DL": 2,
@@ -1345,42 +1345,42 @@
         "round": 2,
         "selection": 14,
         "tradeValue": 440,
-        "noiseRange": 10
+        "noiseRange": 20
       },
       {
         "overall": 77,
         "round": 3,
         "selection": 13,
         "tradeValue": 205,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 116,
         "round": 4,
         "selection": 16,
         "tradeValue": 62,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 155,
         "round": 5,
         "selection": 15,
         "tradeValue": 29,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 195,
         "round": 6,
         "selection": 14,
         "tradeValue": 13,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 229,
         "round": 7,
         "selection": 13,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       }
     ]
   },
@@ -1428,56 +1428,56 @@
         "round": 2,
         "selection": 18,
         "tradeValue": 400,
-        "noiseRange": 10
+        "noiseRange": 20
       },
       {
         "overall": 118,
         "round": 4,
         "selection": 18,
         "tradeValue": 58,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 128,
         "round": 4,
         "selection": 28,
         "tradeValue": 44,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 157,
         "round": 5,
         "selection": 17,
         "tradeValue": 28,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 181,
         "round": 5,
         "selection": 41,
         "tradeValue": 18,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 205,
         "round": 6,
         "selection": 24,
         "tradeValue": 9,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 213,
         "round": 6,
         "selection": 32,
         "tradeValue": 5,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 222,
         "round": 7,
         "selection": 6,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       }
     ]
   },
@@ -1486,8 +1486,8 @@
     "name": "Vikings",
     "city": "Minnesota",
     "positionalNeed": {
-      "QB": 1,
-      "RB": 3,
+      "QB": 3,
+      "RB": 2,
       "WR": 3,
       "TE": 3,
       "OT": 3,
@@ -1525,56 +1525,56 @@
         "round": 2,
         "selection": 17,
         "tradeValue": 410,
-        "noiseRange": 10
+        "noiseRange": 20
       },
       {
         "overall": 82,
         "round": 3,
         "selection": 18,
         "tradeValue": 180,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 97,
         "round": 3,
         "selection": 33,
         "tradeValue": 112,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 163,
         "round": 5,
         "selection": 23,
         "tradeValue": 26,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 196,
         "round": 6,
         "selection": 15,
         "tradeValue": 12,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 234,
         "round": 7,
         "selection": 18,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 235,
         "round": 7,
         "selection": 19,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 244,
         "round": 7,
         "selection": 28,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       }
     ]
   },
@@ -1585,7 +1585,7 @@
     "positionalNeed": {
       "QB": 4,
       "RB": 2,
-      "WR": 3,
+      "WR": 2,
       "TE": 2,
       "OT": 3,
       "OG": 4,
@@ -1622,42 +1622,42 @@
         "round": 2,
         "selection": 19,
         "tradeValue": 390,
-        "noiseRange": 10
+        "noiseRange": 20
       },
       {
         "overall": 83,
         "round": 3,
         "selection": 19,
         "tradeValue": 175,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 119,
         "round": 4,
         "selection": 19,
         "tradeValue": 56,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 158,
         "round": 5,
         "selection": 18,
         "tradeValue": 28,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 159,
         "round": 5,
         "selection": 19,
         "tradeValue": 27,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 200,
         "round": 6,
         "selection": 19,
         "tradeValue": 11,
-        "noiseRange": 10
+        "noiseRange": 100
       }
     ]
   },
@@ -1705,77 +1705,77 @@
         "round": 2,
         "selection": 21,
         "tradeValue": 370,
-        "noiseRange": 10
+        "noiseRange": 20
       },
       {
         "overall": 76,
         "round": 3,
         "selection": 12,
         "tradeValue": 210,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 85,
         "round": 3,
         "selection": 21,
         "tradeValue": 165,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 99,
         "round": 3,
         "selection": 35,
         "tradeValue": 104,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 121,
         "round": 4,
         "selection": 21,
         "tradeValue": 52,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 135,
         "round": 4,
         "selection": 35,
         "tradeValue": 38,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 161,
         "round": 5,
         "selection": 21,
         "tradeValue": 27,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 216,
         "round": 6,
         "selection": 35,
         "tradeValue": 4,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 224,
         "round": 7,
         "selection": 8,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 230,
         "round": 7,
         "selection": 14,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 237,
         "round": 7,
         "selection": 21,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       }
     ]
   },
@@ -1823,28 +1823,28 @@
         "round": 2,
         "selection": 23,
         "tradeValue": 350,
-        "noiseRange": 10
+        "noiseRange": 20
       },
       {
         "overall": 86,
         "round": 3,
         "selection": 22,
         "tradeValue": 160,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 123,
         "round": 4,
         "selection": 23,
         "tradeValue": 49,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 204,
         "round": 6,
         "selection": 23,
         "tradeValue": 9,
-        "noiseRange": 10
+        "noiseRange": 100
       }
     ]
   },
@@ -1855,7 +1855,7 @@
     "positionalNeed": {
       "QB": 4,
       "RB": 3,
-      "WR": 4,
+      "WR": 3,
       "TE": 2,
       "OT": 2,
       "OG": 3,
@@ -1892,56 +1892,56 @@
         "round": 2,
         "selection": 22,
         "tradeValue": 360,
-        "noiseRange": 10
+        "noiseRange": 20
       },
       {
         "overall": 68,
         "round": 3,
         "selection": 4,
         "tradeValue": 250,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 98,
         "round": 3,
         "selection": 34,
         "tradeValue": 108,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 122,
         "round": 4,
         "selection": 22,
         "tradeValue": 50,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 137,
         "round": 4,
         "selection": 37,
         "tradeValue": 37,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 153,
         "round": 5,
         "selection": 13,
         "tradeValue": 30,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 178,
         "round": 5,
         "selection": 38,
         "tradeValue": 19,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 215,
         "round": 6,
         "selection": 34,
         "tradeValue": 5,
-        "noiseRange": 10
+        "noiseRange": 100
       }
     ]
   },
@@ -1958,7 +1958,7 @@
       "OG": 4,
       "OC": 3,
       "EDGE": 2,
-      "DL": 3,
+      "DL": 2,
       "ILB": 2,
       "OLB": 3,
       "CB": 3,
@@ -1982,49 +1982,49 @@
         "round": 2,
         "selection": 15,
         "tradeValue": 430,
-        "noiseRange": 10
+        "noiseRange": 20
       },
       {
         "overall": 78,
         "round": 3,
         "selection": 14,
         "tradeValue": 200,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 113,
         "round": 4,
         "selection": 13,
         "tradeValue": 68,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 156,
         "round": 5,
         "selection": 16,
         "tradeValue": 29,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 214,
         "round": 6,
         "selection": 33,
         "tradeValue": 5,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 249,
         "round": 7,
         "selection": 33,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 254,
         "round": 7,
         "selection": 38,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       }
     ]
   },
@@ -2038,8 +2038,8 @@
       "WR": 4,
       "TE": 2,
       "OT": 3,
-      "OG": 4,
-      "OC": 3,
+      "OG": 3,
+      "OC": 2,
       "EDGE": 5,
       "DL": 2,
       "ILB": 3,
@@ -2072,49 +2072,49 @@
         "round": 2,
         "selection": 6,
         "tradeValue": 520,
-        "noiseRange": 10
+        "noiseRange": 20
       },
       {
         "overall": 59,
         "round": 2,
         "selection": 27,
         "tradeValue": 310,
-        "noiseRange": 10
+        "noiseRange": 20
       },
       {
         "overall": 69,
         "round": 3,
         "selection": 5,
         "tradeValue": 245,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 106,
         "round": 4,
         "selection": 6,
         "tradeValue": 82,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 141,
         "round": 5,
         "selection": 1,
         "tradeValue": 35,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 167,
         "round": 5,
         "selection": 27,
         "tradeValue": 24,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 243,
         "round": 7,
         "selection": 27,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       }
     ]
   },
@@ -2155,35 +2155,35 @@
         "round": 2,
         "selection": 16,
         "tradeValue": 420,
-        "noiseRange": 10
+        "noiseRange": 20
       },
       {
         "overall": 79,
         "round": 3,
         "selection": 15,
         "tradeValue": 195,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 114,
         "round": 4,
         "selection": 14,
         "tradeValue": 66,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 197,
         "round": 6,
         "selection": 16,
         "tradeValue": 12,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 231,
         "round": 7,
         "selection": 15,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       }
     ]
   },
@@ -2224,77 +2224,77 @@
         "round": 2,
         "selection": 24,
         "tradeValue": 340,
-        "noiseRange": 10
+        "noiseRange": 20
       },
       {
         "overall": 81,
         "round": 3,
         "selection": 17,
         "tradeValue": 185,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 88,
         "round": 3,
         "selection": 24,
         "tradeValue": 150,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 100,
         "round": 3,
         "selection": 36,
         "tradeValue": 100,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 124,
         "round": 4,
         "selection": 24,
         "tradeValue": 48,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 164,
         "round": 5,
         "selection": 24,
         "tradeValue": 25,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 166,
         "round": 5,
         "selection": 26,
         "tradeValue": 25,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 203,
         "round": 6,
         "selection": 22,
         "tradeValue": 9,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 233,
         "round": 7,
         "selection": 17,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 240,
         "round": 7,
         "selection": 24,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 245,
         "round": 7,
         "selection": 29,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       }
     ]
   },
@@ -2310,7 +2310,7 @@
       "OT": 3,
       "OG": 1,
       "OC": 2,
-      "EDGE": 4,
+      "EDGE": 3,
       "DL": 4,
       "ILB": 4,
       "OLB": 3,
@@ -2342,21 +2342,21 @@
         "round": 2,
         "selection": 32,
         "tradeValue": 270,
-        "noiseRange": 10
+        "noiseRange": 20
       },
       {
         "overall": 96,
         "round": 3,
         "selection": 32,
         "tradeValue": 116,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 188,
         "round": 6,
         "selection": 7,
         "tradeValue": 15,
-        "noiseRange": 10
+        "noiseRange": 100
       }
     ]
   },
@@ -2371,13 +2371,13 @@
       "TE": 3,
       "OT": 2,
       "OG": 2,
-      "OC": 3,
+      "OC": 2,
       "EDGE": 2,
       "DL": 3,
       "ILB": 3,
       "OLB": 3,
       "CB": 2,
-      "S": 3,
+      "S": 2,
       "FB": 5,
       "K": 5,
       "P": 5
@@ -2404,42 +2404,42 @@
         "round": 2,
         "selection": 25,
         "tradeValue": 330,
-        "noiseRange": 10
+        "noiseRange": 20
       },
       {
         "overall": 60,
         "round": 2,
         "selection": 28,
         "tradeValue": 300,
-        "noiseRange": 10
+        "noiseRange": 20
       },
       {
         "overall": 89,
         "round": 3,
         "selection": 25,
         "tradeValue": 145,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 129,
         "round": 4,
         "selection": 29,
         "tradeValue": 43,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 239,
         "round": 7,
         "selection": 23,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 241,
         "round": 7,
         "selection": 25,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       }
     ]
   },
@@ -2450,7 +2450,7 @@
     "positionalNeed": {
       "QB": 5,
       "RB": 3,
-      "WR": 2,
+      "WR": 4,
       "TE": 3,
       "OT": 4,
       "OG": 3,
@@ -2487,56 +2487,56 @@
         "round": 2,
         "selection": 30,
         "tradeValue": 284,
-        "noiseRange": 10
+        "noiseRange": 20
       },
       {
         "overall": 94,
         "round": 3,
         "selection": 30,
         "tradeValue": 124,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 108,
         "round": 4,
         "selection": 8,
         "tradeValue": 78,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 130,
         "round": 4,
         "selection": 30,
         "tradeValue": 42,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 170,
         "round": 5,
         "selection": 30,
         "tradeValue": 23,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 246,
         "round": 7,
         "selection": 30,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 256,
         "round": 7,
         "selection": 40,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 257,
         "round": 7,
         "selection": 41,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       }
     ]
   },
@@ -2584,35 +2584,35 @@
         "round": 2,
         "selection": 26,
         "tradeValue": 320,
-        "noiseRange": 10
+        "noiseRange": 20
       },
       {
         "overall": 127,
         "round": 4,
         "selection": 27,
         "tradeValue": 45,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 133,
         "round": 4,
         "selection": 33,
         "tradeValue": 39,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 138,
         "round": 4,
         "selection": 38,
         "tradeValue": 37,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 139,
         "round": 4,
         "selection": 39,
         "tradeValue": 36,
-        "noiseRange": 10
+        "noiseRange": 50
       }
     ]
   },
@@ -2627,7 +2627,7 @@
       "TE": 3,
       "OT": 3,
       "OG": 2,
-      "OC": 3,
+      "OC": 5,
       "EDGE": 3,
       "DL": 3,
       "ILB": 2,
@@ -2660,42 +2660,42 @@
         "round": 3,
         "selection": 27,
         "tradeValue": 136,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 126,
         "round": 4,
         "selection": 26,
         "tradeValue": 46,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 165,
         "round": 5,
         "selection": 25,
         "tradeValue": 25,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 168,
         "round": 5,
         "selection": 28,
         "tradeValue": 24,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 182,
         "round": 6,
         "selection": 1,
         "tradeValue": 18,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 220,
         "round": 7,
         "selection": 4,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       }
     ]
   },
@@ -2736,49 +2736,49 @@
         "round": 2,
         "selection": 20,
         "tradeValue": 380,
-        "noiseRange": 10
+        "noiseRange": 20
       },
       {
         "overall": 84,
         "round": 3,
         "selection": 20,
         "tradeValue": 170,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 120,
         "round": 4,
         "selection": 20,
         "tradeValue": 54,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 160,
         "round": 5,
         "selection": 20,
         "tradeValue": 27,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 201,
         "round": 6,
         "selection": 20,
         "tradeValue": 10,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 236,
         "round": 7,
         "selection": 20,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 255,
         "round": 7,
         "selection": 39,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       }
     ]
   },
@@ -2826,70 +2826,70 @@
         "round": 2,
         "selection": 31,
         "tradeValue": 276,
-        "noiseRange": 10
+        "noiseRange": 20
       },
       {
         "overall": 95,
         "round": 3,
         "selection": 31,
         "tradeValue": 120,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 125,
         "round": 4,
         "selection": 25,
         "tradeValue": 47,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 131,
         "round": 4,
         "selection": 31,
         "tradeValue": 41,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 171,
         "round": 5,
         "selection": 31,
         "tradeValue": 23,
-        "noiseRange": 10
+        "noiseRange": 50
       },
       {
         "overall": 191,
         "round": 6,
         "selection": 10,
         "tradeValue": 14,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 198,
         "round": 6,
         "selection": 17,
         "tradeValue": 11,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 202,
         "round": 6,
         "selection": 21,
         "tradeValue": 10,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 212,
         "round": 6,
         "selection": 31,
         "tradeValue": 6,
-        "noiseRange": 10
+        "noiseRange": 100
       },
       {
         "overall": 247,
         "round": 7,
         "selection": 31,
         "tradeValue": 1,
-        "noiseRange": 10
+        "noiseRange": 100
       }
     ]
   }
