@@ -2,6 +2,7 @@
 #include <algorithm>
 #include <stdexcept>
 
+
 int Team::getNeedForPosition(std::string_view position) const
 {
     auto I{positionalNeed_m.find(std::string(position))};
@@ -10,15 +11,25 @@ int Team::getNeedForPosition(std::string_view position) const
     return 3;
 }
 
-    void Team::updateNeedAfterPick(std::string_view position)
-    {
-        auto it = positionalNeed_m.find(std::string(position));
-        if (it != positionalNeed_m.end())
-        {
-            // reduce need by 1, clamp at minimum of 1
-            it->second = std::max(1, it->second - 1);
-        }
-    }
+void Team::updateNeedAfterPick(std::string_view position, const Player& player)
+{
+    auto it = positionalNeed_m.find(std::string(position));
+    if (it == positionalNeed_m.end()) return; // guard
+
+    int rank = player.getConsensusRank();
+    int increment = 0;
+
+    if (rank <= 24)            // top 24 players
+        increment = 3;
+    else if (rank <= 59)       // next 35 players
+        increment = 2;
+    else if (rank <= 149)      // next 90 players
+        increment = 1;
+    else
+        increment = 0;         // very low-ranked, minimal effect
+
+    it->second = std::min(it->second + increment, 5);
+}
 
 void Team::addPick(const Pick& pick)
 {

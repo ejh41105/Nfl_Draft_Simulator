@@ -7,7 +7,7 @@ std::random_device rd;
 std::mt19937 gen(rd());
 
 std::map<std::string, double> getWeights(const Team& team) {
-    const std::array<double, 7> weights = {0.43, 0.20, 0.13, 0.10, 0.06, 0.04, 0.04};
+    const std::array<double, 7> weights = {0.40, 0.23, 0.13, 0.10, 0.06, 0.04, 0.04};
     std::map<std::string, double> weightMap;
 
     const auto& priorities = team.getPriorities();
@@ -46,7 +46,7 @@ double scorePositionalValue(const Player& player)
         {"ILB",  60.0},
         {"OC",   60.0},
         {"TE",   40.0},
-        {"S",    40.0},
+        {"S",    20.0},
         {"K",    20.0},
         {"P",    20.0},
         {"FB",   20.0},

@@ -5,6 +5,7 @@
 #include <string_view>
 #include <map>
 #include <vector>
+#include "Player.h"
 
 struct Pick
 {
@@ -58,7 +59,7 @@ public:
     int getNeedForPosition(std::string_view position)     const;
 
     // Declarations for Team.cpp
-    void updateNeedAfterPick(std::string_view position);
+    void updateNeedAfterPick(std::string_view position, const Player&);
     void addPick(const Pick& pick);
     void removePick(int overallPickNumber);
     Pick getNextPick() const;

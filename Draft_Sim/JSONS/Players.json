@@ -184,7 +184,7 @@
     "weight": 315,
     "number": 69,
     "age": 21,
-    "majorStats": "14 games started, 4.93 40-yard dash",
+    "majorStats": "14 games started",
     "positionalRanking": 2,
     "RAS": 9.99,
     "miscConcern": 10,
@@ -259,7 +259,7 @@
     "consensusRanking": 17,
     "name": "Keldric Faulk",
     "college": "Auburn",
-    "position": "DL",
+    "position": "EDGE",
     "height": 78,
     "weight": 276,
     "number": 46,
@@ -337,22 +337,6 @@
   },
   {
     "consensusRanking": 22,
-    "name": "Denzel Boston",
-    "college": "Washington",
-    "position": "WR",
-    "height": 76,
-    "weight": 212,
-    "number": 36,
-    "age": 22,
-    "majorStats": "62 rec, 881 yards, 11 TD, avg 14.2",
-    "positionalRanking": 4,
-    "RAS": 7.2,
-    "miscConcern": 10,
-    "floorCeiling": 8,
-    "logoFile": "washington.png"
-  },
-  {
-    "consensusRanking": 23,
     "name": "Caleb Lomu",
     "college": "Utah",
     "position": "OT",
@@ -368,7 +352,7 @@
     "logoFile": "utah.png"
   },
   {
-    "consensusRanking": 24,
+    "consensusRanking": 23,
     "name": "Peter Woods",
     "college": "Clemson",
     "position": "DL",
@@ -384,7 +368,7 @@
     "logoFile": "clemson.png"
   },
   {
-    "consensusRanking": 25,
+    "consensusRanking": 24,
     "name": "Emmanuel McNeil-Warren",
     "college": "Toledo",
     "position": "S",
@@ -400,7 +384,7 @@
     "logoFile": "toledo.png"
   },
   {
-    "consensusRanking": 26,
+    "consensusRanking": 25,
     "name": "Kadyn Proctor",
     "college": "Alabama",
     "position": "OT",
@@ -416,7 +400,7 @@
     "logoFile": "alabama.png"
   },
   {
-    "consensusRanking": 27,
+    "consensusRanking": 26,
     "name": "Avieon Terrell",
     "college": "Clemson",
     "position": "CB",
@@ -430,6 +414,22 @@
     "miscConcern": 10,
     "floorCeiling": 7,
     "logoFile": "clemson.png"
+  },
+  {
+    "consensusRanking": 27,
+    "name": "Denzel Boston",
+    "college": "Washington",
+    "position": "WR",
+    "height": 76,
+    "weight": 212,
+    "number": 36,
+    "age": 22,
+    "majorStats": "62 rec, 881 yards, 11 TD, avg 14.2",
+    "positionalRanking": 4,
+    "RAS": 7.2,
+    "miscConcern": 10,
+    "floorCeiling": 8,
+    "logoFile": "washington.png"
   },
   {
     "consensusRanking": 28,
