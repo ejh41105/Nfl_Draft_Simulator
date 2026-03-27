@@ -6,13 +6,27 @@
 #include "ScoringEngine.h"
 #include "Team.h"
 
-
 int main()
 {
     // Load players, teams, and draft order
     loadPlayers("JSONS/Players.json");
     loadTeams("JSONS/TeamConfig.json");
     loadDraftOrder("JSONS/DraftOrder.json");
+
+    std::vector<std::string_view> selectedTeams{};
+
+    selectedTeams.emplace_back("Raiders");
+
+    for (auto& select : teamList)
+    {
+        for (auto i : selectedTeams)
+        {
+            if (i == select.getName())
+            {
+                select.Team::setSelected(true);
+            }
+        }
+    }
 
     // Build a map for quick team lookup by ID
     std::map<std::string, Team*> teamMap;
@@ -40,29 +54,70 @@ int main()
         auto bestIt = std::max_element(scoredPlayers.begin(), scoredPlayers.end(),
             [](const auto& a, const auto& b) { return a.first < b.first; });
         int bestIndex = bestIt->second;
-        const Player& drafted = availablePool[bestIndex];
 
-        // Show draft pick information
-        std::cout << "Pick " << pick.overall
-                  << " | Round " << pick.round
-                  << " | " << team->getName()
-                  << " selects " << drafted.getName()
-                  << " | " << drafted.getCollege() << " University"
-                  << " | " << drafted.getPosition()
-                  << " | Consensus Rank: " << drafted.getConsensusRank()
-                  << " | Score: " << bestIt->first << "\n";
+        if (!team->getSelected())
+        {
+            const Player& drafted = availablePool[bestIndex];
 
-        // Debug: show positional need before updating
-        int needBefore = team->getNeedForPosition(drafted.getPosition());
+            std::cout << "Pick " << pick.overall
+                      << " | Round " << pick.round
+                      << " | " << team->getName()
+                      << " selects " << drafted.getName()
+                      << " | " << drafted.getCollege() << " University"
+                      << " | " << drafted.getPosition()
+                      << " | Consensus Rank: " << drafted.getConsensusRank()
+                      << " | Score: " << bestIt->first << "\n";
 
-        // Update team's positional need based on the drafted player
-        team->updateNeedAfterPick(drafted.getPosition(), drafted);
+            // Debug: show positional need before updating
+            int needBefore = team->getNeedForPosition(drafted.getPosition());
 
-        // Debug: show positional need after updating
-        int needAfter = team->getNeedForPosition(drafted.getPosition());
+            team->updateNeedAfterPick(drafted.getPosition(), drafted);
 
-        // Remove drafted player from the pool
-        availablePool.erase(availablePool.begin() + bestIndex);
+            int needAfter = team->getNeedForPosition(drafted.getPosition());
+
+            // Remove drafted player from the pool
+            availablePool.erase(availablePool.begin() + bestIndex);
+        }
+        else
+        {
+            int rank{};
+            bool validPick = false;
+
+            while (!validPick)
+            {
+                std::cout << "Enter consensus rank: ";
+                std::cin >> rank;
+
+                auto it = std::find_if(availablePool.begin(), availablePool.end(),
+                    [rank](const Player& p) { return p.getConsensusRank() == rank; });
+
+                if (it == availablePool.end())
+                {
+                    std::cout << "Player not found or already drafted, try again\n";
+                    continue;
+                }
+
+                const Player& drafted = *it;
+
+                std::cout << "Pick " << pick.overall
+                          << " | Round " << pick.round
+                          << " | " << team->getName()
+                          << " selects " << drafted.getName()
+                          << " | " << drafted.getCollege() << " University"
+                          << " | " << drafted.getPosition()
+                          << " | Consensus Rank: " << drafted.getConsensusRank()
+                          << " | Score: " << bestIt->first << "\n";
+
+                int needBefore = team->getNeedForPosition(drafted.getPosition());
+
+                team->updateNeedAfterPick(drafted.getPosition(), drafted);
+
+                int needAfter = team->getNeedForPosition(drafted.getPosition());
+
+                availablePool.erase(it);
+                validPick = true;
+            }
+        }
     }
 
     return 0;

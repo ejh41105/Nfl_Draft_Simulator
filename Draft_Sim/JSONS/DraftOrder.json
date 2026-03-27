@@ -76,7 +76,7 @@
     "round": 1,
     "selection": 10,
     "tradeValue": 1300,
-    "noiseRange": 10,
+    "noiseRange": 30,
     "teamId": "CIN"
   },
   {
@@ -92,7 +92,7 @@
     "round": 1,
     "selection": 12,
     "tradeValue": 1200,
-    "noiseRange": 10,
+    "noiseRange": 0,
     "teamId": "DAL"
   },
   {
@@ -164,7 +164,7 @@
     "round": 1,
     "selection": 21,
     "tradeValue": 800,
-    "noiseRange": 10,
+    "noiseRange": 30,
     "teamId": "PIT"
   },
   {
@@ -172,7 +172,7 @@
     "round": 1,
     "selection": 22,
     "tradeValue": 780,
-    "noiseRange": 10,
+    "noiseRange": 30,
     "teamId": "LAC"
   },
   {
