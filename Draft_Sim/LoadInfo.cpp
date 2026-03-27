@@ -74,7 +74,8 @@ void loadTeams(const std::string& path)
             t["city"].get<std::string>(),
             picks,
             t["positionalNeed"].get<std::map<std::string, int>>(),
-            priorities
+            priorities,
+            t["selected"].get<bool>()
         );
     }
 }

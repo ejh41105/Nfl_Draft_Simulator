@@ -37,15 +37,16 @@ private:
     // "consensusRank", "positionalNeed", "positionalValue",
     // "RAS", "floorCeiling", "miscConcern", "positionalScarcity"
     std::vector<std::string> priorities_m{};
+    bool selected_m{false};
 
 public:
     Team(std::string_view id, std::string_view name, std::string_view city,
          const std::vector<Pick>& picks,
          const std::map<std::string, int>& positionalNeed,
-         const std::vector<std::string>& priorities)
+         const std::vector<std::string>& priorities, bool selected)
         : id_m{id}, name_m{name}, city_m{city},
           picks_m{picks}, positionalNeed_m{positionalNeed},
-          priorities_m{priorities}
+          priorities_m{priorities}, selected_m{selected}
     {}
 
     // Getters
@@ -55,6 +56,7 @@ public:
     const std::vector<Pick>& getPicks()                   const { return picks_m; }
     const std::map<std::string, int>& getPositionalNeed() const { return positionalNeed_m; }
     const std::vector<std::string>& getPriorities()       const { return priorities_m; }
+    bool getSelected()                                    const { return selected_m; }
 
     int getNeedForPosition(std::string_view position)     const;
 
@@ -63,6 +65,12 @@ public:
     void addPick(const Pick& pick);
     void removePick(int overallPickNumber);
     Pick getNextPick() const;
+
+    //This is for when user selects a team (changes false to true)//
+    void setSelected(bool choice)
+    {
+        selected_m = choice;
+    }
 };
 
 #endif //MOCKDRAFTPROJECT_TEAM_H

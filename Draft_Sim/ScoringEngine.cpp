@@ -43,13 +43,13 @@ double scorePositionalValue(const Player& player)
         {"DT",   60.0},
         {"OG",   60.0},
         {"RB",   60.0},
-        {"ILB",  60.0},
+        {"ILB",  50.0},
         {"OC",   60.0},
         {"TE",   40.0},
         {"S",    20.0},
-        {"K",    20.0},
-        {"P",    20.0},
-        {"FB",   20.0},
+        {"K",    5.0},
+        {"P",    5.0},
+        {"FB",   5.0},
     };
 
     auto it = positionValue.find(std::string(player.getPosition()));
