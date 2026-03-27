@@ -8,7 +8,7 @@
 #include <random>
 
 
-void runDraft(const std::string&);
+void RunDraft();
 
 
 #endif //MOCKDRAFTPROJECT_SIMDRAFT_H
