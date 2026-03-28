@@ -4,7 +4,7 @@
     "round": 1,
     "selection": 1,
     "tradeValue": 3000,
-    "noiseRange": 0,
+    "noiseRange": 100,
     "teamId": "LV"
   },
   {
