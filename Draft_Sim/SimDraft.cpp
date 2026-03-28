@@ -8,8 +8,7 @@ void RunDraft()
     loadDraftOrder("JSONS/DraftOrder.json");
 
     std::vector<std::string_view> selectedTeams{};
-
-    selectedTeams.emplace_back("Raider");
+    selectedTeams.emplace_back("Cardinals");
 
     for (auto& select : teamList)
     {
@@ -74,12 +73,13 @@ void RunDraft()
         }
         else
         {
+            Player& drafted = availablePool[bestIndex];
             int rank{};
             bool validPick = false;
 
             while (!validPick)
             {
-                std::cout << "Enter consensus rank: ";
+                std::cout << team->getName() << " are selecting. Suggested Player is " << drafted.getName() << " Enter consensus rank: ";
                 std::cin >> rank;
 
                 auto it = std::find_if(availablePool.begin(), availablePool.end(),
