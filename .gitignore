@@ -15,7 +15,7 @@ Thumbs.db
 
 # Keep these
 !Draft_Sim/
-!Draft_Sim/json.hpp
+!Draft_Sim/Back End/Include/json.hpp
 !data/
 !CMakeLists.txt
 
