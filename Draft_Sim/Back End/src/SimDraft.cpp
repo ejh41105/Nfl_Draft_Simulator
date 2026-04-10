@@ -1,4 +1,4 @@
-#include "SimDraft.h"
+#include "Include/SimDraft.h"
 
 void RunDraft()
 {
@@ -8,7 +8,7 @@ void RunDraft()
     loadDraftOrder("JSONS/DraftOrder.json");
 
     std::vector<std::string_view> selectedTeams{};
-    selectedTeams.emplace_back("Cardinals");
+    selectedTeams.emplace_back("Cowboys");
 
     for (auto& select : teamList)
     {
