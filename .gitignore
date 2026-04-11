@@ -1,4 +1,4 @@
-# CLion build folders
+ # CLion build folders
 cmake-build-debug/
 cmake-build-release/
 
@@ -7,6 +7,12 @@ CMakeCache.txt
 CMakeFiles/
 cmake_install.cmake
 Makefile
+
+#VSC Build Folders
+build/
+out/
+cmake-build-debug/
+cmake-build-release/
 
 # Compiled objects
 *.d

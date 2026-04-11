@@ -16,8 +16,6 @@ target_include_directories(MockDraftProject PRIVATE
         "Draft_Sim/BackEnd/Include"
 )
 
-add_custom_command(TARGET MockDraftProject POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E copy_directory
-    "${CMAKE_SOURCE_DIR}/Draft_Sim/BackEnd/Data/JSONS"
-    "$<TARGET_FILE_DIR:MockDraftProject>/JSONS"
-)
+configure_file("Draft_Sim/BackEnd/Data/JSONS/Players.json" JSONS/Players.json COPYONLY)
+configure_file("Draft_Sim/BackEnd/Data/JSONS/TeamConfig.json" JSONS/TeamConfig.json COPYONLY)
+configure_file("Draft_Sim/BackEnd/Data/JSONS/DraftOrder.json" JSONS/DraftOrder.json COPYONLY)
