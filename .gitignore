@@ -1,4 +1,9 @@
- # CLion build folders
+# IDE folders
+.vs/
+.idea/
+.vscode/
+
+# CLion build folders
 cmake-build-debug/
 cmake-build-release/
 
@@ -8,11 +13,9 @@ CMakeFiles/
 cmake_install.cmake
 Makefile
 
-#VSC Build Folders
+# VSC Build Folders
 build/
 out/
-cmake-build-debug/
-cmake-build-release/
 
 # Compiled objects
 *.d
@@ -46,5 +49,7 @@ cmake-build-release/
 *.mod
 *.smod
 
-#idea
-*.idea/
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
