@@ -79,7 +79,8 @@ void RunDraft()
 
             while (!validPick)
             {
-                std::cout << team->getName() << " are selecting. Suggested Player is " << drafted.getName() << " Enter consensus rank: ";
+                std::cout << team->getName() << " are selecting. Suggested Player is " 
+                << drafted.getName() << ", his Consensus rank is " << drafted.getConsensusRank() << ". Enter consensus rank of player you wish to draft: ";
                 std::cin >> rank;
 
                 auto it = std::find_if(availablePool.begin(), availablePool.end(),
