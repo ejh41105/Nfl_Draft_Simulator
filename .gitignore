@@ -39,3 +39,6 @@ Makefile
 *.pdb
 *.mod
 *.smod
+
+#idea
+*.idea/
