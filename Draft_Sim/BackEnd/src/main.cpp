@@ -1,7 +1,7 @@
 #include "SimDraft.h"
 #include <iostream>
 
-//test
+//test2
 
 int main()
 {
