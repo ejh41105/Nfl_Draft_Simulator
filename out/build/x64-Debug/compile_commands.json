@@ -1,0 +1,32 @@
+[
+{
+  "directory": "C:/Users/ethan/Downloads/Draft Project/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"C:\\Users\\ethan\\Downloads\\Draft Project\\Draft_Sim\\BackEnd\\Include\" /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od -std:c++20 -MDd -RTC1 -Zi @CMakeFiles\\MockDraftProject.dir\\Draft_Sim\\BackEnd\\src\\main.cpp.obj.modmap /FoCMakeFiles\\MockDraftProject.dir\\Draft_Sim\\BackEnd\\src\\main.cpp.obj /FdCMakeFiles\\MockDraftProject.dir\\ /FS -c \"C:\\Users\\ethan\\Downloads\\Draft Project\\Draft_Sim\\BackEnd\\src\\main.cpp\"",
+  "file": "C:/Users/ethan/Downloads/Draft Project/Draft_Sim/BackEnd/src/main.cpp",
+  "output": "C:/Users/ethan/Downloads/Draft Project/out/build/x64-Debug/CMakeFiles/MockDraftProject.dir/Draft_Sim/BackEnd/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/ethan/Downloads/Draft Project/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"C:\\Users\\ethan\\Downloads\\Draft Project\\Draft_Sim\\BackEnd\\Include\" /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od -std:c++20 -MDd -RTC1 -Zi @CMakeFiles\\MockDraftProject.dir\\Draft_Sim\\BackEnd\\src\\Team.cpp.obj.modmap /FoCMakeFiles\\MockDraftProject.dir\\Draft_Sim\\BackEnd\\src\\Team.cpp.obj /FdCMakeFiles\\MockDraftProject.dir\\ /FS -c \"C:\\Users\\ethan\\Downloads\\Draft Project\\Draft_Sim\\BackEnd\\src\\Team.cpp\"",
+  "file": "C:/Users/ethan/Downloads/Draft Project/Draft_Sim/BackEnd/src/Team.cpp",
+  "output": "C:/Users/ethan/Downloads/Draft Project/out/build/x64-Debug/CMakeFiles/MockDraftProject.dir/Draft_Sim/BackEnd/src/Team.cpp.obj"
+},
+{
+  "directory": "C:/Users/ethan/Downloads/Draft Project/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"C:\\Users\\ethan\\Downloads\\Draft Project\\Draft_Sim\\BackEnd\\Include\" /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od -std:c++20 -MDd -RTC1 -Zi @CMakeFiles\\MockDraftProject.dir\\Draft_Sim\\BackEnd\\src\\ScoringEngine.cpp.obj.modmap /FoCMakeFiles\\MockDraftProject.dir\\Draft_Sim\\BackEnd\\src\\ScoringEngine.cpp.obj /FdCMakeFiles\\MockDraftProject.dir\\ /FS -c \"C:\\Users\\ethan\\Downloads\\Draft Project\\Draft_Sim\\BackEnd\\src\\ScoringEngine.cpp\"",
+  "file": "C:/Users/ethan/Downloads/Draft Project/Draft_Sim/BackEnd/src/ScoringEngine.cpp",
+  "output": "C:/Users/ethan/Downloads/Draft Project/out/build/x64-Debug/CMakeFiles/MockDraftProject.dir/Draft_Sim/BackEnd/src/ScoringEngine.cpp.obj"
+},
+{
+  "directory": "C:/Users/ethan/Downloads/Draft Project/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"C:\\Users\\ethan\\Downloads\\Draft Project\\Draft_Sim\\BackEnd\\Include\" /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od -std:c++20 -MDd -RTC1 -Zi @CMakeFiles\\MockDraftProject.dir\\Draft_Sim\\BackEnd\\src\\LoadInfo.cpp.obj.modmap /FoCMakeFiles\\MockDraftProject.dir\\Draft_Sim\\BackEnd\\src\\LoadInfo.cpp.obj /FdCMakeFiles\\MockDraftProject.dir\\ /FS -c \"C:\\Users\\ethan\\Downloads\\Draft Project\\Draft_Sim\\BackEnd\\src\\LoadInfo.cpp\"",
+  "file": "C:/Users/ethan/Downloads/Draft Project/Draft_Sim/BackEnd/src/LoadInfo.cpp",
+  "output": "C:/Users/ethan/Downloads/Draft Project/out/build/x64-Debug/CMakeFiles/MockDraftProject.dir/Draft_Sim/BackEnd/src/LoadInfo.cpp.obj"
+},
+{
+  "directory": "C:/Users/ethan/Downloads/Draft Project/out/build/x64-Debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"C:\\Users\\ethan\\Downloads\\Draft Project\\Draft_Sim\\BackEnd\\Include\" /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od -std:c++20 -MDd -RTC1 -Zi @CMakeFiles\\MockDraftProject.dir\\Draft_Sim\\BackEnd\\src\\SimDraft.cpp.obj.modmap /FoCMakeFiles\\MockDraftProject.dir\\Draft_Sim\\BackEnd\\src\\SimDraft.cpp.obj /FdCMakeFiles\\MockDraftProject.dir\\ /FS -c \"C:\\Users\\ethan\\Downloads\\Draft Project\\Draft_Sim\\BackEnd\\src\\SimDraft.cpp\"",
+  "file": "C:/Users/ethan/Downloads/Draft Project/Draft_Sim/BackEnd/src/SimDraft.cpp",
+  "output": "C:/Users/ethan/Downloads/Draft Project/out/build/x64-Debug/CMakeFiles/MockDraftProject.dir/Draft_Sim/BackEnd/src/SimDraft.cpp.obj"
+}
+]
