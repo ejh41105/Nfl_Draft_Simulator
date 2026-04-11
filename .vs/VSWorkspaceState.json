@@ -1,0 +1,18 @@
+{
+  "OutputFoldersPerTargetSystem": {
+    "Local Machine": [
+      "out\\build\\x64-Debug",
+      "out\\install\\x64-Debug"
+    ]
+  },
+  "ExpandedNodes": [
+    "",
+    "\\Draft_Sim",
+    "\\Draft_Sim\\BackEnd",
+    "\\Draft_Sim\\BackEnd\\Data",
+    "\\Draft_Sim\\BackEnd\\Data\\JSONS",
+    "\\Draft_Sim\\BackEnd\\src"
+  ],
+  "SelectedNode": "\\Draft_Sim\\BackEnd\\src\\SimDraft.cpp",
+  "PreviewInSolutionExplorer": false
+}
