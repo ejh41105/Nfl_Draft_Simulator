@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "MockDraftProject.dir\\Debug\\main.obj",
+            "outputs": [
+                "C:\\Users\\ethan\\Downloads\\Nfl_Draft_Simulator\\build\\MockDraftProject.dir\\Debug\\vc143.pdb",
+                "MockDraftProject.dir\\Debug\\"
+            ],
+            "requires": []
+        }
+    ]
+}
