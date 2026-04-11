@@ -1,5 +1,4 @@
-# CLion IDE
-.idea/
+# CLion build folders
 cmake-build-debug/
 cmake-build-release/
 
@@ -9,46 +8,34 @@ CMakeFiles/
 cmake_install.cmake
 Makefile
 
-# OS
-.DS_Store
-Thumbs.db
-
-# Keep these
-!Draft_Sim/
-!Draft_Sim/Back End/Include/json.hpp
-!data/
-!CMakeLists.txt
-
-# Then paste the GitHub default below this line
-# Prerequisites
+# Compiled objects
 *.d
-# Compiled Object files
 *.slo
 *.lo
 *.o
 *.obj
-# Precompiled Headers
+
+# Precompiled headers
 *.gch
 *.pch
-# Linker files
-*.ilk
-# Debugger Files
-*.pdb
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-# Fortran module files
-*.mod
-*.smod
-# Compiled Static libraries
+
+# Libraries
 *.lai
 *.la
 *.a
 *.lib
+*.so
+*.dylib
+*.dll
+
 # Executables
 *.exe
 *.out
 *.app
-# debug information files
+
+# Debug info
 *.dwo
+*.ilk
+*.pdb
+*.mod
+*.smod

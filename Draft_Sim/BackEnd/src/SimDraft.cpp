@@ -3,9 +3,9 @@
 void RunDraft()
 {
     // Load players, teams, and draft order
-    loadPlayers("../../Draft_Sim/BackEnd/Data/JSONS/Players.json");
-    loadTeams("../../Draft_Sim/BackEnd/Data/JSONS/TeamConfig.json");
-    loadDraftOrder("../../Draft_Sim/BackEnd/Data/JSONS/DraftOrder.json");
+    loadPlayers("JSONS/Players.json");
+    loadTeams("JSONS/TeamConfig.json");
+    loadDraftOrder("JSONS/DraftOrder.json");
 
     std::vector<std::string_view> selectedTeams{};
     selectedTeams.emplace_back("Cowboys");
