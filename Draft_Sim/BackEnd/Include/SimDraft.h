@@ -6,9 +6,11 @@
 #include "LoadInfo.h"
 #include "ScoringEngine.h"
 #include <random>
+#include <unordered_map>
 
 
 void RunDraft();
+void getBigBoard();
 
 
 #endif //MOCKDRAFTPROJECT_SIMDRAFT_H

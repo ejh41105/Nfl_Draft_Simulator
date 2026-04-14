@@ -25,4 +25,6 @@ int getBestPlayerIndex(const Team& team, const std::vector<Player>& pool);
 
 int scoreScarcity(std::string_view position, const std::vector<Player>& pool);
 
+double createBigBoard(const Player&, const Team&);
+
 #endif

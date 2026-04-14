@@ -2,7 +2,6 @@
 
 void RunDraft()
 {
-    // Load players, teams, and draft order
     loadPlayers("JSONS/Players.json");
     loadTeams("JSONS/TeamConfig.json");
     loadDraftOrder("JSONS/DraftOrder.json");
@@ -21,21 +20,17 @@ void RunDraft()
         }
     }
 
-    // Build a map for quick team lookup by ID
     std::map<std::string, Team*> teamMap;
     for (auto& t : teamList)
         teamMap[std::string(t.getId())] = &t;
 
-    // Make a copy of draft pool
     std::vector<Player> availablePool = draftPool;
 
-    // Loop through each pick in the draft
     for (const auto& pick : draftOrder)
     {
         Team* team = teamMap[pick.teamId];
-        if (!team) continue; // Skip if team not found
+        if (!team) continue;
 
-        // Score all available players for this team
         std::vector<std::pair<double, int>> scoredPlayers;
         for (int i = 0; i < availablePool.size(); ++i)
         {
@@ -43,7 +38,6 @@ void RunDraft()
             scoredPlayers.emplace_back(score, i);
         }
 
-        // Find the player with the highest score
         auto bestIt = std::max_element(scoredPlayers.begin(), scoredPlayers.end(),
             [](const auto& a, const auto& b) { return a.first < b.first; });
         int bestIndex = bestIt->second;
@@ -53,34 +47,30 @@ void RunDraft()
             const Player& drafted = availablePool[bestIndex];
 
             std::cout << "Pick " << pick.overall
-                      << " | Round " << pick.round
-                      << " | " << team->getName()
-                      << " selects " << drafted.getName()
-                      << " | " << drafted.getCollege() << " University"
-                      << " | " << drafted.getPosition()
-                      << " | Consensus Rank: " << drafted.getConsensusRank()
-                      << " | Score: " << bestIt->first << "\n";
-
-            // Debug: show positional need before updating
-            int needBefore = team->getNeedForPosition(drafted.getPosition());
+                << " | Round " << pick.round
+                << " | " << team->getName()
+                << " selects " << drafted.getName()
+                << " | " << drafted.getCollege() << " University"
+                << " | " << drafted.getPosition()
+                << " | Consensus Rank: " << drafted.getConsensusRank()
+                << " | Score: " << bestIt->first << "\n";
 
             team->updateNeedAfterPick(drafted.getPosition(), drafted);
-
-            int needAfter = team->getNeedForPosition(drafted.getPosition());
-
-            // Remove drafted player from the pool
             availablePool.erase(availablePool.begin() + bestIndex);
         }
         else
         {
-            Player& drafted = availablePool[bestIndex];
+            // Rename outer variable to avoid shadowing
+            Player& suggestedPlayer = availablePool[bestIndex];
             int rank{};
             bool validPick = false;
 
             while (!validPick)
             {
-                std::cout << team->getName() << " are selecting. Suggested Player is " 
-                << drafted.getName() << ", his Consensus rank is " << drafted.getConsensusRank() << ". Enter consensus rank of player you wish to draft: ";
+                std::cout << team->getName() << " are on the clock. Suggested: "
+                    << suggestedPlayer.getName()
+                    << " (Consensus Rank: " << suggestedPlayer.getConsensusRank()
+                    << "). Enter consensus rank of player you wish to draft: ";
                 std::cin >> rank;
 
                 auto it = std::find_if(availablePool.begin(), availablePool.end(),
@@ -88,30 +78,65 @@ void RunDraft()
 
                 if (it == availablePool.end())
                 {
-                    std::cout << "Player not found or already drafted, try again\n";
+                    std::cout << "Player not found or already drafted, try again.\n";
                     continue;
                 }
 
                 const Player& drafted = *it;
 
                 std::cout << "Pick " << pick.overall
-                          << " | Round " << pick.round
-                          << " | " << team->getName()
-                          << " selects " << drafted.getName()
-                          << " | " << drafted.getCollege() << " University"
-                          << " | " << drafted.getPosition()
-                          << " | Consensus Rank: " << drafted.getConsensusRank()
-                          << " | Score: " << bestIt->first << "\n";
-
-                int needBefore = team->getNeedForPosition(drafted.getPosition());
+                    << " | Round " << pick.round
+                    << " | " << team->getName()
+                    << " selects " << drafted.getName()
+                    << " | " << drafted.getCollege() << " University"
+                    << " | " << drafted.getPosition()
+                    << " | Consensus Rank: " << drafted.getConsensusRank() << "\n";
 
                 team->updateNeedAfterPick(drafted.getPosition(), drafted);
-
-                int needAfter = team->getNeedForPosition(drafted.getPosition());
-
                 availablePool.erase(it);
                 validPick = true;
             }
         }
+    }
+}
+
+void getBigBoard()
+{
+    loadPlayers("JSONS/Players.json");
+    loadTeams("JSONS/TeamConfig.json");
+
+    std::cout << "Please select a team to get their big board: \n";
+    std::string teampick{};
+    std::cin >> teampick;
+
+    Pick pick1{ 1, 1, 1, 1, 1, "Dal" };
+
+    auto it = std::find_if(teamList.begin(), teamList.end(),
+        [&teampick](const Team& t) { return t.getName() == teampick; });
+
+    if (it == teamList.end())
+    {
+        std::cout << "Team not found: " << teampick << "\n";
+        return;
+    }
+    Team selectedTeam = *it;
+
+    std::vector<std::pair<double, int>> scoredPlayers;
+    for (int i = 0; i < draftPool.size(); ++i)
+    {
+        double score = scorePlayer(draftPool[i], selectedTeam, draftPool, pick1);
+        scoredPlayers.emplace_back(score, i);
+    }
+
+    std::sort(scoredPlayers.begin(), scoredPlayers.end(),
+        [](const auto& a, const auto& b) { return a.first > b.first; });
+
+    for (int i = 0; i < scoredPlayers.size(); i++)
+    {
+        const Player& p = draftPool[scoredPlayers[i].second];
+        std::cout << "Player #" << i + 1
+            << " | " << p.getName()
+            << " | " << p.getPosition()
+            << " | Consensus Rank: " << p.getConsensusRank() << "\n";
     }
 }
