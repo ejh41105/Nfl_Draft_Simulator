@@ -2,105 +2,146 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Draft Season</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../CSS/HomePage.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NFL Draft Simulator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../CSS/DraftPage.css"/>
 </head>
 <body>
 
 <header>
-  <div class="logo">Draft Season</div>
+  <h1>NFL Draft Simulator</h1>
+  <span class="header-meta">2026 NFL DRAFT &nbsp;·&nbsp; ALL 7 ROUNDS</span>
+  <span class="header-badge">LIVE</span>
 </header>
 
 <main>
-  <h1 class="page-title">Configure Your Draft</h1>
-  <p class="page-subtitle">Select the teams you want to control, then set your draft parameters.</p>
 
-  <!-- Team Selection -->
-  <div class="section">
-    <div class="section-label">Select Teams to Control</div>
-    <div class="section-body">
-      <div class="team-controls">
-        <button class="ctrl-btn">Select All</button>
-        <button class="ctrl-btn">Deselect All</button>
+  <!-- ══ LEFT: DRAFT BOARD ══ -->
+  <div class="panel" id="panel-draft">
+    <div class="panel-header">
+      <div class="panel-title"><span class="dot"></span> Draft Board</div>
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-top:6px;">
+        <div class="panel-sub" id="draft-total">257 TOTAL PICKS</div>
+        <div class="pick-chip">Pick <span class="chip-val" id="current-pick">1</span>&nbsp;/&nbsp;<span id="total-picks">257</span></div>
       </div>
-      <div class="team-grid" id="teamGrid"></div>
     </div>
+    <!-- Rendered by renderDraftBoard() in draft.js -->
+    <div class="panel-body" id="draft-body"></div>
   </div>
 
-  <!-- Year Selection -->
-  <div class="section">
-    <div class="section-label">Draft Year</div>
-    <div class="section-body">
-      <div class="pill-row" id="yearRow"></div>
-    </div>
-  </div>
+  <!-- ══ CENTER: CONTROLS ══ -->
+  <div id="panel-center">
 
-  <!-- Rounds Selection -->
-  <div class="section">
-    <div class="section-label">Number of Rounds</div>
-    <div class="section-body">
-      <div class="pill-row" id="roundsRow"></div>
+    <!-- Clock -->
+    <div class="clock-ring">
+      <svg viewBox="0 0 100 100">
+        <circle class="track" cx="50" cy="50" r="45"/>
+        <circle class="progress" cx="50" cy="50" r="45" id="clock-progress"/>
+      </svg>
+      <div class="clock-inner">
+        <div class="clock-time" id="clock-display">7:00</div>
+        <div class="clock-label">ON CLOCK</div>
+      </div>
     </div>
-  </div>
 
-  <!-- Simulation Speed -->
-  <div class="section">
-    <div class="section-label">Simulation Speed</div>
-    <div class="section-body">
+    <!-- On the clock team -->
+    <div class="on-clock-box">
+      <div class="on-clock-label">NOW SELECTING</div>
+      <div class="on-clock-team">Jacksonville Jaguars</div>
+      <div class="on-clock-pick">Pick #5 · Round 1</div>
+    </div>
+
+    <div class="ctrl-divider"></div>
+
+    <!-- Simulation buttons -->
+    <div class="ctrl-group">
+      <div class="ctrl-label">SIMULATION</div>
+      <button class="ctrl-btn primary" id="btn-pause">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+        Pause Draft
+      </button>
+      <button class="ctrl-btn" id="btn-restart">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-4"/></svg>
+        Restart
+      </button>
+    </div>
+
+    <div class="ctrl-divider"></div>
+
+    <!-- Speed -->
+    <div class="speed-group">
+      <div class="ctrl-label">PICK SPEED</div>
       <div class="speed-row">
-        <div class="speed-card" data-speed="slow">
-          <div class="speed-icon">🐢</div>
-          <div class="speed-name">Slow</div>
-          <div class="speed-desc">1s per CPU pick</div>
-        </div>
-        <div class="speed-card" data-speed="medium">
-          <div class="speed-icon">⚡</div>
-          <div class="speed-name">Medium</div>
-          <div class="speed-desc">0.5s per CPU pick</div>
-        </div>
-        <div class="speed-card selected" data-speed="fast">
-          <div class="speed-icon">🚀</div>
-          <div class="speed-name">Fast</div>
-          <div class="speed-desc">Instant CPU picks</div>
-        </div>
+        <div class="speed-btn" onclick="setSpeed(this,'0.5x')">0.5×</div>
+        <div class="speed-btn active" onclick="setSpeed(this,'1x')">1×</div>
+        <div class="speed-btn" onclick="setSpeed(this,'2x')">2×</div>
+        <div class="speed-btn" onclick="setSpeed(this,'5x')">5×</div>
       </div>
     </div>
+
+    <div class="ctrl-divider"></div>
+
+    <!-- Progress -->
+    <div class="progress-group">
+      <div class="ctrl-label">DRAFT PROGRESS</div>
+      <div class="progress-bar-wrap">
+        <div class="progress-bar-fill" id="progress-fill"></div>
+      </div>
+      <div class="progress-nums">
+        <span id="prog-done">4 done</span>
+        <span id="prog-left">253 left</span>
+      </div>
+    </div>
+
   </div>
 
-  <!-- Summary + Start -->
-  <div class="summary-bar">
-    <div class="summary-items">
-      <div class="summary-item">
-        <span class="summary-key">Teams Controlled</span>
-        <span class="summary-val accent" id="summaryTeams">0</span>
-      </div>
-      <div class="summary-item">
-        <span class="summary-key">Draft Year</span>
-        <span class="summary-val" id="summaryYear">'26</span>
-      </div>
-      <div class="summary-item">
-        <span class="summary-key">Rounds</span>
-        <span class="summary-val" id="summaryRounds">1</span>
-      </div>
-      <div class="summary-item">
-        <span class="summary-key">Speed</span>
-        <span class="summary-val" id="summarySpeed">Fast</span>
-      </div>
-      <div class="summary-item">
-        <span class="summary-key">Total Picks</span>
-        <span class="summary-val" id="summaryPicks">32</span>
+  <!-- ══ RIGHT: PLAYER POOL ══ -->
+  <div class="panel" id="panel-players">
+    <div class="panel-header">
+      <div class="panel-title"><span class="dot" style="background:var(--accent2)"></span> Player Pool</div>
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-top:6px;">
+        <div class="panel-sub">515 PROSPECTS</div>
+        <div class="pick-chip"><span class="chip-val" id="avail-count">511</span>&nbsp;available</div>
       </div>
     </div>
-    <div>
-      <button class="start-btn" id="startBtn">Start Draft</button>
-      <div class="validation-msg" id="validationMsg">Select at least one team to control.</div>
+
+    <!-- Search -->
+    <div class="search-wrap">
+      <input class="search-input" type="text" placeholder="Search player or school…" id="player-search"/>
     </div>
+
+    <!-- Filter tabs -->
+    <div class="filter-tabs">
+      <div class="filter-tab active" onclick="setFilter(this,'ALL')">ALL</div>
+      <div class="filter-tab" onclick="setFilter(this,'QB')">QB</div>
+      <div class="filter-tab" onclick="setFilter(this,'WR')">WR</div>
+      <div class="filter-tab" onclick="setFilter(this,'RB')">RB</div>
+      <div class="filter-tab" onclick="setFilter(this,'TE')">TE</div>
+      <div class="filter-tab" onclick="setFilter(this,'OT')">OT</div>
+      <div class="filter-tab" onclick="setFilter(this,'IOL')">IOL</div>
+      <div class="filter-tab" onclick="setFilter(this,'EDGE')">EDGE</div>
+      <div class="filter-tab" onclick="setFilter(this,'DL')">DL</div>
+      <div class="filter-tab" onclick="setFilter(this,'LB')">LB</div>
+      <div class="filter-tab" onclick="setFilter(this,'CB')">CB</div>
+      <div class="filter-tab" onclick="setFilter(this,'S')">S</div>
+    </div>
+
+    <!-- Player list (rendered by draft.js) -->
+    <div class="panel-body" id="player-body"></div>
   </div>
+
 </main>
 
-<script src="../JavaScript/HomePage.js"></script>
+<!-- ══ PLAYER CARD MODAL ══ -->
+<!-- Backdrop: clicking it closes the modal (handled in draft.js). -->
+<!-- The inner div is empty — buildPlayerCard(p) writes the HTML each time. -->
+<div id="player-modal">
+  <div class="modal-card" id="modal-card-inner"></div>
+</div>
+
+<!-- JS loaded at end of body so the DOM is ready when it runs -->
+<script src="../JavaScript/DraftPage.js"></script>
+
 </body>
 </html>
