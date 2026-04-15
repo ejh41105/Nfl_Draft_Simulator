@@ -11,6 +11,7 @@ std::vector<Pick>   draftOrder;
 
 void loadPlayers(const std::string& path)
 {
+    draftPool.clear();
     std::ifstream file(path);
 
     if (!file.is_open())
@@ -43,6 +44,7 @@ void loadPlayers(const std::string& path)
 
 void loadTeams(const std::string& path)
 {
+    teamList.clear();
     std::ifstream file(path);
     if (!file.is_open())
     {
@@ -83,6 +85,7 @@ void loadTeams(const std::string& path)
 
 void loadDraftOrder(const std::string& path)
 {
+    draftOrder.clear();
     std::ifstream file(path);
     if (!file.is_open())
     {

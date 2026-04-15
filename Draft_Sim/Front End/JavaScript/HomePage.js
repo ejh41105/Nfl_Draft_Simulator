@@ -154,7 +154,7 @@ function startDraft() {
         speed:  selectedSpeed,
     };
     sessionStorage.setItem('draftConfig', JSON.stringify(config));
-    window.location.href = 'DraftPage.html';
+    window.location.href = '/draft';
 }
 
 // ── Init ──
