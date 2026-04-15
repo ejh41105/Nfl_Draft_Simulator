@@ -24,6 +24,7 @@ void loadPlayers(const std::string& path)
     for (const auto& p : data) {
         draftPool.emplace_back(
             p["name"].get<std::string>(),
+            p["playerId"].get<int>(),
             p["position"].get<std::string>(),
             p["college"].get<std::string>(),
             p["majorStats"].is_null() ? "No stats available" : p["majorStats"].get<std::string>(),

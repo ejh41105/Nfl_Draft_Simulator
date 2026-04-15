@@ -8,9 +8,10 @@ class Player
 {
 private:
     std::string name_m{"???"};
+    int playerId_m{0};
     std::string position_m{"???"};
     std::string college_m{"???"};
-    std::string majorStats_m{"???"};
+    std::string majorStats_m{"???"}; 
     int number_m{0};
     int age_m{0};
     int height_m{0};
@@ -22,12 +23,13 @@ private:
     int floorCeiling_m{0};
 
 public:
-    Player(std::string_view name, std::string_view position, std::string_view college, std::string_view majorStats, int number, int age, int height, int weight, int consensusRanking, int positionalRanking, double RAS, int miscConcerns, int floorCeiling)
-        : name_m{name}, position_m{position}, college_m{college}, majorStats_m{majorStats}, number_m{number}, age_m{age}, height_m{height},
+    Player(std::string_view name, int playerId, std::string_view position, std::string_view college, std::string_view majorStats, int number, int age, int height, int weight, int consensusRanking, int positionalRanking, double RAS, int miscConcerns, int floorCeiling)
+        : name_m{name}, playerId_m{playerId}, position_m{position}, college_m{college}, majorStats_m{majorStats}, number_m{number}, age_m{age}, height_m{height},
           weight_m{weight}, consensusRanking_m{consensusRanking}, positionalRanking_m{positionalRanking}, RAS_m{RAS}, miscConcerns_m{miscConcerns}, floorCeiling_m{floorCeiling}
     {}
 
     std::string_view getName()           const { return name_m; }
+    int              getplayerId()             const { return playerId_m; }
     std::string_view getPosition()       const { return position_m; }
     std::string_view getCollege()        const { return college_m; }
     std::string_view getMajorStats()     const { return majorStats_m; }

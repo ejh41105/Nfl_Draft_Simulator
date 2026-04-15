@@ -137,6 +137,6 @@ void getBigBoard()
         std::cout << "Player #" << i + 1
             << " | " << p.getName()
             << " | " << p.getPosition()
-            << " | Consensus Rank: " << p.getConsensusRank() << "\n";
+            << " | Consensus Rank: " << p.getConsensusRank() << ". \n"; 
     }
 }
