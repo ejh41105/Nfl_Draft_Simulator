@@ -10,7 +10,7 @@
 <body>
 
 <header>
-  <h1>Draft Season</h1>
+  <h1><a href="/" class="header-home">Draft Season</a></h1>
   <span class="header-meta">2026 NFL DRAFT · </span>
   <span class="header-badge">LIVE</span>
 </header>
@@ -82,6 +82,7 @@
         <span id="prog-left">253 left</span>
       </div>
     </div>
+
   </div>
 
   <div class="panel" id="panel-players">
@@ -121,6 +122,17 @@
 
 <div id="player-modal">
   <div class="modal-card" id="modal-card-inner"></div>
+</div>
+
+<div id="draft-complete-modal">
+  <div class="modal-card draft-complete-modal-card">
+    <div class="draft-complete-card open" id="draft-complete-card">
+      <div class="draft-complete-title">Draft Is Done</div>
+      <div class="draft-complete-text">The simulation is complete. You can restart this sim or head back home.</div>
+      <button class="ctrl-btn primary" id="btn-complete-restart">Restart Sim</button>
+      <a class="ctrl-btn draft-home-btn" href="/">Go Back To Home Page</a>
+    </div>
+  </div>
 </div>
 
 <script src="../JavaScript/DraftPage.js"></script>

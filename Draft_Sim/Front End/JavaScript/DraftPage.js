@@ -105,6 +105,35 @@ function syncSpeedButtons() {
   });
 }
 
+function setDraftCompleteUI(isComplete) {
+  const completeCard = document.getElementById('draft-complete-card');
+  const completeModal = document.getElementById('draft-complete-modal');
+  const pauseBtn = document.getElementById('btn-pause');
+  const restartBtn = document.getElementById('btn-restart');
+  const speedGroup = document.querySelector('.speed-group');
+
+  if (completeCard) {
+    completeCard.classList.toggle('open', isComplete);
+  }
+
+  if (completeModal) {
+    completeModal.classList.toggle('open', isComplete);
+  }
+
+  if (pauseBtn) {
+    pauseBtn.disabled = isComplete;
+    pauseBtn.style.display = isComplete ? 'none' : '';
+  }
+
+  if (restartBtn) {
+    restartBtn.style.display = isComplete ? 'none' : '';
+  }
+
+  if (speedGroup) {
+    speedGroup.style.display = isComplete ? 'none' : '';
+  }
+}
+
 function cancelAutoAdvanceDelay() {
   if (autoAdvanceTimer) {
     clearTimeout(autoAdvanceTimer);
@@ -495,6 +524,7 @@ async function draftPlayerFromModal(consensusRank) {
 async function restartDraft() {
   cancelAutoAdvanceDelay();
   paused = false;
+  setDraftCompleteUI(false);
 
   const pauseBtn = document.getElementById('btn-pause');
   if (pauseBtn) {
@@ -617,6 +647,8 @@ function syncState(state) {
   const availEl = document.getElementById('avail-count');
   if (availEl) availEl.textContent = state.availableCount ?? PLAYERS.length;
 
+  setDraftCompleteUI(Boolean(state.complete));
+
   continueCpuDraft(state).catch(console.error);
 }
 
@@ -665,6 +697,7 @@ async function continueCpuDraft(state) {
         DRAFT_ORDER.length
       );
       updateClockDisplay(nextState.isUserPick);
+      setDraftCompleteUI(Boolean(nextState.complete));
 
       const availEl = document.getElementById('avail-count');
       if (availEl) availEl.textContent = nextState.availableCount ?? PLAYERS.length;
@@ -770,6 +803,18 @@ function wireEvents() {
       const ok = window.confirm('Restart the entire draft? All picks will be cleared.');
       if (!ok) return;
 
+      try {
+        await restartDraft();
+      } catch (err) {
+        console.error(err);
+        alert(err.message);
+      }
+    });
+  }
+
+  const completeRestartBtn = document.getElementById('btn-complete-restart');
+  if (completeRestartBtn) {
+    completeRestartBtn.addEventListener('click', async () => {
       try {
         await restartDraft();
       } catch (err) {

@@ -51,6 +51,15 @@ header h1 {
   color: var(--accent);
 }
 
+.header-home {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header-home:hover {
+  color: var(--accent2);
+}
+
 .header-meta {
   font-size: 0.72rem;
   color: #e8efff;
@@ -441,6 +450,40 @@ main {
 
 /* Progress bar */
 .progress-group { width: 100%; }
+
+.draft-complete-card {
+  display: none;
+  width: 100%;
+  padding: 30px 28px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(105, 182, 255, 0.08), rgba(25, 30, 46, 0.95));
+  text-align: center;
+  gap: 16px;
+}
+
+.draft-complete-card.open {
+  display: flex;
+  flex-direction: column;
+}
+
+.draft-complete-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.7rem;
+  letter-spacing: 2.5px;
+  color: var(--text);
+}
+
+.draft-complete-text {
+  color: #e6eeff;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.draft-home-btn {
+  text-decoration: none;
+}
 
 .progress-bar-wrap {
   background: var(--surface2);
@@ -850,6 +893,20 @@ main {
   display: flex;
 }
 
+#draft-complete-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 210;
+  align-items: center;
+  justify-content: center;
+}
+
+#draft-complete-modal.open {
+  display: flex;
+}
+
 /* ── MODAL CARD ── */
 .modal-card {
   background: var(--surface);
@@ -861,6 +918,11 @@ main {
   position: relative;
   animation: modal-in 0.18s ease;
   box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+}
+
+.draft-complete-modal-card {
+  width: min(560px, calc(100vw - 32px));
+  max-height: calc(100vh - 40px);
 }
 
 @keyframes modal-in {
