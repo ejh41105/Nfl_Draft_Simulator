@@ -15,7 +15,7 @@ let paused = false;
 let draftStarted = false;
 let isAdvancing = false;
 let autoAdvanceTimer = null;
-let selectedSpeed = '1x';
+let selectedSpeed = 'base';
 
 const pickResults = {}; // overall -> { playerId, playerName, position, college }
 
@@ -58,13 +58,45 @@ function getSavedConfig() {
     teams: Array.isArray(config.teams) ? config.teams : [],
     year: config.year || '26',
     rounds: Number(config.rounds || 1),
-    speed: config.speed || '1x'
+    speed: normalizeSpeedValue(config.speed)
   };
 }
 
 function getSearchValue() {
   const el = document.getElementById('player-search');
   return el ? el.value : '';
+}
+
+function normalizeSpeedValue(speed) {
+  const map = {
+    slow: 'slow',
+    fast: 'fast',
+    base: 'base',
+    '1x': 'base',
+    '0.5x': 'slow',
+    '2x': 'fast',
+    '5x': 'fast'
+  };
+
+  return map[speed] || 'base';
+}
+
+function getCpuPickDelayMs(speed) {
+  switch (normalizeSpeedValue(speed)) {
+    case 'slow':
+      return 2000;
+    case 'fast':
+      return 0;
+    case 'base':
+    default:
+      return 500;
+  }
+}
+
+function syncSpeedButtons() {
+  document.querySelectorAll('.speed-btn').forEach(button => {
+    button.classList.toggle('active', button.dataset.speed === selectedSpeed);
+  });
 }
 
 // ---------- Modal ----------
@@ -82,6 +114,9 @@ function buildPlayerCard(p) {
   const height = p.height != null ? formatHeight(p.height) : '—';
   const weight = p.weight != null ? `${p.weight} lb` : '—';
   const jersey = p.number ?? '—';
+
+  const consensusRank = p.consensusRanking ?? p.consensusRank ?? null;
+  const canDraftPlayer = currentIsUserPick && consensusRank != null;
 
   return `
     <button class="modal-close" onclick="closePlayerCard()">
@@ -141,6 +176,14 @@ function buildPlayerCard(p) {
       <span class="vital-label">Major stats</span>
       <p class="stats-text">${escapeHtml(stats)}</p>
     </div>
+
+    ${canDraftPlayer ? `
+      <div class="modal-actions">
+        <button class="ctrl-btn primary modal-draft-btn" onclick="draftPlayerFromModal(${Number(consensusRank)})">
+          Draft Player
+        </button>
+      </div>
+    ` : ''}
   `;
 }
 
@@ -177,18 +220,8 @@ function renderPlayerRow(p, isUserOnClock) {
     <span class="player-consensus-rank">#${escapeHtml(consensusRank)}</span>
   `;
 
-  row.addEventListener('click', async () => {
+  row.addEventListener('click', () => {
     openPlayerCard(p);
-
-    if (!isUserOnClock) return;
-
-    const shouldDraft = window.confirm(
-      `Draft ${p.name} for consensus rank ${consensusRank}?`
-    );
-
-    if (!shouldDraft) return;
-
-    await submitUserPick(Number(consensusRank));
   });
 
   return row;
@@ -330,7 +363,8 @@ function setOnClockBox(teamName, overall, round) {
 async function startBackendDraft() {
   const config = getSavedConfig();
 
-  selectedSpeed = config.speed || '1x';
+  selectedSpeed = normalizeSpeedValue(config.speed);
+  syncSpeedButtons();
 
   const res = await fetch('/api/draft/start', {
     method: 'POST',
@@ -412,6 +446,16 @@ async function submitUserPick(consensusRank) {
   }
 
   syncState(data.state);
+}
+
+async function draftPlayerFromModal(consensusRank) {
+  try {
+    await submitUserPick(consensusRank);
+    closePlayerCard();
+  } catch (err) {
+    console.error(err);
+    alert(err.message);
+  }
 }
 
 async function restartDraft() {
@@ -588,6 +632,16 @@ async function continueCpuDraft(state) {
       const availEl = document.getElementById('avail-count');
       if (availEl) availEl.textContent = nextState.availableCount ?? PLAYERS.length;
 
+      const delayMs = getCpuPickDelayMs(selectedSpeed);
+      if (delayMs > 0 && !nextState.complete && !nextState.isUserPick && !paused) {
+        await new Promise(resolve => {
+          autoAdvanceTimer = setTimeout(() => {
+            autoAdvanceTimer = null;
+            resolve();
+          }, delayMs);
+        });
+      }
+
       safety += 1;
       if (safety % 8 === 0) {
         await new Promise(resolve => setTimeout(resolve, 0));
@@ -607,9 +661,11 @@ function setFilter(el, filterValue) {
 }
 
 function setSpeed(el, speedValue) {
-  document.querySelectorAll('.speed-btn').forEach(b => b.classList.remove('active'));
-  el.classList.add('active');
-  selectedSpeed = speedValue;
+  selectedSpeed = normalizeSpeedValue(speedValue);
+  syncSpeedButtons();
+  const config = getSavedConfig();
+  config.speed = selectedSpeed;
+  sessionStorage.setItem('draftConfig', JSON.stringify(config));
   refreshFromBackend().catch(console.error);
 }
 
@@ -711,3 +767,4 @@ window.setFilter = setFilter;
 window.setSpeed = setSpeed;
 window.closePlayerCard = closePlayerCard;
 window.openPlayerCard = openPlayerCard;
+window.draftPlayerFromModal = draftPlayerFromModal;

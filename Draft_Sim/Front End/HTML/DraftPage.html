@@ -11,29 +11,23 @@
 
 <header>
   <h1>Draft Season</h1>
-  <span class="header-meta">2026 NFL DRAFT &nbsp;·&nbsp; </span>
+  <span class="header-meta">2026 NFL DRAFT · </span>
   <span class="header-badge">LIVE</span>
 </header>
 
 <main>
-
-  <!-- ══ LEFT: DRAFT BOARD ══ -->
-<div class="panel" id="panel-draft">
-  <div class="panel-header">
-    <div class="panel-title"><span class="dot"></span> Draft Board</div>
-    <div style="display:flex; justify-content:space-between; align-items:center; margin-top:6px;">
-      <div class="panel-sub" id="draft-total">257 TOTAL PICKS</div>
-      <div class="pick-chip">Pick <span class="chip-val" id="current-pick">1</span>&nbsp;/&nbsp;<span id="total-picks">257</span></div>
+  <div class="panel" id="panel-draft">
+    <div class="panel-header">
+      <div class="panel-title"><span class="dot"></span> Draft Board</div>
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-top:6px;">
+        <div class="panel-sub" id="draft-total">257 TOTAL PICKS</div>
+        <div class="pick-chip">Pick <span class="chip-val" id="current-pick">1</span>&nbsp;/&nbsp;<span id="total-picks">257</span></div>
+      </div>
     </div>
+    <div class="panel-body" id="draft-body"></div>
   </div>
-  <!-- Rendered by renderDraftBoard() in draft.js -->
-  <div class="panel-body" id="draft-body"></div>
-</div>
 
-  <!-- ══ CENTER: CONTROLS ══ -->
   <div id="panel-center">
-
-    <!-- Clock -->
     <div class="clock-ring">
       <svg viewBox="0 0 100 100">
         <circle class="track" cx="50" cy="50" r="45"/>
@@ -45,7 +39,6 @@
       </div>
     </div>
 
-    <!-- On the clock team -->
     <div class="on-clock-box">
       <div class="on-clock-label">NOW SELECTING</div>
       <div class="on-clock-team">Jacksonville Jaguars</div>
@@ -54,7 +47,6 @@
 
     <div class="ctrl-divider"></div>
 
-    <!-- Simulation buttons -->
     <div class="ctrl-group">
       <div class="ctrl-label">SIMULATION</div>
       <button class="ctrl-btn primary" id="btn-pause">
@@ -69,20 +61,17 @@
 
     <div class="ctrl-divider"></div>
 
-    <!-- Speed -->
     <div class="speed-group">
       <div class="ctrl-label">PICK SPEED</div>
       <div class="speed-row">
-        <div class="speed-btn" onclick="setSpeed(this,'0.5x')">0.5×</div>
-        <div class="speed-btn active" onclick="setSpeed(this,'1x')">1×</div>
-        <div class="speed-btn" onclick="setSpeed(this,'2x')">2×</div>
-        <div class="speed-btn" onclick="setSpeed(this,'5x')">5×</div>
+        <div class="speed-btn" data-speed="slow" onclick="setSpeed(this,'slow')">Slow</div>
+        <div class="speed-btn active" data-speed="base" onclick="setSpeed(this,'base')">Base</div>
+        <div class="speed-btn" data-speed="fast" onclick="setSpeed(this,'fast')">Fast</div>
       </div>
     </div>
 
     <div class="ctrl-divider"></div>
 
-    <!-- Progress -->
     <div class="progress-group">
       <div class="ctrl-label">DRAFT PROGRESS</div>
       <div class="progress-bar-wrap">
@@ -93,10 +82,8 @@
         <span id="prog-left">253 left</span>
       </div>
     </div>
-
   </div>
 
-  <!-- ══ RIGHT: PLAYER POOL ══ -->
   <div class="panel" id="panel-players">
     <div class="panel-header">
       <div class="panel-title"><span class="dot" style="background:var(--accent2)"></span> Player Pool</div>
@@ -106,12 +93,10 @@
       </div>
     </div>
 
-    <!-- Search -->
     <div class="search-wrap">
-      <input class="search-input" type="text" placeholder="Search player or school…" id="player-search"/>
+      <input class="search-input" type="text" placeholder="Search player or school..." id="player-search"/>
     </div>
 
-    <!-- Filter tabs -->
     <div class="filter-tabs">
       <div class="filter-tab active" onclick="setFilter(this,'ALL')">ALL</div>
       <div class="filter-tab" onclick="setFilter(this,'QB')">QB</div>
@@ -130,20 +115,14 @@
       <div class="filter-tab" onclick="setFilter(this,'P')">P</div>
     </div>
 
-    <!-- Player list (rendered by draft.js) -->
     <div class="panel-body" id="player-body"></div>
   </div>
-
 </main>
 
-<!-- ══ PLAYER CARD MODAL ══ -->
-<!-- Backdrop: clicking it closes the modal (handled in draft.js). -->
-<!-- The inner div is empty — buildPlayerCard(p) writes the HTML each time. -->
 <div id="player-modal">
   <div class="modal-card" id="modal-card-inner"></div>
 </div>
 
-<!-- JS loaded at end of body so the DOM is ready when it runs -->
 <script src="../JavaScript/DraftPage.js"></script>
 
 </body>

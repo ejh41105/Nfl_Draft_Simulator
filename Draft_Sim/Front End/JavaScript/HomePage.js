@@ -53,7 +53,7 @@ function totalPicks(rounds) {
 let selectedTeams  = new Set();
 let selectedYear   = '26';
 let selectedRounds = 1;
-let selectedSpeed  = 'fast';
+let selectedSpeed  = 'base';
 
 // ── Build Team Grid ──
 function buildTeams() {
@@ -130,11 +130,17 @@ function selectSpeed(card) {
 
 // ── Summary ──
 function updateSummary() {
+    const speedLabels = {
+        slow: 'Slow',
+        base: 'Base',
+        fast: 'Fast',
+    };
+
     document.getElementById('summaryTeams').textContent  = selectedTeams.size;
     document.getElementById('summaryYear').textContent   = `'${selectedYear}`;
     document.getElementById('summaryRounds').textContent = selectedRounds;
     document.getElementById('summarySpeed').textContent  =
-        selectedSpeed.charAt(0).toUpperCase() + selectedSpeed.slice(1);
+        speedLabels[selectedSpeed] || 'Base';
     document.getElementById('summaryPicks').textContent  = totalPicks(selectedRounds);
 }
 

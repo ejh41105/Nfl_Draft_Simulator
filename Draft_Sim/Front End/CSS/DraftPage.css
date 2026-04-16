@@ -785,6 +785,14 @@ main {
   gap: 4px;
 }
 
+.modal-actions {
+  padding: 0 1.25rem 1.25rem;
+}
+
+.modal-draft-btn {
+  width: 100%;
+}
+
 .stats-text {
   font-size: 0.78rem;
   color: var(--text);
