@@ -18,20 +18,7 @@ add_executable(MockDraftProject
 
 target_include_directories(MockDraftProject PRIVATE
         "Draft_Sim/BackEnd/Include"
+        "/opt/homebrew/include"
 )
 
 target_link_libraries(MockDraftProject PRIVATE Threads::Threads)
-
-# Copy JSONS to build output directory
-add_custom_command(TARGET MockDraftProject POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E copy_directory
-            "${CMAKE_SOURCE_DIR}/Draft_Sim/BackEnd/Data/JSONS"
-            "$<TARGET_FILE_DIR:MockDraftProject>/JSONS"
-)
-
-# Copy frontend files to build output directory
-add_custom_command(TARGET MockDraftProject POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E copy_directory
-            "${CMAKE_SOURCE_DIR}/Draft_Sim/Front End"
-            "$<TARGET_FILE_DIR:MockDraftProject>/Front End"
-)
