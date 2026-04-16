@@ -16,8 +16,10 @@ let draftStarted = false;
 let isAdvancing = false;
 let autoAdvanceTimer = null;
 let autoAdvanceDelayResolve = null;
+let postUserPickDelayMs = 0;
 let selectedSpeed = 'base';
 let recommendedRanks = new Set();
+let mobileActiveTab = 'draft';
 
 const pickResults = {}; // overall -> { playerId, playerName, position, college }
 
@@ -144,6 +146,27 @@ function cancelAutoAdvanceDelay() {
     const resolve = autoAdvanceDelayResolve;
     autoAdvanceDelayResolve = null;
     resolve();
+  }
+}
+
+function setMobileTab(view) {
+  mobileActiveTab = view === 'players' ? 'players' : 'draft';
+
+  const main = document.getElementById('draft-page');
+  if (main) {
+    main.classList.toggle('mobile-tab-draft', mobileActiveTab === 'draft');
+    main.classList.toggle('mobile-tab-players', mobileActiveTab === 'players');
+  }
+
+  const draftTab = document.getElementById('mobile-tab-draft');
+  const playersTab = document.getElementById('mobile-tab-players');
+
+  if (draftTab) {
+    draftTab.classList.toggle('active', mobileActiveTab === 'draft');
+  }
+
+  if (playersTab) {
+    playersTab.classList.toggle('active', mobileActiveTab === 'players');
   }
 }
 
@@ -342,6 +365,39 @@ function buildPickRow(pick, state, result = null) {
   return row;
 }
 
+function scrollDraftBoardToCurrentPick() {
+  const onClockRow = document.getElementById(`pick-row-${currentPick}`);
+  const draftBody = document.getElementById('draft-body');
+  if (!onClockRow || !draftBody) return;
+
+  const rowTop = onClockRow.offsetTop;
+  const rowBottom = rowTop + onClockRow.offsetHeight;
+  const viewTop = draftBody.scrollTop;
+  const viewBottom = viewTop + draftBody.clientHeight;
+  const isFastCpuRun = !currentIsUserPick && normalizeSpeedValue(selectedSpeed) === 'fast';
+
+  if (isFastCpuRun) {
+    if (rowTop < viewTop) {
+      draftBody.scrollTo({
+        top: rowTop,
+        behavior: 'auto'
+      });
+    } else if (rowBottom > viewBottom) {
+      draftBody.scrollTo({
+        top: Math.max(rowBottom - draftBody.clientHeight, 0),
+        behavior: 'auto'
+      });
+    }
+    return;
+  }
+
+  const targetTop = rowTop - ((draftBody.clientHeight - onClockRow.offsetHeight) / 2);
+  draftBody.scrollTo({
+    top: Math.max(targetTop, 0),
+    behavior: currentIsUserPick ? 'smooth' : 'auto'
+  });
+}
+
 function renderDraftBoard() {
   const body = document.getElementById('draft-body');
   if (!body) return;
@@ -380,17 +436,7 @@ function renderDraftBoard() {
   if (totalEl) totalEl.textContent = total;
   if (currentEl) currentEl.textContent = currentPick;
   if (totalLabel) totalLabel.textContent = `${total} TOTAL PICKS`;
-
-  const onClockRow = document.getElementById(`pick-row-${currentPick}`);
-  const draftBody = document.getElementById('draft-body');
-  if (onClockRow && draftBody) {
-    const targetTop = onClockRow.offsetTop - ((draftBody.clientHeight - onClockRow.offsetHeight) / 2);
-    draftBody.scrollTo({
-      top: Math.max(targetTop, 0),
-      behavior: 'smooth'
-    });
-  }
-
+  scrollDraftBoardToCurrentPick();
 }
 
 // ---------- UI Updates ----------
@@ -508,6 +554,7 @@ async function submitUserPick(consensusRank) {
     throw new Error('Backend rejected pick.');
   }
 
+  postUserPickDelayMs = 900;
   syncState(data.state);
 }
 
@@ -678,6 +725,24 @@ async function continueCpuDraft(state) {
     let nextState = state;
     let safety = 0;
 
+    if (postUserPickDelayMs > 0) {
+      const delayMs = postUserPickDelayMs;
+      postUserPickDelayMs = 0;
+
+      await new Promise(resolve => {
+        autoAdvanceDelayResolve = resolve;
+        autoAdvanceTimer = setTimeout(() => {
+          autoAdvanceTimer = null;
+          autoAdvanceDelayResolve = null;
+          resolve();
+        }, delayMs);
+      });
+
+      if (paused) {
+        return;
+      }
+    }
+
     while (!paused && !nextState.complete && !nextState.isUserPick) {
       const data = await advanceCpuPick();
       nextState = data.state;
@@ -743,6 +808,8 @@ function setSpeed(el, speedValue) {
 
 // ---------- Event Wiring ----------
 function wireEvents() {
+  setMobileTab(mobileActiveTab);
+
   const modal = document.getElementById('player-modal');
   if (modal) {
     modal.addEventListener('click', e => {
@@ -760,6 +827,12 @@ function wireEvents() {
       renderPlayers(activeFilter, getSearchValue(), currentIsUserPick);
     });
   }
+
+  document.querySelectorAll('.mobile-view-tab').forEach(button => {
+    button.addEventListener('click', () => {
+      setMobileTab(button.dataset.view);
+    });
+  });
 
   const pauseBtn = document.getElementById('btn-pause');
   if (pauseBtn) {

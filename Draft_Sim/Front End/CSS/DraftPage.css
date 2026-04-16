@@ -87,6 +87,10 @@ main {
   min-height: 0;
 }
 
+.mobile-view-tabs {
+  display: none;
+}
+
 /* ── SHARED PANEL STYLES ── */
 .panel {
   display: flex;
@@ -712,17 +716,55 @@ main {
     gap: 12px;
   }
 
-  #panel-draft {
+  .mobile-view-tabs {
     order: 2;
-    flex: 0 0 30vh;
+    display: flex;
+    gap: 8px;
+    padding: 0 12px 10px;
+    background: var(--bg);
+    flex: 0 0 auto;
+  }
+
+  .mobile-view-tab {
+    flex: 1;
+    padding: 10px 0;
+    border: 1px solid var(--border);
+    border-radius: 999px;
     background: var(--surface);
-    min-height: 180px;
+    color: #e6eeff;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
+  }
+
+  .mobile-view-tab.active {
+    background: rgba(105, 182, 255, 0.12);
+    border-color: var(--accent2);
+    color: var(--accent2);
+  }
+
+  #panel-draft {
+    order: 3;
+    flex: 1 1 auto;
+    background: var(--surface);
+    min-height: 0;
   }
 
   #panel-players {
     order: 3;
     flex: 1 1 auto;
     min-height: 0;
+  }
+
+  main.mobile-tab-draft #panel-players {
+    display: none;
+  }
+
+  main.mobile-tab-players #panel-draft {
+    display: none;
   }
 
   .clock-ring {
