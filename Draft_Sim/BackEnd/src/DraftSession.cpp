@@ -118,6 +118,11 @@ DraftState DraftSession::getState() const
             state.suggestedPlayer.position = p.getPosition();
             state.suggestedPlayer.consensusRank = p.getConsensusRank();
         }
+
+        if (state.isUserPick)
+        {
+            state.recommendedConsensusRanks = getTopRecommendedConsensusRanks(3);
+        }
     }
 
     return state;
@@ -245,6 +250,40 @@ std::optional<int> DraftSession::getBestPlayerIndex() const
         [](const auto& a, const auto& b) { return a.first < b.first; });
 
     return bestIt->second;
+}
+
+std::vector<int> DraftSession::getTopRecommendedConsensusRanks(std::size_t count) const
+{
+    if (!started_ || currentPickIndex_ >= picks_.size() || count == 0)
+        return {};
+
+    const Team* team = getCurrentTeam();
+    if (!team)
+        return {};
+
+    const Pick& pick = picks_[currentPickIndex_];
+
+    std::vector<std::pair<double, int>> scoredPlayers;
+    scoredPlayers.reserve(availablePool_.size());
+
+    for (int i = 0; i < static_cast<int>(availablePool_.size()); ++i)
+    {
+        double score = scorePlayer(availablePool_[i], *team, availablePool_, pick);
+        scoredPlayers.emplace_back(score, i);
+    }
+
+    std::sort(scoredPlayers.begin(), scoredPlayers.end(),
+        [](const auto& a, const auto& b) { return a.first > b.first; });
+
+    std::vector<int> recommendedRanks;
+    recommendedRanks.reserve(std::min(count, scoredPlayers.size()));
+
+    for (std::size_t i = 0; i < count && i < scoredPlayers.size(); ++i)
+    {
+        recommendedRanks.push_back(availablePool_[scoredPlayers[i].second].getConsensusRank());
+    }
+
+    return recommendedRanks;
 }
 
 std::optional<int> DraftSession::findPlayerByConsensusRank(int rank) const

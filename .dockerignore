@@ -1,0 +1,12 @@
+.git
+.vs
+build
+out
+*.user
+*.suo
+*.pdb
+*.ilk
+*.obj
+*.tlog
+*.vcxproj*
+*.sln

@@ -15,7 +15,9 @@ let paused = false;
 let draftStarted = false;
 let isAdvancing = false;
 let autoAdvanceTimer = null;
+let autoAdvanceDelayResolve = null;
 let selectedSpeed = 'base';
+let recommendedRanks = new Set();
 
 const pickResults = {}; // overall -> { playerId, playerName, position, college }
 
@@ -67,6 +69,10 @@ function getSearchValue() {
   return el ? el.value : '';
 }
 
+function getTeamLogoUrl(teamId) {
+  return `https://a.espncdn.com/i/teamlogos/nfl/500/${String(teamId || '').toLowerCase()}.png`;
+}
+
 function normalizeSpeedValue(speed) {
   const map = {
     slow: 'slow',
@@ -97,6 +103,19 @@ function syncSpeedButtons() {
   document.querySelectorAll('.speed-btn').forEach(button => {
     button.classList.toggle('active', button.dataset.speed === selectedSpeed);
   });
+}
+
+function cancelAutoAdvanceDelay() {
+  if (autoAdvanceTimer) {
+    clearTimeout(autoAdvanceTimer);
+    autoAdvanceTimer = null;
+  }
+
+  if (autoAdvanceDelayResolve) {
+    const resolve = autoAdvanceDelayResolve;
+    autoAdvanceDelayResolve = null;
+    resolve();
+  }
 }
 
 // ---------- Modal ----------
@@ -208,6 +227,7 @@ function renderPlayerRow(p, isUserOnClock) {
   row.className = 'player-row';
 
   const consensusRank = p.consensusRanking ?? p.consensusRank ?? '—';
+  const isRecommended = isUserOnClock && recommendedRanks.has(Number(consensusRank));
 
   row.innerHTML = `
     <span class="player-rank">${escapeHtml(consensusRank)}</span>
@@ -216,6 +236,7 @@ function renderPlayerRow(p, isUserOnClock) {
       <div class="player-row-name">${escapeHtml(p.name || 'Unknown Player')}</div>
       <div class="player-row-school">${escapeHtml((p.position || '—') + ' · ' + (p.college || '—'))}</div>
     </div>
+    ${isRecommended ? '<span class="recommend-chip">Recommended Player</span>' : ''}
     <span class="pos-badge ${posBadgeClass(p.position)}">${escapeHtml(p.position || '—')}</span>
     <span class="player-consensus-rank">#${escapeHtml(consensusRank)}</span>
   `;
@@ -274,7 +295,14 @@ function buildPickRow(pick, state, result = null) {
 
   row.innerHTML = `
     <span class="pick-num">${escapeHtml(pick.overall)}</span>
-    <div class="team-logo">${escapeHtml(pick.teamId)}</div>
+    <div class="team-logo">
+      <img
+        src="${escapeHtml(getTeamLogoUrl(pick.teamId))}"
+        alt="${escapeHtml(pick.teamId)}"
+        title="${escapeHtml(pick.teamId)}"
+        onerror="this.style.display='none'; this.parentElement.textContent='${escapeHtml(pick.teamId)}';"
+      />
+    </div>
     <div class="pick-info">
       <div class="player-name">${escapeHtml(playerName)}</div>
       <div class="player-meta">${escapeHtml(playerMeta)}</div>
@@ -325,9 +353,15 @@ function renderDraftBoard() {
   if (totalLabel) totalLabel.textContent = `${total} TOTAL PICKS`;
 
   const onClockRow = document.getElementById(`pick-row-${currentPick}`);
-  if (onClockRow) {
-    onClockRow.scrollIntoView({ block: 'center', behavior: 'smooth' });
+  const draftBody = document.getElementById('draft-body');
+  if (onClockRow && draftBody) {
+    const targetTop = onClockRow.offsetTop - ((draftBody.clientHeight - onClockRow.offsetHeight) / 2);
+    draftBody.scrollTo({
+      top: Math.max(targetTop, 0),
+      behavior: 'smooth'
+    });
   }
+
 }
 
 // ---------- UI Updates ----------
@@ -459,8 +493,7 @@ async function draftPlayerFromModal(consensusRank) {
 }
 
 async function restartDraft() {
-  clearTimeout(autoAdvanceTimer);
-  autoAdvanceTimer = null;
+  cancelAutoAdvanceDelay();
   paused = false;
 
   const pauseBtn = document.getElementById('btn-pause');
@@ -558,6 +591,11 @@ function syncState(state) {
 
   currentPick = state.overall || 1;
   currentIsUserPick = Boolean(state.isUserPick);
+  recommendedRanks = new Set(
+    Array.isArray(state.recommendedConsensusRanks)
+      ? state.recommendedConsensusRanks.map(rank => Number(rank))
+      : []
+  );
 
   inferCompletedResultsFromBoard(state);
   removeDraftedPlayersFromPool(state);
@@ -598,8 +636,7 @@ async function refreshFromBackend() {
 }
 
 async function continueCpuDraft(state) {
-  clearTimeout(autoAdvanceTimer);
-  autoAdvanceTimer = null;
+  cancelAutoAdvanceDelay();
 
   if (paused || isAdvancing || state.complete || state.isUserPick) return;
 
@@ -635,8 +672,10 @@ async function continueCpuDraft(state) {
       const delayMs = getCpuPickDelayMs(selectedSpeed);
       if (delayMs > 0 && !nextState.complete && !nextState.isUserPick && !paused) {
         await new Promise(resolve => {
+          autoAdvanceDelayResolve = resolve;
           autoAdvanceTimer = setTimeout(() => {
             autoAdvanceTimer = null;
+            autoAdvanceDelayResolve = null;
             resolve();
           }, delayMs);
         });
@@ -666,7 +705,7 @@ function setSpeed(el, speedValue) {
   const config = getSavedConfig();
   config.speed = selectedSpeed;
   sessionStorage.setItem('draftConfig', JSON.stringify(config));
-  refreshFromBackend().catch(console.error);
+  cancelAutoAdvanceDelay();
 }
 
 // ---------- Event Wiring ----------

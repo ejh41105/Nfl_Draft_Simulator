@@ -7,16 +7,16 @@ html { height: 100%; overflow: hidden; }
   --bg:         #0a0c10;
   --surface:    #111520;
   --surface2:   #191e2e;
-  --border:     #252c42;
-  --accent:     #006ad4;
-  --accent2:    #3a7bd5;
+  --border:     #2f3b5c;
+  --accent:     #69b6ff;
+  --accent2:    #8bc8ff;
   --on-pick:    #151815;
-  --text:       #e8ecf5;
-  --muted:      #6b748a;
+  --text:       #f5f8ff;
+  --muted:      #e2ebff;
   --danger:     #c0392b;
   --green:      #27ae60;
-  --panel-w:    320px;
-  --center-w:   180px;
+  --panel-min:  360px;
+  --center-w:   150px;
   --radius:     10px;
 }
 
@@ -53,7 +53,7 @@ header h1 {
 
 .header-meta {
   font-size: 0.72rem;
-  color: var(--muted);
+  color: #e8efff;
   font-family: 'DM Mono', monospace;
   letter-spacing: 1px;
 }
@@ -72,7 +72,7 @@ header h1 {
 main {
   flex: 1;
   display: grid;
-  grid-template-columns: var(--panel-w) 1fr var(--panel-w);
+  grid-template-columns: minmax(var(--panel-min), 1.35fr) minmax(140px, var(--center-w)) minmax(var(--panel-min), 1.15fr);
   gap: 0;
   overflow: hidden;
   min-height: 0;
@@ -97,7 +97,7 @@ main {
 
 .panel-title {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   letter-spacing: 2.5px;
   color: var(--text);
   display: flex;
@@ -112,8 +112,8 @@ main {
 }
 
 .panel-sub {
-  font-size: 0.68rem;
-  color: var(--muted);
+  font-size: 0.72rem;
+  color: #e5edff;
   font-family: 'DM Mono', monospace;
   margin-top: 3px;
   letter-spacing: 0.5px;
@@ -155,9 +155,9 @@ main {
 }
 
 .round-label span:last-child {
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   font-family: 'DM Mono', monospace;
-  color: var(--muted);
+  color: #e6eeff;
 }
 
 /* Draft pick row */
@@ -165,11 +165,11 @@ main {
   display: grid;
   grid-template-columns: 38px 30px 1fr auto;
   align-items: center;
-  gap: 8px;
-  padding: 8px 14px 8px 12px;
+  gap: 10px;
+  padding: 14px 18px 14px 16px;
   border-bottom: 1px solid var(--border);
   transition: background 0.15s;
-  min-height: 48px;
+  min-height: 68px;
 }
 
 .pick-row:hover { background: var(--surface2); }
@@ -184,21 +184,21 @@ main {
 
 .pick-num {
   font-family: 'DM Mono', monospace;
-  font-size: 0.75rem;
-  color: var(--muted);
+  font-size: 0.88rem;
+  color: #e7efff;
   text-align: right;
 }
 
 .team-logo {
-  width: 26px; height: 26px;
+  width: 30px; height: 30px;
   background: var(--surface2);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.55rem;
+  font-size: 0.62rem;
   font-weight: 700;
-  color: var(--muted);
+  color: #f5f8ff;
   border: 1px solid var(--border);
   overflow: hidden;
   flex-shrink: 0;
@@ -209,8 +209,8 @@ main {
 .pick-info { min-width: 0; }
 
 .player-name {
-  font-size: 0.82rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 700;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -218,20 +218,20 @@ main {
 }
 
 .player-meta {
-  font-size: 0.65rem;
-  color: var(--muted);
+  font-size: 0.78rem;
+  color: #e6eeff;
   font-family: 'DM Mono', monospace;
-  margin-top: 1px;
+  margin-top: 4px;
 }
 
 .pos-badge {
-  font-size: 0.6rem;
+  font-size: 0.68rem;
   font-weight: 700;
   font-family: 'DM Mono', monospace;
-  padding: 2px 5px;
-  border-radius: 3px;
+  padding: 3px 7px;
+  border-radius: 4px;
   background: var(--surface2);
-  color: var(--muted);
+  color: #f0f5ff;
   white-space: nowrap;
 }
 
@@ -254,8 +254,8 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 28px 16px;
-  gap: 28px;
+  padding: 24px 12px;
+  gap: 22px;
   border-left: 1px solid var(--border);
   border-right: 1px solid var(--border);
 }
@@ -301,13 +301,13 @@ main {
   font-family: 'DM Mono', monospace;
   font-size: 1.4rem;
   font-weight: 500;
-  color: var(--accent);
+  color: var(--text);
   line-height: 1;
 }
 
 .clock-label {
   font-size: 0.58rem;
-  color: var(--muted);
+  color: #f0f5ff;
   letter-spacing: 1.5px;
   margin-top: 3px;
 }
@@ -324,7 +324,7 @@ main {
 
 .on-clock-label {
   font-size: 0.6rem;
-  color: var(--muted);
+  color: #e8efff;
   letter-spacing: 2px;
   font-family: 'DM Mono', monospace;
   margin-bottom: 6px;
@@ -332,14 +332,14 @@ main {
 
 .on-clock-team {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   letter-spacing: 2px;
   color: var(--text);
 }
 
 .on-clock-pick {
   font-family: 'DM Mono', monospace;
-  font-size: 0.68rem;
+  font-size: 0.74rem;
   color: var(--accent);
   margin-top: 2px;
 }
@@ -360,8 +360,8 @@ main {
 }
 
 .ctrl-label {
-  font-size: 0.6rem;
-  color: var(--muted);
+  font-size: 0.64rem;
+  color: #eef4ff;
   letter-spacing: 2px;
   font-family: 'DM Mono', monospace;
   text-align: center;
@@ -375,7 +375,7 @@ main {
   background: var(--surface2);
   color: var(--text);
   font-family: 'DM Sans', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.84rem;
   font-weight: 600;
   cursor: pointer;
   display: flex;
@@ -418,14 +418,14 @@ main {
 
 .speed-btn {
   flex: 1;
-  padding: 7px 0;
+  padding: 8px 0;
   border: 1px solid var(--border);
   border-radius: 5px;
   background: var(--surface2);
-  color: var(--muted);
+  color: var(--text);
   font-family: 'DM Mono', monospace;
-  font-size: 0.7rem;
-  font-weight: 500;
+  font-size: 0.74rem;
+  font-weight: 600;
   cursor: pointer;
   text-align: center;
   transition: all 0.15s;
@@ -464,8 +464,8 @@ main {
   justify-content: space-between;
   margin-top: 5px;
   font-family: 'DM Mono', monospace;
-  font-size: 0.62rem;
-  color: var(--muted);
+  font-size: 0.68rem;
+  color: #e6eeff;
 }
 
 /* ── RIGHT PANEL — PLAYER POOL ── */
@@ -486,7 +486,7 @@ main {
   padding: 8px 12px 8px 32px;
   color: var(--text);
   font-family: 'DM Sans', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.86rem;
   outline: none;
   transition: border-color 0.15s;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236b748a' stroke-width='2'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cpath d='m21 21-4.35-4.35'/%3E%3C/svg%3E");
@@ -514,10 +514,10 @@ main {
 
 .filter-tab {
   padding: 8px 10px;
-  font-size: 0.7rem;
+  font-size: 0.74rem;
   font-weight: 600;
   font-family: 'DM Mono', monospace;
-  color: var(--muted);
+  color: var(--text);
   cursor: pointer;
   border-bottom: 2px solid transparent;
   white-space: nowrap;
@@ -533,8 +533,8 @@ main {
   display: grid;
   grid-template-columns: 28px 1fr auto;
   align-items: center;
-  gap: 10px;
-  padding: 9px 14px;
+  gap: 12px;
+  padding: 14px 18px;
   border-bottom: 1px solid var(--border);
   transition: background 0.12s;
   cursor: pointer;
@@ -544,26 +544,26 @@ main {
 
 .player-rank {
   font-family: 'DM Mono', monospace;
-  font-size: 0.68rem;
-  color: var(--muted);
+  font-size: 0.82rem;
+  color: #e7efff;
   text-align: right;
 }
 
 .player-row-info { min-width: 0; }
 
 .player-row-name {
-  font-size: 0.82rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 700;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .player-row-school {
-  font-size: 0.65rem;
-  color: var(--muted);
+  font-size: 0.8rem;
+  color: #e6eeff;
   font-family: 'DM Mono', monospace;
-  margin-top: 1px;
+  margin-top: 4px;
 }
 
 .player-row-grade {
@@ -607,24 +607,203 @@ main {
   border-radius: 20px;
   padding: 3px 10px;
   font-family: 'DM Mono', monospace;
-  font-size: 0.65rem;
-  color: var(--muted);
+  font-size: 0.7rem;
+  color: #e6eeff;
 }
 
 .pick-chip .chip-val { color: var(--text); font-weight: 500; }
 
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
-  :root { --panel-w: 260px; --center-w: 140px; }
+  html,
+  body {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  body {
+    min-height: 100vh;
+  }
+
+  header {
+    padding: 0 16px;
+    height: auto;
+    min-height: 56px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  header h1 {
+    font-size: 1.55rem;
+    letter-spacing: 2px;
+  }
+
+  .header-meta {
+    font-size: 0.64rem;
+  }
+
+  .header-badge {
+    font-size: 0.62rem;
+    padding: 3px 8px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 56px);
+    overflow: hidden;
+    min-height: 0;
+  }
+
+  .panel,
+  .panel:last-child,
+  #panel-center {
+    border-left: none;
+    border-right: none;
+  }
+
+  #panel-center {
+    order: 1;
+    flex: 0 0 auto;
+    padding: 12px;
+    gap: 12px;
+  }
+
+  #panel-draft {
+    order: 2;
+    flex: 0 0 30vh;
+    background: var(--surface);
+    min-height: 180px;
+  }
+
+  #panel-players {
+    order: 3;
+    flex: 1 1 auto;
+    min-height: 0;
+  }
+
+  .clock-ring {
+    display: none;
+  }
+
+  .clock-time {
+    font-size: 1.15rem;
+  }
+
+  .on-clock-box {
+    display: none;
+  }
+
+  .on-clock-team {
+    font-size: 1rem;
+  }
+
+  .speed-row {
+    gap: 8px;
+  }
+
+  .panel-header {
+    padding: 12px 14px 10px;
+  }
+
+  #panel-draft .panel-body {
+    max-height: none;
+    min-height: 0;
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+
+  #panel-players .panel-body {
+    min-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .panel-title {
+    font-size: 1rem;
+  }
+
+  .round-label {
+    padding: 8px 14px 6px;
+  }
+
+  .pick-row {
+    grid-template-columns: 30px 26px 1fr auto;
+    gap: 8px;
+    padding: 12px 14px;
+    min-height: 60px;
+    min-width: 720px;
+  }
+
+  .pick-num {
+    font-size: 0.78rem;
+  }
+
+  .team-logo {
+    width: 26px;
+    height: 26px;
+  }
+
+  .player-name {
+    font-size: 0.92rem;
+  }
+
+  .player-meta {
+    font-size: 0.72rem;
+    margin-top: 2px;
+  }
+
+  .search-wrap {
+    padding: 10px 12px;
+  }
+
+  .filter-tabs {
+    padding: 0 12px;
+  }
+
+  .filter-tab {
+    padding: 10px 8px;
+    font-size: 0.68rem;
+  }
+
+  .player-row {
+    grid-template-columns: 26px 26px 1fr auto auto auto;
+    gap: 8px;
+    padding: 12px 14px;
+    min-width: 0;
+  }
+
+  .player-rank {
+    font-size: 0.74rem;
+  }
+
+  .player-logo-circle {
+    width: 26px;
+    height: 26px;
+  }
+
+  .player-row-name {
+    font-size: 0.92rem;
+  }
+
+  .player-row-school {
+    font-size: 0.72rem;
+    margin-top: 2px;
+  }
+
+  .player-consensus-rank {
+    min-width: 28px;
+    font-size: 0.76rem;
+  }
 }
 
 /* ── PLAYER ROW: updated columns for logo + consensus rank ── */
 .player-row {
-  grid-template-columns: 28px 26px 1fr auto auto;
+  grid-template-columns: 30px 30px 1fr auto auto auto;
 }
 
 .player-logo-circle {
-  width: 26px; height: 26px;
+  width: 30px; height: 30px;
   border-radius: 50%;
   background: var(--surface2);
   border: 1px solid var(--border);
@@ -633,11 +812,27 @@ main {
 
 .player-consensus-rank {
   font-family: 'DM Mono', monospace;
-  font-size: 0.72rem;
-  font-weight: 500;
+  font-size: 0.86rem;
+  font-weight: 700;
   color: var(--text);
-  min-width: 28px;
+  min-width: 36px;
   text-align: right;
+}
+
+.recommend-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(105, 182, 255, 0.16);
+  border: 1px solid rgba(139, 200, 255, 0.35);
+  color: #f5f8ff;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
 }
 
 /* ── MODAL BACKDROP ── */
@@ -660,10 +855,12 @@ main {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 14px;
-  width: 360px;
+  width: min(560px, calc(100vw - 32px));
+  max-height: calc(100vh - 40px);
   overflow: hidden;
   position: relative;
   animation: modal-in 0.18s ease;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
 }
 
 @keyframes modal-in {
@@ -690,7 +887,7 @@ main {
 
 /* Modal top section */
 .modal-top {
-  padding: 1.25rem 1.25rem 1rem;
+  padding: 1.6rem 1.6rem 1.2rem;
   border-bottom: 1px solid var(--border);
 }
 
@@ -706,26 +903,26 @@ main {
 }
 
 .card-number {
-  font-size: 0.75rem;
-  color: var(--muted);
+  font-size: 0.84rem;
+  color: #eef4ff;
   font-family: 'DM Mono', monospace;
 }
 
 .modal-name-row {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 4px;
+  gap: 12px;
+  margin-bottom: 6px;
 }
 
 .card-name {
-  font-size: 1.25rem;
+  font-size: 1.7rem;
   font-weight: 600;
   color: var(--text);
 }
 
 .card-logo-circle {
-  width: 28px; height: 28px;
+  width: 36px; height: 36px;
   border-radius: 50%;
   background: var(--surface2);
   border: 1px solid var(--border);
@@ -734,59 +931,59 @@ main {
 
 .card-college {
   display: block;
-  font-size: 0.8rem;
-  color: var(--muted);
+  font-size: 0.92rem;
+  color: #eef4ff;
   font-family: 'DM Mono', monospace;
-  margin-bottom: 14px;
+  margin-bottom: 18px;
 }
 
 /* Vitals grid */
 .modal-vitals {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 8px;
+  gap: 12px;
 }
 
 .vital-box {
   background: var(--surface2);
   border-radius: 7px;
-  padding: 8px 10px;
+  padding: 12px 14px;
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 4px;
 }
 
 .vital-label {
-  font-size: 0.65rem;
+  font-size: 0.72rem;
   color: var(--muted);
   font-family: 'DM Mono', monospace;
 }
 
 .vital-value {
-  font-size: 1rem;
+  font-size: 1.12rem;
   font-weight: 600;
   color: var(--text);
 }
 
 /* Modal bottom section */
 .modal-bottom {
-  padding: 1rem 1.25rem;
+  padding: 1.2rem 1.6rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 8px;
+  gap: 12px;
   border-bottom: 1px solid var(--border);
 }
 
 /* Stats section */
 .modal-stats {
-  padding: 1rem 1.25rem;
+  padding: 1.2rem 1.6rem;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 8px;
 }
 
 .modal-actions {
-  padding: 0 1.25rem 1.25rem;
+  padding: 0 1.6rem 1.6rem;
 }
 
 .modal-draft-btn {
@@ -794,13 +991,51 @@ main {
 }
 
 .stats-text {
-  font-size: 0.78rem;
+  font-size: 0.92rem;
   color: var(--text);
   font-family: 'DM Mono', monospace;
-  line-height: 1.5;
+  line-height: 1.65;
+}
+
+@media (max-width: 640px) {
+  .modal-top,
+  .modal-bottom,
+  .modal-stats,
+  .modal-actions {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .modal-top {
+    padding-top: 1.25rem;
+  }
+
+  .modal-actions {
+    padding-bottom: 1rem;
+  }
+
+  .card-name {
+    font-size: 1.35rem;
+  }
+
+  .modal-vitals,
+  .modal-bottom {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* RAS color tiers */
 .ras-high { color: var(--green); }
 .ras-mid  { color: var(--accent); }
 .ras-low  { color: var(--danger); }
+
+/* Readability overrides */
+.modal-close,
+.card-number {
+  color: #eef4ff;
+}
+
+.card-college,
+.vital-label {
+  color: #e6eeff;
+}

@@ -43,6 +43,28 @@ namespace
         return candidates.front();
     }
 
+    fs::path resolveDataPath(const fs::path& relativePath)
+    {
+        const std::vector<fs::path> candidates = {
+            fs::current_path() / "Draft_Sim" / "BackEnd" / "Data" / relativePath,
+            fs::current_path().parent_path() / "Draft_Sim" / "BackEnd" / "Data" / relativePath,
+            fs::current_path() / relativePath,
+            fs::current_path() / "Draft_Sim" / relativePath,
+            fs::current_path().parent_path() / relativePath,
+            fs::current_path().parent_path() / "Draft_Sim" / relativePath
+        };
+
+        for (const auto& candidate : candidates)
+        {
+            if (fs::exists(candidate))
+            {
+                return candidate;
+            }
+        }
+
+        return candidates.front();
+    }
+
     std::string readFileOrEmpty(const fs::path& path)
     {
         std::ifstream file(path, std::ios::binary);
@@ -173,6 +195,12 @@ namespace
             payload["suggestedPlayer"] = toJson(state.suggestedPlayer);
         }
 
+        payload["recommendedConsensusRanks"] = json::array();
+        for (const int rank : state.recommendedConsensusRanks)
+        {
+            payload["recommendedConsensusRanks"].push_back(rank);
+        }
+
         for (const auto& result : results)
         {
             payload["results"].push_back(toJson(result));
@@ -204,7 +232,7 @@ int main()
     crow::SimpleApp app;
 
     const fs::path frontEndRoot = resolvePath(fs::path("Front End"));
-    const fs::path dataRoot = resolvePath(fs::path("JSONS"));
+    const fs::path dataRoot = resolveDataPath(fs::path("JSONS"));
 
     CROW_ROUTE(app, "/")([frontEndRoot]() {
         return serveFile(frontEndRoot / "HTML" / "HomePage.html", "text/html; charset=utf-8");

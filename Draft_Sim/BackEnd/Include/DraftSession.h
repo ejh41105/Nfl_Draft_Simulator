@@ -49,6 +49,7 @@ struct DraftState
 
     bool hasSuggestedPlayer{false};
     SuggestedPlayer suggestedPlayer{};
+    std::vector<int> recommendedConsensusRanks{};
 };
 
 class DraftSession
@@ -68,6 +69,7 @@ public:
 
 private:
     std::optional<int> getBestPlayerIndex() const;
+    std::vector<int> getTopRecommendedConsensusRanks(std::size_t count) const;
     std::optional<int> findPlayerByConsensusRank(int rank) const;
     Team* getCurrentTeam();
     const Team* getCurrentTeam() const;

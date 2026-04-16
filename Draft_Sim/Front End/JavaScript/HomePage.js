@@ -136,7 +136,8 @@ function updateSummary() {
         fast: 'Fast',
     };
 
-    document.getElementById('summaryTeams').textContent  = selectedTeams.size;
+    document.getElementById('summaryTeams').textContent  =
+        selectedTeams.size === 0 ? 'CPU Only' : selectedTeams.size;
     document.getElementById('summaryYear').textContent   = `'${selectedYear}`;
     document.getElementById('summaryRounds').textContent = selectedRounds;
     document.getElementById('summarySpeed').textContent  =
@@ -146,13 +147,6 @@ function updateSummary() {
 
 // ── Start Draft ──
 function startDraft() {
-    const msg = document.getElementById('validationMsg');
-    if (selectedTeams.size === 0) {
-        msg.classList.add('visible');
-        return;
-    }
-    msg.classList.remove('visible');
-
     const config = {
         teams:  Array.from(selectedTeams),
         year:   selectedYear,
