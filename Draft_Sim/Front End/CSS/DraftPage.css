@@ -192,30 +192,8 @@ main {
   position: relative;
 }
 
-.pick-row.completed.clickable::after {
-  content: "View";
-  justify-self: end;
-  align-self: center;
-  padding: 3px 8px;
-  border-radius: 999px;
-  border: 1px solid rgba(139, 200, 255, 0.28);
-  background: rgba(105, 182, 255, 0.12);
-  color: var(--accent2);
-  font-family: 'DM Mono', monospace;
-  font-size: 0.62rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  opacity: 0.88;
-}
-
 .pick-row.completed.clickable:hover {
   background: rgba(25, 30, 46, 0.96);
-}
-
-.pick-row.completed.clickable:hover::after {
-  border-color: rgba(139, 200, 255, 0.48);
-  background: rgba(105, 182, 255, 0.2);
-  color: #f5f8ff;
 }
 
 .pick-row.on-clock {
