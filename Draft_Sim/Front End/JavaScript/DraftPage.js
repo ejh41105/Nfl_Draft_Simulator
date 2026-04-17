@@ -53,7 +53,7 @@ function escapeHtml(value) {
 }
 
 function getSavedConfig() {
-  const raw = sessionStorage.getItem('draftConfig');
+  const raw = sessionStorage.getItem(getDraftConfigStorageKey());
   if (!raw) {
     throw new Error('No draft config found. Go back to the homepage and start a draft.');
   }
@@ -66,6 +66,40 @@ function getSavedConfig() {
     rounds: Number(config.rounds || 1),
     speed: normalizeSpeedValue(config.speed)
   };
+}
+
+function getDraftToken() {
+  const params = new URLSearchParams(window.location.search);
+  const draftToken = params.get('draft');
+
+  if (!draftToken) {
+    throw new Error('Missing draft token. Go back to the homepage and start a new draft.');
+  }
+
+  return draftToken;
+}
+
+function getDraftConfigStorageKey() {
+  return `draftConfig:${getDraftToken()}`;
+}
+
+function getDraftClientStorageKey() {
+  return `draftClientId:${getDraftToken()}`;
+}
+
+function getSessionLabel() {
+  const token = getDraftToken();
+  const compactToken = token.replace(/[^a-zA-Z0-9]/g, '');
+  return compactToken.slice(0, 6).toUpperCase() || '----';
+}
+
+function renderSessionIndicator() {
+  const indicator = document.getElementById('session-indicator');
+  if (!indicator) return;
+
+  const label = getSessionLabel();
+  indicator.textContent = `S: ${label}`;
+  indicator.title = `Current draft session: ${label}`;
 }
 
 function getSearchValue() {
@@ -82,7 +116,7 @@ function generateClientSessionId() {
 }
 
 function getClientSessionId() {
-  const key = 'draftClientId';
+  const key = getDraftClientStorageKey();
   let sessionId = sessionStorage.getItem(key);
 
   if (!sessionId) {
@@ -382,10 +416,31 @@ function renderPlayers(filter = 'ALL', search = '', isUserOnClock = false) {
     return true;
   });
 
-  filtered.forEach(p => body.appendChild(renderPlayerRow(p, isUserOnClock)));
+  const sortedPlayers = [...filtered];
+
+  if (isUserOnClock && recommendedRanks.size > 0) {
+    sortedPlayers.sort((a, b) => {
+      const aRank = Number(a.consensusRanking ?? a.consensusRank);
+      const bRank = Number(b.consensusRanking ?? b.consensusRank);
+      const aRecommended = recommendedRanks.has(aRank);
+      const bRecommended = recommendedRanks.has(bRank);
+
+      if (aRecommended !== bRecommended) {
+        return aRecommended ? -1 : 1;
+      }
+
+      if (Number.isFinite(aRank) && Number.isFinite(bRank) && aRank !== bRank) {
+        return aRank - bRank;
+      }
+
+      return String(a.name || '').localeCompare(String(b.name || ''));
+    });
+  }
+
+  sortedPlayers.forEach(p => body.appendChild(renderPlayerRow(p, isUserOnClock)));
 
   const countEl = document.getElementById('avail-count');
-  if (countEl) countEl.textContent = filtered.length;
+  if (countEl) countEl.textContent = sortedPlayers.length;
 }
 
 // ---------- Draft Board ----------
@@ -897,7 +952,7 @@ function setSpeed(el, speedValue) {
   syncSpeedButtons();
   const config = getSavedConfig();
   config.speed = selectedSpeed;
-  sessionStorage.setItem('draftConfig', JSON.stringify(config));
+  sessionStorage.setItem(getDraftConfigStorageKey(), JSON.stringify(config));
   cancelAutoAdvanceDelay();
 }
 
@@ -1006,6 +1061,7 @@ function wireEvents() {
 // ---------- Init ----------
 async function init() {
   try {
+    renderSessionIndicator();
     wireEvents();
     await startBackendDraft();
     await refreshFromBackend();

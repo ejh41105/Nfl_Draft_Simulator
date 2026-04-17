@@ -67,6 +67,18 @@ header h1 {
   letter-spacing: 1px;
 }
 
+.session-indicator {
+  padding: 2px 6px;
+  border: 1px solid rgba(139, 200, 255, 0.22);
+  border-radius: 999px;
+  background: rgba(105, 182, 255, 0.08);
+  color: #d7e8ff;
+  font-size: 0.58rem;
+  font-family: 'DM Mono', monospace;
+  letter-spacing: 0.08em;
+  line-height: 1;
+}
+
 .header-badge {
   background: var(--accent2);
   color: #fff;
@@ -695,6 +707,10 @@ main {
 
   .header-meta {
     font-size: 0.64rem;
+  }
+
+  .session-indicator {
+    font-size: 0.54rem;
   }
 
   .header-badge {
