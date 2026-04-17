@@ -83,11 +83,11 @@ function generateClientSessionId() {
 
 function getClientSessionId() {
   const key = 'draftClientId';
-  let sessionId = localStorage.getItem(key);
+  let sessionId = sessionStorage.getItem(key);
 
   if (!sessionId) {
     sessionId = generateClientSessionId();
-    localStorage.setItem(key, sessionId);
+    sessionStorage.setItem(key, sessionId);
   }
 
   return sessionId;
