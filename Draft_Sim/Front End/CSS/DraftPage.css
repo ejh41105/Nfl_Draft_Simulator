@@ -272,11 +272,14 @@ main {
 .pos-badge.WR   { background: rgba(39,174,96,0.2);   color: #5dcc8a; }
 .pos-badge.RB   { background: rgba(212,168,67,0.2);  color: var(--accent); }
 .pos-badge.OT,
-.pos-badge.OL   { background: rgba(155,89,182,0.2);  color: #c39bd3; }
+.pos-badge.OL,
+.pos-badge.OG,
+.pos-badge.OC   { background: rgba(155,89,182,0.2);  color: #c39bd3; }
 .pos-badge.EDGE { background: rgba(231,76,60,0.2);   color: #f1948a; }
 .pos-badge.CB   { background: rgba(22,160,133,0.2);  color: #76d7c4; }
 .pos-badge.S    { background: rgba(230,126,34,0.2);  color: #f0b27a; }
-.pos-badge.LB   { background: rgba(127,140,141,0.2); color: #abb2b9; }
+.pos-badge.LB,
+.pos-badge.ILB  { background: rgba(127,140,141,0.2); color: #abb2b9; }
 .pos-badge.DL   { background: rgba(192,57,43,0.2);   color: #e59866; }
 .pos-badge.TE   { background: rgba(0,149,211,0.2);   color: #74b9ff; }
 
