@@ -4,6 +4,13 @@ A full-stack NFL mock draft simulator that models real draft behavior using weig
 
 ---
 
+## Live Demo
+
+Access the live simulator here:
+https://draftseason.dev
+
+---
+
 ## Overview
 
 This project simulates the NFL Draft by combining player rankings, team needs, and probabilistic decision-making to generate realistic draft results.
@@ -112,11 +119,11 @@ After each selection:
 
 The draft decision logic is based on a weighted scoring system that evaluates players across multiple factors such as consensus ranking, positional need, and player traits.
 
-A detailed breakdown of the scoring methodology, weight distribution, and decision process can be found here:
+A detailed breakdown of the scoring methodology, weight distribution, and decision process will be available here:
 
-(To be added later)
+[Scoring Algorithm Documentation](#)
 
-This document outlines:
+This document will outline:
 
 * Weight assignment based on team priorities
 * Player evaluation formulas
@@ -145,7 +152,7 @@ This document outlines:
 
 ---
 
-## Made by Ethan Howard
+## Author
 
 I am a junior Computer Science student at the University of North Texas with a strong interest in backend engineering. This project reflects my focus on building systems that combine data modeling, algorithmic logic, and real-world simulation.
 
