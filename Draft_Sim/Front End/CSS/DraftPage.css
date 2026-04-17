@@ -923,6 +923,14 @@ main {
   background: var(--surface2);
   border: 1px solid var(--border);
   flex-shrink: 0;
+  overflow: hidden;
+}
+
+.player-logo-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .player-consensus-rank {
@@ -1045,6 +1053,14 @@ main {
   background: var(--surface2);
   border: 1px solid var(--border);
   flex-shrink: 0;
+  overflow: hidden;
+}
+
+.card-logo-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .card-college {
