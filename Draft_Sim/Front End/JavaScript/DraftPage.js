@@ -14,7 +14,6 @@ let currentIsUserPick = false;
 let activeFilter = 'ALL';
 let paused = false;
 let draftStarted = false;
-let clientSessionId = null;
 let isAdvancing = false;
 let autoAdvanceTimer = null;
 let autoAdvanceDelayResolve = null;
@@ -104,30 +103,10 @@ function getSearchValue() {
   return el ? el.value : '';
 }
 
-function generateClientSessionId() {
-  if (window.crypto && typeof window.crypto.randomUUID === 'function') {
-    return window.crypto.randomUUID();
-  }
-
-  return `draft-${Date.now()}-${Math.random().toString(16).slice(2)}`;
-}
-
-function getClientSessionId() {
-  if (!clientSessionId) {
-    clientSessionId = generateClientSessionId();
-  }
-
-  return clientSessionId;
-}
-
 function apiFetch(url, options = {}) {
-  const headers = new Headers(options.headers || {});
-  headers.set('X-Draft-Client-Id', getClientSessionId());
-  headers.set('X-Draft-Token', getDraftToken());
-
   return fetch(url, {
     ...options,
-    headers
+    headers: options.headers
   });
 }
 
