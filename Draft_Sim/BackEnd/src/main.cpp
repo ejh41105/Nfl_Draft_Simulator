@@ -24,6 +24,7 @@ namespace
 {
     constexpr const char* kDraftSessionCookie = "draft_session_id";
     constexpr const char* kDraftClientHeader = "X-Draft-Client-Id";
+    constexpr const char* kDraftTokenHeader = "X-Draft-Token";
     constexpr auto kSessionTtl = std::chrono::hours(12);
 
     struct SessionEntry
@@ -283,6 +284,13 @@ namespace
     std::optional<std::string> getSessionKey(const crow::request& req)
     {
         const std::string clientId = trim(req.get_header_value(kDraftClientHeader));
+        const std::string draftToken = trim(req.get_header_value(kDraftTokenHeader));
+
+        if (!clientId.empty() && !draftToken.empty())
+        {
+            return draftToken + ":" + clientId;
+        }
+
         if (!clientId.empty())
         {
             return clientId;

@@ -123,6 +123,7 @@ function getClientSessionId() {
 function apiFetch(url, options = {}) {
   const headers = new Headers(options.headers || {});
   headers.set('X-Draft-Client-Id', getClientSessionId());
+  headers.set('X-Draft-Token', getDraftToken());
 
   return fetch(url, {
     ...options,
