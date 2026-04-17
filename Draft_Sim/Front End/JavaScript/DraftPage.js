@@ -13,7 +13,6 @@ let currentPick = 1;
 let currentIsUserPick = false;
 let activeFilter = 'ALL';
 let paused = false;
-let backendSessionId = null;
 let draftStarted = false;
 let isAdvancing = false;
 let autoAdvanceTimer = null;
@@ -105,14 +104,9 @@ function getSearchValue() {
 }
 
 function apiFetch(url, options = {}) {
-  const headers = new Headers(options.headers || {});
-  if (backendSessionId) {
-    headers.set('X-Draft-Session-Id', backendSessionId);
-  }
-
   return fetch(url, {
     ...options,
-    headers
+    headers: options.headers
   });
 }
 
@@ -583,7 +577,6 @@ async function startBackendDraft() {
   selectedSpeed = normalizeSpeedValue(config.speed);
   syncSpeedButtons();
   draftCompleteModalDismissed = false;
-  backendSessionId = null;
 
   const res = await apiFetch('/api/draft/start', {
     method: 'POST',
@@ -596,12 +589,6 @@ async function startBackendDraft() {
   if (!res.ok) {
     const text = await res.text();
     throw new Error(text || 'Failed to start backend draft.');
-  }
-
-  const data = await res.json();
-  backendSessionId = data.sessionId || null;
-  if (!backendSessionId) {
-    throw new Error('Backend did not return a draft session ID.');
   }
 
   draftStarted = true;
