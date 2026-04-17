@@ -6,6 +6,7 @@
 #include <algorithm>
 #include <chrono>
 #include <cctype>
+#include <cstdlib>
 #include <filesystem>
 #include <fstream>
 #include <mutex>
@@ -15,8 +16,8 @@
 #include <sstream>
 #include <string>
 #include <unordered_map>
+#include <utility>
 #include <vector>
-#include <cstdlib>
 
 using json = nlohmann::json;
 namespace fs = std::filesystem;
@@ -310,7 +311,7 @@ namespace
         return &it->second;
     }
 
-    SessionEntry& createSession()
+    std::pair<std::string, SessionEntry*> createSession()
     {
         pruneExpiredSessions();
 
@@ -322,7 +323,7 @@ namespace
 
         auto [it, inserted] = gSessions.emplace(sessionId, SessionEntry{});
         it->second.lastAccess = std::chrono::steady_clock::now();
-        return it->second;
+        return {sessionId, &it->second};
     }
 }
 
@@ -452,24 +453,21 @@ int main()
             config.selectedTeams = (*body)["teams"].get<std::vector<std::string>>();
         }
 
-        crow::response res;
-        addJsonHeaders(res);
-
         std::lock_guard<std::mutex> lock(gSessionMutex);
-        SessionEntry& sessionEntry = createSession();
-        const bool started = sessionEntry.session.start(config, dataRoot.string());
+        auto [sessionId, sessionEntry] = createSession();
+        const bool started = sessionEntry->session.start(config, dataRoot.string());
         if (!started)
         {
+            gSessions.erase(sessionId);
             return errorResponse(500, "Could not load draft data.");
         }
 
-        DraftState state = sessionEntry.session.getState();
-        res.code = 200;
-        res.body = json{
+        DraftState state = sessionEntry->session.getState();
+        return jsonResponse(json{
             {"ok", true},
-            {"state", toJson(state, sessionEntry.session.getResults())}
-        }.dump();
-        return res;
+            {"sessionId", sessionId},
+            {"state", toJson(state, sessionEntry->session.getResults())}
+        });
     });
 
     CROW_ROUTE(app, "/api/draft/state")([](const crow::request& req) {

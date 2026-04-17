@@ -45,11 +45,11 @@ function formatHeight(totalInches) {
 
 function escapeHtml(value) {
   return String(value)
-    .replaceAll('&', '&amp;')
-    .replaceAll('<', '&lt;')
-    .replaceAll('>', '&gt;')
-    .replaceAll('"', '&quot;')
-    .replaceAll("'", '&#39;');
+      .replaceAll('&', '&amp;')
+      .replaceAll('<', '&lt;')
+      .replaceAll('>', '&gt;')
+      .replaceAll('"', '&quot;')
+      .replaceAll("'", '&#39;');
 }
 
 function getSavedConfig() {
@@ -83,6 +83,25 @@ function getDraftConfigStorageKey() {
   return `draftConfig:${getDraftToken()}`;
 }
 
+// ---------- Session ID storage ----------
+function getSessionIdStorageKey() {
+  return `draftSessionId:${getDraftToken()}`;
+}
+
+function getStoredSessionId() {
+  return sessionStorage.getItem(getSessionIdStorageKey());
+}
+
+function setStoredSessionId(id) {
+  if (id) {
+    sessionStorage.setItem(getSessionIdStorageKey(), id);
+  }
+}
+
+function clearStoredSessionId() {
+  sessionStorage.removeItem(getSessionIdStorageKey());
+}
+
 function getSessionLabel() {
   const token = getDraftToken();
   const compactToken = token.replace(/[^a-zA-Z0-9]/g, '');
@@ -104,9 +123,16 @@ function getSearchValue() {
 }
 
 function apiFetch(url, options = {}) {
+  const sessionId = getStoredSessionId();
+  const headers = { ...(options.headers || {}) };
+
+  if (sessionId) {
+    headers['X-Draft-Session-Id'] = sessionId;
+  }
+
   return fetch(url, {
     ...options,
-    headers: options.headers
+    headers
   });
 }
 
@@ -215,9 +241,9 @@ function buildPlayerCard(p) {
   const readOnly = Boolean(p.__readOnly);
   const rasValue = typeof p.RAS === 'number' ? p.RAS : null;
   const rasClass =
-    rasValue === null ? '' :
-    rasValue >= 8 ? 'ras-high' :
-    rasValue >= 5 ? 'ras-mid' : 'ras-low';
+      rasValue === null ? '' :
+          rasValue >= 8 ? 'ras-high' :
+              rasValue >= 5 ? 'ras-mid' : 'ras-low';
 
   const stats = p.majorStats || '—';
   const overallRank = p.consensusRanking ?? p.consensusRank ?? '—';
@@ -332,12 +358,12 @@ function getPlayerFromResult(result) {
     position: result.player.position,
     consensusRanking: result.player.consensusRank,
     consensusRank: result.player.consensusRank,
-    number: 'â€”',
-    age: 'â€”',
+    number: '—',
+    age: '—',
     height: null,
     weight: null,
     majorStats: 'No extended profile available for this drafted player.',
-    positionalRanking: 'â€”',
+    positionalRanking: '—',
     RAS: null,
     __readOnly: true
   };
@@ -578,6 +604,9 @@ async function startBackendDraft() {
   syncSpeedButtons();
   draftCompleteModalDismissed = false;
 
+  // Clear any stale session ID from a previous draft before starting a new one
+  clearStoredSessionId();
+
   const res = await apiFetch('/api/draft/start', {
     method: 'POST',
     headers: {
@@ -591,6 +620,13 @@ async function startBackendDraft() {
     throw new Error(text || 'Failed to start backend draft.');
   }
 
+  const data = await res.json();
+
+  if (!data.sessionId) {
+    throw new Error('Backend did not return a session ID.');
+  }
+
+  setStoredSessionId(data.sessionId);
   draftStarted = true;
 }
 
@@ -732,21 +768,21 @@ function inferCompletedResultsFromBoard(state) {
 
 function rebuildPlayerMap() {
   PLAYER_MAP = new Map(
-    PLAYER_CATALOG.flatMap(p => {
-      const entries = [];
-      const playerId = p.playerId ?? p.id;
-      const consensusRank = p.consensusRanking ?? p.consensusRank;
+      PLAYER_CATALOG.flatMap(p => {
+        const entries = [];
+        const playerId = p.playerId ?? p.id;
+        const consensusRank = p.consensusRanking ?? p.consensusRank;
 
-      if (playerId != null) {
-        entries.push([String(playerId), p]);
-      }
+        if (playerId != null) {
+          entries.push([String(playerId), p]);
+        }
 
-      if (consensusRank != null) {
-        entries.push([String(consensusRank), p]);
-      }
+        if (consensusRank != null) {
+          entries.push([String(consensusRank), p]);
+        }
 
-      return entries;
-    })
+        return entries;
+      })
   );
 }
 
@@ -791,9 +827,9 @@ function syncState(state) {
   currentPick = state.overall || 1;
   currentIsUserPick = Boolean(state.isUserPick);
   recommendedRanks = new Set(
-    Array.isArray(state.recommendedConsensusRanks)
-      ? state.recommendedConsensusRanks.map(rank => Number(rank))
-      : []
+      Array.isArray(state.recommendedConsensusRanks)
+          ? state.recommendedConsensusRanks.map(rank => Number(rank))
+          : []
   );
 
   inferCompletedResultsFromBoard(state);
@@ -805,8 +841,8 @@ function syncState(state) {
 
   setOnClockBox(state.onClockTeamName, state.overall, state.round);
   updateProgress(
-    Array.isArray(state.results) ? state.results.length : Math.max((state.currentPickNumber || 1) - 1, 0),
-    DRAFT_ORDER.length
+      Array.isArray(state.results) ? state.results.length : Math.max((state.currentPickNumber || 1) - 1, 0),
+      DRAFT_ORDER.length
   );
   updateClockDisplay(state.isUserPick);
 
@@ -881,8 +917,8 @@ async function continueCpuDraft(state) {
       renderPlayers(activeFilter, getSearchValue(), currentIsUserPick);
       setOnClockBox(nextState.onClockTeamName, nextState.overall, nextState.round);
       updateProgress(
-        Array.isArray(nextState.results) ? nextState.results.length : Math.max((nextState.currentPickNumber || 1) - 1, 0),
-        DRAFT_ORDER.length
+          Array.isArray(nextState.results) ? nextState.results.length : Math.max((nextState.currentPickNumber || 1) - 1, 0),
+          DRAFT_ORDER.length
       );
       updateClockDisplay(nextState.isUserPick);
       setDraftCompleteUI(Boolean(nextState.complete));
