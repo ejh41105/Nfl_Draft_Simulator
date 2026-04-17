@@ -140,24 +140,6 @@ function getTeamLogoUrl(teamId) {
   return `https://a.espncdn.com/i/teamlogos/nfl/500/${String(teamId || '').toLowerCase()}.png`;
 }
 
-function getCollegeLogoUrl(player) {
-  let fileName = String(player.logoFile || player.college || 'default.png')
-      .trim()
-      .toLowerCase();
-
-  fileName = fileName
-      .replace(/\s+/g, '-')
-      .replace(/[^a-z0-9.-]/g, '')
-      .replace(/-+/g, '-')
-      .replace(/(^-|-$)/g, '');
-
-  if (!fileName.includes('.')) {
-    fileName += '.png';
-  }
-
-  return `../Assets/Logos/${encodeURIComponent(fileName)}`;
-}
-
 function normalizeSpeedValue(speed) {
   const map = {
     slow: 'slow',
@@ -283,9 +265,7 @@ function buildPlayerCard(p) {
 
       <div class="modal-name-row">
         <span class="card-name">${escapeHtml(p.name || 'Unknown Player')}</span>
-        <div class="card-logo-circle" title="${escapeHtml(p.college || '')}">
-          <img src="${escapeHtml(getCollegeLogoUrl(p))}" alt="${escapeHtml(p.college || 'college')} logo" onerror="this.onerror=null; this.src='../Assets/Logos/default.png'" />
-        </div>
+        <div class="card-logo-circle" title="${escapeHtml(p.college || '')}"></div>
       </div>
 
       <span class="card-college">${escapeHtml(p.college || '—')}</span>
@@ -397,12 +377,9 @@ function renderPlayerRow(p, isUserOnClock) {
   const consensusRank = p.consensusRanking ?? p.consensusRank ?? '—';
   const isRecommended = isUserOnClock && recommendedRanks.has(Number(consensusRank));
 
-  const collegeLogoUrl = escapeHtml(getCollegeLogoUrl(p));
   row.innerHTML = `
     <span class="player-rank">${escapeHtml(consensusRank)}</span>
-    <div class="player-logo-circle">
-      <img src="${collegeLogoUrl}" alt="${escapeHtml(p.college || 'college')} logo" onerror="this.onerror=null; this.src='../Assets/Logos/default.png'" />
-    </div>
+    <div class="player-logo-circle"></div>
     <div class="player-row-info">
       <div class="player-row-name">${escapeHtml(p.name || 'Unknown Player')}</div>
       <div class="player-row-school">${escapeHtml((p.position || '—') + ' · ' + (p.college || '—'))}</div>
