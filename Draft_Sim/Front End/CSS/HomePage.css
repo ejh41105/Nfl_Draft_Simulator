@@ -352,3 +352,78 @@ main {
 .section:nth-child(3) { animation-delay: 0.19s; }
 .section:nth-child(4) { animation-delay: 0.26s; }
 .summary-bar          { animation: fadeUp 0.4s ease 0.32s both; }
+
+@media (max-width: 760px) {
+    header {
+        padding: 0 1rem;
+        height: 56px;
+    }
+
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    main {
+        padding: 1.5rem 1rem 2.5rem;
+    }
+
+    .page-title {
+        font-size: 1.65rem;
+    }
+
+    .page-subtitle {
+        font-size: 0.88rem;
+        margin-bottom: 1.75rem;
+    }
+
+    .section {
+        margin-bottom: 1.75rem;
+    }
+
+    .section-body {
+        padding: 1rem;
+    }
+
+    .team-controls {
+        gap: 0.5rem;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.45rem;
+    }
+
+    .team-btn {
+        gap: 0.45rem;
+        padding: 0.55rem 0.6rem;
+        font-size: 0.82rem;
+        min-width: 0;
+    }
+
+    .team-logo {
+        width: 18px;
+        height: 18px;
+    }
+
+    .speed-row {
+        grid-template-columns: 1fr;
+        gap: 0.6rem;
+    }
+
+    .summary-bar {
+        padding: 1rem;
+    }
+
+    .summary-items {
+        gap: 1rem 1.5rem;
+    }
+
+    .summary-item {
+        min-width: 82px;
+    }
+
+    .start-btn {
+        width: 100%;
+        padding: 0.8rem 1.25rem;
+    }
+}
