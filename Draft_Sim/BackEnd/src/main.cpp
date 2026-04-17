@@ -12,6 +12,7 @@
 #include <sstream>
 #include <string>
 #include <vector>
+#include <cstdlib>
 
 using json = nlohmann::json;
 namespace fs = std::filesystem;
@@ -443,6 +444,8 @@ int main()
         });
     });
 
-    app.port(8080).run();
+    const char* port_env = std::getenv("PORT");
+    int port = port_env ? std::atoi(port_env) : 8080;
+    app.bindaddr("127.0.0.1").port(port).multithreaded().run();
     return 0;
 }
