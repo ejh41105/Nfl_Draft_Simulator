@@ -6,6 +6,7 @@
 // ---------- App State ----------
 let PLAYERS = [];
 let DRAFT_ORDER = [];
+let PLAYER_CATALOG = [];
 let PLAYER_MAP = new Map();
 
 let currentPick = 1;
@@ -20,6 +21,7 @@ let postUserPickDelayMs = 0;
 let selectedSpeed = 'base';
 let recommendedRanks = new Set();
 let mobileActiveTab = 'draft';
+let draftCompleteModalDismissed = false;
 
 const pickResults = {}; // overall -> { playerId, playerName, position, college }
 
@@ -71,6 +73,36 @@ function getSearchValue() {
   return el ? el.value : '';
 }
 
+function generateClientSessionId() {
+  if (window.crypto && typeof window.crypto.randomUUID === 'function') {
+    return window.crypto.randomUUID();
+  }
+
+  return `draft-${Date.now()}-${Math.random().toString(16).slice(2)}`;
+}
+
+function getClientSessionId() {
+  const key = 'draftClientId';
+  let sessionId = localStorage.getItem(key);
+
+  if (!sessionId) {
+    sessionId = generateClientSessionId();
+    localStorage.setItem(key, sessionId);
+  }
+
+  return sessionId;
+}
+
+function apiFetch(url, options = {}) {
+  const headers = new Headers(options.headers || {});
+  headers.set('X-Draft-Client-Id', getClientSessionId());
+
+  return fetch(url, {
+    ...options,
+    headers
+  });
+}
+
 function getTeamLogoUrl(teamId) {
   return `https://a.espncdn.com/i/teamlogos/nfl/500/${String(teamId || '').toLowerCase()}.png`;
 }
@@ -113,13 +145,14 @@ function setDraftCompleteUI(isComplete) {
   const pauseBtn = document.getElementById('btn-pause');
   const restartBtn = document.getElementById('btn-restart');
   const speedGroup = document.querySelector('.speed-group');
+  const shouldShowModal = isComplete && !draftCompleteModalDismissed;
 
   if (completeCard) {
-    completeCard.classList.toggle('open', isComplete);
+    completeCard.classList.toggle('open', shouldShowModal);
   }
 
   if (completeModal) {
-    completeModal.classList.toggle('open', isComplete);
+    completeModal.classList.toggle('open', shouldShowModal);
   }
 
   if (pauseBtn) {
@@ -128,7 +161,7 @@ function setDraftCompleteUI(isComplete) {
   }
 
   if (restartBtn) {
-    restartBtn.style.display = isComplete ? 'none' : '';
+    restartBtn.style.display = '';
   }
 
   if (speedGroup) {
@@ -172,6 +205,7 @@ function setMobileTab(view) {
 
 // ---------- Modal ----------
 function buildPlayerCard(p) {
+  const readOnly = Boolean(p.__readOnly);
   const rasValue = typeof p.RAS === 'number' ? p.RAS : null;
   const rasClass =
     rasValue === null ? '' :
@@ -187,7 +221,7 @@ function buildPlayerCard(p) {
   const jersey = p.number ?? '—';
 
   const consensusRank = p.consensusRanking ?? p.consensusRank ?? null;
-  const canDraftPlayer = currentIsUserPick && consensusRank != null;
+  const canDraftPlayer = !readOnly && currentIsUserPick && consensusRank != null;
 
   return `
     <div class="modal-top">
@@ -264,6 +298,42 @@ function closePlayerCard() {
   const modal = document.getElementById('player-modal');
   if (!modal) return;
   modal.classList.remove('open');
+}
+
+function dismissDraftCompleteModal() {
+  draftCompleteModalDismissed = true;
+  setDraftCompleteUI(true);
+}
+
+function getPlayerFromResult(result) {
+  if (!result || !result.player) return null;
+
+  const playerId = result.player.id != null ? String(result.player.id) : null;
+  const consensusRank = result.player.consensusRank != null ? String(result.player.consensusRank) : null;
+
+  if (playerId && PLAYER_MAP.has(playerId)) {
+    return { ...PLAYER_MAP.get(playerId), __readOnly: true };
+  }
+
+  if (consensusRank && PLAYER_MAP.has(consensusRank)) {
+    return { ...PLAYER_MAP.get(consensusRank), __readOnly: true };
+  }
+
+  return {
+    name: result.player.name,
+    college: result.player.college,
+    position: result.player.position,
+    consensusRanking: result.player.consensusRank,
+    consensusRank: result.player.consensusRank,
+    number: 'â€”',
+    age: 'â€”',
+    height: null,
+    weight: null,
+    majorStats: 'No extended profile available for this drafted player.',
+    positionalRanking: 'â€”',
+    RAS: null,
+    __readOnly: true
+  };
 }
 
 // ---------- Player Pool ----------
@@ -354,6 +424,16 @@ function buildPickRow(pick, state, result = null) {
     </div>
     ${badge}
   `;
+
+  if (state === 'completed' && result) {
+    const player = getPlayerFromResult(result);
+    if (player) {
+      row.classList.add('clickable');
+      row.addEventListener('click', () => {
+        openPlayerCard(player);
+      });
+    }
+  }
 
   return row;
 }
@@ -468,8 +548,9 @@ async function startBackendDraft() {
 
   selectedSpeed = normalizeSpeedValue(config.speed);
   syncSpeedButtons();
+  draftCompleteModalDismissed = false;
 
-  const res = await fetch('/api/draft/start', {
+  const res = await apiFetch('/api/draft/start', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -486,7 +567,7 @@ async function startBackendDraft() {
 }
 
 async function fetchDraftState() {
-  const res = await fetch('/api/draft/state');
+  const res = await apiFetch('/api/draft/state');
   if (!res.ok) {
     const text = await res.text();
     throw new Error(text || 'Failed to load draft state.');
@@ -503,7 +584,7 @@ async function fetchPlayers() {
 
   const url = params.toString() ? `/api/players?${params.toString()}` : '/api/players';
 
-  const res = await fetch(url);
+  const res = await apiFetch(url);
   if (!res.ok) {
     const text = await res.text();
     throw new Error(text || 'Failed to load players.');
@@ -512,7 +593,7 @@ async function fetchPlayers() {
 }
 
 async function fetchPicks() {
-  const res = await fetch('/api/picks');
+  const res = await apiFetch('/api/picks');
   if (!res.ok) {
     const text = await res.text();
     throw new Error(text || 'Failed to load picks.');
@@ -521,7 +602,7 @@ async function fetchPicks() {
 }
 
 async function advanceCpuPick() {
-  const res = await fetch('/api/draft/advance', { method: 'POST' });
+  const res = await apiFetch('/api/draft/advance', { method: 'POST' });
   if (!res.ok) {
     const text = await res.text();
     throw new Error(text || 'Failed to advance draft.');
@@ -530,7 +611,7 @@ async function advanceCpuPick() {
 }
 
 async function submitUserPick(consensusRank) {
-  const res = await fetch('/api/draft/pick', {
+  const res = await apiFetch('/api/draft/pick', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -586,6 +667,7 @@ async function restartDraft() {
   }
 
   PLAYERS = [];
+  PLAYER_CATALOG = [];
   PLAYER_MAP = new Map();
   currentPick = 1;
 
@@ -615,10 +697,21 @@ function inferCompletedResultsFromBoard(state) {
 
 function rebuildPlayerMap() {
   PLAYER_MAP = new Map(
-    PLAYERS.map(p => [
-      p.playerId ?? p.id ?? p.consensusRanking ?? p.consensusRank,
-      p
-    ])
+    PLAYER_CATALOG.flatMap(p => {
+      const entries = [];
+      const playerId = p.playerId ?? p.id;
+      const consensusRank = p.consensusRanking ?? p.consensusRank;
+
+      if (playerId != null) {
+        entries.push([String(playerId), p]);
+      }
+
+      if (consensusRank != null) {
+        entries.push([String(consensusRank), p]);
+      }
+
+      return entries;
+    })
   );
 }
 
@@ -701,6 +794,7 @@ async function refreshFromBackend() {
   if (PLAYERS.length === 0) {
     const players = await fetchPlayers();
     PLAYERS = Array.isArray(players.players) ? players.players : players;
+    PLAYER_CATALOG = [...PLAYERS];
     rebuildPlayerMap();
   }
 
@@ -811,8 +905,18 @@ function wireEvents() {
     });
   }
 
+  const completeModal = document.getElementById('draft-complete-modal');
+  if (completeModal) {
+    completeModal.addEventListener('click', e => {
+      if (e.target === completeModal) dismissDraftCompleteModal();
+    });
+  }
+
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') closePlayerCard();
+    if (e.key === 'Escape' && document.getElementById('draft-complete-modal')?.classList.contains('open')) {
+      dismissDraftCompleteModal();
+    }
   });
 
   const searchInput = document.getElementById('player-search');

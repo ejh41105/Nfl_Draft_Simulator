@@ -187,6 +187,7 @@ main {
 
 .pick-row:hover { background: var(--surface2); }
 .pick-row.completed { background: var(--on-pick); }
+.pick-row.clickable { cursor: pointer; }
 
 .pick-row.on-clock {
   background: rgba(212, 168, 67, 0.08);

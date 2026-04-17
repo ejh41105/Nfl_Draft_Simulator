@@ -23,6 +23,7 @@ namespace fs = std::filesystem;
 namespace
 {
     constexpr const char* kDraftSessionCookie = "draft_session_id";
+    constexpr const char* kDraftClientHeader = "X-Draft-Client-Id";
     constexpr auto kSessionTtl = std::chrono::hours(12);
 
     struct SessionEntry
@@ -279,6 +280,17 @@ namespace
         return std::nullopt;
     }
 
+    std::optional<std::string> getSessionKey(const crow::request& req)
+    {
+        const std::string clientId = trim(req.get_header_value(kDraftClientHeader));
+        if (!clientId.empty())
+        {
+            return clientId;
+        }
+
+        return getCookieValue(req, kDraftSessionCookie);
+    }
+
     std::string generateSessionId()
     {
         static constexpr char alphabet[] = "0123456789abcdef";
@@ -339,7 +351,7 @@ namespace
 
     SessionEntry* findSession(const crow::request& req)
     {
-        const auto sessionId = getCookieValue(req, kDraftSessionCookie);
+        const auto sessionId = getSessionKey(req);
         if (!sessionId.has_value())
         {
             return nullptr;
@@ -359,7 +371,7 @@ namespace
     {
         pruneExpiredSessions();
 
-        if (const auto sessionId = getCookieValue(req, kDraftSessionCookie); sessionId.has_value())
+        if (const auto sessionId = getSessionKey(req); sessionId.has_value())
         {
             auto it = gSessions.find(*sessionId);
             if (it != gSessions.end())
@@ -370,10 +382,17 @@ namespace
         }
 
         std::string sessionId;
-        do
+        if (const auto requestedSessionId = getSessionKey(req); requestedSessionId.has_value() && !requestedSessionId->empty())
         {
-            sessionId = generateSessionId();
-        } while (gSessions.contains(sessionId));
+            sessionId = *requestedSessionId;
+        }
+        else
+        {
+            do
+            {
+                sessionId = generateSessionId();
+            } while (gSessions.contains(sessionId));
+        }
 
         std::string cookie = std::string(kDraftSessionCookie) + "=" + sessionId +
                              "; Path=/; HttpOnly; SameSite=Lax; Max-Age=43200";
