@@ -114,7 +114,7 @@ The draft decision logic is based on a weighted scoring system that evaluates pl
 
 A detailed breakdown of the scoring methodology, weight distribution, and decision process can be found here:
 
-[Scoring Algorithm Documentation](YOUR_GOOGLE_DOC_LINK)
+(To be added later)
 
 This document outlines:
 
