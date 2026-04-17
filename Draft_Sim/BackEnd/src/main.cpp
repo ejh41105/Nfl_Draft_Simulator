@@ -22,9 +22,7 @@ namespace fs = std::filesystem;
 
 namespace
 {
-    constexpr const char* kDraftSessionCookie = "draft_session_id";
-    constexpr const char* kDraftClientHeader = "X-Draft-Client-Id";
-    constexpr const char* kDraftTokenHeader = "X-Draft-Token";
+    constexpr const char* kDraftSessionHeader = "X-Draft-Session-Id";
     constexpr auto kSessionTtl = std::chrono::hours(12);
 
     struct SessionEntry
@@ -249,54 +247,15 @@ namespace
         return value;
     }
 
-    std::optional<std::string> getCookieValue(const crow::request& req, const std::string& name)
+    std::optional<std::string> getSessionKey(const crow::request& req)
     {
-        const std::string cookieHeader = req.get_header_value("Cookie");
-        if (cookieHeader.empty())
+        const std::string sessionId = trim(req.get_header_value(kDraftSessionHeader));
+        if (sessionId.empty())
         {
             return std::nullopt;
         }
 
-        std::stringstream stream(cookieHeader);
-        std::string item;
-        while (std::getline(stream, item, ';'))
-        {
-            item = trim(item);
-
-            const std::size_t equals = item.find('=');
-            if (equals == std::string::npos)
-            {
-                continue;
-            }
-
-            const std::string key = trim(item.substr(0, equals));
-            if (key != name)
-            {
-                continue;
-            }
-
-            return item.substr(equals + 1);
-        }
-
-        return std::nullopt;
-    }
-
-    std::optional<std::string> getSessionKey(const crow::request& req)
-    {
-        const std::string clientId = trim(req.get_header_value(kDraftClientHeader));
-        const std::string draftToken = trim(req.get_header_value(kDraftTokenHeader));
-
-        if (!clientId.empty() && !draftToken.empty())
-        {
-            return draftToken + ":" + clientId;
-        }
-
-        if (!clientId.empty())
-        {
-            return clientId;
-        }
-
-        return getCookieValue(req, kDraftSessionCookie);
+        return sessionId;
     }
 
     std::string generateSessionId()
@@ -313,31 +272,6 @@ namespace
         }
 
         return id;
-    }
-
-    bool isHttpsRequest(const crow::request& req)
-    {
-        const std::string forwardedProto = req.get_header_value("X-Forwarded-Proto");
-        if (!forwardedProto.empty())
-        {
-            std::string lowered = forwardedProto;
-            std::transform(lowered.begin(), lowered.end(), lowered.begin(), [](unsigned char ch) {
-                return static_cast<char>(std::tolower(ch));
-            });
-            return lowered.find("https") != std::string::npos;
-        }
-
-        const std::string forwarded = req.get_header_value("Forwarded");
-        if (!forwarded.empty())
-        {
-            std::string lowered = forwarded;
-            std::transform(lowered.begin(), lowered.end(), lowered.begin(), [](unsigned char ch) {
-                return static_cast<char>(std::tolower(ch));
-            });
-            return lowered.find("proto=https") != std::string::npos;
-        }
-
-        return false;
     }
 
     void pruneExpiredSessions()
@@ -375,41 +309,17 @@ namespace
         return &it->second;
     }
 
-    SessionEntry& getOrCreateSession(const crow::request& req, crow::response& res)
+    SessionEntry& createSession(crow::response& res)
     {
         pruneExpiredSessions();
 
-        if (const auto sessionId = getSessionKey(req); sessionId.has_value())
-        {
-            auto it = gSessions.find(*sessionId);
-            if (it != gSessions.end())
-            {
-                it->second.lastAccess = std::chrono::steady_clock::now();
-                return it->second;
-            }
-        }
-
         std::string sessionId;
-        if (const auto requestedSessionId = getSessionKey(req); requestedSessionId.has_value() && !requestedSessionId->empty())
+        do
         {
-            sessionId = *requestedSessionId;
-        }
-        else
-        {
-            do
-            {
-                sessionId = generateSessionId();
-            } while (gSessions.contains(sessionId));
-        }
+            sessionId = generateSessionId();
+        } while (gSessions.contains(sessionId));
 
-        std::string cookie = std::string(kDraftSessionCookie) + "=" + sessionId +
-                             "; Path=/; HttpOnly; SameSite=Lax; Max-Age=43200";
-        if (isHttpsRequest(req))
-        {
-            cookie += "; Secure";
-        }
-
-        res.add_header("Set-Cookie", cookie);
+        res.add_header(kDraftSessionHeader, sessionId);
         auto [it, inserted] = gSessions.emplace(sessionId, SessionEntry{});
         it->second.lastAccess = std::chrono::steady_clock::now();
         return it->second;
@@ -546,7 +456,7 @@ int main()
         addJsonHeaders(res);
 
         std::lock_guard<std::mutex> lock(gSessionMutex);
-        SessionEntry& sessionEntry = getOrCreateSession(req, res);
+        SessionEntry& sessionEntry = createSession(res);
         const bool started = sessionEntry.session.start(config, dataRoot.string());
         if (!started)
         {

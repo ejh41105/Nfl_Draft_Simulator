@@ -13,8 +13,8 @@ let currentPick = 1;
 let currentIsUserPick = false;
 let activeFilter = 'ALL';
 let paused = false;
+let backendSessionId = null;
 let draftStarted = false;
-let clientSessionId = null;
 let isAdvancing = false;
 let autoAdvanceTimer = null;
 let autoAdvanceDelayResolve = null;
@@ -104,26 +104,11 @@ function getSearchValue() {
   return el ? el.value : '';
 }
 
-function generateClientSessionId() {
-  if (window.crypto && typeof window.crypto.randomUUID === 'function') {
-    return window.crypto.randomUUID();
-  }
-
-  return `draft-${Date.now()}-${Math.random().toString(16).slice(2)}`;
-}
-
-function getClientSessionId() {
-  if (!clientSessionId) {
-    clientSessionId = generateClientSessionId();
-  }
-
-  return clientSessionId;
-}
-
 function apiFetch(url, options = {}) {
   const headers = new Headers(options.headers || {});
-  headers.set('X-Draft-Client-Id', getClientSessionId());
-  headers.set('X-Draft-Token', getDraftToken());
+  if (backendSessionId) {
+    headers.set('X-Draft-Session-Id', backendSessionId);
+  }
 
   return fetch(url, {
     ...options,
@@ -598,6 +583,7 @@ async function startBackendDraft() {
   selectedSpeed = normalizeSpeedValue(config.speed);
   syncSpeedButtons();
   draftCompleteModalDismissed = false;
+  backendSessionId = null;
 
   const res = await apiFetch('/api/draft/start', {
     method: 'POST',
@@ -610,6 +596,11 @@ async function startBackendDraft() {
   if (!res.ok) {
     const text = await res.text();
     throw new Error(text || 'Failed to start backend draft.');
+  }
+
+  backendSessionId = res.headers.get('X-Draft-Session-Id');
+  if (!backendSessionId) {
+    throw new Error('Backend did not return a draft session ID.');
   }
 
   draftStarted = true;
