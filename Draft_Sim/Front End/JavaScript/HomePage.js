@@ -167,7 +167,6 @@ function startDraft() {
     };
 
     const draftToken = buildDraftLaunchToken();
-    sessionStorage.setItem(`draftClientId:${draftToken}`, generateDraftClientId());
     sessionStorage.setItem(`draftConfig:${draftToken}`, JSON.stringify(config));
     window.location.href = `/draft?draft=${encodeURIComponent(draftToken)}`;
 }

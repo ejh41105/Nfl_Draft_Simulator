@@ -14,6 +14,7 @@ let currentIsUserPick = false;
 let activeFilter = 'ALL';
 let paused = false;
 let draftStarted = false;
+let clientSessionId = null;
 let isAdvancing = false;
 let autoAdvanceTimer = null;
 let autoAdvanceDelayResolve = null;
@@ -83,10 +84,6 @@ function getDraftConfigStorageKey() {
   return `draftConfig:${getDraftToken()}`;
 }
 
-function getDraftClientStorageKey() {
-  return `draftClientId:${getDraftToken()}`;
-}
-
 function getSessionLabel() {
   const token = getDraftToken();
   const compactToken = token.replace(/[^a-zA-Z0-9]/g, '');
@@ -116,15 +113,11 @@ function generateClientSessionId() {
 }
 
 function getClientSessionId() {
-  const key = getDraftClientStorageKey();
-  let sessionId = sessionStorage.getItem(key);
-
-  if (!sessionId) {
-    sessionId = generateClientSessionId();
-    sessionStorage.setItem(key, sessionId);
+  if (!clientSessionId) {
+    clientSessionId = generateClientSessionId();
   }
 
-  return sessionId;
+  return clientSessionId;
 }
 
 function apiFetch(url, options = {}) {
