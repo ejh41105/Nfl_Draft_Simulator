@@ -27,6 +27,7 @@ namespace
 
     struct SessionEntry
     {
+        std::string id;
         DraftSession session;
         std::chrono::steady_clock::time_point lastAccess{std::chrono::steady_clock::now()};
     };
@@ -309,7 +310,7 @@ namespace
         return &it->second;
     }
 
-    SessionEntry& createSession(crow::response& res)
+    SessionEntry& createSession()
     {
         pruneExpiredSessions();
 
@@ -319,8 +320,8 @@ namespace
             sessionId = generateSessionId();
         } while (gSessions.contains(sessionId));
 
-        res.add_header(kDraftSessionHeader, sessionId);
         auto [it, inserted] = gSessions.emplace(sessionId, SessionEntry{});
+        it->second.id = sessionId;
         it->second.lastAccess = std::chrono::steady_clock::now();
         return it->second;
     }
@@ -456,7 +457,7 @@ int main()
         addJsonHeaders(res);
 
         std::lock_guard<std::mutex> lock(gSessionMutex);
-        SessionEntry& sessionEntry = createSession(res);
+        SessionEntry& sessionEntry = createSession();
         const bool started = sessionEntry.session.start(config, dataRoot.string());
         if (!started)
         {
@@ -467,6 +468,7 @@ int main()
         res.code = 200;
         res.body = json{
             {"ok", true},
+            {"sessionId", sessionEntry.id},
             {"state", toJson(state, sessionEntry.session.getResults())}
         }.dump();
         return res;

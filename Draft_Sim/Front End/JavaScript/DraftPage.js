@@ -598,7 +598,8 @@ async function startBackendDraft() {
     throw new Error(text || 'Failed to start backend draft.');
   }
 
-  backendSessionId = res.headers.get('X-Draft-Session-Id');
+  const data = await res.json();
+  backendSessionId = data.sessionId || null;
   if (!backendSessionId) {
     throw new Error('Backend did not return a draft session ID.');
   }
