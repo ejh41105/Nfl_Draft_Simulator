@@ -12,10 +12,11 @@
 <header>
   <h1><a href="/" class="header-home">Draft Season</a></h1>
   <span class="header-meta">2026 NFL DRAFT · Ethan Howard</span>
+  <span class="session-indicator" id="session-indicator" title="Current draft session">S: ----</span>
   <span class="header-badge">LIVE</span>
 </header>
 
-<main>
+<main id="draft-page" class="mobile-tab-draft">
   <div class="panel" id="panel-draft">
     <div class="panel-header">
       <div class="panel-title"><span class="dot"></span> Draft Board</div>
@@ -70,7 +71,7 @@
       </div>
     </div>
 
-    <div class="ctrl-divider"></div>
+    <div class="ctrl-divider progress-divider"></div>
 
     <div class="progress-group">
       <div class="ctrl-label">DRAFT PROGRESS</div>
@@ -83,6 +84,15 @@
       </div>
     </div>
 
+  </div>
+
+  <div class="mobile-view-tabs" aria-label="Mobile views">
+    <button class="mobile-view-tab active" id="mobile-tab-draft" type="button" data-view="draft">
+      Draft
+    </button>
+    <button class="mobile-view-tab" id="mobile-tab-players" type="button" data-view="players">
+      Players
+    </button>
   </div>
 
   <div class="panel" id="panel-players">

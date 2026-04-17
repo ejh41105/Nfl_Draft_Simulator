@@ -67,6 +67,18 @@ header h1 {
   letter-spacing: 1px;
 }
 
+.session-indicator {
+  padding: 2px 6px;
+  border: 1px solid rgba(139, 200, 255, 0.22);
+  border-radius: 999px;
+  background: rgba(105, 182, 255, 0.08);
+  color: #d7e8ff;
+  font-size: 0.58rem;
+  font-family: 'DM Mono', monospace;
+  letter-spacing: 0.08em;
+  line-height: 1;
+}
+
 .header-badge {
   background: var(--accent2);
   color: #fff;
@@ -85,6 +97,10 @@ main {
   gap: 0;
   overflow: hidden;
   min-height: 0;
+}
+
+.mobile-view-tabs {
+  display: none;
 }
 
 /* ── SHARED PANEL STYLES ── */
@@ -183,6 +199,14 @@ main {
 
 .pick-row:hover { background: var(--surface2); }
 .pick-row.completed { background: var(--on-pick); }
+.pick-row.clickable { cursor: pointer; }
+.pick-row.completed.clickable {
+  position: relative;
+}
+
+.pick-row.completed.clickable:hover {
+  background: rgba(25, 30, 46, 0.96);
+}
 
 .pick-row.on-clock {
   background: rgba(212, 168, 67, 0.08);
@@ -685,6 +709,10 @@ main {
     font-size: 0.64rem;
   }
 
+  .session-indicator {
+    font-size: 0.54rem;
+  }
+
   .header-badge {
     font-size: 0.62rem;
     padding: 3px 8px;
@@ -712,17 +740,55 @@ main {
     gap: 12px;
   }
 
-  #panel-draft {
+  .mobile-view-tabs {
     order: 2;
-    flex: 0 0 30vh;
+    display: flex;
+    gap: 8px;
+    padding: 0 12px 10px;
+    background: var(--bg);
+    flex: 0 0 auto;
+  }
+
+  .mobile-view-tab {
+    flex: 1;
+    padding: 10px 0;
+    border: 1px solid var(--border);
+    border-radius: 999px;
     background: var(--surface);
-    min-height: 180px;
+    color: #e6eeff;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
+  }
+
+  .mobile-view-tab.active {
+    background: rgba(105, 182, 255, 0.12);
+    border-color: var(--accent2);
+    color: var(--accent2);
+  }
+
+  #panel-draft {
+    order: 3;
+    flex: 1 1 auto;
+    background: var(--surface);
+    min-height: 0;
   }
 
   #panel-players {
     order: 3;
     flex: 1 1 auto;
     min-height: 0;
+  }
+
+  main.mobile-tab-draft #panel-players {
+    display: none;
+  }
+
+  main.mobile-tab-players #panel-draft {
+    display: none;
   }
 
   .clock-ring {
@@ -743,6 +809,11 @@ main {
 
   .speed-row {
     gap: 8px;
+  }
+
+  .progress-divider,
+  .progress-group {
+    display: none;
   }
 
   .panel-header {
@@ -914,7 +985,8 @@ main {
   border-radius: 14px;
   width: min(560px, calc(100vw - 32px));
   max-height: calc(100vh - 40px);
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   position: relative;
   animation: modal-in 0.18s ease;
   box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
@@ -929,23 +1001,6 @@ main {
   from { transform: scale(0.95); opacity: 0; }
   to   { transform: scale(1);    opacity: 1; }
 }
-
-.modal-close {
-  position: absolute;
-  top: 12px; right: 12px;
-  width: 28px; height: 28px;
-  border-radius: 50%;
-  border: 1px solid var(--border);
-  background: var(--surface2);
-  color: var(--muted);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.15s, color 0.15s;
-}
-
-.modal-close:hover { background: var(--border); color: var(--text); }
 
 /* Modal top section */
 .modal-top {
@@ -1060,6 +1115,11 @@ main {
 }
 
 @media (max-width: 640px) {
+  .modal-card {
+    width: min(420px, 75vw);
+    max-height: 75vh;
+  }
+
   .modal-top,
   .modal-bottom,
   .modal-stats,
@@ -1073,7 +1133,11 @@ main {
   }
 
   .modal-actions {
+    position: sticky;
+    bottom: 0;
+    padding-top: 0.85rem;
     padding-bottom: 1rem;
+    background: linear-gradient(180deg, rgba(17, 21, 32, 0), rgba(17, 21, 32, 0.94) 22%, rgba(17, 21, 32, 1) 100%);
   }
 
   .card-name {
@@ -1092,7 +1156,6 @@ main {
 .ras-low  { color: var(--danger); }
 
 /* Readability overrides */
-.modal-close,
 .card-number {
   color: #eef4ff;
 }

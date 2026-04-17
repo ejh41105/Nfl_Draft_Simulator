@@ -3,18 +3,19 @@ project(MockDraftProject)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
 
-# Crow requires Threads
+# Crow dependencies
 find_package(Threads REQUIRED)
+find_package(ZLIB REQUIRED)
 
-# Fetch Crow at configure time
-include(FetchContent)
-FetchContent_Declare(
-        Crow
-        GIT_REPOSITORY https://github.com/CrowCpp/Crow.git
-        GIT_TAG v1.2.1.2
-)
-FetchContent_MakeAvailable(Crow)
+if(APPLE)
+    list(APPEND EXTRA_INCLUDE_DIRS "/opt/homebrew/include")
+endif()
+
+if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
+    find_package(Boost REQUIRED COMPONENTS system)
+endif()
 
 add_executable(MockDraftProject
         "Draft_Sim/BackEnd/src/main.cpp"
@@ -27,9 +28,14 @@ add_executable(MockDraftProject
 
 target_include_directories(MockDraftProject PRIVATE
         "Draft_Sim/BackEnd/Include"
+        ${EXTRA_INCLUDE_DIRS}
 )
 
-target_link_libraries(MockDraftProject PRIVATE
-        Threads::Threads
-        Crow::Crow
-)
+target_link_libraries(MockDraftProject PRIVATE Threads::Threads ZLIB::ZLIB)
+
+if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
+    target_compile_definitions(MockDraftProject PRIVATE CROW_USE_BOOST)
+    target_link_libraries(MockDraftProject PRIVATE Boost::system)
+endif()
+
+message(STATUS "Configuring ${PROJECT_NAME} for ${CMAKE_SYSTEM_NAME}")

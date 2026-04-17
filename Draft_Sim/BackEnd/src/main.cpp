@@ -4,13 +4,17 @@
 #include "json.hpp"
 
 #include <algorithm>
+#include <chrono>
 #include <cctype>
 #include <filesystem>
 #include <fstream>
 #include <mutex>
 #include <optional>
+#include <random>
+#include <stdexcept>
 #include <sstream>
 #include <string>
+#include <unordered_map>
 #include <vector>
 #include <cstdlib>
 
@@ -19,7 +23,18 @@ namespace fs = std::filesystem;
 
 namespace
 {
-    DraftSession gSession;
+    constexpr const char* kDraftSessionCookie = "draft_session_id";
+    constexpr const char* kDraftClientHeader = "X-Draft-Client-Id";
+    constexpr const char* kDraftTokenHeader = "X-Draft-Token";
+    constexpr auto kSessionTtl = std::chrono::hours(12);
+
+    struct SessionEntry
+    {
+        DraftSession session;
+        std::chrono::steady_clock::time_point lastAccess{std::chrono::steady_clock::now()};
+    };
+
+    std::unordered_map<std::string, SessionEntry> gSessions;
     std::mutex gSessionMutex;
 
     fs::path resolvePath(const fs::path& relativePath)
@@ -226,6 +241,180 @@ namespace
             return std::nullopt;
         }
     }
+
+    std::string trim(std::string value)
+    {
+        const auto notSpace = [](unsigned char ch) { return !std::isspace(ch); };
+        value.erase(value.begin(), std::find_if(value.begin(), value.end(), notSpace));
+        value.erase(std::find_if(value.rbegin(), value.rend(), notSpace).base(), value.end());
+        return value;
+    }
+
+    std::optional<std::string> getCookieValue(const crow::request& req, const std::string& name)
+    {
+        const std::string cookieHeader = req.get_header_value("Cookie");
+        if (cookieHeader.empty())
+        {
+            return std::nullopt;
+        }
+
+        std::stringstream stream(cookieHeader);
+        std::string item;
+        while (std::getline(stream, item, ';'))
+        {
+            item = trim(item);
+
+            const std::size_t equals = item.find('=');
+            if (equals == std::string::npos)
+            {
+                continue;
+            }
+
+            const std::string key = trim(item.substr(0, equals));
+            if (key != name)
+            {
+                continue;
+            }
+
+            return item.substr(equals + 1);
+        }
+
+        return std::nullopt;
+    }
+
+    std::optional<std::string> getSessionKey(const crow::request& req)
+    {
+        const std::string clientId = trim(req.get_header_value(kDraftClientHeader));
+        const std::string draftToken = trim(req.get_header_value(kDraftTokenHeader));
+
+        if (!clientId.empty() && !draftToken.empty())
+        {
+            return draftToken + ":" + clientId;
+        }
+
+        if (!clientId.empty())
+        {
+            return clientId;
+        }
+
+        return getCookieValue(req, kDraftSessionCookie);
+    }
+
+    std::string generateSessionId()
+    {
+        static constexpr char alphabet[] = "0123456789abcdef";
+        std::random_device rng;
+
+        std::string id;
+        id.reserve(32);
+
+        for (int i = 0; i < 32; ++i)
+        {
+            id.push_back(alphabet[rng() & 0x0F]);
+        }
+
+        return id;
+    }
+
+    bool isHttpsRequest(const crow::request& req)
+    {
+        const std::string forwardedProto = req.get_header_value("X-Forwarded-Proto");
+        if (!forwardedProto.empty())
+        {
+            std::string lowered = forwardedProto;
+            std::transform(lowered.begin(), lowered.end(), lowered.begin(), [](unsigned char ch) {
+                return static_cast<char>(std::tolower(ch));
+            });
+            return lowered.find("https") != std::string::npos;
+        }
+
+        const std::string forwarded = req.get_header_value("Forwarded");
+        if (!forwarded.empty())
+        {
+            std::string lowered = forwarded;
+            std::transform(lowered.begin(), lowered.end(), lowered.begin(), [](unsigned char ch) {
+                return static_cast<char>(std::tolower(ch));
+            });
+            return lowered.find("proto=https") != std::string::npos;
+        }
+
+        return false;
+    }
+
+    void pruneExpiredSessions()
+    {
+        const auto now = std::chrono::steady_clock::now();
+
+        for (auto it = gSessions.begin(); it != gSessions.end();)
+        {
+            if (now - it->second.lastAccess > kSessionTtl)
+            {
+                it = gSessions.erase(it);
+            }
+            else
+            {
+                ++it;
+            }
+        }
+    }
+
+    SessionEntry* findSession(const crow::request& req)
+    {
+        const auto sessionId = getSessionKey(req);
+        if (!sessionId.has_value())
+        {
+            return nullptr;
+        }
+
+        auto it = gSessions.find(*sessionId);
+        if (it == gSessions.end())
+        {
+            return nullptr;
+        }
+
+        it->second.lastAccess = std::chrono::steady_clock::now();
+        return &it->second;
+    }
+
+    SessionEntry& getOrCreateSession(const crow::request& req, crow::response& res)
+    {
+        pruneExpiredSessions();
+
+        if (const auto sessionId = getSessionKey(req); sessionId.has_value())
+        {
+            auto it = gSessions.find(*sessionId);
+            if (it != gSessions.end())
+            {
+                it->second.lastAccess = std::chrono::steady_clock::now();
+                return it->second;
+            }
+        }
+
+        std::string sessionId;
+        if (const auto requestedSessionId = getSessionKey(req); requestedSessionId.has_value() && !requestedSessionId->empty())
+        {
+            sessionId = *requestedSessionId;
+        }
+        else
+        {
+            do
+            {
+                sessionId = generateSessionId();
+            } while (gSessions.contains(sessionId));
+        }
+
+        std::string cookie = std::string(kDraftSessionCookie) + "=" + sessionId +
+                             "; Path=/; HttpOnly; SameSite=Lax; Max-Age=43200";
+        if (isHttpsRequest(req))
+        {
+            cookie += "; Secure";
+        }
+
+        res.add_header("Set-Cookie", cookie);
+        auto [it, inserted] = gSessions.emplace(sessionId, SessionEntry{});
+        it->second.lastAccess = std::chrono::steady_clock::now();
+        return it->second;
+    }
 }
 
 int main()
@@ -269,10 +458,11 @@ int main()
         std::lock_guard<std::mutex> lock(gSessionMutex);
 
         std::vector<Player> players;
-        DraftState state = gSession.getState();
-        if (state.started)
+        SessionEntry* sessionEntry = findSession(req);
+        DraftState state = sessionEntry ? sessionEntry->session.getState() : DraftState{};
+        if (state.started && sessionEntry)
         {
-            players = gSession.getAvailablePlayers();
+            players = sessionEntry->session.getAvailablePlayers();
         }
         else
         {
@@ -319,12 +509,13 @@ int main()
         return jsonResponse(payload);
     });
 
-    CROW_ROUTE(app, "/api/picks")([dataRoot]() {
+    CROW_ROUTE(app, "/api/picks")([dataRoot](const crow::request& req) {
         json payload = json::array();
         std::lock_guard<std::mutex> lock(gSessionMutex);
-        DraftState state = gSession.getState();
+        SessionEntry* sessionEntry = findSession(req);
+        DraftState state = sessionEntry ? sessionEntry->session.getState() : DraftState{};
 
-        const std::vector<Pick> picks = state.started ? gSession.getPicks() : [&dataRoot]() {
+        const std::vector<Pick> picks = state.started && sessionEntry ? sessionEntry->session.getPicks() : [&dataRoot]() {
             loadDraftOrder(dataRoot.string() + "/DraftOrder.json");
             return draftOrder;
         }();
@@ -352,29 +543,47 @@ int main()
             config.selectedTeams = (*body)["teams"].get<std::vector<std::string>>();
         }
 
+        crow::response res;
+        addJsonHeaders(res);
+
         std::lock_guard<std::mutex> lock(gSessionMutex);
-        const bool started = gSession.start(config, dataRoot.string());
+        SessionEntry& sessionEntry = getOrCreateSession(req, res);
+        const bool started = sessionEntry.session.start(config, dataRoot.string());
         if (!started)
         {
             return errorResponse(500, "Could not load draft data.");
         }
 
-        DraftState state = gSession.getState();
-        return jsonResponse(json{
+        DraftState state = sessionEntry.session.getState();
+        res.code = 200;
+        res.body = json{
             {"ok", true},
-            {"state", toJson(state, gSession.getResults())}
-        });
+            {"state", toJson(state, sessionEntry.session.getResults())}
+        }.dump();
+        return res;
     });
 
-    CROW_ROUTE(app, "/api/draft/state")([]() {
+    CROW_ROUTE(app, "/api/draft/state")([](const crow::request& req) {
         std::lock_guard<std::mutex> lock(gSessionMutex);
-        DraftState state = gSession.getState();
-        return jsonResponse(toJson(state, gSession.getResults()));
+        SessionEntry* sessionEntry = findSession(req);
+        if (!sessionEntry)
+        {
+            return jsonResponse(toJson(DraftState{}, {}));
+        }
+
+        DraftState state = sessionEntry->session.getState();
+        return jsonResponse(toJson(state, sessionEntry->session.getResults()));
     });
 
-    CROW_ROUTE(app, "/api/draft/advance").methods(crow::HTTPMethod::Post)([]() {
+    CROW_ROUTE(app, "/api/draft/advance").methods(crow::HTTPMethod::Post)([](const crow::request& req) {
         std::lock_guard<std::mutex> lock(gSessionMutex);
-        DraftState before = gSession.getState();
+        SessionEntry* sessionEntry = findSession(req);
+        if (!sessionEntry)
+        {
+            return errorResponse(400, "Draft session has not started.");
+        }
+
+        DraftState before = sessionEntry->session.getState();
 
         if (!before.started)
         {
@@ -386,7 +595,7 @@ int main()
             return jsonResponse(json{
                 {"ok", true},
                 {"advanced", false},
-                {"state", toJson(before, gSession.getResults())}
+                {"state", toJson(before, sessionEntry->session.getResults())}
             });
         }
 
@@ -395,13 +604,13 @@ int main()
             return errorResponse(409, "Current pick belongs to a user-controlled team.");
         }
 
-        const bool advanced = gSession.advanceOnePick();
-        DraftState after = gSession.getState();
+        const bool advanced = sessionEntry->session.advanceOnePick();
+        DraftState after = sessionEntry->session.getState();
 
         return jsonResponse(json{
             {"ok", advanced},
             {"advanced", advanced},
-            {"state", toJson(after, gSession.getResults())}
+            {"state", toJson(after, sessionEntry->session.getResults())}
         });
     });
 
@@ -419,7 +628,13 @@ int main()
         }
 
         std::lock_guard<std::mutex> lock(gSessionMutex);
-        DraftState before = gSession.getState();
+        SessionEntry* sessionEntry = findSession(req);
+        if (!sessionEntry)
+        {
+            return errorResponse(400, "Draft session has not started.");
+        }
+
+        DraftState before = sessionEntry->session.getState();
 
         if (!before.started)
         {
@@ -431,16 +646,16 @@ int main()
             return errorResponse(409, "It is not currently a user pick.");
         }
 
-        const bool ok = gSession.makeUserPick(consensusRank);
+        const bool ok = sessionEntry->session.makeUserPick(consensusRank);
         if (!ok)
         {
             return errorResponse(400, "Could not draft that player.");
         }
 
-        DraftState after = gSession.getState();
+        DraftState after = sessionEntry->session.getState();
         return jsonResponse(json{
             {"ok", true},
-            {"state", toJson(after, gSession.getResults())}
+            {"state", toJson(after, sessionEntry->session.getResults())}
         });
     });
 

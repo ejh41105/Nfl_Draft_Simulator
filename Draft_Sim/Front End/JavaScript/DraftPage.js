@@ -6,6 +6,7 @@
 // ---------- App State ----------
 let PLAYERS = [];
 let DRAFT_ORDER = [];
+let PLAYER_CATALOG = [];
 let PLAYER_MAP = new Map();
 
 let currentPick = 1;
@@ -13,11 +14,15 @@ let currentIsUserPick = false;
 let activeFilter = 'ALL';
 let paused = false;
 let draftStarted = false;
+let clientSessionId = null;
 let isAdvancing = false;
 let autoAdvanceTimer = null;
 let autoAdvanceDelayResolve = null;
+let postUserPickDelayMs = 0;
 let selectedSpeed = 'base';
 let recommendedRanks = new Set();
+let mobileActiveTab = 'draft';
+let draftCompleteModalDismissed = false;
 
 const pickResults = {}; // overall -> { playerId, playerName, position, college }
 
@@ -49,7 +54,7 @@ function escapeHtml(value) {
 }
 
 function getSavedConfig() {
-  const raw = sessionStorage.getItem('draftConfig');
+  const raw = sessionStorage.getItem(getDraftConfigStorageKey());
   if (!raw) {
     throw new Error('No draft config found. Go back to the homepage and start a draft.');
   }
@@ -64,9 +69,66 @@ function getSavedConfig() {
   };
 }
 
+function getDraftToken() {
+  const params = new URLSearchParams(window.location.search);
+  const draftToken = params.get('draft');
+
+  if (!draftToken) {
+    throw new Error('Missing draft token. Go back to the homepage and start a new draft.');
+  }
+
+  return draftToken;
+}
+
+function getDraftConfigStorageKey() {
+  return `draftConfig:${getDraftToken()}`;
+}
+
+function getSessionLabel() {
+  const token = getDraftToken();
+  const compactToken = token.replace(/[^a-zA-Z0-9]/g, '');
+  return compactToken.slice(0, 6).toUpperCase() || '----';
+}
+
+function renderSessionIndicator() {
+  const indicator = document.getElementById('session-indicator');
+  if (!indicator) return;
+
+  const label = getSessionLabel();
+  indicator.textContent = `S: ${label}`;
+  indicator.title = `Current draft session: ${label}`;
+}
+
 function getSearchValue() {
   const el = document.getElementById('player-search');
   return el ? el.value : '';
+}
+
+function generateClientSessionId() {
+  if (window.crypto && typeof window.crypto.randomUUID === 'function') {
+    return window.crypto.randomUUID();
+  }
+
+  return `draft-${Date.now()}-${Math.random().toString(16).slice(2)}`;
+}
+
+function getClientSessionId() {
+  if (!clientSessionId) {
+    clientSessionId = generateClientSessionId();
+  }
+
+  return clientSessionId;
+}
+
+function apiFetch(url, options = {}) {
+  const headers = new Headers(options.headers || {});
+  headers.set('X-Draft-Client-Id', getClientSessionId());
+  headers.set('X-Draft-Token', getDraftToken());
+
+  return fetch(url, {
+    ...options,
+    headers
+  });
 }
 
 function getTeamLogoUrl(teamId) {
@@ -111,13 +173,14 @@ function setDraftCompleteUI(isComplete) {
   const pauseBtn = document.getElementById('btn-pause');
   const restartBtn = document.getElementById('btn-restart');
   const speedGroup = document.querySelector('.speed-group');
+  const shouldShowModal = isComplete && !draftCompleteModalDismissed;
 
   if (completeCard) {
-    completeCard.classList.toggle('open', isComplete);
+    completeCard.classList.toggle('open', shouldShowModal);
   }
 
   if (completeModal) {
-    completeModal.classList.toggle('open', isComplete);
+    completeModal.classList.toggle('open', shouldShowModal);
   }
 
   if (pauseBtn) {
@@ -126,7 +189,7 @@ function setDraftCompleteUI(isComplete) {
   }
 
   if (restartBtn) {
-    restartBtn.style.display = isComplete ? 'none' : '';
+    restartBtn.style.display = '';
   }
 
   if (speedGroup) {
@@ -147,8 +210,30 @@ function cancelAutoAdvanceDelay() {
   }
 }
 
+function setMobileTab(view) {
+  mobileActiveTab = view === 'players' ? 'players' : 'draft';
+
+  const main = document.getElementById('draft-page');
+  if (main) {
+    main.classList.toggle('mobile-tab-draft', mobileActiveTab === 'draft');
+    main.classList.toggle('mobile-tab-players', mobileActiveTab === 'players');
+  }
+
+  const draftTab = document.getElementById('mobile-tab-draft');
+  const playersTab = document.getElementById('mobile-tab-players');
+
+  if (draftTab) {
+    draftTab.classList.toggle('active', mobileActiveTab === 'draft');
+  }
+
+  if (playersTab) {
+    playersTab.classList.toggle('active', mobileActiveTab === 'players');
+  }
+}
+
 // ---------- Modal ----------
 function buildPlayerCard(p) {
+  const readOnly = Boolean(p.__readOnly);
   const rasValue = typeof p.RAS === 'number' ? p.RAS : null;
   const rasClass =
     rasValue === null ? '' :
@@ -164,16 +249,9 @@ function buildPlayerCard(p) {
   const jersey = p.number ?? '—';
 
   const consensusRank = p.consensusRanking ?? p.consensusRank ?? null;
-  const canDraftPlayer = currentIsUserPick && consensusRank != null;
+  const canDraftPlayer = !readOnly && currentIsUserPick && consensusRank != null;
 
   return `
-    <button class="modal-close" onclick="closePlayerCard()">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-        <line x1="18" y1="6" x2="6" y2="18"></line>
-        <line x1="6" y1="6" x2="18" y2="18"></line>
-      </svg>
-    </button>
-
     <div class="modal-top">
       <div class="modal-badge-row">
         <span class="pos-badge ${posBadgeClass(p.position)}">${escapeHtml(p.position || '—')}</span>
@@ -250,6 +328,42 @@ function closePlayerCard() {
   modal.classList.remove('open');
 }
 
+function dismissDraftCompleteModal() {
+  draftCompleteModalDismissed = true;
+  setDraftCompleteUI(true);
+}
+
+function getPlayerFromResult(result) {
+  if (!result || !result.player) return null;
+
+  const playerId = result.player.id != null ? String(result.player.id) : null;
+  const consensusRank = result.player.consensusRank != null ? String(result.player.consensusRank) : null;
+
+  if (playerId && PLAYER_MAP.has(playerId)) {
+    return { ...PLAYER_MAP.get(playerId), __readOnly: true };
+  }
+
+  if (consensusRank && PLAYER_MAP.has(consensusRank)) {
+    return { ...PLAYER_MAP.get(consensusRank), __readOnly: true };
+  }
+
+  return {
+    name: result.player.name,
+    college: result.player.college,
+    position: result.player.position,
+    consensusRanking: result.player.consensusRank,
+    consensusRank: result.player.consensusRank,
+    number: 'â€”',
+    age: 'â€”',
+    height: null,
+    weight: null,
+    majorStats: 'No extended profile available for this drafted player.',
+    positionalRanking: 'â€”',
+    RAS: null,
+    __readOnly: true
+  };
+}
+
 // ---------- Player Pool ----------
 function renderPlayerRow(p, isUserOnClock) {
   const row = document.createElement('div');
@@ -296,10 +410,31 @@ function renderPlayers(filter = 'ALL', search = '', isUserOnClock = false) {
     return true;
   });
 
-  filtered.forEach(p => body.appendChild(renderPlayerRow(p, isUserOnClock)));
+  const sortedPlayers = [...filtered];
+
+  if (isUserOnClock && recommendedRanks.size > 0) {
+    sortedPlayers.sort((a, b) => {
+      const aRank = Number(a.consensusRanking ?? a.consensusRank);
+      const bRank = Number(b.consensusRanking ?? b.consensusRank);
+      const aRecommended = recommendedRanks.has(aRank);
+      const bRecommended = recommendedRanks.has(bRank);
+
+      if (aRecommended !== bRecommended) {
+        return aRecommended ? -1 : 1;
+      }
+
+      if (Number.isFinite(aRank) && Number.isFinite(bRank) && aRank !== bRank) {
+        return aRank - bRank;
+      }
+
+      return String(a.name || '').localeCompare(String(b.name || ''));
+    });
+  }
+
+  sortedPlayers.forEach(p => body.appendChild(renderPlayerRow(p, isUserOnClock)));
 
   const countEl = document.getElementById('avail-count');
-  if (countEl) countEl.textContent = filtered.length;
+  if (countEl) countEl.textContent = sortedPlayers.length;
 }
 
 // ---------- Draft Board ----------
@@ -339,7 +474,51 @@ function buildPickRow(pick, state, result = null) {
     ${badge}
   `;
 
+  if (state === 'completed' && result) {
+    const player = getPlayerFromResult(result);
+    if (player) {
+      row.classList.add('clickable');
+      row.addEventListener('click', () => {
+        openPlayerCard(player);
+      });
+    }
+  }
+
   return row;
+}
+
+function scrollDraftBoardToCurrentPick() {
+  const onClockRow = document.getElementById(`pick-row-${currentPick}`);
+  const draftBody = document.getElementById('draft-body');
+  if (!onClockRow || !draftBody) return;
+  if (window.matchMedia('(max-width: 900px)').matches) return;
+
+  const rowTop = onClockRow.offsetTop;
+  const rowBottom = rowTop + onClockRow.offsetHeight;
+  const viewTop = draftBody.scrollTop;
+  const viewBottom = viewTop + draftBody.clientHeight;
+  const isFastCpuRun = !currentIsUserPick && normalizeSpeedValue(selectedSpeed) === 'fast';
+
+  if (isFastCpuRun) {
+    if (rowTop < viewTop) {
+      draftBody.scrollTo({
+        top: rowTop,
+        behavior: 'auto'
+      });
+    } else if (rowBottom > viewBottom) {
+      draftBody.scrollTo({
+        top: Math.max(rowBottom - draftBody.clientHeight, 0),
+        behavior: 'auto'
+      });
+    }
+    return;
+  }
+
+  const targetTop = rowTop - ((draftBody.clientHeight - onClockRow.offsetHeight) / 2);
+  draftBody.scrollTo({
+    top: Math.max(targetTop, 0),
+    behavior: currentIsUserPick ? 'smooth' : 'auto'
+  });
 }
 
 function renderDraftBoard() {
@@ -380,17 +559,7 @@ function renderDraftBoard() {
   if (totalEl) totalEl.textContent = total;
   if (currentEl) currentEl.textContent = currentPick;
   if (totalLabel) totalLabel.textContent = `${total} TOTAL PICKS`;
-
-  const onClockRow = document.getElementById(`pick-row-${currentPick}`);
-  const draftBody = document.getElementById('draft-body');
-  if (onClockRow && draftBody) {
-    const targetTop = onClockRow.offsetTop - ((draftBody.clientHeight - onClockRow.offsetHeight) / 2);
-    draftBody.scrollTo({
-      top: Math.max(targetTop, 0),
-      behavior: 'smooth'
-    });
-  }
-
+  scrollDraftBoardToCurrentPick();
 }
 
 // ---------- UI Updates ----------
@@ -428,8 +597,9 @@ async function startBackendDraft() {
 
   selectedSpeed = normalizeSpeedValue(config.speed);
   syncSpeedButtons();
+  draftCompleteModalDismissed = false;
 
-  const res = await fetch('/api/draft/start', {
+  const res = await apiFetch('/api/draft/start', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -446,7 +616,7 @@ async function startBackendDraft() {
 }
 
 async function fetchDraftState() {
-  const res = await fetch('/api/draft/state');
+  const res = await apiFetch('/api/draft/state');
   if (!res.ok) {
     const text = await res.text();
     throw new Error(text || 'Failed to load draft state.');
@@ -463,7 +633,7 @@ async function fetchPlayers() {
 
   const url = params.toString() ? `/api/players?${params.toString()}` : '/api/players';
 
-  const res = await fetch(url);
+  const res = await apiFetch(url);
   if (!res.ok) {
     const text = await res.text();
     throw new Error(text || 'Failed to load players.');
@@ -472,7 +642,7 @@ async function fetchPlayers() {
 }
 
 async function fetchPicks() {
-  const res = await fetch('/api/picks');
+  const res = await apiFetch('/api/picks');
   if (!res.ok) {
     const text = await res.text();
     throw new Error(text || 'Failed to load picks.');
@@ -481,7 +651,7 @@ async function fetchPicks() {
 }
 
 async function advanceCpuPick() {
-  const res = await fetch('/api/draft/advance', { method: 'POST' });
+  const res = await apiFetch('/api/draft/advance', { method: 'POST' });
   if (!res.ok) {
     const text = await res.text();
     throw new Error(text || 'Failed to advance draft.');
@@ -490,7 +660,7 @@ async function advanceCpuPick() {
 }
 
 async function submitUserPick(consensusRank) {
-  const res = await fetch('/api/draft/pick', {
+  const res = await apiFetch('/api/draft/pick', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -508,6 +678,7 @@ async function submitUserPick(consensusRank) {
     throw new Error('Backend rejected pick.');
   }
 
+  postUserPickDelayMs = 900;
   syncState(data.state);
 }
 
@@ -545,6 +716,7 @@ async function restartDraft() {
   }
 
   PLAYERS = [];
+  PLAYER_CATALOG = [];
   PLAYER_MAP = new Map();
   currentPick = 1;
 
@@ -567,17 +739,35 @@ function inferCompletedResultsFromBoard(state) {
       playerId: result.player.id,
       playerName: result.player.name,
       position: result.player.position,
-      college: result.player.college
+      college: result.player.college,
+      player: {
+        id: result.player.id,
+        name: result.player.name,
+        college: result.player.college,
+        position: result.player.position,
+        consensusRank: result.player.consensusRank
+      }
     };
   });
 }
 
 function rebuildPlayerMap() {
   PLAYER_MAP = new Map(
-    PLAYERS.map(p => [
-      p.playerId ?? p.id ?? p.consensusRanking ?? p.consensusRank,
-      p
-    ])
+    PLAYER_CATALOG.flatMap(p => {
+      const entries = [];
+      const playerId = p.playerId ?? p.id;
+      const consensusRank = p.consensusRanking ?? p.consensusRank;
+
+      if (playerId != null) {
+        entries.push([String(playerId), p]);
+      }
+
+      if (consensusRank != null) {
+        entries.push([String(consensusRank), p]);
+      }
+
+      return entries;
+    })
   );
 }
 
@@ -660,6 +850,7 @@ async function refreshFromBackend() {
   if (PLAYERS.length === 0) {
     const players = await fetchPlayers();
     PLAYERS = Array.isArray(players.players) ? players.players : players;
+    PLAYER_CATALOG = [...PLAYERS];
     rebuildPlayerMap();
   }
 
@@ -677,6 +868,24 @@ async function continueCpuDraft(state) {
   try {
     let nextState = state;
     let safety = 0;
+
+    if (postUserPickDelayMs > 0) {
+      const delayMs = postUserPickDelayMs;
+      postUserPickDelayMs = 0;
+
+      await new Promise(resolve => {
+        autoAdvanceDelayResolve = resolve;
+        autoAdvanceTimer = setTimeout(() => {
+          autoAdvanceTimer = null;
+          autoAdvanceDelayResolve = null;
+          resolve();
+        }, delayMs);
+      });
+
+      if (paused) {
+        return;
+      }
+    }
 
     while (!paused && !nextState.complete && !nextState.isUserPick) {
       const data = await advanceCpuPick();
@@ -737,12 +946,14 @@ function setSpeed(el, speedValue) {
   syncSpeedButtons();
   const config = getSavedConfig();
   config.speed = selectedSpeed;
-  sessionStorage.setItem('draftConfig', JSON.stringify(config));
+  sessionStorage.setItem(getDraftConfigStorageKey(), JSON.stringify(config));
   cancelAutoAdvanceDelay();
 }
 
 // ---------- Event Wiring ----------
 function wireEvents() {
+  setMobileTab(mobileActiveTab);
+
   const modal = document.getElementById('player-modal');
   if (modal) {
     modal.addEventListener('click', e => {
@@ -750,8 +961,18 @@ function wireEvents() {
     });
   }
 
+  const completeModal = document.getElementById('draft-complete-modal');
+  if (completeModal) {
+    completeModal.addEventListener('click', e => {
+      if (e.target === completeModal) dismissDraftCompleteModal();
+    });
+  }
+
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') closePlayerCard();
+    if (e.key === 'Escape' && document.getElementById('draft-complete-modal')?.classList.contains('open')) {
+      dismissDraftCompleteModal();
+    }
   });
 
   const searchInput = document.getElementById('player-search');
@@ -760,6 +981,12 @@ function wireEvents() {
       renderPlayers(activeFilter, getSearchValue(), currentIsUserPick);
     });
   }
+
+  document.querySelectorAll('.mobile-view-tab').forEach(button => {
+    button.addEventListener('click', () => {
+      setMobileTab(button.dataset.view);
+    });
+  });
 
   const pauseBtn = document.getElementById('btn-pause');
   if (pauseBtn) {
@@ -828,6 +1055,7 @@ function wireEvents() {
 // ---------- Init ----------
 async function init() {
   try {
+    renderSessionIndicator();
     wireEvents();
     await startBackendDraft();
     await refreshFromBackend();

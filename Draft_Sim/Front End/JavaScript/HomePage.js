@@ -146,6 +146,18 @@ function updateSummary() {
 }
 
 // ── Start Draft ──
+function generateDraftClientId() {
+    if (window.crypto && typeof window.crypto.randomUUID === 'function') {
+        return window.crypto.randomUUID();
+    }
+
+    return `draft-${Date.now()}-${Math.random().toString(16).slice(2)}`;
+}
+
+function buildDraftLaunchToken() {
+    return generateDraftClientId();
+}
+
 function startDraft() {
     const config = {
         teams:  Array.from(selectedTeams),
@@ -153,8 +165,10 @@ function startDraft() {
         rounds: selectedRounds,
         speed:  selectedSpeed,
     };
-    sessionStorage.setItem('draftConfig', JSON.stringify(config));
-    window.location.href = '/draft';
+
+    const draftToken = buildDraftLaunchToken();
+    sessionStorage.setItem(`draftConfig:${draftToken}`, JSON.stringify(config));
+    window.location.href = `/draft?draft=${encodeURIComponent(draftToken)}`;
 }
 
 // ── Init ──
