@@ -362,6 +362,7 @@ function scrollDraftBoardToCurrentPick() {
   const onClockRow = document.getElementById(`pick-row-${currentPick}`);
   const draftBody = document.getElementById('draft-body');
   if (!onClockRow || !draftBody) return;
+  if (window.matchMedia('(max-width: 900px)').matches) return;
 
   const rowTop = onClockRow.offsetTop;
   const rowBottom = rowTop + onClockRow.offsetHeight;
