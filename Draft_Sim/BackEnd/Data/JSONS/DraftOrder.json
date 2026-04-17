@@ -44,7 +44,7 @@
     "round": 1,
     "selection": 6,
     "tradeValue": 1600,
-    "noiseRange": 10,
+    "noiseRange": 50,
     "teamId": "CLE"
   },
   {
@@ -52,7 +52,7 @@
     "round": 1,
     "selection": 7,
     "tradeValue": 1500,
-    "noiseRange": 30,
+    "noiseRange": 50,
     "teamId": "WAS"
   },
   {
@@ -76,7 +76,7 @@
     "round": 1,
     "selection": 10,
     "tradeValue": 1300,
-    "noiseRange": 30,
+    "noiseRange": 50,
     "teamId": "CIN"
   },
   {
@@ -84,7 +84,7 @@
     "round": 1,
     "selection": 11,
     "tradeValue": 1250,
-    "noiseRange": 10,
+    "noiseRange": 50,
     "teamId": "MIA"
   },
   {
@@ -92,7 +92,7 @@
     "round": 1,
     "selection": 12,
     "tradeValue": 1200,
-    "noiseRange": 0,
+    "noiseRange": 50,
     "teamId": "DAL"
   },
   {
@@ -108,7 +108,7 @@
     "round": 1,
     "selection": 14,
     "tradeValue": 1100,
-    "noiseRange": 10,
+    "noiseRange": 50,
     "teamId": "BAL"
   },
   {
@@ -116,7 +116,7 @@
     "round": 1,
     "selection": 15,
     "tradeValue": 1050,
-    "noiseRange": 10,
+    "noiseRange": 50,
     "teamId": "TB"
   },
   {
@@ -132,7 +132,7 @@
     "round": 1,
     "selection": 17,
     "tradeValue": 950,
-    "noiseRange": 10,
+    "noiseRange": 50,
     "teamId": "DET"
   },
   {
@@ -140,7 +140,7 @@
     "round": 1,
     "selection": 18,
     "tradeValue": 900,
-    "noiseRange": 10,
+    "noiseRange": 50,
     "teamId": "MIN"
   },
   {
