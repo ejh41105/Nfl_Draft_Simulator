@@ -690,7 +690,14 @@ function inferCompletedResultsFromBoard(state) {
       playerId: result.player.id,
       playerName: result.player.name,
       position: result.player.position,
-      college: result.player.college
+      college: result.player.college,
+      player: {
+        id: result.player.id,
+        name: result.player.name,
+        college: result.player.college,
+        position: result.player.position,
+        consensusRank: result.player.consensusRank
+      }
     };
   });
 }
