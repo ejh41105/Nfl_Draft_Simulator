@@ -398,7 +398,7 @@
       "OG": 2,
       "OC": 3,
       "EDGE": 5,
-      "DL": 4,
+      "DL": 1,
       "ILB": 2,
       "OLB": 3,
       "CB": 3,
@@ -422,6 +422,13 @@
         "round": 1,
         "selection": 5,
         "tradeValue": 1700,
+        "noiseRange": 10
+      },
+      {
+        "overall": 10,
+        "round": 1,
+        "selection": 10,
+        "tradeValue": 1300,
         "noiseRange": 10
       },
       {
@@ -846,7 +853,7 @@
       "OG": 3,
       "OC": 3,
       "EDGE": 3,
-      "DL": 2,
+      "DL": 5,
       "ILB": 1,
       "OLB": 3,
       "CB": 3,
@@ -865,13 +872,6 @@
       "positionalScarcity"
     ],
     "picks": [
-      {
-        "overall": 10,
-        "round": 1,
-        "selection": 10,
-        "tradeValue": 1300,
-        "noiseRange": 10
-      },
       {
         "overall": 41,
         "round": 2,

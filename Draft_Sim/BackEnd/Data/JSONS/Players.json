@@ -120,6 +120,23 @@
   },
   {
     "consensusRanking": 8,
+    "playerId": 10,
+    "name": "Ruben Bain Jr.",
+    "college": "Miami (FL)",
+    "position": "EDGE",
+    "height": 74,
+    "weight": 263,
+    "number": 42,
+    "age": 21,
+    "majorStats": "54 tackles, 9.5 sacks, 1 PBU, 1 INT, 1 FF",
+    "positionalRanking": 3,
+    "RAS": 8.0,
+    "miscConcern": 3,
+    "floorCeiling": 9,
+    "logoFile": "miami.png"
+  },
+  {
+    "consensusRanking": 9,
     "playerId": 8,
     "name": "Mansoor Delane",
     "college": "LSU",
@@ -136,7 +153,7 @@
     "logoFile": "lsu.png"
   },
   {
-    "consensusRanking": 9,
+    "consensusRanking": 10,
     "playerId": 9,
     "name": "Carnell Tate",
     "college": "Ohio State",
@@ -153,24 +170,24 @@
     "logoFile": "ohio-state.png"
   },
   {
-    "consensusRanking": 10,
+    "consensusRanking": 11,
     "playerId": 10,
-    "name": "Ruben Bain Jr.",
-    "college": "Miami (FL)",
-    "position": "EDGE",
-    "height": 74,
-    "weight": 263,
-    "number": 42,
+    "name": "Olaivavega Ioane",
+    "college": "Penn State",
+    "position": "OG",
+    "height": 76,
+    "weight": 320,
+    "number": 51,
     "age": 21,
-    "majorStats": "54 tackles, 9.5 sacks, 1 PBU, 1 INT, 1 FF",
-    "positionalRanking": 3,
-    "RAS": 8.0,
-    "miscConcern": 1,
+    "majorStats": "11 games started",
+    "positionalRanking": 1,
+    "RAS": 8.6,
+    "miscConcern": 8,
     "floorCeiling": 9,
-    "logoFile": "miami.png"
+    "logoFile": "penn-state.png"
   },
   {
-    "consensusRanking": 11,
+    "consensusRanking": 12,
     "playerId": 11,
     "name": "Makai Lemon",
     "college": "USC",
@@ -187,7 +204,7 @@
     "logoFile": "usc.png"
   },
   {
-    "consensusRanking": 12,
+    "consensusRanking": 13,
     "playerId": 12,
     "name": "Monroe Freeling",
     "college": "Georgia",
@@ -203,23 +220,7 @@
     "floorCeiling": 9,
     "logoFile": "georgia.png"
   },
-  {
-    "consensusRanking": 13,
-    "playerId": 13,
-    "name": "Olaivavega Ioane",
-    "college": "Penn State",
-    "position": "OG",
-    "height": 76,
-    "weight": 320,
-    "number": 51,
-    "age": 21,
-    "majorStats": "11 games started",
-    "positionalRanking": 1,
-    "RAS": 8.6,
-    "miscConcern": 8,
-    "floorCeiling": 9,
-    "logoFile": "penn-state.png"
-  },
+  
   {
     "consensusRanking": 14,
     "playerId": 14,

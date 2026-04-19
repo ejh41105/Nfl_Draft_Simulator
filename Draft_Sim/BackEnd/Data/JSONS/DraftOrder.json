@@ -4,7 +4,7 @@
     "round": 1,
     "selection": 1,
     "tradeValue": 3000,
-    "noiseRange": 0,
+    "noiseRange": 10,
     "teamId": "LV"
   },
   {
@@ -12,7 +12,7 @@
     "round": 1,
     "selection": 2,
     "tradeValue": 2600,
-    "noiseRange": 0,
+    "noiseRange": 10,
     "teamId": "NYJ"
   },
   {
@@ -20,7 +20,7 @@
     "round": 1,
     "selection": 3,
     "tradeValue": 2200,
-    "noiseRange": 30,
+    "noiseRange": 10,
     "teamId": "ARI"
   },
   {
@@ -28,7 +28,7 @@
     "round": 1,
     "selection": 4,
     "tradeValue": 1800,
-    "noiseRange": 30,
+    "noiseRange": 10,
     "teamId": "TEN"
   },
   {
@@ -36,7 +36,7 @@
     "round": 1,
     "selection": 5,
     "tradeValue": 1700,
-    "noiseRange": 50,
+    "noiseRange": 10,
     "teamId": "NYG"
   },
   {
@@ -44,7 +44,7 @@
     "round": 1,
     "selection": 6,
     "tradeValue": 1600,
-    "noiseRange": 50,
+    "noiseRange": 10,
     "teamId": "CLE"
   },
   {
@@ -52,7 +52,7 @@
     "round": 1,
     "selection": 7,
     "tradeValue": 1500,
-    "noiseRange": 50,
+    "noiseRange": 10,
     "teamId": "WAS"
   },
   {
@@ -60,7 +60,7 @@
     "round": 1,
     "selection": 8,
     "tradeValue": 1400,
-    "noiseRange": 30,
+    "noiseRange": 10,
     "teamId": "NO"
   },
   {
@@ -76,15 +76,15 @@
     "round": 1,
     "selection": 10,
     "tradeValue": 1300,
-    "noiseRange": 50,
-    "teamId": "CIN"
+    "noiseRange": 10,
+    "teamId": "NYG"
   },
   {
     "overall": 11,
     "round": 1,
     "selection": 11,
     "tradeValue": 1250,
-    "noiseRange": 50,
+    "noiseRange": 10,
     "teamId": "MIA"
   },
   {
@@ -92,7 +92,7 @@
     "round": 1,
     "selection": 12,
     "tradeValue": 1200,
-    "noiseRange": 50,
+    "noiseRange": 10,
     "teamId": "DAL"
   },
   {
@@ -100,7 +100,7 @@
     "round": 1,
     "selection": 13,
     "tradeValue": 1150,
-    "noiseRange": 50,
+    "noiseRange": 10,
     "teamId": "LAR"
   },
   {
@@ -108,7 +108,7 @@
     "round": 1,
     "selection": 14,
     "tradeValue": 1100,
-    "noiseRange": 50,
+    "noiseRange": 10,
     "teamId": "BAL"
   },
   {
@@ -116,7 +116,7 @@
     "round": 1,
     "selection": 15,
     "tradeValue": 1050,
-    "noiseRange": 50,
+    "noiseRange": 10,
     "teamId": "TB"
   },
   {
@@ -124,7 +124,7 @@
     "round": 1,
     "selection": 16,
     "tradeValue": 1000,
-    "noiseRange": 50,
+    "noiseRange": 10,
     "teamId": "NYJ"
   },
   {
@@ -132,7 +132,7 @@
     "round": 1,
     "selection": 17,
     "tradeValue": 950,
-    "noiseRange": 50,
+    "noiseRange": 10,
     "teamId": "DET"
   },
   {
@@ -140,7 +140,7 @@
     "round": 1,
     "selection": 18,
     "tradeValue": 900,
-    "noiseRange": 50,
+    "noiseRange": 10,
     "teamId": "MIN"
   },
   {
@@ -148,7 +148,7 @@
     "round": 1,
     "selection": 19,
     "tradeValue": 875,
-    "noiseRange": 50,
+    "noiseRange": 10,
     "teamId": "CAR"
   },
   {
@@ -156,7 +156,7 @@
     "round": 1,
     "selection": 20,
     "tradeValue": 850,
-    "noiseRange": 50,
+    "noiseRange": 10,
     "teamId": "DAL"
   },
   {
@@ -164,7 +164,7 @@
     "round": 1,
     "selection": 21,
     "tradeValue": 800,
-    "noiseRange": 30,
+    "noiseRange": 10,
     "teamId": "PIT"
   },
   {
@@ -172,7 +172,7 @@
     "round": 1,
     "selection": 22,
     "tradeValue": 780,
-    "noiseRange": 30,
+    "noiseRange": 10,
     "teamId": "LAC"
   },
   {
@@ -196,7 +196,7 @@
     "round": 1,
     "selection": 25,
     "tradeValue": 720,
-    "noiseRange": 30,
+    "noiseRange": 10,
     "teamId": "CHI"
   },
   {
@@ -204,7 +204,7 @@
     "round": 1,
     "selection": 26,
     "tradeValue": 700,
-    "noiseRange": 50,
+    "noiseRange": 10,
     "teamId": "BUF"
   },
   {
@@ -212,7 +212,7 @@
     "round": 1,
     "selection": 27,
     "tradeValue": 680,
-    "noiseRange": 30,
+    "noiseRange": 10,
     "teamId": "SF"
   },
   {
@@ -260,7 +260,7 @@
     "round": 2,
     "selection": 1,
     "tradeValue": 580,
-    "noiseRange": 20,
+    "noiseRange": 45,
     "teamId": "NYJ"
   },
   {
@@ -268,7 +268,7 @@
     "round": 2,
     "selection": 2,
     "tradeValue": 560,
-    "noiseRange": 20,
+    "noiseRange": 45,
     "teamId": "ARI"
   },
   {
@@ -276,7 +276,7 @@
     "round": 2,
     "selection": 3,
     "tradeValue": 550,
-    "noiseRange": 20,
+    "noiseRange": 45,
     "teamId": "TEN"
   },
   {
@@ -284,7 +284,7 @@
     "round": 2,
     "selection": 4,
     "tradeValue": 540,
-    "noiseRange": 20,
+    "noiseRange": 45,
     "teamId": "LV"
   },
   {
@@ -292,7 +292,7 @@
     "round": 2,
     "selection": 5,
     "tradeValue": 530,
-    "noiseRange": 20,
+    "noiseRange": 45,
     "teamId": "NYG"
   },
   {
@@ -300,7 +300,7 @@
     "round": 2,
     "selection": 6,
     "tradeValue": 520,
-    "noiseRange": 20,
+    "noiseRange": 45,
     "teamId": "HOU"
   },
   {
@@ -308,7 +308,7 @@
     "round": 2,
     "selection": 7,
     "tradeValue": 510,
-    "noiseRange": 20,
+    "noiseRange": 45,
     "teamId": "CLE"
   },
   {
@@ -316,7 +316,7 @@
     "round": 2,
     "selection": 8,
     "tradeValue": 500,
-    "noiseRange": 20,
+    "noiseRange": 45,
     "teamId": "KC"
   },
   {
@@ -324,7 +324,7 @@
     "round": 2,
     "selection": 9,
     "tradeValue": 490,
-    "noiseRange": 20,
+    "noiseRange": 45,
     "teamId": "CIN"
   },
   {
@@ -332,7 +332,7 @@
     "round": 2,
     "selection": 10,
     "tradeValue": 480,
-    "noiseRange": 20,
+    "noiseRange": 45,
     "teamId": "NO"
   },
   {
@@ -340,7 +340,7 @@
     "round": 2,
     "selection": 11,
     "tradeValue": 470,
-    "noiseRange": 20,
+    "noiseRange": 45,
     "teamId": "MIA"
   },
   {
@@ -348,7 +348,7 @@
     "round": 2,
     "selection": 12,
     "tradeValue": 460,
-    "noiseRange": 20,
+    "noiseRange": 45,
     "teamId": "NYJ"
   },
   {
@@ -356,7 +356,7 @@
     "round": 2,
     "selection": 13,
     "tradeValue": 450,
-    "noiseRange": 20,
+    "noiseRange": 45,
     "teamId": "BAL"
   },
   {
@@ -364,7 +364,7 @@
     "round": 2,
     "selection": 14,
     "tradeValue": 440,
-    "noiseRange": 20,
+    "noiseRange": 45,
     "teamId": "TB"
   },
   {
@@ -372,7 +372,7 @@
     "round": 2,
     "selection": 15,
     "tradeValue": 430,
-    "noiseRange": 20,
+    "noiseRange": 45,
     "teamId": "IND"
   },
   {
@@ -380,7 +380,7 @@
     "round": 2,
     "selection": 16,
     "tradeValue": 420,
-    "noiseRange": 20,
+    "noiseRange": 45,
     "teamId": "ATL"
   },
   {
@@ -388,7 +388,7 @@
     "round": 2,
     "selection": 17,
     "tradeValue": 410,
-    "noiseRange": 20,
+    "noiseRange": 45,
     "teamId": "MIN"
   },
   {
@@ -396,7 +396,7 @@
     "round": 2,
     "selection": 18,
     "tradeValue": 400,
-    "noiseRange": 20,
+    "noiseRange": 45,
     "teamId": "DET"
   },
   {
@@ -404,7 +404,7 @@
     "round": 2,
     "selection": 19,
     "tradeValue": 390,
-    "noiseRange": 20,
+    "noiseRange": 45,
     "teamId": "CAR"
   },
   {
@@ -412,7 +412,7 @@
     "round": 2,
     "selection": 20,
     "tradeValue": 380,
-    "noiseRange": 20,
+    "noiseRange": 45,
     "teamId": "GB"
   },
   {
@@ -420,7 +420,7 @@
     "round": 2,
     "selection": 21,
     "tradeValue": 370,
-    "noiseRange": 20,
+    "noiseRange": 45,
     "teamId": "PIT"
   },
   {
@@ -428,7 +428,7 @@
     "round": 2,
     "selection": 22,
     "tradeValue": 360,
-    "noiseRange": 20,
+    "noiseRange": 45,
     "teamId": "PHI"
   },
   {
@@ -436,7 +436,7 @@
     "round": 2,
     "selection": 23,
     "tradeValue": 350,
-    "noiseRange": 20,
+    "noiseRange": 45,
     "teamId": "LAC"
   },
   {
@@ -444,7 +444,7 @@
     "round": 2,
     "selection": 24,
     "tradeValue": 340,
-    "noiseRange": 20,
+    "noiseRange": 45,
     "teamId": "JAX"
   },
   {
@@ -452,7 +452,7 @@
     "round": 2,
     "selection": 25,
     "tradeValue": 330,
-    "noiseRange": 20,
+    "noiseRange": 45,
     "teamId": "CHI"
   },
   {
@@ -460,7 +460,7 @@
     "round": 2,
     "selection": 26,
     "tradeValue": 320,
-    "noiseRange": 20,
+    "noiseRange": 45,
     "teamId": "SF"
   },
   {
@@ -468,7 +468,7 @@
     "round": 2,
     "selection": 27,
     "tradeValue": 310,
-    "noiseRange": 20,
+    "noiseRange": 45,
     "teamId": "HOU"
   },
   {
@@ -476,7 +476,7 @@
     "round": 2,
     "selection": 28,
     "tradeValue": 300,
-    "noiseRange": 20,
+    "noiseRange": 45,
     "teamId": "CHI"
   },
   {
@@ -484,7 +484,7 @@
     "round": 2,
     "selection": 29,
     "tradeValue": 292,
-    "noiseRange": 20,
+    "noiseRange": 45,
     "teamId": "LAR"
   },
   {
@@ -492,7 +492,7 @@
     "round": 2,
     "selection": 30,
     "tradeValue": 284,
-    "noiseRange": 20,
+    "noiseRange": 45,
     "teamId": "DEN"
   },
   {
@@ -500,7 +500,7 @@
     "round": 2,
     "selection": 31,
     "tradeValue": 276,
-    "noiseRange": 20,
+    "noiseRange": 45,
     "teamId": "NE"
   },
   {
@@ -508,7 +508,7 @@
     "round": 2,
     "selection": 32,
     "tradeValue": 270,
-    "noiseRange": 20,
+    "noiseRange": 45,
     "teamId": "SEA"
   },
   {
@@ -516,7 +516,7 @@
     "round": 3,
     "selection": 1,
     "tradeValue": 265,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "ARI"
   },
   {
@@ -524,7 +524,7 @@
     "round": 3,
     "selection": 2,
     "tradeValue": 260,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "TEN"
   },
   {
@@ -532,7 +532,7 @@
     "round": 3,
     "selection": 3,
     "tradeValue": 255,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "LV"
   },
   {
@@ -540,7 +540,7 @@
     "round": 3,
     "selection": 4,
     "tradeValue": 250,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "PHI"
   },
   {
@@ -548,7 +548,7 @@
     "round": 3,
     "selection": 5,
     "tradeValue": 245,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "HOU"
   },
   {
@@ -556,7 +556,7 @@
     "round": 3,
     "selection": 6,
     "tradeValue": 240,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "CLE"
   },
   {
@@ -564,7 +564,7 @@
     "round": 3,
     "selection": 7,
     "tradeValue": 235,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "WAS"
   },
   {
@@ -572,7 +572,7 @@
     "round": 3,
     "selection": 8,
     "tradeValue": 230,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "CIN"
   },
   {
@@ -580,7 +580,7 @@
     "round": 3,
     "selection": 9,
     "tradeValue": 225,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "NO"
   },
   {
@@ -588,7 +588,7 @@
     "round": 3,
     "selection": 10,
     "tradeValue": 220,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "KC"
   },
   {
@@ -596,7 +596,7 @@
     "round": 3,
     "selection": 11,
     "tradeValue": 215,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "MIA"
   },
   {
@@ -604,7 +604,7 @@
     "round": 3,
     "selection": 12,
     "tradeValue": 210,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "PIT"
   },
   {
@@ -612,7 +612,7 @@
     "round": 3,
     "selection": 13,
     "tradeValue": 205,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "TB"
   },
   {
@@ -620,7 +620,7 @@
     "round": 3,
     "selection": 14,
     "tradeValue": 200,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "IND"
   },
   {
@@ -628,7 +628,7 @@
     "round": 3,
     "selection": 15,
     "tradeValue": 195,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "ATL"
   },
   {
@@ -636,7 +636,7 @@
     "round": 3,
     "selection": 16,
     "tradeValue": 190,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "BAL"
   },
   {
@@ -644,7 +644,7 @@
     "round": 3,
     "selection": 17,
     "tradeValue": 185,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "JAX"
   },
   {
@@ -652,7 +652,7 @@
     "round": 3,
     "selection": 18,
     "tradeValue": 180,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "MIN"
   },
   {
@@ -660,7 +660,7 @@
     "round": 3,
     "selection": 19,
     "tradeValue": 175,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "CAR"
   },
   {
@@ -668,7 +668,7 @@
     "round": 3,
     "selection": 20,
     "tradeValue": 170,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "GB"
   },
   {
@@ -676,7 +676,7 @@
     "round": 3,
     "selection": 21,
     "tradeValue": 165,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "PIT"
   },
   {
@@ -684,7 +684,7 @@
     "round": 3,
     "selection": 22,
     "tradeValue": 160,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "LAC"
   },
   {
@@ -692,7 +692,7 @@
     "round": 3,
     "selection": 23,
     "tradeValue": 155,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "MIA"
   },
   {
@@ -700,7 +700,7 @@
     "round": 3,
     "selection": 24,
     "tradeValue": 150,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "JAX"
   },
   {
@@ -708,7 +708,7 @@
     "round": 3,
     "selection": 25,
     "tradeValue": 145,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "CHI"
   },
   {
@@ -716,7 +716,7 @@
     "round": 3,
     "selection": 26,
     "tradeValue": 140,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "MIA"
   },
   {
@@ -724,7 +724,7 @@
     "round": 3,
     "selection": 27,
     "tradeValue": 136,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "BUF"
   },
   {
@@ -732,7 +732,7 @@
     "round": 3,
     "selection": 28,
     "tradeValue": 132,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "DAL"
   },
   {
@@ -740,7 +740,7 @@
     "round": 3,
     "selection": 29,
     "tradeValue": 128,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "LAR"
   },
   {
@@ -748,7 +748,7 @@
     "round": 3,
     "selection": 30,
     "tradeValue": 124,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "MIA"
   },
   {
@@ -756,7 +756,7 @@
     "round": 3,
     "selection": 31,
     "tradeValue": 120,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "NE"
   },
   {
@@ -764,7 +764,7 @@
     "round": 3,
     "selection": 32,
     "tradeValue": 116,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "SEA"
   },
   {
@@ -772,7 +772,7 @@
     "round": 3,
     "selection": 33,
     "tradeValue": 112,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "MIN"
   },
   {
@@ -780,7 +780,7 @@
     "round": 3,
     "selection": 34,
     "tradeValue": 108,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "PHI"
   },
   {
@@ -788,7 +788,7 @@
     "round": 3,
     "selection": 35,
     "tradeValue": 104,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "PIT"
   },
   {
@@ -796,7 +796,7 @@
     "round": 3,
     "selection": 36,
     "tradeValue": 100,
-    "noiseRange": 50,
+    "noiseRange": 55,
     "teamId": "JAX"
   },
   {
@@ -804,7 +804,7 @@
     "round": 4,
     "selection": 1,
     "tradeValue": 96,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "TEN"
   },
   {
@@ -812,7 +812,7 @@
     "round": 4,
     "selection": 2,
     "tradeValue": 92,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "LV"
   },
   {
@@ -820,7 +820,7 @@
     "round": 4,
     "selection": 3,
     "tradeValue": 88,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "NYJ"
   },
   {
@@ -828,7 +828,7 @@
     "round": 4,
     "selection": 4,
     "tradeValue": 86,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "ARI"
   },
   {
@@ -836,7 +836,7 @@
     "round": 4,
     "selection": 5,
     "tradeValue": 84,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "NYG"
   },
   {
@@ -844,7 +844,7 @@
     "round": 4,
     "selection": 6,
     "tradeValue": 82,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "HOU"
   },
   {
@@ -852,7 +852,7 @@
     "round": 4,
     "selection": 7,
     "tradeValue": 80,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "CLE"
   },
   {
@@ -860,7 +860,7 @@
     "round": 4,
     "selection": 8,
     "tradeValue": 78,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "DEN"
   },
   {
@@ -868,7 +868,7 @@
     "round": 4,
     "selection": 9,
     "tradeValue": 76,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "KC"
   },
   {
@@ -876,7 +876,7 @@
     "round": 4,
     "selection": 10,
     "tradeValue": 74,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "CIN"
   },
   {
@@ -884,7 +884,7 @@
     "round": 4,
     "selection": 11,
     "tradeValue": 72,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "DEN"
   },
   {
@@ -892,7 +892,7 @@
     "round": 4,
     "selection": 12,
     "tradeValue": 70,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "DAL"
   },
   {
@@ -900,7 +900,7 @@
     "round": 4,
     "selection": 13,
     "tradeValue": 68,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "IND"
   },
   {
@@ -908,7 +908,7 @@
     "round": 4,
     "selection": 14,
     "tradeValue": 66,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "PHI"
   },
   {
@@ -916,7 +916,7 @@
     "round": 4,
     "selection": 15,
     "tradeValue": 64,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "BAL"
   },
   {
@@ -924,7 +924,7 @@
     "round": 4,
     "selection": 16,
     "tradeValue": 62,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "TB"
   },
   {
@@ -932,7 +932,7 @@
     "round": 4,
     "selection": 17,
     "tradeValue": 60,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "LV"
   },
   {
@@ -940,7 +940,7 @@
     "round": 4,
     "selection": 18,
     "tradeValue": 58,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "DET"
   },
   {
@@ -948,7 +948,7 @@
     "round": 4,
     "selection": 19,
     "tradeValue": 56,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "CAR"
   },
   {
@@ -956,7 +956,7 @@
     "round": 4,
     "selection": 20,
     "tradeValue": 54,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "GB"
   },
   {
@@ -964,7 +964,7 @@
     "round": 4,
     "selection": 21,
     "tradeValue": 52,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "PIT"
   },
   {
@@ -972,7 +972,7 @@
     "round": 4,
     "selection": 22,
     "tradeValue": 50,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "ATL"
   },
   {
@@ -980,7 +980,7 @@
     "round": 4,
     "selection": 23,
     "tradeValue": 49,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "LAC"
   },
   {
@@ -988,7 +988,7 @@
     "round": 4,
     "selection": 24,
     "tradeValue": 48,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "JAX"
   },
   {
@@ -996,7 +996,7 @@
     "round": 4,
     "selection": 25,
     "tradeValue": 47,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "NE"
   },
   {
@@ -1004,7 +1004,7 @@
     "round": 4,
     "selection": 26,
     "tradeValue": 46,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "BUF"
   },
   {
@@ -1012,7 +1012,7 @@
     "round": 4,
     "selection": 27,
     "tradeValue": 45,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "SF"
   },
   {
@@ -1020,7 +1020,7 @@
     "round": 4,
     "selection": 28,
     "tradeValue": 44,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "DET"
   },
   {
@@ -1028,7 +1028,7 @@
     "round": 4,
     "selection": 29,
     "tradeValue": 43,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "CHI"
   },
   {
@@ -1036,7 +1036,7 @@
     "round": 4,
     "selection": 30,
     "tradeValue": 42,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "MIA"
   },
   {
@@ -1044,7 +1044,7 @@
     "round": 4,
     "selection": 31,
     "tradeValue": 41,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "NE"
   },
   {
@@ -1052,7 +1052,7 @@
     "round": 4,
     "selection": 32,
     "tradeValue": 40,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "NO"
   },
   {
@@ -1060,7 +1060,7 @@
     "round": 4,
     "selection": 33,
     "tradeValue": 40,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "SF"
   },
   {
@@ -1068,7 +1068,7 @@
     "round": 4,
     "selection": 34,
     "tradeValue": 39,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "LV"
   },
   {
@@ -1076,7 +1076,7 @@
     "round": 4,
     "selection": 35,
     "tradeValue": 38,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "PIT"
   },
   {
@@ -1084,7 +1084,7 @@
     "round": 4,
     "selection": 36,
     "tradeValue": 38,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "NO"
   },
   {
@@ -1092,7 +1092,7 @@
     "round": 4,
     "selection": 37,
     "tradeValue": 38,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "PHI"
   },
   {
@@ -1100,7 +1100,7 @@
     "round": 4,
     "selection": 38,
     "tradeValue": 37,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "SF"
   },
   {
@@ -1108,7 +1108,7 @@
     "round": 4,
     "selection": 39,
     "tradeValue": 36,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "SF"
   },
   {
@@ -1116,7 +1116,7 @@
     "round": 4,
     "selection": 40,
     "tradeValue": 36,
-    "noiseRange": 50,
+    "noiseRange": 65,
     "teamId": "NYJ"
   },
   {
@@ -1124,7 +1124,7 @@
     "round": 5,
     "selection": 1,
     "tradeValue": 36,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "HOU"
   },
   {
@@ -1132,7 +1132,7 @@
     "round": 5,
     "selection": 2,
     "tradeValue": 35,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "TEN"
   },
   {
@@ -1140,7 +1140,7 @@
     "round": 5,
     "selection": 3,
     "tradeValue": 34,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "ARI"
   },
   {
@@ -1148,7 +1148,7 @@
     "round": 5,
     "selection": 4,
     "tradeValue": 34,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "TEN"
   },
   {
@@ -1156,7 +1156,7 @@
     "round": 5,
     "selection": 5,
     "tradeValue": 34,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "NYG"
   },
   {
@@ -1164,7 +1164,7 @@
     "round": 5,
     "selection": 6,
     "tradeValue": 33,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "CLE"
   },
   {
@@ -1172,7 +1172,7 @@
     "round": 5,
     "selection": 7,
     "tradeValue": 33,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "WAS"
   },
   {
@@ -1180,7 +1180,7 @@
     "round": 5,
     "selection": 8,
     "tradeValue": 32,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "KC"
   },
   {
@@ -1188,7 +1188,7 @@
     "round": 5,
     "selection": 9,
     "tradeValue": 32,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "CLE"
   },
   {
@@ -1196,7 +1196,7 @@
     "round": 5,
     "selection": 10,
     "tradeValue": 31,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "NO"
   },
   {
@@ -1204,7 +1204,7 @@
     "round": 5,
     "selection": 11,
     "tradeValue": 31,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "MIA"
   },
   {
@@ -1212,7 +1212,7 @@
     "round": 5,
     "selection": 12,
     "tradeValue": 31,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "DAL"
   },
   {
@@ -1220,7 +1220,7 @@
     "round": 5,
     "selection": 13,
     "tradeValue": 30,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "GB"
   },
   {
@@ -1228,7 +1228,7 @@
     "round": 5,
     "selection": 14,
     "tradeValue": 30,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "BAL"
   },
   {
@@ -1236,7 +1236,7 @@
     "round": 5,
     "selection": 15,
     "tradeValue": 29,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "TB"
   },
   {
@@ -1244,7 +1244,7 @@
     "round": 5,
     "selection": 16,
     "tradeValue": 29,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "IND"
   },
   {
@@ -1252,7 +1252,7 @@
     "round": 5,
     "selection": 17,
     "tradeValue": 29,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "DET"
   },
   {
@@ -1260,7 +1260,7 @@
     "round": 5,
     "selection": 18,
     "tradeValue": 28,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "CAR"
   },
   {
@@ -1268,7 +1268,7 @@
     "round": 5,
     "selection": 19,
     "tradeValue": 28,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "CAR"
   },
   {
@@ -1276,7 +1276,7 @@
     "round": 5,
     "selection": 20,
     "tradeValue": 27,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "GB"
   },
   {
@@ -1284,7 +1284,7 @@
     "round": 5,
     "selection": 21,
     "tradeValue": 27,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "PIT"
   },
   {
@@ -1292,7 +1292,7 @@
     "round": 5,
     "selection": 22,
     "tradeValue": 27,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "BAL"
   },
   {
@@ -1300,7 +1300,7 @@
     "round": 5,
     "selection": 23,
     "tradeValue": 26,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "MIN"
   },
   {
@@ -1308,7 +1308,7 @@
     "round": 5,
     "selection": 24,
     "tradeValue": 26,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "JAX"
   },
   {
@@ -1316,7 +1316,7 @@
     "round": 5,
     "selection": 25,
     "tradeValue": 25,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "BUF"
   },
   {
@@ -1324,7 +1324,7 @@
     "round": 5,
     "selection": 26,
     "tradeValue": 25,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "JAX"
   },
   {
@@ -1332,7 +1332,7 @@
     "round": 5,
     "selection": 27,
     "tradeValue": 25,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "HOU"
   },
   {
@@ -1340,7 +1340,7 @@
     "round": 5,
     "selection": 28,
     "tradeValue": 24,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "BUF"
   },
   {
@@ -1348,7 +1348,7 @@
     "round": 5,
     "selection": 29,
     "tradeValue": 24,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "KC"
   },
   {
@@ -1356,7 +1356,7 @@
     "round": 5,
     "selection": 30,
     "tradeValue": 23,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "DEN"
   },
   {
@@ -1364,7 +1364,7 @@
     "round": 5,
     "selection": 31,
     "tradeValue": 23,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "NE"
   },
   {
@@ -1372,7 +1372,7 @@
     "round": 5,
     "selection": 32,
     "tradeValue": 23,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "NO"
   },
   {
@@ -1380,7 +1380,7 @@
     "round": 5,
     "selection": 33,
     "tradeValue": 22,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "BAL"
   },
   {
@@ -1388,7 +1388,7 @@
     "round": 5,
     "selection": 34,
     "tradeValue": 22,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "BAL"
   },
   {
@@ -1396,7 +1396,7 @@
     "round": 5,
     "selection": 35,
     "tradeValue": 21,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "LV"
   },
   {
@@ -1404,7 +1404,7 @@
     "round": 5,
     "selection": 36,
     "tradeValue": 21,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "KC"
   },
   {
@@ -1412,7 +1412,7 @@
     "round": 5,
     "selection": 37,
     "tradeValue": 21,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "DAL"
   },
   {
@@ -1420,7 +1420,7 @@
     "round": 5,
     "selection": 38,
     "tradeValue": 20,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "PHI"
   },
   {
@@ -1428,7 +1428,7 @@
     "round": 5,
     "selection": 39,
     "tradeValue": 19,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "NYJ"
   },
   {
@@ -1436,7 +1436,7 @@
     "round": 5,
     "selection": 40,
     "tradeValue": 19,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "DAL"
   },
   {
@@ -1444,7 +1444,7 @@
     "round": 5,
     "selection": 41,
     "tradeValue": 19,
-    "noiseRange": 50,
+    "noiseRange": 180,
     "teamId": "DET"
   },
   {
@@ -1452,7 +1452,7 @@
     "round": 6,
     "selection": 1,
     "tradeValue": 18,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "BUF"
   },
   {
@@ -1460,7 +1460,7 @@
     "round": 6,
     "selection": 2,
     "tradeValue": 18,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "ARI"
   },
   {
@@ -1468,7 +1468,7 @@
     "round": 6,
     "selection": 3,
     "tradeValue": 17,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "TEN"
   },
   {
@@ -1476,7 +1476,7 @@
     "round": 6,
     "selection": 4,
     "tradeValue": 17,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "LV"
   },
   {
@@ -1484,7 +1484,7 @@
     "round": 6,
     "selection": 5,
     "tradeValue": 17,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "NYG"
   },
   {
@@ -1492,7 +1492,7 @@
     "round": 6,
     "selection": 6,
     "tradeValue": 16,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "WAS"
   },
   {
@@ -1500,7 +1500,7 @@
     "round": 6,
     "selection": 7,
     "tradeValue": 16,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "SEA"
   },
   {
@@ -1508,7 +1508,7 @@
     "round": 6,
     "selection": 8,
     "tradeValue": 15,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "CIN"
   },
   {
@@ -1516,7 +1516,7 @@
     "round": 6,
     "selection": 9,
     "tradeValue": 15,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "NO"
   },
   {
@@ -1524,7 +1524,7 @@
     "round": 6,
     "selection": 10,
     "tradeValue": 15,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "NE"
   },
   {
@@ -1532,7 +1532,7 @@
     "round": 6,
     "selection": 11,
     "tradeValue": 14,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "NYG"
   },
   {
@@ -1540,7 +1540,7 @@
     "round": 6,
     "selection": 12,
     "tradeValue": 14,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "NYG"
   },
   {
@@ -1548,7 +1548,7 @@
     "round": 6,
     "selection": 13,
     "tradeValue": 13,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "TEN"
   },
   {
@@ -1556,7 +1556,7 @@
     "round": 6,
     "selection": 14,
     "tradeValue": 13,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "TB"
   },
   {
@@ -1564,7 +1564,7 @@
     "round": 6,
     "selection": 15,
     "tradeValue": 13,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "MIN"
   },
   {
@@ -1572,7 +1572,7 @@
     "round": 6,
     "selection": 16,
     "tradeValue": 12,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "PHI"
   },
   {
@@ -1580,7 +1580,7 @@
     "round": 6,
     "selection": 17,
     "tradeValue": 12,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "NE"
   },
   {
@@ -1588,7 +1588,7 @@
     "round": 6,
     "selection": 18,
     "tradeValue": 11,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "CIN"
   },
   {
@@ -1596,7 +1596,7 @@
     "round": 6,
     "selection": 19,
     "tradeValue": 11,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "CAR"
   },
   {
@@ -1604,7 +1604,7 @@
     "round": 6,
     "selection": 20,
     "tradeValue": 11,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "GB"
   },
   {
@@ -1612,7 +1612,7 @@
     "round": 6,
     "selection": 21,
     "tradeValue": 10,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "NE"
   },
   {
@@ -1620,7 +1620,7 @@
     "round": 6,
     "selection": 22,
     "tradeValue": 10,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "JAX"
   },
   {
@@ -1628,7 +1628,7 @@
     "round": 6,
     "selection": 23,
     "tradeValue": 9,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "LAC"
   },
   {
@@ -1636,7 +1636,7 @@
     "round": 6,
     "selection": 24,
     "tradeValue": 9,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "DET"
   },
   {
@@ -1644,7 +1644,7 @@
     "round": 6,
     "selection": 25,
     "tradeValue": 9,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "CLE"
   },
   {
@@ -1652,7 +1652,7 @@
     "round": 6,
     "selection": 26,
     "tradeValue": 8,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "LAR"
   },
   {
@@ -1660,7 +1660,7 @@
     "round": 6,
     "selection": 27,
     "tradeValue": 8,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "LV"
   },
   {
@@ -1668,7 +1668,7 @@
     "round": 6,
     "selection": 28,
     "tradeValue": 7,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "WAS"
   },
   {
@@ -1676,7 +1676,7 @@
     "round": 6,
     "selection": 29,
     "tradeValue": 7,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "NYJ"
   },
   {
@@ -1684,7 +1684,7 @@
     "round": 6,
     "selection": 30,
     "tradeValue": 7,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "BAL"
   },
   {
@@ -1692,7 +1692,7 @@
     "round": 6,
     "selection": 31,
     "tradeValue": 6,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "NE"
   },
   {
@@ -1700,7 +1700,7 @@
     "round": 6,
     "selection": 32,
     "tradeValue": 6,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "DET"
   },
   {
@@ -1708,7 +1708,7 @@
     "round": 6,
     "selection": 33,
     "tradeValue": 5,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "IND"
   },
   {
@@ -1716,7 +1716,7 @@
     "round": 6,
     "selection": 34,
     "tradeValue": 5,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "ATL"
   },
   {
@@ -1724,7 +1724,7 @@
     "round": 6,
     "selection": 35,
     "tradeValue": 5,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "PIT"
   },
   {
@@ -1732,7 +1732,7 @@
     "round": 7,
     "selection": 1,
     "tradeValue": 4,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "ARI"
   },
   {
@@ -1740,7 +1740,7 @@
     "round": 7,
     "selection": 2,
     "tradeValue": 4,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "DAL"
   },
   {
@@ -1748,7 +1748,7 @@
     "round": 7,
     "selection": 3,
     "tradeValue": 3,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "LV"
   },
   {
@@ -1756,7 +1756,7 @@
     "round": 7,
     "selection": 4,
     "tradeValue": 3,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "BUF"
   },
   {
@@ -1764,7 +1764,7 @@
     "round": 7,
     "selection": 5,
     "tradeValue": 2,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "CIN"
   },
   {
@@ -1772,7 +1772,7 @@
     "round": 7,
     "selection": 6,
     "tradeValue": 2,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "DET"
   },
   {
@@ -1780,7 +1780,7 @@
     "round": 7,
     "selection": 7,
     "tradeValue": 2,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "WAS"
   },
   {
@@ -1788,7 +1788,7 @@
     "round": 7,
     "selection": 8,
     "tradeValue": 2,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "PIT"
   },
   {
@@ -1796,7 +1796,7 @@
     "round": 7,
     "selection": 9,
     "tradeValue": 1,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "TEN"
   },
   {
@@ -1804,7 +1804,7 @@
     "round": 7,
     "selection": 10,
     "tradeValue": 1,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "CIN"
   },
   {
@@ -1812,7 +1812,7 @@
     "round": 7,
     "selection": 11,
     "tradeValue": 1,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "MIA"
   },
   {
@@ -1820,7 +1820,7 @@
     "round": 7,
     "selection": 12,
     "tradeValue": 1,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "NYJ"
   },
   {
@@ -1828,7 +1828,7 @@
     "round": 7,
     "selection": 13,
     "tradeValue": 1,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "TB"
   },
   {
@@ -1836,7 +1836,7 @@
     "round": 7,
     "selection": 14,
     "tradeValue": 1,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "PIT"
   },
   {
@@ -1844,7 +1844,7 @@
     "round": 7,
     "selection": 15,
     "tradeValue": 1,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "ATL"
   },
   {
@@ -1852,7 +1852,7 @@
     "round": 7,
     "selection": 16,
     "tradeValue": 1,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "LAR"
   },
   {
@@ -1860,7 +1860,7 @@
     "round": 7,
     "selection": 17,
     "tradeValue": 1,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "JAX"
   },
   {
@@ -1868,7 +1868,7 @@
     "round": 7,
     "selection": 18,
     "tradeValue": 1,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "MIN"
   },
   {
@@ -1876,7 +1876,7 @@
     "round": 7,
     "selection": 19,
     "tradeValue": 1,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "MIN"
   },
   {
@@ -1884,7 +1884,7 @@
     "round": 7,
     "selection": 20,
     "tradeValue": 1,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "GB"
   },
   {
@@ -1892,7 +1892,7 @@
     "round": 7,
     "selection": 21,
     "tradeValue": 1,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "PIT"
   },
   {
@@ -1900,7 +1900,7 @@
     "round": 7,
     "selection": 22,
     "tradeValue": 1,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "MIA"
   },
   {
@@ -1908,7 +1908,7 @@
     "round": 7,
     "selection": 23,
     "tradeValue": 1,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "CHI"
   },
   {
@@ -1916,7 +1916,7 @@
     "round": 7,
     "selection": 24,
     "tradeValue": 1,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "JAX"
   },
   {
@@ -1924,7 +1924,7 @@
     "round": 7,
     "selection": 25,
     "tradeValue": 1,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "CHI"
   },
   {
@@ -1932,7 +1932,7 @@
     "round": 7,
     "selection": 26,
     "tradeValue": 1,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "NYJ"
   },
   {
@@ -1940,7 +1940,7 @@
     "round": 7,
     "selection": 27,
     "tradeValue": 1,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "HOU"
   },
   {
@@ -1948,7 +1948,7 @@
     "round": 7,
     "selection": 28,
     "tradeValue": 1,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "MIN"
   },
   {
@@ -1956,7 +1956,7 @@
     "round": 7,
     "selection": 29,
     "tradeValue": 1,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "JAX"
   },
   {
@@ -1964,7 +1964,7 @@
     "round": 7,
     "selection": 30,
     "tradeValue": 1,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "DEN"
   },
   {
@@ -1972,7 +1972,7 @@
     "round": 7,
     "selection": 31,
     "tradeValue": 1,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "NE"
   },
   {
@@ -1980,7 +1980,7 @@
     "round": 7,
     "selection": 32,
     "tradeValue": 1,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "CLE"
   },
   {
@@ -1988,7 +1988,7 @@
     "round": 7,
     "selection": 33,
     "tradeValue": 1,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "IND"
   },
   {
@@ -1996,7 +1996,7 @@
     "round": 7,
     "selection": 34,
     "tradeValue": 1,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "BAL"
   },
   {
@@ -2004,7 +2004,7 @@
     "round": 7,
     "selection": 35,
     "tradeValue": 1,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "LAR"
   },
   {
@@ -2012,7 +2012,7 @@
     "round": 7,
     "selection": 36,
     "tradeValue": 1,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "LAR"
   },
   {
@@ -2020,7 +2020,7 @@
     "round": 7,
     "selection": 37,
     "tradeValue": 1,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "BAL"
   },
   {
@@ -2028,7 +2028,7 @@
     "round": 7,
     "selection": 38,
     "tradeValue": 1,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "IND"
   },
   {
@@ -2036,7 +2036,7 @@
     "round": 7,
     "selection": 39,
     "tradeValue": 1,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "GB"
   },
   {
@@ -2044,7 +2044,7 @@
     "round": 7,
     "selection": 40,
     "tradeValue": 1,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "DEN"
   },
   {
@@ -2052,7 +2052,7 @@
     "round": 7,
     "selection": 41,
     "tradeValue": 1,
-    "noiseRange": 100,
+    "noiseRange": 180,
     "teamId": "DEN"
   }
 ]
