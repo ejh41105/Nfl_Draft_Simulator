@@ -120,7 +120,7 @@
   },
   {
     "consensusRanking": 8,
-    "playerId": 10,
+    "playerId": 8,
     "name": "Ruben Bain Jr.",
     "college": "Miami (FL)",
     "position": "EDGE",
@@ -137,7 +137,7 @@
   },
   {
     "consensusRanking": 9,
-    "playerId": 8,
+    "playerId": 9,
     "name": "Mansoor Delane",
     "college": "LSU",
     "position": "CB",
@@ -154,7 +154,7 @@
   },
   {
     "consensusRanking": 10,
-    "playerId": 9,
+    "playerId": 10,
     "name": "Carnell Tate",
     "college": "Ohio State",
     "position": "WR",
@@ -171,7 +171,7 @@
   },
   {
     "consensusRanking": 11,
-    "playerId": 10,
+    "playerId": 11,
     "name": "Olaivavega Ioane",
     "college": "Penn State",
     "position": "OG",
@@ -188,7 +188,7 @@
   },
   {
     "consensusRanking": 12,
-    "playerId": 11,
+    "playerId": 12,
     "name": "Makai Lemon",
     "college": "USC",
     "position": "WR",
@@ -205,7 +205,7 @@
   },
   {
     "consensusRanking": 13,
-    "playerId": 12,
+    "playerId": 13,
     "name": "Monroe Freeling",
     "college": "Georgia",
     "position": "OT",
