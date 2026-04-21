@@ -325,23 +325,6 @@
   },
   {
     "consensusRanking": 20,
-    "playerId": 20,
-    "name": "Jermod McCoy",
-    "college": "Tennessee",
-    "position": "CB",
-    "height": 73,
-    "weight": 188,
-    "number": 2,
-    "age": 20,
-    "majorStats": "44 tackles, 0 sacks, 9 PBU, 4 INT",
-    "positionalRanking": 2,
-    "RAS": 9.2,
-    "miscConcern": 8,
-    "floorCeiling": 8,
-    "logoFile": "tennessee.png"
-  },
-  {
-    "consensusRanking": 21,
     "playerId": 21,
     "name": "Akheem Mesidor",
     "college": "Miami (FL)",
@@ -358,7 +341,7 @@
     "logoFile": "miami.png"
   },
   {
-    "consensusRanking": 22,
+    "consensusRanking": 21,
     "playerId": 22,
     "name": "Caleb Lomu",
     "college": "Utah",
@@ -375,7 +358,7 @@
     "logoFile": "utah.png"
   },
   {
-    "consensusRanking": 23,
+    "consensusRanking": 22,
     "playerId": 23,
     "name": "Peter Woods",
     "college": "Clemson",
@@ -392,7 +375,7 @@
     "logoFile": "clemson.png"
   },
   {
-    "consensusRanking": 24,
+    "consensusRanking": 23,
     "playerId": 24,
     "name": "Emmanuel McNeil-Warren",
     "college": "Toledo",
@@ -409,7 +392,7 @@
     "logoFile": "toledo.png"
   },
   {
-    "consensusRanking": 25,
+    "consensusRanking": 24,
     "playerId": 25,
     "name": "Kadyn Proctor",
     "college": "Alabama",
@@ -426,7 +409,7 @@
     "logoFile": "alabama.png"
   },
   {
-    "consensusRanking": 26,
+    "consensusRanking": 25,
     "playerId": 26,
     "name": "Avieon Terrell",
     "college": "Clemson",
@@ -436,14 +419,14 @@
     "number": 11,
     "age": 21,
     "majorStats": "48 tackles, 3.0 sacks, 9 PBU, 0 INT, 5 FF",
-    "positionalRanking": 3,
+    "positionalRanking": 2,
     "RAS": 8.94,
     "miscConcern": 10,
     "floorCeiling": 7,
     "logoFile": "clemson.png"
   },
   {
-    "consensusRanking": 27,
+    "consensusRanking": 26,
     "playerId": 27,
     "name": "Denzel Boston",
     "college": "Washington",
@@ -460,7 +443,7 @@
     "logoFile": "washington.png"
   },
   {
-    "consensusRanking": 28,
+    "consensusRanking": 27,
     "playerId": 28,
     "name": "Caleb Banks",
     "college": "Florida",
@@ -477,7 +460,7 @@
     "logoFile": "florida.png"
   },
   {
-    "consensusRanking": 29,
+    "consensusRanking": 28,
     "playerId": 29,
     "name": "Colton Hood",
     "college": "Tennessee",
@@ -487,9 +470,26 @@
     "number": 29,
     "age": 21,
     "majorStats": "50 tackles, 0 sacks, 8 PBU, 1 INT, 1 FF",
-    "positionalRanking": 4,
+    "positionalRanking": 3,
     "RAS": 9.61,
     "miscConcern": 8,
+    "floorCeiling": 8,
+    "logoFile": "tennessee.png"
+  },
+  {
+    "consensusRanking": 29,
+    "playerId": 20,
+    "name": "Jermod McCoy",
+    "college": "Tennessee",
+    "position": "CB",
+    "height": 73,
+    "weight": 188,
+    "number": 2,
+    "age": 20,
+    "majorStats": "44 tackles, 0 sacks, 9 PBU, 4 INT",
+    "positionalRanking": 4,
+    "RAS": 9.2,
+    "miscConcern": 2,
     "floorCeiling": 8,
     "logoFile": "tennessee.png"
   },
